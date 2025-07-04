@@ -194,6 +194,13 @@ header h1 {
     padding: 4px 12px;
     border-radius: 20px;
     font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.version:hover {
+    background: var(--primary-hover);
+    color: white;
 }
 
 .github-link,
@@ -490,6 +497,42 @@ tr.free-char:hover {
 .shard { color: var(--text-muted); background: var(--hover-bg); }
 .keep { color: var(--success-color); font-weight: 600; }
 .no-shard { color: var(--warning-color); text-decoration: line-through; }
+
+/* Ownership and Level Controls */
+.ownership-header {
+    width: 60px;
+    text-align: center;
+}
+
+.ownership-checkbox {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.level-input {
+    width: 50px;
+    padding: 2px 4px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.level-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+}
+
+.character-row.owned {
+    background-color: var(--tier-a);
+}
+
+.character-row.not-owned {
+    opacity: 0.6;
+}
 
 /* Loading State */
 .loading {

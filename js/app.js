@@ -3,10 +3,12 @@ let allCharacters = [];
 let filteredCharacters = [];
 let sortColumn = null;
 let sortDirection = 'asc';
+let userCharacterData = {};
 
 // Load character data on page load
 document.addEventListener('DOMContentLoaded', async function() {
     initializeTheme();
+    loadUserData();
     await loadCharacterData();
     setupEventListeners();
     setupLegendCollapse();
@@ -38,7 +40,7 @@ async function loadCharacterData() {
     } catch (error) {
         console.error('Error loading character data:', error);
         document.getElementById('tableBody').innerHTML = 
-            '<tr><td colspan="9" class="loading">Error loading data. Please refresh the page.</td></tr>';
+            '<tr><td colspan="12" class="loading">Error loading data. Please refresh the page.</td></tr>';
     }
 }
 
@@ -48,15 +50,29 @@ function renderTable() {
     tbody.innerHTML = '';
     
     if (filteredCharacters.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="9" class="loading">No characters match your filters.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="12" class="loading">No characters match your filters.</td></tr>';
         return;
     }
     
     filteredCharacters.forEach(char => {
         const row = document.createElement('tr');
+        const userData = userCharacterData[char.id] || {};
+        const isOwned = userData.owned || false;
+        
         if (char.isFree) row.classList.add('free-char');
+        row.classList.add('character-row');
+        if (isOwned) {
+            row.classList.add('owned');
+        } else {
+            row.classList.add('not-owned');
+        }
         
         row.innerHTML = `
+            <td class="ownership-header">
+                <input type="checkbox" class="ownership-checkbox" 
+                       data-char-id="${char.id}" 
+                       ${isOwned ? 'checked' : ''}>
+            </td>
             <td><strong>${char.name}</strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
             <td class="tier-${(char.a4Tier || 'none').toLowerCase().replace('+', '\\+')}">${char.a4Tier || 'Not Listed'}</td>
             <td class="${getUltClass(char.ultPriority)}">${char.ultPriority}</td>
@@ -65,11 +81,28 @@ function renderTable() {
             <td class="${getStoneClass(char.stones.AS3)}">${char.stones.AS3}</td>
             <td class="${getStoneClass(char.stones.AS4)}">${char.stones.AS4}</td>
             <td class="${getStoneClass(char.stones.AS5)}">${char.stones.AS5}</td>
+            <td>
+                <input type="number" class="level-input awaken-level" 
+                       min="0" max="4" 
+                       value="${userData.awakenLevel || 0}" 
+                       data-char-id="${char.id}" 
+                       ${!isOwned ? 'disabled' : ''}>
+            </td>
+            <td>
+                <input type="number" class="level-input ult-level" 
+                       min="1" max="10" 
+                       value="${userData.ultLevel || 1}" 
+                       data-char-id="${char.id}" 
+                       ${!isOwned ? 'disabled' : ''}>
+            </td>
             <td>${char.notes}</td>
         `;
         
         tbody.appendChild(row);
     });
+    
+    // Setup event listeners for new controls
+    setupCharacterControlListeners();
 }
 
 // Get CSS class for ultimate priority
@@ -106,6 +139,7 @@ function setupEventListeners() {
     document.getElementById('a4Filter').addEventListener('change', filterTable);
     document.getElementById('ultFilter').addEventListener('change', filterTable);
     document.getElementById('freeFilter').addEventListener('change', filterTable);
+    document.getElementById('ownershipFilter').addEventListener('change', filterTable);
     
     // Theme toggle button
     document.getElementById('themeToggle').addEventListener('click', toggleTheme);
@@ -128,6 +162,7 @@ function filterTable() {
     const a4Filter = document.getElementById('a4Filter').value;
     const ultFilter = document.getElementById('ultFilter').value;
     const freeFilter = document.getElementById('freeFilter').value;
+    const ownershipFilter = document.getElementById('ownershipFilter').value;
     
     filteredCharacters = allCharacters.filter(char => {
         // Search filter
@@ -153,6 +188,16 @@ function filterTable() {
             return false;
         }
         
+        // Ownership filter
+        const userData = userCharacterData[char.id] || {};
+        const isOwned = userData.owned || false;
+        if (ownershipFilter === 'owned' && !isOwned) {
+            return false;
+        }
+        if (ownershipFilter === 'not-owned' && isOwned) {
+            return false;
+        }
+        
         return true;
     });
     
@@ -166,6 +211,7 @@ function resetFilters() {
     document.getElementById('a4Filter').value = '';
     document.getElementById('ultFilter').value = '';
     document.getElementById('freeFilter').value = '';
+    document.getElementById('ownershipFilter').value = '';
     
     filteredCharacters = [...allCharacters];
     renderTable();
@@ -322,5 +368,98 @@ function setupLegendCollapse() {
         }
         
         lastScrollTop = scrollTop;
+    });
+}
+
+// User data management
+function loadUserData() {
+    const saved = localStorage.getItem('cotc-user-data');
+    if (saved) {
+        try {
+            userCharacterData = JSON.parse(saved);
+        } catch (e) {
+            console.error('Error loading user data:', e);
+            userCharacterData = {};
+        }
+    }
+}
+
+function saveUserData() {
+    localStorage.setItem('cotc-user-data', JSON.stringify(userCharacterData));
+}
+
+function updateCharacterData(charId, field, value) {
+    if (!userCharacterData[charId]) {
+        userCharacterData[charId] = {
+            owned: false,
+            awakenLevel: 0,
+            ultLevel: 1
+        };
+    }
+    
+    userCharacterData[charId][field] = value;
+    saveUserData();
+}
+
+// Setup event listeners for character controls
+function setupCharacterControlListeners() {
+    // Ownership checkboxes
+    document.querySelectorAll('.ownership-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const charId = this.dataset.charId;
+            const isOwned = this.checked;
+            
+            updateCharacterData(charId, 'owned', isOwned);
+            
+            // Enable/disable level inputs
+            const row = this.closest('tr');
+            const awakenInput = row.querySelector('.awaken-level');
+            const ultInput = row.querySelector('.ult-level');
+            
+            awakenInput.disabled = !isOwned;
+            ultInput.disabled = !isOwned;
+            
+            // Update row styling
+            if (isOwned) {
+                row.classList.add('owned');
+                row.classList.remove('not-owned');
+            } else {
+                row.classList.remove('owned');
+                row.classList.add('not-owned');
+                // Reset levels when unowned
+                awakenInput.value = 0;
+                ultInput.value = 1;
+                updateCharacterData(charId, 'awakenLevel', 0);
+                updateCharacterData(charId, 'ultLevel', 1);
+            }
+        });
+    });
+    
+    // Awaken level inputs
+    document.querySelectorAll('.awaken-level').forEach(input => {
+        input.addEventListener('change', function() {
+            const charId = this.dataset.charId;
+            const level = parseInt(this.value) || 0;
+            
+            // Clamp to valid range
+            if (level < 0) this.value = 0;
+            if (level > 4) this.value = 4;
+            
+            updateCharacterData(charId, 'awakenLevel', parseInt(this.value));
+        });
+    });
+    
+    // Ultimate level inputs
+    document.querySelectorAll('.ult-level').forEach(input => {
+        input.addEventListener('change', function() {
+            const charId = this.dataset.charId;
+            const level = parseInt(this.value) || 1;
+            
+            // Clamp to valid range
+            if (level < 1) this.value = 1;
+            if (level > 10) this.value = 10;
+            
+            updateCharacterData(charId, 'ultLevel', parseInt(this.value));
+        });
     });
 }

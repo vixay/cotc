@@ -1787,76 +1787,9 @@
       ]
     },
     {
-      "id": "2b",
-      "name": "2B",
+      "id": "attack_command_becomes_an_ice_elemental_attack_also_grants_self_the_ability_to_critically_hit_with_elemental_attacks_and_changes_boost_levels_to_24_and_6_bp_consumption_changes_to_1_3_and_5",
+      "name": "\"Attack\" Command becomes an Ice elemental attack. Also grants self the ability to critically hit with Elemental attacks and changes boost Levels to 2,4, and 6 (BP Consumption changes to 1, 3, and 5)",
       "isFree": false,
-      "isCollab": true,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Keep"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "collab"
-      ]
-    },
-    {
-      "id": "9s",
-      "name": "9S",
-      "isFree": false,
-      "isCollab": true,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Keep"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "collab"
-      ]
-    },
-    {
-      "id": "agnès",
-      "name": "Agnès",
-      "isFree": false,
-      "isCollab": true,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Keep"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "collab"
-      ]
-    },
-    {
-      "id": "black_knight",
-      "name": "Black Knight",
-      "isFree": false,
-      "isCollab": false,
       "a4Tier": null,
       "ultPriority": "L9",
       "ultPriorityGroup": "medium",
@@ -1867,17 +1800,16 @@
         "AS4": "A4",
         "AS5": "Shard"
       },
-      "notes": "Needs tier assessment",
+      "notes": "Needs manual tier assessment",
       "tags": [
         "5-star",
         "needs-review"
       ]
     },
     {
-      "id": "black_maiden",
-      "name": "Black Maiden",
+      "id": "attack_command_can_hit_staff_weakness_when_spending_1_bp_with_skills_grant_the_frontrow_legend_for_2_turns_legend_5_atkdefmagmdef",
+      "name": "\"Attack\" Command can hit Staff Weakness. When spending 1+ BP with skills, grant the frontrow \"Legend\" for 2 turns. \"Legend\": 5% Atk/Def/Mag/MDef",
       "isFree": false,
-      "isCollab": false,
       "a4Tier": null,
       "ultPriority": "L9",
       "ultPriorityGroup": "medium",
@@ -1888,17 +1820,16 @@
         "AS4": "A4",
         "AS5": "Shard"
       },
-      "notes": "Needs tier assessment",
+      "notes": "Needs manual tier assessment",
       "tags": [
         "5-star",
         "needs-review"
       ]
     },
     {
-      "id": "ex_agnea",
-      "name": "EX Agnea",
+      "id": "attack_command_changes_to_the_following_1x_single_target_axe_1x_65440_power_hit_count_does_not_increase_with_boost_lvs_this_attack_has_100000_damage_cap\nthis_attack_also_always_reduces_shield_points_and_does_1_shield_damage_\nthe_longer_the_duration_of_determination_on_self_is_the_more_powerful_this_skill_is_max_x25_power_when_determination_has_5_turn_duration",
+      "name": "\"Attack\" Command changes to the following: 1x Single target Axe (1x 65-440 Power), hit count does not increase with Boost Lvs. This attack has +100,000 Damage Cap.\nThis attack also always reduces shield points and does +1 shield damage. \nThe longer the duration of \"Determination\" on self is, the more powerful this skill is (Max x2.5 Power when \"Determination\" has 5+ turn duration)",
       "isFree": false,
-      "isCollab": false,
       "a4Tier": null,
       "ultPriority": "L9",
       "ultPriorityGroup": "medium",
@@ -1909,666 +1840,16 @@
         "AS4": "A4",
         "AS5": "Shard"
       },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier",
-        "ot2-character"
-      ]
-    },
-    {
-      "id": "ex_araune",
-      "name": "EX Araune",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_bargello",
-      "name": "EX Bargello",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_castti",
-      "name": "EX Castti",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier",
-        "ot2-character"
-      ]
-    },
-    {
-      "id": "ex_cygna",
-      "name": "EX Cygna",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_cyrus",
-      "name": "EX Cyrus",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_ditraina",
-      "name": "EX Ditraina",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_erika",
-      "name": "EX Erika",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_fiore",
-      "name": "EX Fiore",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_haanit",
-      "name": "EX H'aanit",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_hikari",
-      "name": "EX Hikari",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier",
-        "ot2-character"
-      ]
-    },
-    {
-      "id": "ex_lyummis",
-      "name": "EX Lyummis",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_millard",
-      "name": "EX Millard",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_molrusso",
-      "name": "EX Molrusso",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_ochette",
-      "name": "EX Ochette",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier",
-        "ot2-character"
-      ]
-    },
-    {
-      "id": "ex_ophilia",
-      "name": "EX Ophilia",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_osvald",
-      "name": "EX Osvald",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier",
-        "ot2-character"
-      ]
-    },
-    {
-      "id": "ex_partitio",
-      "name": "EX Partitio",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier",
-        "ot2-character"
-      ]
-    },
-    {
-      "id": "ex_primrose",
-      "name": "EX Primrose",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_rinyuu",
-      "name": "EX Rinyuu",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_sazantos",
-      "name": "EX Sazantos",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_sigrid",
-      "name": "EX Sigrid",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_sofia",
-      "name": "EX Sofia",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_tatloch",
-      "name": "EX Tatloch",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_therese",
-      "name": "EX Therese",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_tressa",
-      "name": "EX Tressa",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "ex_viola",
-      "name": "EX Viola",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "ex-version",
-        "high-tier"
-      ]
-    },
-    {
-      "id": "kainé",
-      "name": "Kainé",
-      "isFree": false,
-      "isCollab": true,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Keep"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "collab"
-      ]
-    },
-    {
-      "id": "leeto",
-      "name": "L'eeto",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
+      "notes": "Needs manual tier assessment",
       "tags": [
         "5-star",
         "needs-review"
       ]
     },
     {
-      "id": "odio_o",
-      "name": "Odio O",
+      "id": "attack_command_becomes_a_dark_attack__self_gain_magic_critical_hit",
+      "name": "\"Attack\" command becomes a Dark attack + Self gain Magic Critical Hit",
       "isFree": false,
-      "isCollab": false,
       "a4Tier": null,
       "ultPriority": "L9",
       "ultPriorityGroup": "medium",
@@ -2579,63 +1860,16 @@
         "AS4": "A4",
         "AS5": "Shard"
       },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "boss-character",
-        "top-tier"
-      ]
-    },
-    {
-      "id": "odio_s",
-      "name": "Odio S",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
-      "tags": [
-        "5-star",
-        "needs-review",
-        "boss-character",
-        "top-tier"
-      ]
-    },
-    {
-      "id": "rai_mei",
-      "name": "Rai Mei",
-      "isFree": false,
-      "isCollab": false,
-      "a4Tier": null,
-      "ultPriority": "L9",
-      "ultPriorityGroup": "medium",
-      "stones": {
-        "AS1": "A1",
-        "AS2": "A2",
-        "AS3": "A3",
-        "AS4": "A4",
-        "AS5": "Shard"
-      },
-      "notes": "Needs tier assessment",
+      "notes": "Needs manual tier assessment",
       "tags": [
         "5-star",
         "needs-review"
       ]
     },
     {
-      "id": "throné",
-      "name": "Throné",
+      "id": "attack_command_becomes_a_sword_attack_that_also_hits_firelightningdark_weakness",
+      "name": "\"Attack\" command becomes a Sword attack that also hits Fire/Lightning/Dark weakness",
       "isFree": false,
-      "isCollab": false,
       "a4Tier": null,
       "ultPriority": "L9",
       "ultPriorityGroup": "medium",
@@ -2646,11 +1880,310 @@
         "AS4": "A4",
         "AS5": "Shard"
       },
-      "notes": "Needs tier assessment",
+      "notes": "Needs manual tier assessment",
       "tags": [
         "5-star",
-        "needs-review",
-        "ot2-character"
+        "needs-review"
+      ]
+    },
+    {
+      "id": "berserk_mode_damaging_abilities_are_used_a_second_time_in_a_row",
+      "name": "\"Berserk Mode\": Damaging abilities are used a second time in a row.",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "berserk_mode_self_15_critical_hit_damage_up",
+      "name": "\"Berserk Mode\": Self 15% Critical Hit Damage Up",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "call_hägen_30_potency_up",
+      "name": "\"Call Hägen\" 30% Potency Up",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "call_linde_30_potency_up",
+      "name": "\"Call Linde\" 30% Potency Up",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "call_lulu_potency_increased_by_30",
+      "name": "\"Call Lulu\" Potency increased by 30%",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "camouflage_self_15_bow_damage_up_and_30_sp_cost_reduction",
+      "name": "\"Camouflage\": Self 15% Bow Damage Up and 30% SP Cost Reduction",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "dancer_style_after_self_uses_a_fire_or_wind_ability_perform_a_2x_aoe_attack_of_the_same_element_2x_30_power",
+      "name": "\"Dancer Style\": After Self uses a Fire or Wind ability, perform a 2x AoE attack of the same element (2x 30 Power)",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "demon_of_war_power_x13\ngod_of_war_power_x15_instead",
+      "name": "\"Demon of War\": Power x1.3\n\"God of War\": Power x1.5 instead",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "endless_light__endless_dark_also_gain_15_mag_up",
+      "name": "\"Endless Light\" + \"Endless Dark\": Also gain 15% Mag Up",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "god_of_war_is_active",
+      "name": "\"God of War\" is active",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "intimidate_applied_by_active_skills_count_towards_the_30_active_defmdef_debuff_cap_while_intimidate_applied_by_passive_and_tytos_a4_count_towards_the_30_passive_defmdef_debuff_cap",
+      "name": "\"Intimidate\" applied by active skills count towards the 30% active Def/MDef debuff cap while \"Intimidate\" applied by passive and Tytos' A4 count towards the 30% passive Def/MDef debuff cap",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "intuition_effects_use_the_number_of_intuition_stacks_at_the_time_of_casting_any_intuition_gained_during_the_attack_does_not_count",
+      "name": "\"Intuition\" effects use the number of \"Intuition\" stacks at the time of casting; Any \"Intuition\" gained during the attack does not count",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "marine_wisdom_i_gain_magic_critical_hit_marine_wisdom_ii_gain_guaranteed_critical",
+      "name": "\"Marine Wisdom I\": Gain Magic Critical Hit, \"Marine Wisdom II\": Gain Guaranteed Critical",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "opportune_attack_also_grant_self_guaranteed_critical_and_30000_damage_cap_up",
+      "name": "\"Opportune Attack\": Also grant Self Guaranteed Critical and 30000 Damage Cap Up",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
+      ]
+    },
+    {
+      "id": "paladin_is_active",
+      "name": "\"Paladin\" is active",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Needs manual tier assessment",
+      "tags": [
+        "5-star",
+        "needs-review"
       ]
     }
   ]

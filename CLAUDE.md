@@ -48,6 +48,7 @@ This is a **pure static site** with no build process or framework dependencies. 
 2. **Client-Side Loading**: JavaScript fetches JSON and populates the interface
 3. **Real-Time Filtering**: All search/filter operations happen in-browser
 4. **Theme System**: CSS custom properties with localStorage persistence
+5. **User Data**: Personal character roster and preferences stored in localStorage
 
 ### Core Components
 
@@ -55,6 +56,7 @@ This is a **pure static site** with no build process or framework dependencies. 
 - Single source of truth for all character information
 - Structured with metadata, character array, and validation fields
 - Each character has: id, name, isFree, tiers, stone recommendations, notes, tags
+- **Current**: 122 characters including EX versions, collaborations, and OT2 characters
 
 **UI Layer** (`index.html` + `css/style.css`):
 - Collapsible legend section with auto-scroll behavior

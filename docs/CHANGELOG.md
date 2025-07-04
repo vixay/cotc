@@ -4,6 +4,70 @@ All notable changes to the COTC Awakening Stone Guide will be documented in this
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.3.0] - 2025-07-04
+
+### Added
+- **Character Ownership Tracking System**
+  - Added ownership checkboxes for each character
+  - Added awakening level tracking (0-4) for owned characters
+  - Added ultimate level tracking (1-10) for owned characters
+  - Added ownership filter dropdown (All Characters / Owned Only / Not Owned)
+  - All user data stored locally in browser using localStorage
+- **Visual Enhancements**
+  - Owned characters highlighted with distinct background
+  - Non-owned characters shown with reduced opacity
+  - Level inputs automatically disabled for non-owned characters
+  - Smooth visual transitions for ownership state changes
+
+### Changed
+- Expanded table layout with new "Own", "Awaken", and "Ult" columns
+- Updated filter system to include ownership status
+- Enhanced character data structure to support user tracking
+
+### Character Data
+- Added 38 new characters bringing total from 84 to 122 characters
+- **NieR Collaboration**: 2B, 9S, Kainé, Agnès
+- **EX Characters**: 24 new EX versions including Primrose EX, Agnea EX, Castti EX, etc.
+- **Octopath Traveler II**: Agnea, Castti, Hikari, Ochette, Osvald, Partitio, Throné
+- **Boss Characters**: Odio O, Odio S
+- **Other Additions**: Black Knight, Black Maiden, L'eeto, Rai Mei
+
+## [1.2.0] - 2025-07-04
+
+### Added
+- **Dark Theme Implementation**
+  - Dark theme set as default with automatic OS preference detection
+  - Manual theme toggle button with localStorage persistence
+  - Comprehensive dark/light theme variables using CSS custom properties
+- **UI Reorganization**
+  - Moved "How to Use" guide to first position
+  - Added collapsible legend with auto-collapse on scroll
+  - 5-second manual override protection for legend collapse
+- **Donation Support**
+  - Added donation link to https://coff.ee/vixay in header
+  - Styled with coffee icon and hover effects
+
+### Changed
+- Reorganized page layout: Legend → Stats → Filters → Table
+- Enhanced legend with collapsible functionality
+- Improved theme detection with fallback chain
+- Updated CSS architecture with CSS custom properties
+
+### Fixed
+- Fixed shard field background color in dark theme
+- Resolved theme toggle button styling inconsistencies
+
+## [1.1.0] - 2025-07-04
+
+### Added
+- Enhanced character filtering and search capabilities
+- Improved mobile responsiveness
+- Additional character validation and data quality improvements
+
+### Changed
+- Refined character data extraction process
+- Updated character categorization system
+
 ## [1.0.0] - 2025-07-04
 
 ### Added

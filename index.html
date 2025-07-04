@@ -14,7 +14,7 @@
         <header>
             <h1>COTC Awakening Stone Priority Guide</h1>
             <div class="meta-info">
-                <span id="version" class="version">Loading...</span>
+                <a id="version" class="version" href="docs/CHANGELOG.md" target="_blank" rel="noopener">Loading...</a>
                 <span id="lastUpdated" class="last-updated">Loading...</span>
                 <a href="https://github.com/vixay/cotc" class="github-link" target="_blank" rel="noopener">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
@@ -89,6 +89,11 @@
                     <option value="free">Free Only</option>
                     <option value="gacha">Gacha Only</option>
                 </select>
+                <select id="ownershipFilter" class="filter-select">
+                    <option value="">All Characters</option>
+                    <option value="owned">Owned Only</option>
+                    <option value="not-owned">Not Owned</option>
+                </select>
             </div>
             <div class="action-group">
                 <button id="themeToggle" class="btn btn-secondary" title="Toggle theme">
@@ -105,6 +110,7 @@
             <table id="characterTable">
                 <thead>
                     <tr>
+                        <th class="ownership-header">Own</th>
                         <th data-sort="name" class="sortable">Character <span class="sort-indicator"></span></th>
                         <th data-sort="a4Tier" class="sortable">A4 Tier <span class="sort-indicator"></span></th>
                         <th data-sort="ultPriority" class="sortable">Ult Priority <span class="sort-indicator"></span></th>
@@ -113,12 +119,14 @@
                         <th>AS3</th>
                         <th>AS4</th>
                         <th>AS5</th>
+                        <th>Awaken</th>
+                        <th>Ult</th>
                         <th>Notes</th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
                     <tr>
-                        <td colspan="9" class="loading">Loading character data...</td>
+                        <td colspan="12" class="loading">Loading character data...</td>
                     </tr>
                 </tbody>
             </table>
