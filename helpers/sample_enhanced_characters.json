@@ -1,0 +1,522 @@
+{
+  "version": "1.3.0",
+  "lastUpdated": "2025-07-04",
+  "metadata": {
+    "dataSource": "Reddit tier lists, Discord community, dotgg.gg",
+    "gameVersion": "Global/EN",
+    "excel_analysis": {
+      "source_file": "Octopath Traveler COTC Character Index.xlsx",
+      "analysis_date": "2025-07-04",
+      "total_excel_characters": 147,
+      "enhanced_characters": 5,
+      "new_characters_added": 4
+    }
+  },
+  "characters": [
+    {
+      "id": "lionel",
+      "name": "Lionel",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Mediocre performance overall",
+      "tags": [
+        "5-star",
+        "dps",
+        "shardable",
+        "sword",
+        "warrior"
+      ],
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "max_level": "Lv20",
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "abilities": {
+        "top_abilities": [
+          "1x single-target Sword (1x 170~350 Power)",
+          "1x single-target Ice (1x 170~350 Power)",
+          "1x AoE Sword (1x 120~220 Power)"
+        ],
+        "total_count": 17
+      },
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+      }
+    },
+    {
+      "id": "tikilen",
+      "name": "Tikilen",
+      "isFree": true,
+      "a4Tier": "A",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": [
+        "a4-good",
+        "dps",
+        "free",
+        "story",
+        "sword",
+        "warrior"
+      ],
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "max_level": "Lv10",
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "abilities": {
+        "top_abilities": [
+          "1x AoE Sword (1x 150~260 Power)",
+          "Self 10% Wind Damage Up\nWhen breaking an enemy, inflict 20% Wind Res Down for 3 turns",
+          "1x single-target Wind (1x 170~350 Power)"
+        ],
+        "total_count": 14
+      },
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+      }
+    },
+    {
+      "id": "eliza",
+      "name": "Eliza",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good A4, weak U10",
+      "tags": [
+        "5-star",
+        "a4-good",
+        "dps",
+        "sword",
+        "warrior"
+      ],
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "max_level": "Lv20",
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "abilities": {
+        "top_abilities": [
+          "1x single-target Light (1x 170~350 Power)",
+          "2x AoE Light (2x 80~130 Power)",
+          "2x single-target Sword (2x 90~180 Power)"
+        ],
+        "total_count": 16
+      },
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+      }
+    },
+    {
+      "id": "edea",
+      "name": "Edea",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Strong A4 accessory",
+      "tags": [
+        "5-star",
+        "a4-priority",
+        "bravely-default",
+        "collab",
+        "dps",
+        "sword",
+        "warrior"
+      ],
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "fire",
+        "light"
+      ],
+      "max_level": "Lv10",
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "abilities": {
+        "top_abilities": [
+          "2x single-target Sword (2x 90~180 Power)",
+          "Self 15% Sword Damage Up\nWhile at Full HP, Taunt all enemies",
+          "2x single-target Fire (2x 90~180 Power,)"
+        ],
+        "total_count": 17
+      },
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+      }
+    },
+    {
+      "id": "olberic",
+      "name": "Olberic",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Tank with decent A4",
+      "tags": [
+        "5-star",
+        "dps",
+        "sword",
+        "tank",
+        "warrior"
+      ],
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "spear"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "max_level": "Lv20",
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "abilities": {
+        "top_abilities": [
+          "1x AoE Sword (1x 150~260 Power)",
+          "Self 500 HP Regen\nSelf 10% Damage Up to foes in Break",
+          "1x single-target Spear, gains [Priority] next turn (1x 170~350 Power)"
+        ],
+        "total_count": 16
+      },
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+      }
+    },
+    {
+      "id": "lyummis",
+      "name": "Lyummis",
+      "isFree": false,
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "axe"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "max_level": "Lv20",
+      "abilities": {
+        "top_abilities": [
+          "2x single-target Axe (2x 90~180 Power)",
+          "Self 15% Axe Damage Up\nSelf 500 HP Regen",
+          "Single-Ally Heal (160 Heal Strength)"
+        ],
+        "total_count": 14
+      },
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "New character from Excel data - needs tier assessment",
+      "tags": [
+        "apothecary",
+        "dps",
+        "5-star",
+        "needs-review"
+      ],
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+      }
+    },
+    {
+      "id": "haze",
+      "name": "Haze",
+      "isFree": false,
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "max_level": "Lv20",
+      "abilities": {
+        "top_abilities": [
+          "1x single-target Axe (1x 230~400 Power)",
+          "Self 15% Axe Damage Up\nWhen breaking an enemy, High chance to inflict Bleeding for 3 turns",
+          "Power"
+        ],
+        "total_count": 16
+      },
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "New character from Excel data - needs tier assessment",
+      "tags": [
+        "apothecary",
+        "dps",
+        "5-star",
+        "needs-review"
+      ],
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+      }
+    },
+    {
+      "id": "zegna",
+      "name": "Zegna",
+      "isFree": false,
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "max_level": "Lv20",
+      "abilities": {
+        "top_abilities": [
+          "2x AoE Axe (2x 70~120 Power)",
+          "Frontrow Heal + Regen for 2 turns (45 Heal, 90 Regen)",
+          "Power"
+        ],
+        "total_count": 15
+      },
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "New character from Excel data - needs tier assessment",
+      "tags": [
+        "apothecary",
+        "dps",
+        "5-star",
+        "needs-review"
+      ],
+      "excel_metadata": {
+        "has_resists": true,
+        "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+      }
+    },
+    {
+      "id": "nephti",
+      "name": "Nephti",
+      "isFree": false,
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [],
+      "max_level": "Lv120",
+      "abilities": {
+        "top_abilities": [
+          "3x single-target Axe (3x 55~100 Power)",
+          "Frontrow Heal (130~220 Heal Strength)\n     5+ \"Support Points\": Targets All Allies instead",
+          "1x AoE Axe, also hits Staff and Tome weakness (1x 150~215 Power)"
+        ],
+        "total_count": 10
+      },
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX"
+      ],
+      "a4Tier": null,
+      "ultPriority": "L9",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "New character from Excel data - needs tier assessment",
+      "tags": [
+        "apothecary",
+        "dps",
+        "5-star",
+        "needs-review"
+      ],
+      "excel_metadata": {
+        "has_resists": false,
+        "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+      }
+    }
+  ]
+}

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     await loadCharacterData();
     setupEventListeners();
     setupLegendCollapse();
+    setupCreditsCollapse();
 });
 
 // Load and display character data
@@ -461,5 +462,29 @@ function setupCharacterControlListeners() {
             
             updateCharacterData(charId, 'ultLevel', parseInt(this.value));
         });
+    });
+}
+
+// Credits collapse functionality
+function setupCreditsCollapse() {
+    const credits = document.getElementById('credits');
+    const creditsHeader = document.getElementById('creditsHeader');
+    const creditsContent = document.getElementById('creditsContent');
+    
+    if (!credits || !creditsHeader || !creditsContent) return;
+    
+    // Start collapsed
+    credits.classList.add('collapsed');
+    
+    creditsHeader.addEventListener('click', function() {
+        const isCollapsed = credits.classList.contains('collapsed');
+        
+        if (isCollapsed) {
+            credits.classList.remove('collapsed');
+            creditsContent.classList.add('expanded');
+        } else {
+            credits.classList.add('collapsed');
+            creditsContent.classList.remove('expanded');
+        }
     });
 }

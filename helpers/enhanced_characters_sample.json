@@ -1,0 +1,253 @@
+{
+  "version": "1.4.0",
+  "lastUpdated": "2025-07-04", 
+  "metadata": {
+    "dataSource": "Reddit tier lists, Discord community, dotgg.gg, Excel analysis, Web research",
+    "gameVersion": "Global/EN",
+    "schema_version": "2.0",
+    "enhancements": {
+      "added_fields": [
+        "starRating", "jobType", "roles", "weaponTypes", "elementTypes", 
+        "overallTier", "roleTiers", "keySkills", "canOverclass"
+      ],
+      "data_sources": [
+        "Excel file analysis for job types and abilities",
+        "dotgg.gg tier lists for overall rankings", 
+        "meowdb.com for role-specific classifications",
+        "Community meta analysis for role tiers"
+      ]
+    }
+  },
+  "characters": [
+    {
+      "id": "lynette",
+      "name": "Lynette",
+      "isFree": false,
+      "starRating": 5,
+      "jobType": "Dancer",
+      "weaponTypes": ["fan"],
+      "elementTypes": ["dark"],
+      "canOverclass": true,
+      "roles": {
+        "primary": "Buffer",
+        "secondary": "Support"
+      },
+      "roleTiers": {
+        "Buffer": "S+",
+        "Support": "S",
+        "Debuffer": "A"
+      },
+      "overallTier": "S+",
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1", 
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "keySkills": [
+        "Triple buff system (active/passive/ultimate)",
+        "Fire elemental damage",
+        "Team speed boost"
+      ],
+      "notes": "Top priority U10 - Best buffer for EN. Widely considered best starter 5★ due to utility and versatility",
+      "tags": [
+        "buffer",
+        "top-tier", 
+        "u10-priority",
+        "5-star",
+        "starter-friendly",
+        "meta"
+      ]
+    },
+    {
+      "id": "primrose_ex",
+      "name": "Primrose EX",
+      "isFree": false,
+      "starRating": 5,
+      "jobType": "Dancer", 
+      "weaponTypes": ["dagger"],
+      "elementTypes": ["dark"],
+      "canOverclass": true,
+      "roles": {
+        "primary": "Buffer",
+        "secondary": "Debuffer"
+      },
+      "roleTiers": {
+        "Buffer": "S+",
+        "Debuffer": "S+",
+        "Support": "S+"
+      },
+      "overallTier": "S+",
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2", 
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "keySkills": [
+        "Complete buffer and debuffer kit",
+        "Attack and elemental attack debuffs",
+        "Front row speed increases",
+        "Multi-role compression"
+      ],
+      "notes": "Better than Lynette ult + excellent A4. Most complete buffer and debuffer currently available",
+      "tags": [
+        "buffer",
+        "debuffer",
+        "top-tier",
+        "u10-priority",
+        "a4-priority", 
+        "5-star",
+        "ex-version",
+        "multi-role",
+        "meta"
+      ]
+    },
+    {
+      "id": "solon",
+      "name": "Solon",
+      "isFree": false,
+      "starRating": 5,
+      "jobType": "Scholar",
+      "weaponTypes": ["tome"],
+      "elementTypes": ["fire"],
+      "canOverclass": true,
+      "roles": {
+        "primary": "DPS",
+        "secondary": "Support"
+      },
+      "roleTiers": {
+        "DPS": "S+",
+        "Support": "S",
+        "Buffer": "A"
+      },
+      "overallTier": "S+",
+      "a4Tier": null,
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3", 
+        "AS5": "Shard"
+      },
+      "keySkills": [
+        "Double ultimate usage",
+        "Unit potency doubling",
+        "P.Atk, E.Def, Polearm, Fire Res reduction",
+        "AoE Fire attacks with combustion"
+      ],
+      "notes": "Doubles unit potency - pairs with Odio-O. Can use ult twice making DPS hit like convoy of trucks",
+      "tags": [
+        "dps",
+        "support",
+        "top-tier",
+        "u10-priority",
+        "5-star",
+        "damage-amplifier",
+        "meta"
+      ]
+    },
+    {
+      "id": "signa", 
+      "name": "Signa",
+      "isFree": false,
+      "starRating": 5,
+      "jobType": "Dancer",
+      "weaponTypes": ["fan"],
+      "elementTypes": ["wind"],
+      "canOverclass": true,
+      "roles": {
+        "primary": "Debuffer",
+        "secondary": "Support"
+      },
+      "roleTiers": {
+        "Debuffer": "S+",
+        "Support": "S",
+        "Buffer": "B"
+      },
+      "overallTier": "S+",
+      "a4Tier": null,
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "keySkills": [
+        "20% all stats debuff",
+        "Queen of debuff abilities",
+        "Wind elemental coverage"
+      ],
+      "notes": "Queen of debuff - 20% all stats down. Premier debuffing specialist",
+      "tags": [
+        "debuffer",
+        "top-tier",
+        "u10-priority", 
+        "5-star",
+        "specialist",
+        "meta"
+      ]
+    },
+    {
+      "id": "fiore_ex",
+      "name": "Fiore EX", 
+      "isFree": false,
+      "starRating": 5,
+      "jobType": "Cleric",
+      "weaponTypes": ["staff"],
+      "elementTypes": ["light"],
+      "canOverclass": true,
+      "roles": {
+        "primary": "Tank",
+        "secondary": "Healer"
+      },
+      "roleTiers": {
+        "Tank": "S+",
+        "Healer": "S",
+        "Support": "A"
+      },
+      "overallTier": "S+",
+      "a4Tier": "S",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top", 
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "keySkills": [
+        "Single target attack redirection",
+        "Self-healing capabilities", 
+        "Team survival enhancement",
+        "Light elemental damage"
+      ],
+      "notes": "One of the best tanks even in JP version. Can redirect all single-target attacks to herself",
+      "tags": [
+        "tank",
+        "healer",
+        "top-tier",
+        "u10-priority",
+        "a4-priority",
+        "5-star",
+        "ex-version",
+        "survival",
+        "meta"
+      ]
+    }
+  ]
+}

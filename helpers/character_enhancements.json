@@ -1,0 +1,5975 @@
+{
+  "matches": [
+    {
+      "name": "Lionel",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Sword (1x 170~350 Power)",
+        "1x single-target Ice (1x 170~350 Power)",
+        "1x AoE Sword (1x 120~220 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "lionel",
+      "existing_data": {
+        "id": "lionel",
+        "name": "Lionel",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Mediocre performance overall",
+        "tags": [
+          "shardable",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Tikilen",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x AoE Sword (1x 150~260 Power)",
+        "Self 10% Wind Damage Up\nWhen breaking an enemy, inflict 20% Wind Res Down for 3 turns",
+        "1x single-target Wind (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "tikilen",
+      "existing_data": {
+        "id": "tikilen",
+        "name": "Tikilen",
+        "isFree": true,
+        "a4Tier": "A",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story",
+          "a4-good"
+        ]
+      }
+    },
+    {
+      "name": "Eliza",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Light (1x 170~350 Power)",
+        "2x AoE Light (2x 80~130 Power)",
+        "2x single-target Sword (2x 90~180 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "eliza",
+      "existing_data": {
+        "id": "eliza",
+        "name": "Eliza",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Good A4, weak U10",
+        "tags": [
+          "a4-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Edea",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "fire",
+        "light"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "2x single-target Sword (2x 90~180 Power)",
+        "Self 15% Sword Damage Up\nWhile at Full HP, Taunt all enemies",
+        "2x single-target Fire (2x 90~180 Power,)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "edea",
+      "existing_data": {
+        "id": "edea",
+        "name": "Edea",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Strong A4 accessory",
+        "tags": [
+          "a4-priority",
+          "collab",
+          "bravely-default",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Olberic",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "spear"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x AoE Sword (1x 150~260 Power)",
+        "Self 500 HP Regen\nSelf 10% Damage Up to foes in Break",
+        "1x single-target Spear, gains [Priority] next turn (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "olberic",
+      "existing_data": {
+        "id": "olberic",
+        "name": "Olberic",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Tank with decent A4",
+        "tags": [
+          "tank",
+          "warrior",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Joshua",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "2x single-target Sword, Self 20% Sword Dmg Up for 2 turns (2x 90~180 Power, 38 SP)",
+        "Self 10% Sword Damage Up\nWhen breaking an enemy, inflict 20% Sword Res Down for 3 turns",
+        "2x single-target Ice (2x 90~180 Power, 28 SP)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "joshua",
+      "existing_data": {
+        "id": "joshua",
+        "name": "Joshua",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Good A4 accessory",
+        "tags": [
+          "a4-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Richard",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Sword (1x 230~400 Power)",
+        "Self 15% Sword Damage Up\nSelf 500 HP Regen",
+        "1x single-target Lightning (1x 230~400 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505",
+      "existing_id": "richard",
+      "existing_data": {
+        "id": "richard",
+        "name": "Richard",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L10 First",
+        "ultPriorityGroup": "high",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "A4"
+        },
+        "notes": "Excellent support, priority U10",
+        "tags": [
+          "support",
+          "u10-priority",
+          "a4-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Tressa",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "3x single-target Spear (3x 65~120 Power)",
+        "Self 15% Spear/Wind Damage Up",
+        "1x single-target Wind (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "tressa",
+      "existing_data": {
+        "id": "tressa",
+        "name": "Tressa",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Good support A4",
+        "tags": [
+          "a4-good",
+          "support",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Cardona",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x AoE Spear (1x 150~260 Power)",
+        "Self 15% Spear/Ice Damage Up",
+        "2x AoE Ice (2x 80~130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "cardona",
+      "existing_data": {
+        "id": "cardona",
+        "name": "Cardona",
+        "isFree": false,
+        "a4Tier": "C",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "Shard",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Poor performance, easily shardable",
+        "tags": [
+          "shardable",
+          "poor-performance",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Cecily",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear",
+        "axe",
+        "tome"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Spear (1x 230~400 Power, 32 SP)",
+        "Self 10% Spear/Axe/Tome Damage Up",
+        "1x single-target Axe (1x 230~400 Power, 32 SP)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "cecily",
+      "existing_data": {
+        "id": "cecily",
+        "name": "Cecily",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Decent A4",
+        "tags": [
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "W'ludai",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "2x single-target Spear (2x 90~180 Power)",
+        "1x single-target Dark (1x 170 Power)",
+        "1x single-target Spear, gains [Priority] next turn (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "wludai",
+      "existing_data": {
+        "id": "wludai",
+        "name": "W'ludai",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Tank with decent A4",
+        "tags": [
+          "tank",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Largo",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "fire",
+        "light",
+        "lightning"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "2x AoE Spear (2x 70~120 Power)",
+        "Self 15% Spear Damage Up\nStatus ailments inflicted by holder get +1 turn duration",
+        "1x AoE Fire (1x 150~260 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special"
+      ],
+      "max_level": "Lv10",
+      "has_resists": false,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "largo",
+      "existing_data": {
+        "id": "largo",
+        "name": "Largo",
+        "isFree": true,
+        "a4Tier": "B",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story"
+        ]
+      }
+    },
+    {
+      "name": "9S",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "fire"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "2x AoE Spear (2x 80~130 Power)",
+        "30% Lightning Damage Up",
+        "2x AoE Fire (2x 80~130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "9s",
+      "existing_data": {
+        "id": "9s",
+        "name": "9S",
+        "isFree": false,
+        "isCollab": true,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "collab"
+        ]
+      }
+    },
+    {
+      "name": "Viola",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "fire",
+        "ice"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "2x single-target Dagger (2x 75~150 Power)",
+        "Self 15% Dagger Damage Up\nSelf 10% Ice Def Up",
+        "1x single-target Dagger, heal HP equal to 20% of damage dealt (1x 170-350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "viola",
+      "existing_data": {
+        "id": "viola",
+        "name": "Viola",
+        "isFree": false,
+        "a4Tier": "C",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Good early debuffer, weak endgame",
+        "tags": [
+          "debuffer",
+          "early-game",
+          "shardable",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Heathcote",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Dagger (1x 170~350 Power)",
+        "Self 15% Dagger/Wind Damage Up",
+        "2x single-target Dagger (2x 90~180 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "heathcote",
+      "existing_data": {
+        "id": "heathcote",
+        "name": "Heathcote",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Decent A4, very weak U10",
+        "tags": [
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Nicola",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Dagger, inflict 15% Speed Down for 2 turns (1x 170~350 Power)",
+        "Self 15% Dagger Damage Up\nAt the start of battle, inflict AoE 15% Def Down for 3 turns",
+        "1x single-target Dagger, always reduces Shield Points (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "nicola",
+      "existing_data": {
+        "id": "nicola",
+        "name": "Nicola",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L10 First",
+        "ultPriorityGroup": "high",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "A4"
+        },
+        "notes": "Good U10 and A4",
+        "tags": [
+          "u10-priority",
+          "a4-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "L'eeto",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "2x single-target Dagger, always reduces Shield Points (2x 75~150 Power)",
+        "Self 15% Dagger Damage Up\nWhen using \"Attack\", restore SP = 1% damage dealt\n",
+        "1x AoE Lightning, Medium chance to inflict Paralysis for 2 turns (1x 150~260 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "leeto",
+      "existing_data": {
+        "id": "leeto",
+        "name": "L'eeto",
+        "isFree": false,
+        "isCollab": false,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review"
+        ]
+      }
+    },
+    {
+      "name": "Therion",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Dagger, always reduces Shield Points (1x 170~350 Power)",
+        "Self 15% Dagger Damage Up\nWhen breaking an enemy, High chance to inflict Paralysis for 3 turns",
+        "2x single-target Dagger, heal HP equal to 30% of damage dealt (2x 75~150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "therion",
+      "existing_data": {
+        "id": "therion",
+        "name": "Therion",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Good A4, moderate U10",
+        "tags": [
+          "a4-good",
+          "thief",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "A2",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "axe",
+        "dagger"
+      ],
+      "element_types": [],
+      "abilities_count": 18,
+      "top_abilities": [
+        "3x single-target Dagger (3x 65~120 Power)",
+        "Self 10% Damage Up when attacking enemy weakness; Debuffs inflicted by the holder get +1 turn duration",
+        "3x single-target Axe (3x 65~120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "a2",
+      "existing_data": {
+        "id": "a2",
+        "name": "A2",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "U10"
+        },
+        "notes": "Excellent A4 accessory, U10 optional",
+        "tags": [
+          "a4-priority",
+          "collab",
+          "nier",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Auguste",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome",
+        "dagger"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "4x single-target Dagger (4x 45~90 Power)",
+        "Self 10% Dagger/Tome Damage Up\nAt the start of battle, Special Gauge fills to 100%",
+        "3x single-target Tome (3x 65~120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "auguste",
+      "existing_data": {
+        "id": "auguste",
+        "name": "Auguste",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "A1, L10",
+        "ultPriorityGroup": "high",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "U10",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "A4"
+        },
+        "notes": "Playwright's Quill - full ultimate bar start",
+        "tags": [
+          "a4-priority",
+          "u10-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Sarisa",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Dagger, inflict 15% Spd Down, then swap to Back Row (140~300 Power)",
+        "Frontrow Heal, then swap to Back Row (130 Heal Strength)",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505",
+      "existing_id": "sarisa",
+      "existing_data": {
+        "id": "sarisa",
+        "name": "Sarisa",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Good A4 accessory",
+        "tags": [
+          "a4-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Theo",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Axe (1x 170~350 Power)",
+        "Self 15% Axe Damage Up\nSelf 10% Wind Res Up",
+        "1x single-target Lightning (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505",
+      "existing_id": "theo",
+      "existing_data": {
+        "id": "theo",
+        "name": "Theo",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Decent early game, but outclassed",
+        "tags": [
+          "early-game",
+          "shardable",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Gertrude",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Axe (1x 170~350 Power)",
+        "Self 15% Axe Damage Up\nWhen using \"Attack\", restore HP = 10% damage dealt",
+        "Single-Ally Heal (160~280 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505",
+      "existing_id": "gertrude",
+      "existing_data": {
+        "id": "gertrude",
+        "name": "Gertrude",
+        "isFree": true,
+        "a4Tier": "B",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story"
+        ]
+      }
+    },
+    {
+      "name": "Soleil",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 10,
+      "top_abilities": [
+        "2x single-target Axe (2x 90~180 Power)",
+        "Self 15% Axe Damage Up\nSelf 30% Ailment Res Up",
+        "1x single-target Light (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505",
+      "existing_id": "soleil",
+      "existing_data": {
+        "id": "soleil",
+        "name": "Soleil",
+        "isFree": false,
+        "a4Tier": "C",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "Shard",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Weak character overall",
+        "tags": [
+          "shardable",
+          "poor-performance",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Alfyn",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Axe (1x 170~350 Power)",
+        "Self 15% Axe Damage Up\nWhen at 75% or lower HP, Self 15% Atk Up",
+        "1x single-target Ice (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505",
+      "existing_id": "alfyn",
+      "existing_data": {
+        "id": "alfyn",
+        "name": "Alfyn",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Dreamer's Medicine Box - good A4",
+        "tags": [
+          "a4-good",
+          "support",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "EX Sofia",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "fire",
+        "light",
+        "ice",
+        "lightning",
+        "wind"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x AoE Wind (1x 120~220 Power)",
+        "Self 15% Wind Damage Up\nAt the start of battle, Self 5% Atk/Def/Mag/MDef Up for 3 turns",
+        "Single-Ally Heal (100~220 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505",
+      "existing_id": "ex_sofia",
+      "existing_data": {
+        "id": "ex_sofia",
+        "name": "EX Sofia",
+        "isFree": false,
+        "isCollab": false,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "ex-version",
+          "high-tier"
+        ]
+      }
+    },
+    {
+      "name": "EX Primrose",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "3x single-target Axe (3x 55~100 Power)",
+        "Frontrow Heal + 15% Def/MDef Up for 2 turns (65~155 Heal Strength)",
+        "3x random-target Lightning, inflict 15% Lightning Res Down for 2 turns per hit (3x 65~120 Power, stacks with Boost MAX)\n     If Boost MAX, Medium chance to inflict Paralysis for 2 turns per hit "
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505",
+      "existing_id": "ex_primrose",
+      "existing_data": {
+        "id": "ex_primrose",
+        "name": "EX Primrose",
+        "isFree": false,
+        "isCollab": false,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "ex-version",
+          "high-tier"
+        ]
+      }
+    },
+    {
+      "name": "Scarecrow",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x AoE Bow (1x 150 Power)",
+        "2x single-target Bow (2x 90 Power)",
+        "1x AoE Wind (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "scarecrow",
+      "existing_data": {
+        "id": "scarecrow",
+        "name": "Scarecrow",
+        "isFree": false,
+        "a4Tier": "D",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Weak A4 and U10",
+        "tags": [
+          "shardable",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "H'aanit",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "bow"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "Call Linde to attack; 1x single-target Spear (1x 140 Power) or 1x AoE Sword (1x 120 Power)",
+        "Self 15% Bow/Thunder Damage Up",
+        "1x single-target Bow, guaranteed Crit (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "haanit",
+      "existing_data": {
+        "id": "haanit",
+        "name": "H'aanit",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Regular version, moderate performance",
+        "tags": [
+          "hunter",
+          "shardable",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Z'aanta",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow",
+        "dagger"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "Call H\u00e4gen to attack; 2x single-target Dagger (2x 75 Power) or 1x AoE Fan (1x 120 Power)",
+        "At the start of battle, inflict AoE 15% Bow Res Down for 3 turns\nWhen breaking an enemy, inflict 15% Bow Res Down for 3 turns",
+        "2x single-target Bow (2x 90 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "zaanta",
+      "existing_data": {
+        "id": "zaanta",
+        "name": "Z'aanta",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Excellent A4 accessory",
+        "tags": [
+          "a4-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Yunnie",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow",
+        "sword"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Bow, Medium chance to inflict Poison for 2 turns (1x 170 Power)",
+        "Self 15% Bow Damage Up\nWhen breaking an enemy, High chance to inflict Paralysis for 3 turns",
+        "2x AoE Fire (2x 80 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": false,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "yunnie",
+      "existing_data": {
+        "id": "yunnie",
+        "name": "Yunnie",
+        "isFree": true,
+        "a4Tier": "B",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story"
+        ]
+      }
+    },
+    {
+      "name": "Herminia",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow",
+        "fan"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x AoE Fan, Medium chance to inflict Bleeding for 2 turns (1x 150 Power)",
+        "Self 10% Bow/Fan Damage Up\nAt the start of battle, High chance to inflict AoE Bleeding for 3 turns",
+        "1x AoE Light (1x 180 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "herminia",
+      "existing_data": {
+        "id": "herminia",
+        "name": "Herminia",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Moderate performance",
+        "tags": [
+          "shardable",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "EX Tressa",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x AoE Fire, when in \"Camouflage\" state, gain 1 Arrow (1x 150 Power)",
+        "Self 15% Bow Damage Up\nSelf 20 SP Regen",
+        "1x single-target Bow, use up to 9 Arrows for 1 extra hit per Arrow used (1-10x 35 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "ex_tressa",
+      "existing_data": {
+        "id": "ex_tressa",
+        "name": "EX Tressa",
+        "isFree": false,
+        "isCollab": false,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "ex-version",
+          "high-tier"
+        ]
+      }
+    },
+    {
+      "name": "EX Lyummis",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "2x single-target Bow (2x 75 Power)",
+        "2x single-target Lightning (2x 75 Power)",
+        "2x random-target Lightning, inflict 15% Lightning Res Down for 2 turns with each hit (2x 75 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505",
+      "existing_id": "ex_lyummis",
+      "existing_data": {
+        "id": "ex_lyummis",
+        "name": "EX Lyummis",
+        "isFree": false,
+        "isCollab": false,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "ex-version",
+          "high-tier"
+        ]
+      }
+    },
+    {
+      "name": "Agn\u00e8s",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "light",
+        "wind"
+      ],
+      "abilities_count": 7,
+      "top_abilities": [
+        "2x single-target Wind (2x 90 Power)",
+        "Frontrow Heal (130 Heal Strength)",
+        "1x single-target Staff, inflict 15% MDef Down for 2 turns (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "agn\u00e8s",
+      "existing_data": {
+        "id": "agn\u00e8s",
+        "name": "Agn\u00e8s",
+        "isFree": false,
+        "isCollab": true,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "collab"
+        ]
+      }
+    },
+    {
+      "name": "Lianna",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "Frontrow Heal (130 Heal Strength)",
+        "Self 15% Ice Damage Up\nHeals casted by the wearer are 15% stronger",
+        "2x single-target Ice (2x 90 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "lianna",
+      "existing_data": {
+        "id": "lianna",
+        "name": "Lianna",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "Shard",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Weak U10 and mediocre A4",
+        "tags": [
+          "shardable",
+          "poor-performance",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Yan Long",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "2x single-target Staff (2x 90 Power)",
+        "Self Heal + 20% Def Up for 3 turns (165 Heal Strength) ",
+        "2x random-target Ice, inflict 10% Staff Res Down for 2 turns per hit (2x 90 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "yan_long",
+      "existing_data": {
+        "id": "yan_long",
+        "name": "Yan Long",
+        "isFree": true,
+        "a4Tier": "A",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story",
+          "a4-good"
+        ]
+      }
+    },
+    {
+      "name": "Sofia",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "fire",
+        "ice"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Ice (1x 170 Power)",
+        "Self 10% Fire Res Up\nAt the start of battle, inflict AoE 15% Ice Res Down for 3 turns",
+        "1x AoE Ice (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505",
+      "existing_id": "sofia",
+      "existing_data": {
+        "id": "sofia",
+        "name": "Sofia",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Decent A4, lower U10 priority",
+        "tags": [
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Therese",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Lightning (1x 170 Power)",
+        "At the start of battle, inflict AoE 15% Lightning Res Down for 3 turns\nWhen breaking an enemy, inflict 15% Lightning Res Down for 3 turns",
+        "1x AoE Lightning (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505",
+      "existing_id": "therese",
+      "existing_data": {
+        "id": "therese",
+        "name": "Therese",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Top tier A4 accessory",
+        "tags": [
+          "a4-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Cyrus",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "light",
+        "fire",
+        "ice",
+        "lightning"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Fire (1x 230 Power)",
+        "Self 10% Fire/Ice/Lightning Damage Up",
+        "1x single-target Ice (1x 230 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505",
+      "existing_id": "cyrus",
+      "existing_data": {
+        "id": "cyrus",
+        "name": "Cyrus",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Decent A4, moderate U10",
+        "tags": [
+          "mage",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Varkyn",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Light (1x 170 Power)",
+        "At the start of battle, inflict AoE 15% MDef Down for 6 turns",
+        "1x AoE Light (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505",
+      "existing_id": "varkyn",
+      "existing_data": {
+        "id": "varkyn",
+        "name": "Varkyn",
+        "isFree": true,
+        "a4Tier": "B",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story"
+        ]
+      }
+    },
+    {
+      "name": "Elvis",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Lightning (1x 170 Power)",
+        "Self 15% Tome Damage Up\nSelf 10% Wind Res Up",
+        "2x single-target Tome (2x 90 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505",
+      "existing_id": "elvis",
+      "existing_data": {
+        "id": "elvis",
+        "name": "Elvis",
+        "isFree": true,
+        "a4Tier": "D",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "Keep",
+          "AS2": "Keep",
+          "AS3": "Keep",
+          "AS4": "Keep",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones don't convert to shards",
+        "tags": [
+          "free",
+          "collab",
+          "bravely-default",
+          "poor-performance"
+        ]
+      }
+    },
+    {
+      "name": "Odette",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "light",
+        "wind"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Wind (1x 170 Power)",
+        "2x AoE Light (2x 80 Power)",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505",
+      "existing_id": "odette",
+      "existing_data": {
+        "id": "odette",
+        "name": "Odette",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Excellent A4, moderate U10",
+        "tags": [
+          "a4-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Lynette",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "fire",
+        "ice"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Fire (1x 170 Power)",
+        "Self 15% Fire Damage Up\nSelf 10% Ice Res Up",
+        "2x single-target Fan (2x 90 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505",
+      "existing_id": "lynette",
+      "existing_data": {
+        "id": "lynette",
+        "name": "Lynette",
+        "isFree": false,
+        "a4Tier": null,
+        "ultPriority": "L10",
+        "ultPriorityGroup": "top",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "Shard"
+        },
+        "notes": "Top priority U10 - Best buffer for EN",
+        "tags": [
+          "buffer",
+          "top-tier",
+          "u10-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Glossom",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "3x random-target Fan (3x 65 Power)",
+        "Self 15% Fan Damage Up\nIf HP \u2264 75%, Self 15% Atk/Mag Up",
+        "1x AoE Lightning (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505",
+      "existing_id": "glossom",
+      "existing_data": {
+        "id": "glossom",
+        "name": "Glossom",
+        "isFree": true,
+        "a4Tier": null,
+        "ultPriority": "L10 First",
+        "ultPriorityGroup": "high",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "Keep"
+        },
+        "notes": "Free character - stones give character fragments only",
+        "tags": [
+          "free",
+          "story",
+          "u10-priority"
+        ]
+      }
+    },
+    {
+      "name": "Primrose",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Dark (1x 170 Power)",
+        "Self 15% Fan/Dark Damage Up",
+        "1x AoE Fan (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505",
+      "existing_id": "primrose",
+      "existing_data": {
+        "id": "primrose",
+        "name": "Primrose",
+        "isFree": false,
+        "a4Tier": "A",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Regular version, decent A4",
+        "tags": [
+          "dancer",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Hasumi",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Light (1x 170 Power)",
+        "Self 15% Light Damage Up\nBuffs casted by holder get +1 turn duration",
+        "2x single-target Fan (2x 90 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505",
+      "existing_id": "hasumi",
+      "existing_data": {
+        "id": "hasumi",
+        "name": "Hasumi",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Maiden's Bell is excellent, U10 not priority",
+        "tags": [
+          "a4-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "EX Fiore",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Fan (1x 170 Power)",
+        "Once per battle, survive lethal damage with 1 HP\nWhile at Full HP, Self 25% Damage Reduction",
+        "Self 15% Atk/Fan Damage Up for 3-6 turns, based on Boost Lv."
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505",
+      "existing_id": "ex_fiore",
+      "existing_data": {
+        "id": "ex_fiore",
+        "name": "EX Fiore",
+        "isFree": false,
+        "isCollab": false,
+        "a4Tier": null,
+        "ultPriority": "L9",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Needs tier assessment",
+        "tags": [
+          "5-star",
+          "needs-review",
+          "ex-version",
+          "high-tier"
+        ]
+      }
+    },
+    {
+      "name": "Tatloch",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "fan"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "2x AoE Sword, also hits Spear and Axe weakness + Medium chance to inflict Bleeding for 2 turns (2x 70 Power)",
+        "At the start of battle, inflict AoE 15% Fan/Wind Res Down for 3 turns\nAt the start of each turn (excluding turn 1), Low chance to inflict AoE 10% Def/MDef Down for 1 turn",
+        "1x AoE Fan, inflict 15% Speed Down for 2 turns (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505",
+      "existing_id": "tatloch",
+      "existing_data": {
+        "id": "tatloch",
+        "name": "Tatloch",
+        "isFree": false,
+        "a4Tier": "S+",
+        "ultPriority": "L10",
+        "ultPriorityGroup": "top",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "A4"
+        },
+        "notes": "Can cover five different damage types",
+        "tags": [
+          "versatile",
+          "multi-type",
+          "top-tier",
+          "u10-priority",
+          "a4-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Trish",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Sword (1x 160 Power)",
+        "Self + Paired Ally 10% Sword Damage Up",
+        "1x single-target Wind (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f",
+      "existing_id": "trish",
+      "existing_data": {
+        "id": "trish",
+        "name": "Trish",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Warrior with moderate performance",
+        "tags": [
+          "warrior",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Yugo",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Sword (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Yugo, also grant Self + Paired Ally 10% Def Up and 10% Sword Damage Up",
+        "1x single-target Ice (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f",
+      "existing_id": "yugo",
+      "existing_data": {
+        "id": "yugo",
+        "name": "Yugo",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Warrior with moderate performance",
+        "tags": [
+          "warrior",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Wingate",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "2x single-target Dagger (2x 70 Power)",
+        "1x single-target Dagger, always reduces Shield Points (1x 130 Power)",
+        "2x single-target Dark (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f",
+      "existing_id": "wingate",
+      "existing_data": {
+        "id": "wingate",
+        "name": "Wingate",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Thief with moderate performance",
+        "tags": [
+          "thief",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Vivian",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Bow (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Vivian, also grant Self + Paired Ally 10% Crit Up and 10% Bow Damage Up",
+        "3x random-target Bow (3x 45 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f",
+      "existing_id": "vivian",
+      "existing_data": {
+        "id": "vivian",
+        "name": "Vivian",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Hunter with moderate performance",
+        "tags": [
+          "hunter",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Millard",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "dark",
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Light (1x 170 Power)",
+        "Self 15% Staff Damage Up\nSelf 10% Dark Res Up",
+        "Frontrow Heal (130 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "millard",
+      "existing_data": {
+        "id": "millard",
+        "name": "Millard",
+        "isFree": false,
+        "a4Tier": "D",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "Shard",
+          "AS2": "Shard",
+          "AS3": "Shard",
+          "AS4": "Shard",
+          "AS5": "Shard"
+        },
+        "notes": "Poor character, all stones shardable",
+        "tags": [
+          "shardable",
+          "poor-performance",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Molrusso",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "Single-Ally Heal (155 Heal Strength)",
+        "Self 15% Wind Damage Up\nWhile in Back Row, Paired Ally gain 20 SP Regen",
+        "2x single-target Staff (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "molrusso",
+      "existing_data": {
+        "id": "molrusso",
+        "name": "Molrusso",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "A4, L10",
+        "ultPriorityGroup": "medium",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "U10"
+        },
+        "notes": "Handmade Picture Book - S tier A4 accessory",
+        "tags": [
+          "a4-priority",
+          "support",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Ophilia",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "2x single-target Light (2x 90 Power)",
+        "Self 15% Light Damage Up\nSelf 30% Ailment Resist Up",
+        "Frontrow Heal + HP Regen for 2 turns (55 Heal, 80 Regen)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "ophilia",
+      "existing_data": {
+        "id": "ophilia",
+        "name": "Ophilia",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L10 First",
+        "ultPriorityGroup": "high",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "Shard"
+        },
+        "notes": "Good healer U10, weak A4",
+        "tags": [
+          "healer",
+          "u10-priority",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Yukes",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1-7x single-target Staff, 30% chance to take 20% max HP recoil (1-7x 35 Power)",
+        " Self 15% Fire Damage Up\nAt the end of each turn, 20% chance to remove certain status ailments from self",
+        "Single-Ally Heal + Restore 25-100 SP to target if they are a Warrior, based on Boost Lv. (160 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "yukes",
+      "existing_data": {
+        "id": "yukes",
+        "name": "Yukes",
+        "isFree": false,
+        "a4Tier": "B",
+        "ultPriority": "L9",
+        "ultPriorityGroup": "low",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Cleric with moderate performance",
+        "tags": [
+          "cleric",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Rinyuu",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "healer",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "lightning",
+        "ice",
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "Single-Ally Heal + Restore 20 SP + 20% Ice Def Up for 2-5 turns, based on Boost Lv., if Boost MAX, target Frontrow instead (100 Heal Strength)",
+        "1x AoE Bow + Medium chance to inflict Poison/Bleeding for 3 turns (1x 120 Power)",
+        "2x single-target Lightning (2x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505",
+      "existing_id": "rinyuu",
+      "existing_data": {
+        "id": "rinyuu",
+        "name": "Rinyuu",
+        "isFree": false,
+        "a4Tier": "S",
+        "ultPriority": "L1",
+        "ultPriorityGroup": "lowest",
+        "stones": {
+          "AS1": "A1",
+          "AS2": "A2",
+          "AS3": "A3",
+          "AS4": "A4",
+          "AS5": "Shard"
+        },
+        "notes": "Excellent backpack support, good A4",
+        "tags": [
+          "support",
+          "backpack",
+          "a4-good",
+          "5-star"
+        ]
+      }
+    },
+    {
+      "name": "Gilderoy",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "tank",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Spear (1x 170~350 Power)",
+        "Self 15% Spear Damage Up\nSelf 10% Wind Def Up",
+        "AoE Taunt for 3-6 turns, based on Boost Lv."
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505",
+      "existing_id": "gilderoy",
+      "existing_data": {
+        "id": "gilderoy",
+        "name": "Gilderoy",
+        "isFree": false,
+        "a4Tier": "C",
+        "ultPriority": "L10 First",
+        "ultPriorityGroup": "high",
+        "stones": {
+          "AS1": "U10",
+          "AS2": "A1",
+          "AS3": "A2",
+          "AS4": "A3",
+          "AS5": "Shard"
+        },
+        "notes": "Strong U10, weak A4 - shard after U10",
+        "tags": [
+          "u10-priority",
+          "5-star"
+        ]
+      }
+    }
+  ],
+  "new_characters": [
+    {
+      "name": "Lyummis",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword",
+        "axe"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "2x single-target Axe (2x 90~180 Power)",
+        "Self 15% Axe Damage Up\nSelf 500 HP Regen",
+        "Single-Ally Heal (160 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+    },
+    {
+      "name": "Haze",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Axe (1x 230~400 Power)",
+        "Self 15% Axe Damage Up\nWhen breaking an enemy, High chance to inflict Bleeding for 3 turns",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+    },
+    {
+      "name": "Zegna",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "2x AoE Axe (2x 70~120 Power)",
+        "Frontrow Heal + Regen for 2 turns (45 Heal, 90 Regen)",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+    },
+    {
+      "name": "Nephti",
+      "job": "Apothecary",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [],
+      "abilities_count": 10,
+      "top_abilities": [
+        "3x single-target Axe (3x 55~100 Power)",
+        "Frontrow Heal (130~220 Heal Strength)\n     5+ \"Support Points\": Targets All Allies instead",
+        "1x AoE Axe, also hits Staff and Tome weakness (1x 150~215 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX"
+      ],
+      "max_level": "Lv120",
+      "has_resists": false,
+      "sheet_source": "\ud83e\ude93 Apothecaries \u2b505"
+    },
+    {
+      "name": "Shelby",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Axe (1x 130 Power)",
+        "Single-Ally Heal (155 Heal Strength)",
+        "1x single-target Ice (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Rita",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Axe (1x 130 Power)",
+        "Self 10% Critical Damage Up",
+        "Single-Ally Heal (155 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Rodion",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Axe (1x 130 Power)",
+        "1x AoE Axe (1x 145 Power)",
+        "1x single-target Dark (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Merrit",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "dark",
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Axe (1x 160 Power)",
+        "Single-Ally Heal (155 Heal Strength)",
+        "1x single-target Light (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Cornelia",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "Single-Ally Heal (95 Heal Strength)",
+        "Self 10% Weakness Damage Up",
+        "1x single-target Axe (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Saria",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Axe (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Saria, also grant Self + Paired Ally 10% Atk Up and 10% Axe Damage Up",
+        "1x single-target Ice (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Penny",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Axe (1x 120 Power)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Penny, also grant Self + Paired Ally 10% Mag Up and 10% Axe Damage Up",
+        "Single-Ally Heal (90 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Jorge",
+      "job": "Apothecary",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "axe"
+      ],
+      "element_types": [
+        "fire",
+        "ice"
+      ],
+      "abilities_count": 10,
+      "top_abilities": [
+        "1x single-target Axe (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Jorge, also grant Self + Paired Ally 10% Def Up and 10% Axe Damage Up",
+        "1x single-target Fire (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Apothecaries (Axes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Stead",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "2x single-target Dark (2x 90 Power)",
+        "Frontrow Heal + Regen for 2 turns (55 Heal, 80 Regen)",
+        "1x single-target Staff, Medium chance to inflict Bleeding for 2 turns (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505"
+    },
+    {
+      "name": "Prome",
+      "job": "Cleric",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "2x single-target Staff (2x 90 Power)",
+        "Frontrow Heal + Regen for 2 turns (55 Heal, 80 Regen)",
+        "1x single-target Fire, inflict 10% Fire Res Down for 2 turns (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83e\uddd9\ud83c\udffb\u200d\u2642\ufe0f Clerics \u2b505"
+    },
+    {
+      "name": "Madelaine",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "2x single-target Staff (2x 70 Power)",
+        "Single-Ally Heal (155 Heal Strength)",
+        "1x AoE Staff (1x 145 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Cedric",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Fire (1x 130 Power)",
+        "At the start of the battle, Medium chance to inflict AoE Bleeding for 3 turns",
+        "1x single-target Staff, Medium chance to inflict Bleeding for 2 turns (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Menno",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Wind (1x 130 Power)",
+        "Single-Ally Heal (155 Heal Strength)",
+        "1x AoE Wind (1x 115 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Efrain",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Staff (1x 160 Power)",
+        "Self 15% Staff Damage Up",
+        "1x AoE Staff (1x 145 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Ramona",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Ice (1x 160 Power)",
+        "Frontrow Heal (60 Heal Strength)",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Brigitte",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Staff (1x 160 Power)",
+        "Frontrow Heal (60 Heal Strength)",
+        "Self \"20% Healing Up (doesn't include Regen)\" buff for 3-6 turns, based on Boost Lv."
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Telly",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "Single-Ally Heal (90 Heal Strength)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Telly, also grant Self + Paired Ally 10% Mag Up and 10% Ice Damage Up",
+        "1x single-target Ice (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Pearl",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [
+        "staff"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "Single-Ally Heal (90 Heal Strength)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Pearl, also grant Self + Paired Ally 10% Mag Up and 10% Fire Damage Up",
+        "1x single-target Staff (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Jos\u00e9",
+      "job": "Cleric",
+      "star_rating": "3-4",
+      "primary_role": "healer",
+      "weapon_types": [],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 10,
+      "top_abilities": [
+        "Single-Ally Heal (90 Heal Strength)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Jos\u00e9, also grant Self + Paired Ally 10% MDef Up and 10% Light Damage Up",
+        "1x single-target Light (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Clerics (Staves) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Harley",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Wind (1x 170 Power)",
+        "Self 15% Wind Damage Up\nAt the start of battle, inflict AoE 15% Atk Down for 3 turns",
+        "1x AoE Fan (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505"
+    },
+    {
+      "name": "Titi",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Lightning, if Boost MAX, inflict 10% Lightning Res Down for 2 turns (1x 170 Power)",
+        "Self 15% Fan/Lightning Damage Up",
+        "1x single-target Fan, if Boost MAX, inflict 10% Fan Res Down for 2 turns (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505"
+    },
+    {
+      "name": "Eleonora",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Ice (1x 170 Power)",
+        "Self 15% Fan Damage Up\nAt the start of battle, Self \"Dodge Physical Attacks\" buff for 3 attacks",
+        "1x single-target Fan (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505"
+    },
+    {
+      "name": "Lemaire",
+      "job": "Dancer",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [],
+      "element_types": [
+        "fire",
+        "light",
+        "dark",
+        "ice",
+        "lightning",
+        "wind"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "3x single-target Wind + Reveal 1 weakness (3x 65 Power)",
+        "Self 10% Break Damage Up\nAt the start of battle, reveal 1 weakness of all enemies",
+        "3x single-target Light, Frontrow Heal (3x 65 Power, 150 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udc83 Dancers \u2b505"
+    },
+    {
+      "name": "Fabio",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Wind (1x 130 Power)",
+        "1x AoE Wind (1x 145 Power)",
+        "2x single-target Fan (2x 85 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Iris",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Ice (1x 130 Power)",
+        "At the start of battle, inflict AoE 10% Fan Res Down for 3 turns",
+        "1x AoE Fan (1x 145 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Mabel",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Lightning (1x 160 Power)",
+        "Power",
+        "1x AoE Fan, inflict 10% MDef Down for 2 turns (1x 115 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Meena",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Light (1x 130 Power, 9 SP)",
+        "1x single-target Fan (1x 160 Power, 18 SP)",
+        "Frontrow Heal (60 Heal Strength, 28 SP)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Paula",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x AoE Dark (1x 115 Power)",
+        "At the start of battle, inflict AoE 10% Dark Res Down for 3 turns",
+        "1x AoE Fan (1x 145 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Manuel",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Fan (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Manuel, also grant Self + Paired Ally 10% Atk Up and 10% Fan Damage Up",
+        "1x single-target Wind (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Evelyn",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Fan (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Evelyn, also grant Self + Paired Ally 10% Mag Up and 10% Dark Damage Up",
+        "1x AoE Dark (1x 110 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Harry",
+      "job": "Dancer",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "fan"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Fan (1x 120 Power)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Harry, also grant Self + Paired Ally 10% Mag Up and 10% Fire Damage Up",
+        "1x single-target Fire (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Dancers (Fans) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Kersjes",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Bow, Self 10% Atk Up for 2 turns (1x 170 Power)",
+        "Self 15% Bow/Ice Damage Up",
+        "2x AoE Ice (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505"
+    },
+    {
+      "name": "Jillmeila",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "2x single-target Bow (2x 90 Power)",
+        "1x single-target Dark (1x 170 Power)",
+        "1x single-target Bow, Medium chance to inflict Bleeding for 2 turns (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505"
+    },
+    {
+      "name": "Chloe",
+      "job": "Hunter",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Bow, Medium chance to inflict Paralysis for 2 turns (1x 170 Power)",
+        "Self 15% Bow Damage Up\nHeals casted by the wearer are 15% stronger",
+        "Frontrow Heal (130 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83c\udff9 Hunters \u2b505"
+    },
+    {
+      "name": "Lucette",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x AoE Bow (1x 115 Power)",
+        "Self 15% Bow Damage Up",
+        "2x single-target Bow (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Bertrand",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Bow (1x 130 Power)",
+        "1x single-target Lightning (1x 130 Power)",
+        "1x AoE Lightning, inflict 15% Lightning Res Down for 2 turns (1x 85 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Ashlan",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x AoE Bow (1x 115 Power)",
+        "Self 10% Critical Damage Up",
+        "1x single-target Bow, guaranteed Crit (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Camilla",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x AoE Bow (1x 115 Power)",
+        "1x single-target Bow (1x 160 Power)",
+        "Single-Ally Heal (95 Heal Strength)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Narr",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Bow (1x 160 Power)",
+        "Self 10% Critical Damage Up",
+        "1x single-target Dark (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Lolo",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow",
+        "staff"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "Call Lulu to attack; 1x single-target Staff (1x 130 Power)",
+        "2x single-target Light (2x 70 Power)",
+        "3x random-target Bow (3x 50 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Guti",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Bow (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Guti, also grant Self + Paired Ally 10% Speed Up and 10% Bow Damage Up",
+        "1x single-target Bow, Small chance to inflict Poison for 2 turns (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Sunny",
+      "job": "Hunter",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "bow"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Bow (1x 120 Power)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Sunny, also grant Self + Paired Ally 10% Atk Up and 10% Bow Damage Up",
+        "1x AoE Bow (1x 110 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Hunters (Bows) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Dorothea",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 19,
+      "top_abilities": [
+        "2x single-target Spear (2x 90~180 Power)",
+        "Self 15% Spear/Fire Damage Up",
+        "1x single-target Fire (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505"
+    },
+    {
+      "name": "Nonya",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x AoE Spear (1x 150~260 Power)",
+        "Self 15% Spear Damage Up\nAt the start of battle, Self +1 BP Regen for 3 turns",
+        "1x single-target Fire (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505"
+    },
+    {
+      "name": "Krauser",
+      "job": "Merchant",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 18,
+      "top_abilities": [
+        "3x single-target Spear (3x 65~120 Power)",
+        "Self 15% Spear Damage Up\nAt the the start of battle, inflict AoE 15% Spear Res Down for 3 turns",
+        "2x single-target Wind (2x 75~150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd31 Merchants \u2b505"
+    },
+    {
+      "name": "Helga",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Spear (1x 130 Power)",
+        "1x single-target Ice (1x 130 Power)",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Devin",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 9,
+      "top_abilities": [
+        "1x single-target Spear (1x 130 Power)",
+        "1x single-target Wind (1x 130 Power)",
+        "Self \"Counter Physical Attacks\" buff for 3-6 turns, based on Boost Lv. (150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Barrad",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Spear (1x 160 Power)",
+        "Self 15% Spear Damage Up",
+        "1x single-target Fire (1x 160 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Cerna",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "2x single-target Spear (2x 85 Power)",
+        "1x single-target Spear (1x 160 Power)",
+        "2x random-target Spear, inflict 15% Speed Down for 2 turns per hit (2x 85 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Carroll",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Spear (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Carroll, also grant Self + Paired Ally 8 SP Regen and 10% Spear Damage Up",
+        "1x single-target Spear, Taunt the target for 2 turns (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Juan",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Spear (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Juan, also grant Self + Paired Ally 10% MDef Up and 10% Spear Damage Up",
+        "1x single-target Dark (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Pia",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "tank",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Light (1x 130 Power)",
+        "1x single-target Spear (1x 130 Power)",
+        "1x AoE Spear, inflict 15% Spear Res Down for 2 turns (1x 115 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Conny",
+      "job": "Merchant",
+      "star_rating": "3-4",
+      "primary_role": "tank",
+      "weapon_types": [
+        "spear"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Spear (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Conny, also grant Self + Paired Ally 10% Atk Up and 10% Spear Damage Up",
+        "AoE Taunt for 2-5 turns, based on Boost Lv."
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Merchants (Spears) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Mooloo",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "3x random-target Tome (3x 55 Power)",
+        "At the start of battle, inflict AoE 15% Fire Res Down for 3 turns\nWhen breaking an enemy, inflict 15% Fire Res Down for 3 turns",
+        "2x single-target Fire (2x 75 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505"
+    },
+    {
+      "name": "Ninalana",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 18,
+      "top_abilities": [
+        "2x single-target Dark (2x 90 Power)",
+        "Self 15% Tome Damage Up\nWhen breaking an enemy, inflict 15% Dark Res Down for 3 turns",
+        "1x AoE Dark (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505"
+    },
+    {
+      "name": "Araune",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "fire",
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Light (1x 170 Power)",
+        "While at 50% or less HP, Self 30% Def Up\nHeals casted by holder are 15% stronger",
+        "1x single-target Fire (1x 170 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505"
+    },
+    {
+      "name": "Levina",
+      "job": "Scholar",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "lightning",
+        "light",
+        "wind"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "2x single-target Wind (2x 75 Power)",
+        "Self 10% Dagger/Wind Damage Up\nSelf 15 SP Regen",
+        "1x AoE Wind (1x 150 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udcd6 Scholars \u2b505"
+    },
+    {
+      "name": "Peredir",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Fire (1x 130 Power)",
+        "1x AoE Fire (1x 115 Power)",
+        "1x AoE Tome (1x 145 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Laura",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Lightning (1x 130 Power)",
+        "At the start of battle, inflict AoE 10% Lightning Res Down for 3 turns",
+        "2x single-target Tome (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Heinz",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Dark (1x 130 Power)",
+        "At the start of battle, inflict AoE 10% Dark Res Down for 3 turns",
+        "1x AoE Dark (1x 115 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Noelle",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Wind (1x 160 Power)",
+        "1x AoE Wind (1x 145 Power)",
+        "1x single-target Wind (1x 220 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Kenneth",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Ice (1x 130 Power)",
+        "At the start of battle, inflict AoE 10% Ice Res Down for 3 turns",
+        "1x AoE Ice (1x 115 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Levan",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Light (1x 130 Power)",
+        "1x AoE Light (1x 115 Power)",
+        "2x single-target Light (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Eunice",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [],
+      "element_types": [
+        "ice",
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Light (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Eunice, also grant Self + Paired Ally 10% Mag Up and 10% Light Damage Up",
+        "2x single-target Light (2x 65 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Julio",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Ice (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Julio, also grant Self + Paired Ally 8 SP Regen and 10% Ice Damage Up",
+        "1x AoE Ice (1x 110 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Dolly",
+      "job": "Scholar",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "tome"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Dark (1x 120 Power)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Dolly, also grant Self + Paired Ally 10% Mag Up and 10% Dark Damage Up",
+        "1x single-target Tome (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Scholars (Tomes) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Adelle",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "2x single-target Dagger (2x 90~180 Power)",
+        "Self 15% Dagger Damage Up\nAilments inflicted by the holder get +1 turn duration",
+        "2x single-target Light (2x 90~180 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv10",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505"
+    },
+    {
+      "name": "Falco",
+      "job": "Thief",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 19,
+      "top_abilities": [
+        "1x single-target Dagger, always reduces Shield Points (1x 170~350 Power)",
+        "Self 15% Dagger Damage Up\nSelf 500 HP Regen",
+        "1x AoE Ice (1x 150~260 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\ud83d\udd2a Thieves \u2b505"
+    },
+    {
+      "name": "Cless",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Dagger (1x 130 Power)",
+        "Self + Paired Ally 10% Dagger Damage Up",
+        "1x single-target Lightning (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Aslyte",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "ice"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Dagger (1x 130 Power)",
+        "1x single-target Ice (1x 130 Power)",
+        "1x single-target Dagger, always reduces Shield Points (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Kurtz",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "1x single-target Dagger (1x 130 Power)",
+        "While at Full HP, debuffs inflicted by wearer gain +1 turn duration",
+        "1x single-target Wind (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Durand",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "2x single-target Dagger (2x 70 Power)",
+        "At the start of battle, inflict AoE 10% Speed Down for 3 turns",
+        "2x single-target Light (2x 70 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Billy",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 12,
+      "top_abilities": [
+        "1x single-target Dagger (1x 120 Power)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Billy, also grant Self + Paired Ally 10% Atk Up and 10% Dagger Damage Up",
+        "2x single-target Dagger (2x 65 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Felline",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Dagger (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Felline, also grant Self + Paired Ally 10% Crit Up and 10% Dagger Damage Up",
+        "1x single-target Lightning (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Diego",
+      "job": "Thief",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "dagger"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Dagger (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Diego, also grant Self + Paired Ally 10% Speed Up and 10% Dagger Damage Up",
+        "1x single-target Fire (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Thieves (Daggers) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Fior",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "dark",
+        "light"
+      ],
+      "abilities_count": 14,
+      "top_abilities": [
+        "1x single-target Sword (1x 170~350 Power)",
+        "Self 10% Sword Damage Up\nSelf 10% Light/Dark Res Up",
+        "1x single-target Dark (1x 170~350 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+    },
+    {
+      "name": "Kouren",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 17,
+      "top_abilities": [
+        "2x single-target Sword (2x 90~180 Power)",
+        "Self 15% Sword/Light Damage Up",
+        "2x single-target Light (2x 90~180 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": false,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+    },
+    {
+      "name": "Wrath",
+      "job": "Warrior",
+      "star_rating": "5",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "wind"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x AoE Sword (1x 150~260 Power)",
+        "Self 15% Sword/Wind Damage Up",
+        "3x single-target Sword (3x 65~120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "5*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "\u2694\ufe0f Warriors \u2b505"
+    },
+    {
+      "name": "Sigrid",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "lightning",
+        "light"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "1x single-target Sword (1x 130 Power)",
+        "Self 15% Sword Damage Up",
+        "1x single-target Lightning (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Tahir",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "fire"
+      ],
+      "abilities_count": 15,
+      "top_abilities": [
+        "1x single-target Sword (1x 130 Power)",
+        "1x AoE Sword (1x 115 Power)",
+        "1x single-target Fire (1x 130 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Miles",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 11,
+      "top_abilities": [
+        "1x single-target Sword (1x 130 Power)",
+        "1x single-target Light (1x 160 Power)",
+        "Power"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Jorn",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 16,
+      "top_abilities": [
+        "2x single-target Sword (2x 70 Power)",
+        "1x AoE Sword (1x 115 Power)",
+        "Also grant 15% Atk/Sword Damage Up"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "4*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Nanna",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "dark"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Sword (1x 120 Power)",
+        "Self + Paired Ally 80 HP Regen\nIf equipped by Nanna, also grant Self + Paired Ally 10% Crit Up and 10% Sword Damage Up",
+        "1x single-target Dark (1x 120 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f"
+    },
+    {
+      "name": "Menny",
+      "job": "Warrior",
+      "star_rating": "3-4",
+      "primary_role": "dps",
+      "weapon_types": [
+        "sword"
+      ],
+      "element_types": [
+        "light"
+      ],
+      "abilities_count": 13,
+      "top_abilities": [
+        "1x single-target Sword (1x 120 Power)",
+        "Self + Paired Ally 8 SP Regen\nIf equipped by Menny, also grant Self + Paired Ally 80 HP Regen\nand 10% Sword Damage Up",
+        "1x AoE Sword (1x 110 Power)"
+      ],
+      "skill_levels": [
+        "1*",
+        "2*",
+        "3*",
+        "TP",
+        "EX",
+        "Special",
+        "Passive"
+      ],
+      "max_level": "Lv20",
+      "has_resists": true,
+      "sheet_source": "Warriors (Swords) 3\u272f & 4\u272f"
+    }
+  ],
+  "summary": {
+    "total_excel_characters": 147,
+    "total_existing_characters": 122,
+    "matching_characters": 59,
+    "new_characters_count": 88,
+    "jobs_found": {
+      "Warrior": 18,
+      "Merchant": 18,
+      "Thief": 18,
+      "Apothecary": 18,
+      "Hunter": 19,
+      "Cleric": 19,
+      "Scholar": 19,
+      "Dancer": 18
+    },
+    "star_ratings_found": {
+      "5": 80,
+      "3-4": 67
+    }
+  }
+}

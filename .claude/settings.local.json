@@ -15,7 +15,11 @@
       "Bash(echo:*)",
       "Bash(fi)",
       "Bash(done)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "WebFetch(domain:meowdb.com)",
+      "Bash(python:*)",
+      "Bash(mv:*)",
+      "Bash(true)"
     ],
     "deny": []
   }

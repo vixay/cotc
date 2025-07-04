@@ -534,6 +534,118 @@ tr.free-char:hover {
     opacity: 0.6;
 }
 
+/* Credits Section */
+.credits {
+    background: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+.credits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+    font-size: 1.3em;
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+
+.credits-header:hover {
+    color: var(--primary-hover);
+}
+
+.credits-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.credits-content.expanded {
+    max-height: 800px;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.credits.collapsed .collapse-indicator {
+    transform: rotate(-90deg);
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.credits-section h4 {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.credits-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.credits-section li {
+    margin: 8px 0;
+    color: var(--text-secondary);
+    padding-left: 15px;
+    position: relative;
+}
+
+.credits-section li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.credits-section strong {
+    color: var(--text-primary);
+}
+
+.disclaimer {
+    background: var(--hover-bg);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--warning-color);
+}
+
+.disclaimer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Navigation Link Styling */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
 /* Loading State */
 .loading {
     text-align: center;

@@ -1,0 +1,43 @@
+Missing Characters Found in XLSX:
+==================================================
+
+  1. 2B
+  2. 9S
+  3. Agnès
+  4. Black Knight
+  5. Black Maiden
+  6. Color Key:
+  7. EX Agnea
+  8. EX Araune
+  9. EX Bargello
+ 10. EX Castti
+ 11. EX Cygna
+ 12. EX Cyrus
+ 13. EX Ditraina
+ 14. EX Erika
+ 15. EX Fiore
+ 16. EX H'aanit
+ 17. EX Hikari
+ 18. EX Lyummis
+ 19. EX Millard
+ 20. EX Molrusso
+ 21. EX Ochette
+ 22. EX Ophilia
+ 23. EX Osvald
+ 24. EX Partitio
+ 25. EX Primrose
+ 26. EX Rinyuu
+ 27. EX Sazantos
+ 28. EX Sigrid
+ 29. EX Sofia
+ 30. EX Tatloch
+ 31. EX Therese
+ 32. EX Tressa
+ 33. EX Viola
+ 34. Kainé
+ 35. L'eeto
+ 36. Odio O
+ 37. Odio S
+ 38. Rai Mei
+ 39. Throné
+ 40. Warrior (Sword)

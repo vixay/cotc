@@ -20,10 +20,13 @@ npx http-server -p 8080
 ### Data Validation
 ```bash
 # Validate character data (requires Node.js)
-node scripts/validate.js
+node helpers/validate.js
 
 # Manual JSON validation
 python -m json.tool data/characters.json
+
+# Enhance character data with metadata
+python3 helpers/enhance_characters.py
 ```
 
 ### Git Workflow for Character Updates
@@ -132,9 +135,35 @@ The site defaults to **dark theme** but respects OS preferences:
 ## Important Files for Character Updates
 
 - `data/characters.json` - All character data (primary edit target)
-- `scripts/validate.js` - Data validation script
+- `data/characters_enhanced.json` - Enhanced character data with detailed metadata
+- `helpers/validate.js` - Data validation script
 - `docs/CONTRIBUTING.md` - Contributor guidelines
 - `.github/workflows/validate.yml` - Automated validation on PRs
+
+## Project Structure
+
+### Core Application Files
+- `index.html` - Main awakening stone guide application
+- `character-details.html` - Detailed character information application
+- `css/` - Stylesheets for all applications
+- `js/` - JavaScript logic for applications
+- `data/characters.json` - Primary character database
+- `data/characters_enhanced.json` - Enhanced character database with metadata
+
+### Helper Scripts and Temporary Data
+- `helpers/` - Contains all development scripts, temporary data files, and analysis results
+  - `enhance_characters.py` - Script to enhance character data with metadata
+  - `extract_characters_refined.py` - Excel data extraction script
+  - `add_missing_characters.py` - Script to add missing characters
+  - `validate.js` - Data validation script
+  - `*.json` - Temporary analysis files and samples
+  - `*.txt` - Analysis reports and character lists
+  - `*.md` - Development documentation and reports
+
+### Documentation
+- `docs/` - User documentation and guides
+- `CLAUDE.md` - Development instructions for Claude Code
+- `README.md` - Project overview and setup instructions
 
 ## Planned Future Features
 
