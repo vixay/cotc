@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "lastUpdated": "2025-07-04",
   "metadata": {
     "dataSource": "Reddit tier lists, Discord community, dotgg.gg",
@@ -419,17 +419,17 @@
       "name": "Frederica",
       "isFree": false,
       "a4Tier": "S+",
-      "ultPriority": "L9",
-      "ultPriorityGroup": "low",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
       "stones": {
         "AS1": "A1",
         "AS2": "A2",
         "AS3": "A3",
         "AS4": "A4",
-        "AS5": "Shard"
+        "AS5": "U10"
       },
-      "notes": "Great A4, lower U10 priority",
-      "tags": ["a4-priority", "5-star"]
+      "notes": "Orlea's Pendant - excellent A4 accessory",
+      "tags": ["a4-priority", "collab", "triangle-strategy", "5-star"]
     },
     {
       "id": "zaanta",
@@ -923,6 +923,516 @@
       },
       "notes": "Tank with decent A4",
       "tags": ["tank", "5-star"]
+    },
+    {
+      "id": "alaune_ex",
+      "name": "Alaune EX",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Infinite BP regen - S+ tier support",
+      "tags": ["support", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "bargello",
+      "name": "Bargello",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Best dagger DPS in Global - S+ tier",
+      "tags": ["dps", "dagger", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "canary",
+      "name": "Canary",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Best shield-breaking traveler in the game",
+      "tags": ["breaker", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "ditrania",
+      "name": "Ditrania",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Best elemental attacker for Light and Dark",
+      "tags": ["dps", "elemental", "light", "dark", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "elrica",
+      "name": "Elrica",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Top 3 warrior still used in Japan - can hit 10 times",
+      "tags": ["warrior", "dps", "breaker", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "haanit_ex",
+      "name": "H'aanit EX",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Amazing evasion tank and debuffer - 50% dodge chance",
+      "tags": ["tank", "debuffer", "evasion", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "sazantos",
+      "name": "Sazantos",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Best Fire warrior - covers Fire and Light weaknesses",
+      "tags": ["warrior", "fire", "light", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "sonia",
+      "name": "Sonia",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "AoE breaker specialist - S+ tier",
+      "tags": ["breaker", "aoe", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "tatloch",
+      "name": "Tatloch",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Can cover five different damage types",
+      "tags": ["versatile", "multi-type", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "eltrix",
+      "name": "Eltrix",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "S tier warrior with strong ultimate",
+      "tags": ["warrior", "u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "nivelle",
+      "name": "Nivelle",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "S tier support with strong ultimate",
+      "tags": ["support", "u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "oersted",
+      "name": "Oersted",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "S tier warrior with good ultimate",
+      "tags": ["warrior", "u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "roland",
+      "name": "Roland",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "S tier support character",
+      "tags": ["support", "u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "zenia",
+      "name": "Zenia",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Poysenbalm - S tier A4 accessory",
+      "tags": ["support", "u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "fiore_ex",
+      "name": "Fiore EX",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "U10"
+      },
+      "notes": "Sunny Sandals - S tier A4 accessory",
+      "tags": ["a4-priority", "support", "5-star"]
+    },
+    {
+      "id": "molrusso",
+      "name": "Molrusso",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "U10"
+      },
+      "notes": "Handmade Picture Book - S tier A4 accessory",
+      "tags": ["a4-priority", "support", "5-star"]
+    },
+    {
+      "id": "nona",
+      "name": "Nona",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "U10"
+      },
+      "notes": "Large Merchant's Pack - S tier A4 accessory",
+      "tags": ["a4-priority", "merchant", "5-star"]
+    },
+    {
+      "id": "temenos",
+      "name": "Temenos",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Cleric with decent A4, lower ultimate priority",
+      "tags": ["cleric", "healer", "5-star"]
+    },
+    {
+      "id": "therese_ex",
+      "name": "Therese EX",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "U10"
+      },
+      "notes": "Enhanced version with excellent A4 accessory",
+      "tags": ["a4-priority", "cleric", "5-star"]
+    },
+    {
+      "id": "throne",
+      "name": "Thronè",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Thief with decent performance",
+      "tags": ["thief", "5-star"]
+    },
+    {
+      "id": "tithi",
+      "name": "Tithi",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Amazing dancer support with powerful debuffs",
+      "tags": ["dancer", "support", "debuffer", "u10-priority", "5-star"]
+    },
+    {
+      "id": "tiziano",
+      "name": "Tiziano",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Thief with moderate performance",
+      "tags": ["thief", "5-star"]
+    },
+    {
+      "id": "tressa_ex",
+      "name": "Tressa EX",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "U10"
+      },
+      "notes": "Enhanced hunter version with good A4",
+      "tags": ["hunter", "a4-good", "5-star"]
+    },
+    {
+      "id": "trish",
+      "name": "Trish",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Warrior with moderate performance",
+      "tags": ["warrior", "5-star"]
+    },
+    {
+      "id": "tytos",
+      "name": "Tytos",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Warrior with decent A4",
+      "tags": ["warrior", "5-star"]
+    },
+    {
+      "id": "viola_ex",
+      "name": "Viola EX",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Enhanced scholar version",
+      "tags": ["scholar", "5-star"]
+    },
+    {
+      "id": "vivian",
+      "name": "Vivian",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Hunter with moderate performance",
+      "tags": ["hunter", "5-star"]
+    },
+    {
+      "id": "wingate",
+      "name": "Wingate",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Thief with moderate performance",
+      "tags": ["thief", "5-star"]
+    },
+    {
+      "id": "yugo",
+      "name": "Yugo",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Warrior with moderate performance",
+      "tags": ["warrior", "5-star"]
+    },
+    {
+      "id": "yukes",
+      "name": "Yukes",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Cleric with moderate performance",
+      "tags": ["cleric", "5-star"]
     }
   ]
 }
