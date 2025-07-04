@@ -136,6 +136,55 @@ The site defaults to **dark theme** but respects OS preferences:
 - `docs/CONTRIBUTING.md` - Contributor guidelines
 - `.github/workflows/validate.yml` - Automated validation on PRs
 
+## Planned Future Features
+
+The following features are planned for future development:
+
+### Character Information Enhancement
+- **Star Rating Display**: Show character base star rating (3★, 4★, 5★) and 6★ overclass availability
+- **Job Classification**: Display job types (Hunter, Warrior, Cleric, Scholar, Dancer, Merchant, Apothecary, Thief)
+- **Role Analysis**: Show primary/secondary roles (DPS, Buffer, Debuffer, Healer, Tank, Support)
+- **Role Rankings**: Tier rankings within each role type (S+/S/A/B/C tiers for DPS, Buffer, etc.)
+- **Overall Meta Ranking**: Combined ranking considering all roles and meta relevance
+- **Multi-Role Units**: Special highlighting for meta units that compress multiple roles (e.g., Primrose EX)
+- **Key Skills Display**: Show signature abilities and what makes each character unique
+- **Expanded Tag System**: Currently character tags exist in data but aren't displayed in UI
+
+### Advanced Features (Previously Planned)
+- **Team Building System**: Create teams for specific fights and content
+- **Damage Calculations**: Algorithm display and skill optimization for max damage
+- **Accessory Search**: Filter accessories by desired effects (PDF down, SP recovery, RES down, etc.)
+- **Battle Simulations**: Calculate optimal damage combinations with specific characters and accessories
+- **Advanced Filtering**: Filter by job type, role type, star rating, overclass availability
+
+### Data Structure Enhancements Needed
+The current character schema will need expansion to support:
+```json
+{
+  "starRating": 3|4|5,
+  "canOverclass": boolean,
+  "jobType": "Hunter"|"Warrior"|"Cleric"|"Scholar"|"Dancer"|"Merchant"|"Apothecary"|"Thief",
+  "roles": {
+    "primary": "DPS"|"Buffer"|"Debuffer"|"Healer"|"Tank"|"Support",
+    "secondary": "..." // optional
+  },
+  "roleTiers": {
+    "DPS": "S+"|"S"|"A"|"B"|"C"|null,
+    "Buffer": "...",
+    "Debuffer": "..."
+  },
+  "overallRanking": "S+"|"S"|"A"|"B"|"C",
+  "keySkills": ["Skill Name 1", "Skill Name 2"],
+  "specialNotes": "Multi-role meta unit" // for compressed role units
+}
+```
+
+### Implementation Priority
+1. **Phase 1**: Star ratings, job types, and role display (basic info enhancement)
+2. **Phase 2**: Role-specific tier rankings and overall meta ranking
+3. **Phase 3**: Advanced filtering by new attributes
+4. **Phase 4**: Team building and damage calculation systems
+
 ## Community-Driven Content
 
 This guide is maintained by COTC players. When making character updates:
