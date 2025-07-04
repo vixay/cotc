@@ -1,0 +1,134 @@
+name: Validate Character Data
+
+on:
+  pull_request:
+    paths:
+      - 'data/characters.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/characters.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+    
+    - name: Validate JSON syntax
+      run: |
+        echo "Validating JSON syntax..."
+        python -m json.tool data/characters.json > /dev/null
+        if [ $? -eq 0 ]; then
+          echo "✅ JSON syntax is valid"
+        else
+          echo "❌ JSON syntax error detected"
+          exit 1
+        fi
+    
+    - name: Check for required fields
+      run: |
+        node -e "
+        const fs = require('fs');
+        const data = JSON.parse(fs.readFileSync('data/characters.json', 'utf8'));
+        const requiredFields = ['id', 'name', 'isFree', 'ultPriority', 'stones', 'notes'];
+        let errors = [];
+        
+        data.characters.forEach((char, index) => {
+          requiredFields.forEach(field => {
+            if (!(field in char)) {
+              errors.push(\`Character at index \${index} (\${char.name || 'unnamed'}) missing field: \${field}\`);
+            }
+          });
+          
+          // Check stones
+          if (char.stones) {
+            const stoneFields = ['AS1', 'AS2', 'AS3', 'AS4', 'AS5'];
+            stoneFields.forEach(stone => {
+              if (!(stone in char.stones)) {
+                errors.push(\`Character \${char.name} missing stone: \${stone}\`);
+              }
+            });
+          }
+        });
+        
+        if (errors.length > 0) {
+          console.error('❌ Validation errors:');
+          errors.forEach(err => console.error('  - ' + err));
+          process.exit(1);
+        } else {
+          console.log('✅ All required fields present');
+        }
+        "
+    
+    - name: Check for duplicate IDs
+      run: |
+        node -e "
+        const fs = require('fs');
+        const data = JSON.parse(fs.readFileSync('data/characters.json', 'utf8'));
+        const ids = data.characters.map(c => c.id);
+        const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
+        
+        if (duplicates.length > 0) {
+          console.error('❌ Duplicate IDs found:', duplicates);
+          process.exit(1);
+        } else {
+          console.log('✅ No duplicate IDs');
+        }
+        "
+    
+    - name: Validate stone values
+      run: |
+        node -e "
+        const fs = require('fs');
+        const data = JSON.parse(fs.readFileSync('data/characters.json', 'utf8'));
+        const validStones = ['U10', 'A1', 'A2', 'A3', 'A4', 'Shard', 'Keep'];
+        let errors = [];
+        
+        data.characters.forEach(char => {
+          Object.entries(char.stones).forEach(([key, value]) => {
+            if (!validStones.includes(value)) {
+              errors.push(\`\${char.name} has invalid stone value for \${key}: \${value}\`);
+            }
+          });
+        });
+        
+        if (errors.length > 0) {
+          console.error('❌ Invalid stone values:');
+          errors.forEach(err => console.error('  - ' + err));
+          process.exit(1);
+        } else {
+          console.log('✅ All stone values are valid');
+        }
+        "
+    
+    - name: Post validation results
+      uses: actions/github-script@v6
+      if: github.event_name == 'pull_request' && failure()
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '❌ Character data validation failed. Please check the JSON syntax and ensure all required fields are present.'
+          })
+    
+    - name: Post success message
+      uses: actions/github-script@v6
+      if: github.event_name == 'pull_request' && success()
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '✅ Character data validation passed! The changes look good.'
+          })

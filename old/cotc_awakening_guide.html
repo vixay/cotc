@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COTC Awakening Stone Priority Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .legend {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .legend h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        .legend-item {
+            margin: 5px 0;
+        }
+        .legend-item span {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f0f8ff;
+        }
+        .tier-s-plus { background-color: #ffcccc; }
+        .tier-s { background-color: #ffe6cc; }
+        .tier-a { background-color: #ffffcc; }
+        .tier-b { background-color: #e6ffcc; }
+        .tier-c { background-color: #ccffcc; }
+        .tier-d { background-color: #ccffe6; }
+        .u10-priority { color: #ff0000; font-weight: bold; }
+        .a4-priority { color: #0066cc; font-weight: bold; }
+        .shard { color: #666666; }
+        .keep { color: #009900; font-weight: bold; }
+        .notes {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #ffeaa7;
+        }
+        .notes h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+        .search-box {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 300px;
+            border: 2px solid #0066cc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COTC Awakening Stone Priority Guide</h1>
+        
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-item"><span>A1:</span> Use first awakening stone for stat boost (+30% base attributes)</div>
+            <div class="legend-item"><span>A3:</span> Use three awakening stones for HP boost (+1000 HP)</div>
+            <div class="legend-item"><span>A4:</span> Use fourth awakening stone for exclusive accessory</div>
+            <div class="legend-item"><span>U10:</span> Use awakening stones for Level 10 Ultimate skill</div>
+            <div class="legend-item"><span>Shard:</span> Exchange for awakening stone shards</div>
+            <div class="legend-item"><span>Keep:</span> Save for future use/decision</div>
+        </div>
+
+        <input type="text" class="search-box" id="searchBox" placeholder="Search for a character..." onkeyup="filterTable()">
+        
+        <table id="characterTable">
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>A4 Acc Tier</th>
+                    <th>U10 Priority</th>
+                    <th>AS1</th>
+                    <th>AS2</th>
+                    <th>AS3</th>
+                    <th>AS4</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Top Priority Characters (Both U10 and A4 are valuable) -->
+                <tr>
+                    <td><strong>Lynette</strong></td>
+                    <td>Not Listed</td>
+                    <td class="u10-priority">L10 (Top)</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td>Top priority U10 - Self explanatory for EN</td>
+                </tr>
+                <tr>
+                    <td><strong>Primrose EX</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td class="u10-priority">L10 (Top)</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Better than Lynette ult + excellent A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Solon</strong></td>
+                    <td>Not Listed</td>
+                    <td class="u10-priority">L10 (Top)</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td>Doubles unit potency - pairs with Odio-O</td>
+                </tr>
+                <tr>
+                    <td><strong>Signa</strong></td>
+                    <td>Not Listed</td>
+                    <td class="u10-priority">L10 (Top)</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td>Queen of debuff - 20% all stats down</td>
+                </tr>
+                
+                <!-- High Priority U10 or A4 -->
+                <tr>
+                    <td><strong>A2</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>A4, L10</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Excellent A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Auguste</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>A1, L10</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Playwright's Quill - full ultimate bar start</td>
+                </tr>
+                <tr>
+                    <td><strong>Therese</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>A4, L10</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Top tier A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Odette</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Excellent A4, moderate U10</td>
+                </tr>
+                
+                <!-- Good A4, Poor U10 (Shard after A4) -->
+                <tr>
+                    <td><strong>Hasumi</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Maiden's Bell is excellent, U10 not priority</td>
+                </tr>
+                <tr>
+                    <td><strong>Edea</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>A4, L10</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Strong A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Frederica</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Great A4, lower U10 priority</td>
+                </tr>
+                
+                <!-- S Tier A4 -->
+                <tr>
+                    <td><strong>Alfyn</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Dreamer's Medicine Box - good A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Agnes</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Therion</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="shard">Shard</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good A4, moderate U10</td>
+                </tr>
+                
+                <!-- Good U10, Poor A4 -->
+                <tr>
+                    <td><strong>Gilderoy</strong></td>
+                    <td class="tier-c">C</td>
+                    <td class="u10-priority">L10 First</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="shard">Shard</td>
+                    <td>Strong U10, weak A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Nicola</strong></td>
+                    <td class="tier-s">S</td>
+                    <td class="u10-priority">L10 First</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good U10 and A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Harley</strong></td>
+                    <td class="tier-a">A</td>
+                    <td class="u10-priority">L10 First</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="keep">Keep</td>
+                    <td>Priority U10, decent A4</td>
+                </tr>
+                
+                <!-- Easily Shardable (Poor U10 and A4) -->
+                <tr>
+                    <td><strong>Millard</strong></td>
+                    <td class="tier-d">D</td>
+                    <td>L1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Poor character, easily shardable</td>
+                </tr>
+                <tr>
+                    <td><strong>Scarecrow</strong></td>
+                    <td class="tier-d">D</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Weak A4 and U10</td>
+                </tr>
+                <tr>
+                    <td><strong>Elvis</strong></td>
+                    <td class="tier-d">D</td>
+                    <td>L9</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Very poor A4 and U10</td>
+                </tr>
+                <tr>
+                    <td><strong>Soleil</strong></td>
+                    <td class="tier-c">C</td>
+                    <td>L1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Weak character overall</td>
+                </tr>
+                <tr>
+                    <td><strong>Cardona</strong></td>
+                    <td class="tier-c">C</td>
+                    <td>L1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Poor performance, easily shardable</td>
+                </tr>
+                <tr>
+                    <td><strong>Theo</strong></td>
+                    <td class="tier-b">B</td>
+                    <td>L1</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Decent early game, but outclassed</td>
+                </tr>
+                <tr>
+                    <td><strong>Lianna</strong></td>
+                    <td class="tier-b">B</td>
+                    <td>L1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Weak U10 and mediocre A4</td>
+                </tr>
+                
+                <!-- Mid-tier characters with specific uses -->
+                <tr>
+                    <td><strong>Viola</strong></td>
+                    <td class="tier-c">C</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Good early game debuffer, weak A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Cyrus</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Decent A4, moderate U10</td>
+                </tr>
+                <tr>
+                    <td><strong>Primrose</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Regular version, decent A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Olberic</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Tank with decent A4</td>
+                </tr>
+                
+                <!-- Special Cases -->
+                <tr>
+                    <td><strong>Richard</strong></td>
+                    <td class="tier-a">A</td>
+                    <td class="u10-priority">L10 First</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="keep">Keep</td>
+                    <td>Excellent support, priority U10</td>
+                </tr>
+                <tr>
+                    <td><strong>Ophilia</strong></td>
+                    <td class="tier-b">B</td>
+                    <td class="u10-priority">L10 First</td>
+                    <td class="keep">A1</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="u10-priority">U10</td>
+                    <td class="shard">Shard</td>
+                    <td>Good healer U10, weak A4</td>
+                </tr>
+                <tr>
+                    <td><strong>H'aanit</strong></td>
+                    <td class="tier-b">B</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Moderate performance</td>
+                </tr>
+                
+                <!-- Additional characters from tier lists -->
+                <tr>
+                    <td><strong>Tikilen</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>A4, L10</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Sofia</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Decent A4, lower U10 priority</td>
+                </tr>
+                <tr>
+                    <td><strong>Tressa</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="shard">Shard</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good support A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Herminia</strong></td>
+                    <td class="tier-b">B</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td>Moderate performance</td>
+                </tr>
+                <tr>
+                    <td><strong>Z'aanta</strong></td>
+                    <td class="tier-s-plus">S+</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Excellent A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Lumis</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Decent A4, lower priority</td>
+                </tr>
+                <tr>
+                    <td><strong>Cecily</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Decent A4</td>
+                </tr>
+                <tr>
+                    <td><strong>W'ludai</strong></td>
+                    <td class="tier-a">A</td>
+                    <td>L9</td>
+                    <td class="keep">A1</td>
+                    <td class="shard">Shard</td>
+                    <td class="shard">Shard</td>
+                    <td class="keep">Keep</td>
+                    <td>Tank with decent A4</td>
+                </tr>
+                <tr>
+                    <td><strong>Eliza</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L1</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good A4, weak U10</td>
+                </tr>
+                <tr>
+                    <td><strong>Joshua</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L1</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Sarisa</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L1</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Good A4 accessory</td>
+                </tr>
+                <tr>
+                    <td><strong>Rinyuu</strong></td>
+                    <td class="tier-s">S</td>
+                    <td>L1</td>
+                    <td class="keep">A1</td>
+                    <td class="keep">Keep</td>
+                    <td class="keep">Keep</td>
+                    <td class="a4-priority">A4</td>
+                    <td>Excellent backpack support, good A4</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="notes">
+            <h3>Important Notes:</h3>
+            <ul>
+                <li><strong>Priority Order:</strong> Generally, U10 > A4 > A3 > A1 for top tier units</li>
+                <li><strong>Sharding Strategy:</strong> Units with both poor U10 (L1 or L9) AND poor A4 (Tier C/D) are ideal for sharding</li>
+                <li><strong>A1 Priority:</strong> Almost always worth getting A1 for the 30% stat boost on units you use</li>
+                <li><strong>Resource Management:</strong> 6 unwanted awakening stones = 6000 shards = 1 dupe of your choice</li>
+                <li><strong>Future Planning:</strong> Keep stones for units that might get buffs or have niche uses</li>
+                <li><strong>Meta Changes:</strong> This guide is based on current meta and may change with updates</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function filterTable() {
+            const input = document.getElementById("searchBox");
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById("characterTable");
+            const tr = table.getElementsByTagName("tr");
+            
+            for (let i = 1; i < tr.length; i++) {
+                const td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    const txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

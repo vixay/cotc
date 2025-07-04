@@ -1,0 +1,928 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-07-04",
+  "metadata": {
+    "dataSource": "Reddit tier lists, Discord community, dotgg.gg",
+    "gameVersion": "Global/EN"
+  },
+  "characters": [
+    {
+      "id": "lynette",
+      "name": "Lynette",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "notes": "Top priority U10 - Best buffer for EN",
+      "tags": ["buffer", "top-tier", "u10-priority", "5-star"]
+    },
+    {
+      "id": "primrose_ex",
+      "name": "Primrose EX",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Better than Lynette ult + excellent A4",
+      "tags": ["buffer", "top-tier", "u10-priority", "a4-priority", "5-star"]
+    },
+    {
+      "id": "solon",
+      "name": "Solon",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "notes": "Doubles unit potency - pairs with Odio-O",
+      "tags": ["support", "top-tier", "u10-priority", "5-star"]
+    },
+    {
+      "id": "signa",
+      "name": "Signa",
+      "isFree": false,
+      "a4Tier": null,
+      "ultPriority": "L10",
+      "ultPriorityGroup": "top",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "notes": "Queen of debuff - 20% all stats down",
+      "tags": ["debuffer", "top-tier", "u10-priority", "5-star"]
+    },
+    {
+      "id": "gilderoy",
+      "name": "Gilderoy",
+      "isFree": false,
+      "a4Tier": "C",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "notes": "Strong U10, weak A4 - shard after U10",
+      "tags": ["u10-priority", "5-star"]
+    },
+    {
+      "id": "nicola",
+      "name": "Nicola",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Good U10 and A4",
+      "tags": ["u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "richard",
+      "name": "Richard",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Excellent support, priority U10",
+      "tags": ["support", "u10-priority", "a4-good", "5-star"]
+    },
+    {
+      "id": "ophilia",
+      "name": "Ophilia",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Shard"
+      },
+      "notes": "Good healer U10, weak A4",
+      "tags": ["healer", "u10-priority", "5-star"]
+    },
+    {
+      "id": "glossom",
+      "name": "Glossom",
+      "isFree": true,
+      "a4Tier": null,
+      "ultPriority": "L10 First",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "U10",
+        "AS2": "A1",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story", "u10-priority"]
+    },
+    {
+      "id": "auguste",
+      "name": "Auguste",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "A1, L10",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "U10",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Playwright's Quill - full ultimate bar start",
+      "tags": ["a4-priority", "u10-good", "5-star"]
+    },
+    {
+      "id": "rondo",
+      "name": "Rondo",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "A1, L10",
+      "ultPriorityGroup": "high",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "U10",
+        "AS3": "A2",
+        "AS4": "A3",
+        "AS5": "A4"
+      },
+      "notes": "Self-sustaining warrior",
+      "tags": ["warrior", "u10-good", "a4-good", "5-star"]
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "U10"
+      },
+      "notes": "Excellent A4 accessory, U10 optional",
+      "tags": ["a4-priority", "collab", "nier", "5-star"]
+    },
+    {
+      "id": "therese",
+      "name": "Therese",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Top tier A4 accessory",
+      "tags": ["a4-priority", "5-star"]
+    },
+    {
+      "id": "edea",
+      "name": "Edea",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Strong A4 accessory",
+      "tags": ["a4-priority", "collab", "bravely-default", "5-star"]
+    },
+    {
+      "id": "tikilen",
+      "name": "Tikilen",
+      "isFree": true,
+      "a4Tier": "A",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story", "a4-good"]
+    },
+    {
+      "id": "varkyn",
+      "name": "Varkyn",
+      "isFree": true,
+      "a4Tier": "B",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story"]
+    },
+    {
+      "id": "ritu",
+      "name": "Ri'tu",
+      "isFree": true,
+      "a4Tier": "A",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story", "a4-good"]
+    },
+    {
+      "id": "gertrude",
+      "name": "Gertrude",
+      "isFree": true,
+      "a4Tier": "B",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story"]
+    },
+    {
+      "id": "yunnie",
+      "name": "Yunnie",
+      "isFree": true,
+      "a4Tier": "B",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story"]
+    },
+    {
+      "id": "yan_long",
+      "name": "Yan Long",
+      "isFree": true,
+      "a4Tier": "A",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story", "a4-good"]
+    },
+    {
+      "id": "largo",
+      "name": "Largo",
+      "isFree": true,
+      "a4Tier": "B",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "story"]
+    },
+    {
+      "id": "serenoa",
+      "name": "Serenoa",
+      "isFree": true,
+      "a4Tier": "A",
+      "ultPriority": "A4, L10",
+      "ultPriorityGroup": "medium",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones give character fragments only",
+      "tags": ["free", "collab", "triangle-strategy", "a4-good"]
+    },
+    {
+      "id": "hasumi",
+      "name": "Hasumi",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Maiden's Bell is excellent, U10 not priority",
+      "tags": ["a4-priority", "5-star"]
+    },
+    {
+      "id": "odette",
+      "name": "Odette",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Excellent A4, moderate U10",
+      "tags": ["a4-priority", "5-star"]
+    },
+    {
+      "id": "frederica",
+      "name": "Frederica",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Great A4, lower U10 priority",
+      "tags": ["a4-priority", "5-star"]
+    },
+    {
+      "id": "zaanta",
+      "name": "Z'aanta",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Excellent A4 accessory",
+      "tags": ["a4-priority", "5-star"]
+    },
+    {
+      "id": "molu",
+      "name": "Molu",
+      "isFree": false,
+      "a4Tier": "S+",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Top tier A4",
+      "tags": ["a4-priority", "5-star"]
+    },
+    {
+      "id": "alfyn",
+      "name": "Alfyn",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Dreamer's Medicine Box - good A4",
+      "tags": ["a4-good", "support", "5-star"]
+    },
+    {
+      "id": "agnes",
+      "name": "Agnes",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good A4 accessory",
+      "tags": ["a4-good", "collab", "bravely-default", "5-star"]
+    },
+    {
+      "id": "therion",
+      "name": "Therion",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good A4, moderate U10",
+      "tags": ["a4-good", "thief", "5-star"]
+    },
+    {
+      "id": "tressa",
+      "name": "Tressa",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good support A4",
+      "tags": ["a4-good", "support", "5-star"]
+    },
+    {
+      "id": "cyrus",
+      "name": "Cyrus",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Decent A4, moderate U10",
+      "tags": ["mage", "5-star"]
+    },
+    {
+      "id": "primrose",
+      "name": "Primrose",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Regular version, decent A4",
+      "tags": ["dancer", "5-star"]
+    },
+    {
+      "id": "olberic",
+      "name": "Olberic",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Tank with decent A4",
+      "tags": ["tank", "warrior", "5-star"]
+    },
+    {
+      "id": "elvis",
+      "name": "Elvis",
+      "isFree": true,
+      "a4Tier": "D",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "Keep",
+        "AS2": "Keep",
+        "AS3": "Keep",
+        "AS4": "Keep",
+        "AS5": "Keep"
+      },
+      "notes": "Free character - stones don't convert to shards",
+      "tags": ["free", "collab", "bravely-default", "poor-performance"]
+    },
+    {
+      "id": "viola",
+      "name": "Viola",
+      "isFree": false,
+      "a4Tier": "C",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Good early debuffer, weak endgame",
+      "tags": ["debuffer", "early-game", "shardable", "5-star"]
+    },
+    {
+      "id": "scarecrow",
+      "name": "Scarecrow",
+      "isFree": false,
+      "a4Tier": "D",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Weak A4 and U10",
+      "tags": ["shardable", "5-star"]
+    },
+    {
+      "id": "haanit",
+      "name": "H'aanit",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Regular version, moderate performance",
+      "tags": ["hunter", "shardable", "5-star"]
+    },
+    {
+      "id": "herminia",
+      "name": "Herminia",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Moderate performance",
+      "tags": ["shardable", "5-star"]
+    },
+    {
+      "id": "eliza",
+      "name": "Eliza",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good A4, weak U10",
+      "tags": ["a4-good", "5-star"]
+    },
+    {
+      "id": "joshua",
+      "name": "Joshua",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good A4 accessory",
+      "tags": ["a4-good", "5-star"]
+    },
+    {
+      "id": "sarisa",
+      "name": "Sarisa",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Good A4 accessory",
+      "tags": ["a4-good", "5-star"]
+    },
+    {
+      "id": "rinyuu",
+      "name": "Rinyuu",
+      "isFree": false,
+      "a4Tier": "S",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Excellent backpack support, good A4",
+      "tags": ["support", "backpack", "a4-good", "5-star"]
+    },
+    {
+      "id": "millard",
+      "name": "Millard",
+      "isFree": false,
+      "a4Tier": "D",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "Shard",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Poor character, all stones shardable",
+      "tags": ["shardable", "poor-performance", "5-star"]
+    },
+    {
+      "id": "theo",
+      "name": "Theo",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Decent early game, but outclassed",
+      "tags": ["early-game", "shardable", "5-star"]
+    },
+    {
+      "id": "soleil",
+      "name": "Soleil",
+      "isFree": false,
+      "a4Tier": "C",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "Shard",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Weak character overall",
+      "tags": ["shardable", "poor-performance", "5-star"]
+    },
+    {
+      "id": "cardona",
+      "name": "Cardona",
+      "isFree": false,
+      "a4Tier": "C",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "Shard",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Poor performance, easily shardable",
+      "tags": ["shardable", "poor-performance", "5-star"]
+    },
+    {
+      "id": "lianna",
+      "name": "Lianna",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "Shard",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Weak U10 and mediocre A4",
+      "tags": ["shardable", "poor-performance", "5-star"]
+    },
+    {
+      "id": "lionel",
+      "name": "Lionel",
+      "isFree": false,
+      "a4Tier": "B",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "Shard",
+        "AS3": "Shard",
+        "AS4": "Shard",
+        "AS5": "Shard"
+      },
+      "notes": "Mediocre performance overall",
+      "tags": ["shardable", "5-star"]
+    },
+    {
+      "id": "heathcote",
+      "name": "Heathcote",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L1",
+      "ultPriorityGroup": "lowest",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Decent A4, very weak U10",
+      "tags": ["5-star"]
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Decent A4, lower U10 priority",
+      "tags": ["5-star"]
+    },
+    {
+      "id": "lumis",
+      "name": "Lumis",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Decent A4, lower priority",
+      "tags": ["5-star"]
+    },
+    {
+      "id": "cecily",
+      "name": "Cecily",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Decent A4",
+      "tags": ["5-star"]
+    },
+    {
+      "id": "wludai",
+      "name": "W'ludai",
+      "isFree": false,
+      "a4Tier": "A",
+      "ultPriority": "L9",
+      "ultPriorityGroup": "low",
+      "stones": {
+        "AS1": "A1",
+        "AS2": "A2",
+        "AS3": "A3",
+        "AS4": "A4",
+        "AS5": "Shard"
+      },
+      "notes": "Tank with decent A4",
+      "tags": ["tank", "5-star"]
+    }
+  ]
+}

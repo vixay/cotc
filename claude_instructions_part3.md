@@ -1,0 +1,456 @@
+# Claude Code Instructions - Part 3: CSS Styles
+
+## File 3: css/style.css
+
+Create the directory and file:
+1. `mkdir -p css`
+2. Create `css/style.css` with the following content:
+
+```css
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0066cc;
+    --primary-hover: #0052a3;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ff6600;
+    --info-color: #17a2b8;
+    
+    --tier-s-plus: #ffcccc;
+    --tier-s: #ffe6cc;
+    --tier-a: #ffffcc;
+    --tier-b: #e6ffcc;
+    --tier-c: #ccffcc;
+    --tier-d: #ccffe6;
+    
+    --free-bg: #e6f3ff;
+    --hover-bg: #f0f8ff;
+    
+    --text-primary: #333;
+    --text-secondary: #666;
+    --text-muted: #999;
+    
+    --border-color: #ddd;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.meta-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+}
+
+.version {
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.github-link:hover {
+    color: var(--primary-color);
+}
+
+/* Filter Styles */
+.filters {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.action-group {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box, .filter-select {
+    padding: 10px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.search-box {
+    width: 300px;
+}
+
+.search-box:focus, .filter-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: #f8f9fa;
+}
+
+/* Legend Styles */
+.legend {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+.legend h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.legend-section h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.legend-item {
+    margin: 8px 0;
+    color: var(--text-secondary);
+}
+
+.legend-key {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.free-note {
+    color: var(--warning-color);
+    font-weight: 500;
+}
+
+/* Stats Bar */
+.stats {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    font-size: 0.9em;
+}
+
+.stat-item {
+    color: var(--text-secondary);
+}
+
+.stat-item span {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Table Styles */
+.table-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+th.sortable:hover {
+    background: var(--primary-hover);
+}
+
+.sort-indicator {
+    position: absolute;
+    right: 10px;
+    opacity: 0.5;
+}
+
+.sort-asc .sort-indicator::after {
+    content: "▲";
+    opacity: 1;
+}
+
+.sort-desc .sort-indicator::after {
+    content: "▼";
+    opacity: 1;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+tr:hover {
+    background: var(--hover-bg);
+}
+
+tr.free-char {
+    background: var(--free-bg);
+    font-style: italic;
+}
+
+tr.free-char:hover {
+    background: #d9ecff;
+}
+
+/* Tier Colors */
+.tier-s\+ { background: var(--tier-s-plus); font-weight: 600; }
+.tier-s { background: var(--tier-s); }
+.tier-a { background: var(--tier-a); }
+.tier-b { background: var(--tier-b); }
+.tier-c { background: var(--tier-c); }
+.tier-d { background: var(--tier-d); }
+
+/* Stone Priority Colors */
+.u10 { color: var(--danger-color); font-weight: 600; }
+.a1, .a2, .a3, .a4 { color: var(--primary-color); }
+.a4 { font-weight: 600; }
+.shard { color: var(--text-muted); background: #f0f0f0; }
+.keep { color: var(--success-color); font-weight: 600; }
+.no-shard { color: var(--warning-color); text-decoration: line-through; }
+
+/* Loading State */
+.loading {
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-content p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .meta-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .filters {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    .action-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .legend-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats {
+        justify-content: space-around;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .filters, .action-group, footer {
+        display: none;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    header, .legend, .table-container {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    
+    tr.free-char {
+        font-style: normal;
+    }
+    
+    tr.free-char td:first-child::after {
+        content: " (Free)";
+    }
+}
+```
+
+## Next Steps
+Continue with Part 4 for JavaScript files

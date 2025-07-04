@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "COTC Character Data",
+  "type": "object",
+  "required": ["version", "lastUpdated", "characters"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "dataSource": {"type": "string"},
+        "gameVersion": {"type": "string"}
+      }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "isFree", "ultPriority", "stones", "notes"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "isFree": {
+            "type": "boolean"
+          },
+          "a4Tier": {
+            "type": ["string", "null"],
+            "enum": ["S+", "S", "A", "B", "C", "D", null]
+          },
+          "ultPriority": {
+            "type": "string",
+            "enum": ["L10", "L10 First", "A1, L10", "A4, L10", "L9", "L1"]
+          },
+          "ultPriorityGroup": {
+            "type": "string",
+            "enum": ["top", "high", "medium", "low", "lowest"]
+          },
+          "stones": {
+            "type": "object",
+            "required": ["AS1", "AS2", "AS3", "AS4", "AS5"],
+            "properties": {
+              "AS1": {"$ref": "#/definitions/stoneValue"},
+              "AS2": {"$ref": "#/definitions/stoneValue"},
+              "AS3": {"$ref": "#/definitions/stoneValue"},
+              "AS4": {"$ref": "#/definitions/stoneValue"},
+              "AS5": {"$ref": "#/definitions/stoneValue"}
+            }
+          },
+          "notes": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "stoneValue": {
+      "type": "string",
+      "enum": ["U10", "A1", "A2", "A3", "A4", "Shard", "Keep"]
+    }
+  }
+}
