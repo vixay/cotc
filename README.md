@@ -119,7 +119,7 @@ We welcome community contributions! Please see [CONTRIBUTING.md](docs/CONTRIBUTI
 
 ## Community
 
-- **Discord**: [COTC Community Discord](https://discord.gg/cotc)
+- **Discord**: [COTC Community Discord](https://discord.gg/octopathcotc)
 - **Reddit**: [r/OctopathCotC](https://reddit.com/r/OctopathCotC)
 - **Issues**: [Report bugs or suggest features](https://github.com/vixay/cotc/issues)
 
