@@ -19,7 +19,9 @@
       "WebFetch(domain:meowdb.com)",
       "Bash(python:*)",
       "Bash(mv:*)",
-      "Bash(true)"
+      "Bash(true)",
+      "Bash(ls:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
