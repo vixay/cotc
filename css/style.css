@@ -29,6 +29,125 @@
     
     --border-color: #ddd;
     --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --bg-primary: #f5f5f5;
+    --bg-secondary: white;
+}
+
+/* Dark theme as default */
+:root {
+    --primary-color: #4a9eff;
+    --primary-hover: #3a8eef;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --info-color: #2196f3;
+    
+    --tier-s-plus: #4a3a3a;
+    --tier-s: #4a4a3a;
+    --tier-a: #4a4a3a;
+    --tier-b: #3a4a3a;
+    --tier-c: #3a4a3a;
+    --tier-d: #3a4a4a;
+    
+    --free-bg: #2a3a4a;
+    --hover-bg: #3a4a5a;
+    
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-muted: #808080;
+    
+    --border-color: #444;
+    --shadow: 0 2px 10px rgba(0,0,0,0.3);
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2a2a2a;
+}
+
+/* Manual theme classes */
+body.light-theme {
+    --primary-color: #0066cc;
+    --primary-hover: #0052a3;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ff6600;
+    --info-color: #17a2b8;
+    
+    --tier-s-plus: #ffcccc;
+    --tier-s: #ffe6cc;
+    --tier-a: #ffffcc;
+    --tier-b: #e6ffcc;
+    --tier-c: #ccffcc;
+    --tier-d: #ccffe6;
+    
+    --free-bg: #e6f3ff;
+    --hover-bg: #f0f8ff;
+    
+    --text-primary: #333;
+    --text-secondary: #666;
+    --text-muted: #999;
+    
+    --border-color: #ddd;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --bg-primary: #f5f5f5;
+    --bg-secondary: white;
+}
+
+body.dark-theme {
+    --primary-color: #4a9eff;
+    --primary-hover: #3a8eef;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --info-color: #2196f3;
+    
+    --tier-s-plus: #4a3a3a;
+    --tier-s: #4a4a3a;
+    --tier-a: #4a4a3a;
+    --tier-b: #3a4a3a;
+    --tier-c: #3a4a3a;
+    --tier-d: #3a4a4a;
+    
+    --free-bg: #2a3a4a;
+    --hover-bg: #3a4a5a;
+    
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-muted: #808080;
+    
+    --border-color: #444;
+    --shadow: 0 2px 10px rgba(0,0,0,0.3);
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2a2a2a;
+}
+
+/* Light theme for users who prefer light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color: #0066cc;
+        --primary-hover: #0052a3;
+        --success-color: #28a745;
+        --danger-color: #dc3545;
+        --warning-color: #ff6600;
+        --info-color: #17a2b8;
+        
+        --tier-s-plus: #ffcccc;
+        --tier-s: #ffe6cc;
+        --tier-a: #ffffcc;
+        --tier-b: #e6ffcc;
+        --tier-c: #ccffcc;
+        --tier-d: #ccffe6;
+        
+        --free-bg: #e6f3ff;
+        --hover-bg: #f0f8ff;
+        
+        --text-primary: #333;
+        --text-secondary: #666;
+        --text-muted: #999;
+        
+        --border-color: #ddd;
+        --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        --bg-primary: #f5f5f5;
+        --bg-secondary: white;
+    }
 }
 
 body {
@@ -36,7 +155,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: var(--text-primary);
-    background-color: #f5f5f5;
+    background-color: var(--bg-primary);
 }
 
 .container {
@@ -47,7 +166,7 @@ body {
 
 /* Header Styles */
 header {
-    background: white;
+    background: var(--bg-secondary);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -77,7 +196,8 @@ header h1 {
     font-weight: 500;
 }
 
-.github-link {
+.github-link,
+.donation-link {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -91,9 +211,13 @@ header h1 {
     color: var(--primary-color);
 }
 
+.donation-link:hover {
+    color: var(--warning-color);
+}
+
 /* Filter Styles */
 .filters {
-    background: white;
+    background: var(--bg-secondary);
     padding: 20px;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -157,18 +281,35 @@ header h1 {
 }
 
 .btn-secondary {
-    background: white;
+    background: var(--bg-secondary);
     color: var(--text-primary);
     border: 2px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-    background: #f8f9fa;
+    background: var(--hover-bg);
+    border-color: var(--primary-color);
+}
+
+#themeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    padding: 10px;
+}
+
+#themeToggle svg {
+    transition: transform 0.2s ease;
+}
+
+#themeToggle:hover svg {
+    transform: rotate(180deg);
 }
 
 /* Legend Styles */
 .legend {
-    background: white;
+    background: var(--bg-secondary);
     padding: 25px;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -179,6 +320,41 @@ header h1 {
     font-size: 1.3em;
     margin-bottom: 20px;
     color: var(--primary-color);
+}
+
+.legend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.legend-header:hover {
+    color: var(--primary-hover);
+}
+
+.collapse-indicator {
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.legend.collapsed .collapse-indicator {
+    transform: rotate(-90deg);
+}
+
+.legend-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.legend.collapsed .legend-content {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
 }
 
 .legend-grid {
@@ -211,7 +387,7 @@ header h1 {
 
 /* Stats Bar */
 .stats {
-    background: white;
+    background: var(--bg-secondary);
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -232,7 +408,7 @@ header h1 {
 
 /* Table Styles */
 .table-container {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: 10px;
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -311,7 +487,7 @@ tr.free-char:hover {
 .u10 { color: var(--danger-color); font-weight: 600; }
 .a1, .a2, .a3, .a4 { color: var(--primary-color); }
 .a4 { font-weight: 600; }
-.shard { color: var(--text-muted); background: #f0f0f0; }
+.shard { color: var(--text-muted); background: var(--hover-bg); }
 .keep { color: var(--success-color); font-weight: 600; }
 .no-shard { color: var(--warning-color); text-decoration: line-through; }
 
@@ -324,7 +500,7 @@ tr.free-char:hover {
 
 /* Footer */
 footer {
-    background: white;
+    background: var(--bg-secondary);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--shadow);

@@ -6,8 +6,10 @@ let sortDirection = 'asc';
 
 // Load character data on page load
 document.addEventListener('DOMContentLoaded', async function() {
+    initializeTheme();
     await loadCharacterData();
     setupEventListeners();
+    setupLegendCollapse();
 });
 
 // Load and display character data
@@ -104,6 +106,9 @@ function setupEventListeners() {
     document.getElementById('a4Filter').addEventListener('change', filterTable);
     document.getElementById('ultFilter').addEventListener('change', filterTable);
     document.getElementById('freeFilter').addEventListener('change', filterTable);
+    
+    // Theme toggle button
+    document.getElementById('themeToggle').addEventListener('click', toggleTheme);
     
     // Reset button
     document.getElementById('resetFilters').addEventListener('click', resetFilters);
@@ -256,4 +261,66 @@ function exportToCSV() {
     a.download = `cotc_awakening_guide_${new Date().toISOString().split('T')[0]}.csv`;
     a.click();
     window.URL.revokeObjectURL(url);
+}
+
+// Theme management functions
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+        document.body.className = savedTheme;
+    } else if (prefersDark) {
+        document.body.className = 'dark-theme';
+    } else {
+        document.body.className = 'light-theme';
+    }
+}
+
+function toggleTheme() {
+    const body = document.body;
+    const currentTheme = body.className;
+    const newTheme = currentTheme === 'dark-theme' ? 'light-theme' : 'dark-theme';
+    
+    body.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+}
+
+// Legend collapse functionality
+function setupLegendCollapse() {
+    const legend = document.getElementById('legend');
+    const legendHeader = document.getElementById('legendHeader');
+    let lastScrollTop = 0;
+    let isManuallyToggled = false;
+    
+    // Manual toggle on click
+    legendHeader.addEventListener('click', function() {
+        legend.classList.toggle('collapsed');
+        isManuallyToggled = true;
+        
+        // Reset manual toggle after some time
+        setTimeout(() => {
+            isManuallyToggled = false;
+        }, 5000);
+    });
+    
+    // Auto-collapse on scroll
+    window.addEventListener('scroll', function() {
+        if (isManuallyToggled) return;
+        
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const legendRect = legend.getBoundingClientRect();
+        const statsRect = document.getElementById('stats').getBoundingClientRect();
+        
+        // Auto-collapse when scrolling down past the stats section
+        if (scrollTop > lastScrollTop && statsRect.top < window.innerHeight / 2) {
+            legend.classList.add('collapsed');
+        }
+        // Auto-expand when scrolling back up to the top
+        else if (scrollTop < lastScrollTop && scrollTop < 100) {
+            legend.classList.remove('collapsed');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
 }

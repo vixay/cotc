@@ -22,8 +22,45 @@
                     </svg>
                     Contribute
                 </a>
+                <a href="https://coff.ee/vixay" class="donation-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20,3H4V2A1,1 0 0,0 3,1A1,1 0 0,0 2,2V21A1,1 0 0,0 3,22A1,1 0 0,0 4,21V20H20A2,2 0 0,0 22,18V5A2,2 0 0,0 20,3M20,18H4V5H20V18M7,6V8H17V6H7M7,10V12H17V10H7M7,14V16H17V14H7Z"/>
+                    </svg>
+                    Buy me a coffee
+                </a>
             </div>
         </header>
+
+        <div class="legend" id="legend">
+            <h3 id="legendHeader" class="legend-header">
+                How to Use This Guide
+                <span class="collapse-indicator">▼</span>
+            </h3>
+            <div class="legend-content" id="legendContent">
+                <div class="legend-grid">
+                    <div class="legend-section">
+                        <h4>Awakening Stones</h4>
+                        <div class="legend-item"><span class="legend-key">AS1-AS5:</span> Awakening Stones 1 through 5</div>
+                        <div class="legend-item"><span class="legend-key">U10:</span> Ultimate Level 10 (highest priority)</div>
+                        <div class="legend-item"><span class="legend-key">A1-A4:</span> Awakening stages 1-4</div>
+                        <div class="legend-item"><span class="legend-key">Shard:</span> Exchange for awakening shards</div>
+                        <div class="legend-item"><span class="legend-key">Keep:</span> Save for future use</div>
+                    </div>
+                    <div class="legend-section">
+                        <h4>Priority Guidelines</h4>
+                        <div class="legend-item">• If L10: Use stones for Ultimate first</div>
+                        <div class="legend-item">• If L9 or lower: Get A1-A4 first</div>
+                        <div class="legend-item">• 6 shards = 6000 fragments = 1 chosen dupe</div>
+                        <div class="legend-item free-note">• Free characters cannot be sharded!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            <div class="stat-item">Total Characters: <span id="totalChars">0</span></div>
+            <div class="stat-item">Filtered: <span id="filteredChars">0</span></div>
+        </div>
 
         <nav class="filters">
             <div class="filter-group">
@@ -54,36 +91,15 @@
                 </select>
             </div>
             <div class="action-group">
+                <button id="themeToggle" class="btn btn-secondary" title="Toggle theme">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                    </svg>
+                </button>
                 <button id="resetFilters" class="btn btn-secondary">Reset</button>
                 <button id="exportCSV" class="btn btn-primary">Export CSV</button>
             </div>
         </nav>
-
-        <div class="legend" id="legend">
-            <h3>How to Use This Guide</h3>
-            <div class="legend-grid">
-                <div class="legend-section">
-                    <h4>Awakening Stones</h4>
-                    <div class="legend-item"><span class="legend-key">AS1-AS5:</span> Awakening Stones 1 through 5</div>
-                    <div class="legend-item"><span class="legend-key">U10:</span> Ultimate Level 10 (highest priority)</div>
-                    <div class="legend-item"><span class="legend-key">A1-A4:</span> Awakening stages 1-4</div>
-                    <div class="legend-item"><span class="legend-key">Shard:</span> Exchange for awakening shards</div>
-                    <div class="legend-item"><span class="legend-key">Keep:</span> Save for future use</div>
-                </div>
-                <div class="legend-section">
-                    <h4>Priority Guidelines</h4>
-                    <div class="legend-item">• If L10: Use stones for Ultimate first</div>
-                    <div class="legend-item">• If L9 or lower: Get A1-A4 first</div>
-                    <div class="legend-item">• 6 shards = 6000 fragments = 1 chosen dupe</div>
-                    <div class="legend-item free-note">• Free characters cannot be sharded!</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="stats" id="stats">
-            <div class="stat-item">Total Characters: <span id="totalChars">0</span></div>
-            <div class="stat-item">Filtered: <span id="filteredChars">0</span></div>
-        </div>
 
         <div class="table-container">
             <table id="characterTable">
