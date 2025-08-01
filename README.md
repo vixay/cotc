@@ -12,6 +12,11 @@ This guide helps COTC players make informed decisions about using their awakenin
 - **Awakening 1-4 (A1-A4)**: Stat boosts and exclusive accessories
 - **Sharding**: Converting unwanted stones to awakening shards
 
+### Data Coverage
+- **244 Total Characters** including all Global/EN releases, EX variants, and collaborations
+- **Enhanced Data Available** with complete stats, skills, and metadata
+- **Current through January 2025** with latest characters and balance updates
+
 ## Features
 
 - 📊 Complete database of all Global/EN characters
@@ -90,6 +95,7 @@ Characters marked as "Free" (obtained through story/events) have stones that **c
 
 ## Data Structure
 
+### Current Production Data
 All character data is stored in [`data/characters.json`](data/characters.json). Each character entry includes:
 
 ```json
@@ -109,6 +115,18 @@ All character data is stored in [`data/characters.json`](data/characters.json). 
   "notes": "Description of recommendation"
 }
 ```
+
+### Enhanced Data Available
+Complete character data with stats, skills, and metadata is available in:
+- [`data/characters_enhanced_v2.json`](data/characters_enhanced_v2.json) - 244 characters with full details
+- [`data/characters_jp.json`](data/characters_jp.json) - JP-specific tier ratings and release dates
+
+The enhanced data includes:
+- Character stats (HP, SP, Attack, Defense, Speed, Critical)
+- Star ratings (3★, 4★, 5★) and job classifications
+- Weapon types and elemental affinities
+- Skill descriptions from individual character markdown files
+- Release dates and availability information
 
 ## Contributing
 

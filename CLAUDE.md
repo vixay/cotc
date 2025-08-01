@@ -99,7 +99,7 @@ filteredCharacters = allCharacters.filter(char => {
 
 ## Data Structure
 
-### Character Schema
+### Character Schema (v1 - Current Production)
 ```json
 {
   "id": "character_id",           // Unique lowercase identifier
@@ -114,6 +114,46 @@ filteredCharacters = allCharacters.filter(char => {
   },
   "notes": "Brief recommendation explanation",
   "tags": ["optional", "categorization", "array"]
+}
+```
+
+### Enhanced Character Schema (v2 - Available)
+```json
+{
+  "id": "character_id",
+  "name": "Display Name",
+  "isFree": boolean,
+  "starRating": 3|4|5,           // Character rarity
+  "job": "Warrior"|"Hunter"|"Cleric"|"Scholar"|"Dancer"|"Merchant"|"Apothecary"|"Thief",
+  "influence": "Power"|"Fame"|"Wealth",
+  "continent": "Orsterra"|"Solistia"|"NieR Universe"|etc,
+  "location": "Town/Region name",
+  "obtainedFrom": "Chance Encounters"|"Limited Guidance"|etc,
+  "weapons": ["Sword", "Axe", etc],
+  "elements": ["Fire", "Ice", "Lightning", "Wind", "Light", "Dark"],
+  "weaknesses": ["Element", "Weapon"],
+  "stats": {
+    "base": { "hp": 2706, "sp": 504, "pAtk": 240, "pDef": 230, 
+              "eAtk": 442, "eDef": 332, "crit": 247, "spd": 392 },
+    "max": { /* Level 120 stats */ }
+  },
+  "tierRatings": {
+    "gl": { "tier": "S+", "score": 9.5 }
+  },
+  "glReleaseDate": "2022-07-27",
+  "ultPriority": "L10",
+  "ultPriorityGroup": "top",
+  "a4Tier": "S+",
+  "stones": { /* awakening stone priorities */ },
+  "notes": "Top priority U10 - Best buffer for EN",
+  "tags": ["buffer", "top-tier"],
+  "skills": {
+    "passive": ["Quick Wit", "SP Restoration"],
+    "battle": [],
+    "ultimate": "Ultimate Name"
+  },
+  "blessingOfLantern": { "available": true, "dateGL": "2025-01-16" },
+  "classBreakthrough": { "available": true, "dateGL": "2025-07-24" }
 }
 ```
 
@@ -134,9 +174,19 @@ The site defaults to **dark theme** but respects OS preferences:
 
 ## Important Files for Character Updates
 
-- `data/characters.json` - All character data (primary edit target)
-- `data/characters_enhanced.json` - Enhanced character data with detailed metadata
+### Data Files
+- `data/characters.json` - Current production data (122 characters, v1 schema)
+- `data/characters_enhanced_v2.json` - Complete enhanced data (244 characters, v2 schema)
+- `data/characters_jp.json` - JP-specific tier and release data
+- `data/Character List *.csv` - Source CSV with comprehensive character stats
+- `data/Character Markdown/` - Individual character skill descriptions
+
+### Scripts & Helpers
+- `helpers/merge_character_data.py` - Merges CSV + Markdown into enhanced JSON
 - `helpers/validate.js` - Data validation script
+- `helpers/temp/` - Archive of old JSON files
+
+### Documentation
 - `docs/CONTRIBUTING.md` - Contributor guidelines
 - `.github/workflows/validate.yml` - Automated validation on PRs
 

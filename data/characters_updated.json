@@ -1,9 +1,13 @@
 {
   "version": "1.3.0",
-  "lastUpdated": "2025-07-04",
+  "lastUpdated": "2025-08-02",
   "metadata": {
     "dataSource": "Reddit tier lists, Discord community, dotgg.gg",
-    "gameVersion": "Global/EN"
+    "gameVersion": "Global/EN",
+    "lastCleaned": "2025-08-02",
+    "charactersRemoved": 0,
+    "lastAssessmentCleaning": "2025-08-02",
+    "assessmentCharactersRemoved": 0
   },
   "characters": [
     {
