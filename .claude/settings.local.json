@@ -21,7 +21,9 @@
       "Bash(mv:*)",
       "Bash(true)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)"
     ],
     "deny": []
   }

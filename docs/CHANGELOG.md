@@ -4,6 +4,37 @@ All notable changes to the COTC Awakening Stone Guide will be documented in this
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [Unreleased]
+
+### Added
+- **Table Grouping Feature**
+  - New dropdown to group characters by A4 Tier or Ultimate Priority
+  - Sticky group headers that remain visible while scrolling
+  - Visual separation between groups with borders
+  - Groups sorted in logical order (S+ → S → A → B → C → D for A4, L10 → L9 → L1 for Ultimate)
+
+### Changed
+- **Table Header Improvements**
+  - Made table headers sticky to stay visible when scrolling
+  - Applied to entire `<thead>` element for better browser compatibility
+  - Added subtle shadow for visual separation
+- **Dark Mode Enhancements**
+  - Significantly improved tier color visibility in dark mode
+  - Changed tier backgrounds from #5a3a3a range to #8b4444 range for better contrast
+  - Removed background highlighting for C and D tiers
+  - Fixed S+ tier highlighting by updating class name handling
+- **Visual Refinements**
+  - Changed owned row highlighting to subtle background instead of intrusive gold
+  - Improved text readability with consistent text shadows on hover
+  - Fixed shard cell backgrounds to respect row states
+  - Enhanced contrast for all text elements in owned rows
+
+### Fixed
+- Fixed S+ tier not showing background color (changed class from `tier-s\+` to `tier-s-plus`)
+- Fixed tier column colors overriding row hover states
+- Fixed poor text contrast for shard/keep/A1-A4 text in owned rows
+- Fixed inconsistent text shadow application on hover
+
 ## [1.3.0] - 2025-07-04
 
 ### Added

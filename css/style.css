@@ -42,12 +42,12 @@
     --warning-color: #ff9800;
     --info-color: #2196f3;
     
-    --tier-s-plus: #4a3a3a;
-    --tier-s: #4a4a3a;
-    --tier-a: #4a4a3a;
-    --tier-b: #3a4a3a;
-    --tier-c: #3a4a3a;
-    --tier-d: #3a4a4a;
+    --tier-s-plus: #8b4444;
+    --tier-s: #8b6444;
+    --tier-a: #8b8b44;
+    --tier-b: #648b44;
+    --tier-c: #448b44;
+    --tier-d: #448b64;
     
     --free-bg: #2a3a4a;
     --hover-bg: #3a4a5a;
@@ -99,12 +99,12 @@ body.dark-theme {
     --warning-color: #ff9800;
     --info-color: #2196f3;
     
-    --tier-s-plus: #4a3a3a;
-    --tier-s: #4a4a3a;
-    --tier-a: #4a4a3a;
-    --tier-b: #3a4a3a;
-    --tier-c: #3a4a3a;
-    --tier-d: #3a4a4a;
+    --tier-s-plus: #8b4444;
+    --tier-s: #8b6444;
+    --tier-a: #8b8b44;
+    --tier-b: #648b44;
+    --tier-c: #448b44;
+    --tier-d: #448b64;
     
     --free-bg: #2a3a4a;
     --hover-bg: #3a4a5a;
@@ -418,12 +418,18 @@ header h1 {
     background: var(--bg-secondary);
     border-radius: 10px;
     box-shadow: var(--shadow);
-    overflow: hidden;
+    overflow: visible;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 th {
@@ -432,9 +438,8 @@ th {
     padding: 15px;
     text-align: left;
     font-weight: 600;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 th.sortable {
@@ -483,20 +488,58 @@ tr.free-char:hover {
 }
 
 /* Tier Colors */
-.tier-s\+ { background: var(--tier-s-plus); font-weight: 600; }
-.tier-s { background: var(--tier-s); }
+.tier-s-plus { background: var(--tier-s-plus) !important; font-weight: 600; }
+.tier-s { background: var(--tier-s); font-weight: 600; }
 .tier-a { background: var(--tier-a); }
 .tier-b { background: var(--tier-b); }
-.tier-c { background: var(--tier-c); }
-.tier-d { background: var(--tier-d); }
+.tier-c { background: transparent; }
+.tier-d { background: transparent; }
+
+/* Tier colors on hover - blend with hover background */
+tr:hover .tier-s-plus { background: var(--tier-s-plus); opacity: 0.8; }
+tr:hover .tier-s { background: var(--tier-s); opacity: 0.8; }
+tr:hover .tier-a { background: var(--tier-a); opacity: 0.8; }
+tr:hover .tier-b { background: var(--tier-b); opacity: 0.8; }
 
 /* Stone Priority Colors */
 .u10 { color: var(--danger-color); font-weight: 600; }
 .a1, .a2, .a3, .a4 { color: var(--primary-color); }
 .a4 { font-weight: 600; }
-.shard { color: var(--text-muted); background: var(--hover-bg); }
+.shard { color: var(--text-primary); font-weight: 500; opacity: 0.8; }
 .keep { color: var(--success-color); font-weight: 600; }
 .no-shard { color: var(--warning-color); text-decoration: line-through; }
+
+
+/* Text shadows for better readability on hover */
+tr:hover td {
+    text-shadow: 0 0 2px var(--bg-secondary), 0 0 4px var(--bg-secondary);
+}
+
+/* Group headers */
+.group-header {
+    background: var(--primary-color) !important;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 56px; /* Height of table header */
+    z-index: 50;
+}
+
+.group-header:hover {
+    background: var(--primary-color) !important;
+}
+
+.group-title {
+    padding: 12px 15px !important;
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Add spacing between groups */
+.group-header + .character-row {
+    border-top: 3px solid var(--primary-color);
+}
 
 /* Ownership and Level Controls */
 .ownership-header {
@@ -527,7 +570,13 @@ tr.free-char:hover {
 }
 
 .character-row.owned {
-    background-color: var(--tier-a);
+    background-color: var(--hover-bg);
+    opacity: 1;
+}
+
+.character-row.owned:hover {
+    background-color: var(--hover-bg);
+    filter: brightness(1.1);
 }
 
 .character-row.not-owned {

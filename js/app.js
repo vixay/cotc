@@ -55,7 +55,12 @@ function renderTable() {
         return;
     }
     
-    filteredCharacters.forEach(char => {
+    const groupBy = document.getElementById('groupByFilter').value;
+    
+    if (groupBy) {
+        renderGroupedTable(groupBy);
+    } else {
+        filteredCharacters.forEach(char => {
         const row = document.createElement('tr');
         const userData = userCharacterData[char.id] || {};
         const isOwned = userData.owned || false;
@@ -75,7 +80,7 @@ function renderTable() {
                        ${isOwned ? 'checked' : ''}>
             </td>
             <td><strong>${char.name}</strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
-            <td class="tier-${(char.a4Tier || 'none').toLowerCase().replace('+', '\\+')}">${char.a4Tier || 'Not Listed'}</td>
+            <td class="tier-${(char.a4Tier || 'none').toLowerCase().replace('+', '-plus')}">${char.a4Tier || 'Not Listed'}</td>
             <td class="${getUltClass(char.ultPriority)}">${char.ultPriority}</td>
             <td class="${getStoneClass(char.stones.AS1)}">${char.stones.AS1}</td>
             <td class="${getStoneClass(char.stones.AS2)}">${char.stones.AS2}</td>
@@ -101,9 +106,95 @@ function renderTable() {
         
         tbody.appendChild(row);
     });
+    }
     
     // Setup event listeners for new controls
     setupCharacterControlListeners();
+}
+
+// Render grouped table
+function renderGroupedTable(groupBy) {
+    const tbody = document.getElementById('tableBody');
+    
+    // Group characters
+    const groups = {};
+    filteredCharacters.forEach(char => {
+        const key = char[groupBy] || 'Not Listed';
+        if (!groups[key]) {
+            groups[key] = [];
+        }
+        groups[key].push(char);
+    });
+    
+    // Define sort order for groups
+    const a4Order = ['S+', 'S', 'A', 'B', 'C', 'D', 'Not Listed'];
+    const ultOrder = ['L10', 'L10 First', 'A1, L10', 'A4, L10', 'L9', 'L1', 'Not Listed'];
+    
+    const sortedKeys = Object.keys(groups).sort((a, b) => {
+        if (groupBy === 'a4Tier') {
+            return a4Order.indexOf(a) - a4Order.indexOf(b);
+        } else if (groupBy === 'ultPriority') {
+            return ultOrder.indexOf(a) - ultOrder.indexOf(b);
+        }
+        return a.localeCompare(b);
+    });
+    
+    // Render each group
+    sortedKeys.forEach(groupKey => {
+        // Add group header
+        const headerRow = document.createElement('tr');
+        headerRow.classList.add('group-header');
+        headerRow.innerHTML = `<td colspan="12" class="group-title">${groupKey}</td>`;
+        tbody.appendChild(headerRow);
+        
+        // Render characters in group
+        groups[groupKey].forEach(char => {
+            const row = document.createElement('tr');
+            const userData = userCharacterData[char.id] || {};
+            const isOwned = userData.owned || false;
+            
+            if (char.isFree) row.classList.add('free-char');
+            row.classList.add('character-row');
+            if (isOwned) {
+                row.classList.add('owned');
+            } else {
+                row.classList.add('not-owned');
+            }
+            
+            row.innerHTML = `
+                <td class="ownership-header">
+                    <input type="checkbox" class="ownership-checkbox" 
+                           data-char-id="${char.id}" 
+                           ${isOwned ? 'checked' : ''}>
+                </td>
+                <td><strong>${char.name}</strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
+                <td class="tier-${(char.a4Tier || 'none').toLowerCase().replace('+', '-plus')}">${char.a4Tier || 'Not Listed'}</td>
+                <td class="${getUltClass(char.ultPriority)}">${char.ultPriority}</td>
+                <td class="${getStoneClass(char.stones.AS1)}">${char.stones.AS1}</td>
+                <td class="${getStoneClass(char.stones.AS2)}">${char.stones.AS2}</td>
+                <td class="${getStoneClass(char.stones.AS3)}">${char.stones.AS3}</td>
+                <td class="${getStoneClass(char.stones.AS4)}">${char.stones.AS4}</td>
+                <td class="${getStoneClass(char.stones.AS5)}">${char.stones.AS5}</td>
+                <td>
+                    <input type="number" class="level-input awaken-level" 
+                           min="0" max="4" 
+                           value="${userData.awakenLevel || 0}" 
+                           data-char-id="${char.id}" 
+                           ${!isOwned ? 'disabled' : ''}>
+                </td>
+                <td>
+                    <input type="number" class="level-input ult-level" 
+                           min="1" max="10" 
+                           value="${userData.ultLevel || 1}" 
+                           data-char-id="${char.id}" 
+                           ${!isOwned ? 'disabled' : ''}>
+                </td>
+                <td>${char.notes}</td>
+            `;
+            
+            tbody.appendChild(row);
+        });
+    });
 }
 
 // Get CSS class for ultimate priority
@@ -141,6 +232,7 @@ function setupEventListeners() {
     document.getElementById('ultFilter').addEventListener('change', filterTable);
     document.getElementById('freeFilter').addEventListener('change', filterTable);
     document.getElementById('ownershipFilter').addEventListener('change', filterTable);
+    document.getElementById('groupByFilter').addEventListener('change', filterTable);
     
     // Theme toggle button
     document.getElementById('themeToggle').addEventListener('click', toggleTheme);

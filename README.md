@@ -21,6 +21,10 @@ This guide helps COTC players make informed decisions about using their awakenin
 - 🏷️ Free character identification
 - 📈 Sortable columns
 - 🎯 Clear priority recommendations
+- 🌙 Dark/Light theme support
+- 📌 Sticky table headers for easy navigation
+- 👥 Group by A4 Tier or Ultimate Priority
+- ✅ Track owned characters and their levels
 
 ## Quick Start Guide
 
