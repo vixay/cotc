@@ -136,7 +136,7 @@
                         <th>AS5</th>
                         <th>Awaken</th>
                         <th>Ult</th>
-                        <th>Notes</th>
+                        <th data-sort="notes" class="sortable">Notes <span class="sort-indicator"></span></th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
@@ -210,7 +210,36 @@
         </footer>
     </div>
 
+    <!-- Character Details Modal -->
+    <div id="characterModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h2 id="modalCharacterName">Character Details</h2>
+                    <div class="modal-subtitle">
+                        <span id="modalCharacterMeta">Loading...</span>
+                    </div>
+                </div>
+                <button id="closeModal" class="modal-close" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-loading" id="modalLoading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading character details...</p>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Character details will be inserted here -->
+                </div>
+            </div>  
+        </div>
+    </div>
+
     <script src="js/app.js"></script>
     <script src="js/filters.js"></script>
+    <script src="js/character-modal.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 // Load and display character data
 async function loadCharacterData() {
     try {
-        const response = await fetch('data/characters.json');
+        const response = await fetch('data/characters_enhanced_v2.json');
         const data = await response.json();
         
         // Update version and date
@@ -79,7 +79,7 @@ function renderTable() {
                        data-char-id="${char.id}" 
                        ${isOwned ? 'checked' : ''}>
             </td>
-            <td><strong>${char.name}</strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
+            <td><strong><a href="#" class="character-name-link" data-char-id="${char.id}">${char.name}</a></strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
             <td class="tier-${(char.a4Tier || 'none').toLowerCase().replace('+', '-plus')}">${char.a4Tier || 'Not Listed'}</td>
             <td class="${getUltClass(char.ultPriority)}">${char.ultPriority}</td>
             <td class="${getStoneClass(char.stones.AS1)}">${char.stones.AS1}</td>
@@ -167,7 +167,7 @@ function renderGroupedTable(groupBy) {
                            data-char-id="${char.id}" 
                            ${isOwned ? 'checked' : ''}>
                 </td>
-                <td><strong>${char.name}</strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
+                <td><strong><a href="#" class="character-name-link" data-char-id="${char.id}">${char.name}</a></strong>${char.isFree ? ' <em>(Free)</em>' : ''}</td>
                 <td class="tier-${(char.a4Tier || 'none').toLowerCase().replace('+', '-plus')}">${char.a4Tier || 'Not Listed'}</td>
                 <td class="${getUltClass(char.ultPriority)}">${char.ultPriority}</td>
                 <td class="${getStoneClass(char.stones.AS1)}">${char.stones.AS1}</td>
@@ -246,6 +246,18 @@ function setupEventListeners() {
     // Sort headers
     document.querySelectorAll('th[data-sort]').forEach(th => {
         th.addEventListener('click', () => sortTable(th.dataset.sort));
+    });
+    
+    // Character name clicks (delegated event listener)
+    document.getElementById('tableBody').addEventListener('click', function(e) {
+        if (e.target.classList.contains('character-name-link')) {
+            e.preventDefault();
+            const charId = e.target.dataset.charId;
+            const character = allCharacters.find(c => c.id === charId);
+            if (character && window.characterModal) {
+                window.characterModal.open(character);
+            }
+        }
     });
 }
 
@@ -349,6 +361,19 @@ function sortTable(column) {
             };
             aVal = ultOrder[aVal] || 99;
             bVal = ultOrder[bVal] || 99;
+        }
+        
+        // Special handling for notes sorting (characters with notes first)
+        if (column === 'notes') {
+            const aHasNotes = aVal && aVal.trim().length > 0;
+            const bHasNotes = bVal && bVal.trim().length > 0;
+            
+            // If one has notes and other doesn't, prioritize the one with notes
+            if (aHasNotes && !bHasNotes) return sortDirection === 'asc' ? -1 : 1;
+            if (!aHasNotes && bHasNotes) return sortDirection === 'asc' ? 1 : -1;
+            
+            // If both have notes or both don't have notes, sort alphabetically by notes content
+            // For empty notes, they will be handled by the string comparison below
         }
         
         if (typeof aVal === 'string') {
