@@ -4,6 +4,19 @@ A community-maintained guide for Octopath Traveler: Champions of the Continent (
 
 🌐 **Live Site**: https://vixay.github.io/cotc/
 
+## What's New in v2.0.0
+
+🎉 **Major Release** - Complete overhaul with enhanced features and improved user experience!
+
+- **🎨 Visual Tier Grouping**: Characters auto-grouped by tier with collapsible headers
+- **👁️ Column Controls**: Show/hide different information groups as needed  
+- **📊 Character Details**: Click any name for comprehensive stats and skills
+- **🏆 GL Tier Ratings**: Official Global tier rankings with scores
+- **⭐ Enhanced Info**: Star ratings, job types, roles, and smart stone display
+- **💾 Smart Persistence**: All your preferences saved automatically
+
+[View Full Changelog](docs/CHANGELOG.md#200---2025-08-02)
+
 ## Overview
 
 This guide helps COTC players make informed decisions about using their awakening stones. Each character can use up to 5 awakening stones for various benefits:
@@ -19,27 +32,41 @@ This guide helps COTC players make informed decisions about using their awakenin
 
 ## Features
 
-- 📊 Complete database of all Global/EN characters
+### Core Features
+- 📊 Complete database of 244+ Global/EN characters
 - 🔍 Real-time search and filtering
 - 📱 Mobile-responsive design
 - 💾 CSV export functionality
 - 🏷️ Free character identification
-- 📈 Sortable columns
+- 📈 Sortable columns with tier-aware sorting
 - 🎯 Clear priority recommendations
 - 🌙 Dark/Light theme support
 - 📌 Sticky table headers for easy navigation
-- 👥 Group by A4 Tier or Ultimate Priority
-- ✅ Track owned characters and their levels
+
+### Enhanced Features (New!)
+- 🎨 **Visual Tier Grouping**: Characters automatically grouped by tier with collapsible headers
+- 👁️ **Column Visibility Controls**: Show/hide column groups (Basic Info, Tiers, Ownership, Awakening Stones, Combat, Acquisition, Notes)
+- 📊 **Advanced Character Details**: Click any character name for detailed stats, skills, and information
+- 🏆 **GL Tier Ratings**: Overall tier rankings based on Global meta with scores
+- ⭐ **Star Rating Display**: See character rarity (3★, 4★, 5★) and job classifications
+- 🎭 **Role Information**: Primary/secondary role classifications for each character
+- 👥 **Ownership Tracking**: Track owned characters and their awakening/ultimate levels
+- 💎 **Smart Stone Display**: Awakening stones show as N/A for 3★/4★ characters
+- 🔄 **Expand/Collapse All**: Quickly expand or collapse all tier groups
+- 🌍 **Acquisition Information**: See continent, acquisition method, and release dates
+- 💾 **Persistent Settings**: All preferences saved to localStorage
 
 ## Quick Start Guide
 
 ### For Users
 
 Visit https://vixay.github.io/cotc/ to:
-- Search for specific characters
-- Filter by A4 tier or ultimate priority
-- Export data for your own analysis
-- View recommendations for each awakening stone
+- **Search & Filter**: Find characters by name, tier, priority, or free/gacha status
+- **Visual Grouping**: Characters automatically organized by tier with expand/collapse controls
+- **Column Control**: Show/hide different information groups based on your needs
+- **Character Details**: Click any character name for comprehensive stats and skill information
+- **Track Progress**: Mark owned characters and track their awakening/ultimate levels
+- **Export Data**: Download filtered results as CSV for your own analysis
 
 ### For Contributors
 
@@ -120,13 +147,15 @@ All character data is stored in [`data/characters.json`](data/characters.json). 
 Complete character data with stats, skills, and metadata is available in:
 - [`data/characters_enhanced_v2.json`](data/characters_enhanced_v2.json) - 244 characters with full details
 - [`data/characters_jp.json`](data/characters_jp.json) - JP-specific tier ratings and release dates
+- [`data/Character Markdown/`](data/Character%20Markdown/) - Individual character skill descriptions and details
 
 The enhanced data includes:
-- Character stats (HP, SP, Attack, Defense, Speed, Critical)
-- Star ratings (3★, 4★, 5★) and job classifications
-- Weapon types and elemental affinities
-- Skill descriptions from individual character markdown files
-- Release dates and availability information
+- **Character Stats**: HP, SP, Attack, Defense, Speed, Critical (base and max levels)
+- **Classifications**: Star ratings (3★, 4★, 5★), job types, primary/secondary roles
+- **Combat Data**: Weapon types, elemental affinities, and weaknesses
+- **Meta Information**: GL tier ratings with scores, release dates, availability
+- **Skill Details**: Complete skill descriptions from markdown files with icons
+- **Special Features**: Blessing of Lantern, Class Breakthrough availability
 
 ## Contributing
 

@@ -6,34 +6,99 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-08-02
+
 ### Added
-- **Table Grouping Feature**
-  - New dropdown to group characters by A4 Tier or Ultimate Priority
-  - Sticky group headers that remain visible while scrolling
-  - Visual separation between groups with borders
-  - Groups sorted in logical order (S+ → S → A → B → C → D for A4, L10 → L9 → L1 for Ultimate)
+- **🎨 Visual Tier Grouping System**
+  - Characters automatically grouped by tier with collapsible headers
+  - Always-visible visual group headers showing tier and character count
+  - Expand/collapse functionality for each tier group
+  - "Expand All" / "Collapse All" toggle for quick group management
+  - Intelligent tier ordering (S+ → S → A → B → C → D → Not Listed)
+  - Group state persistence using localStorage
+
+- **👁️ Advanced Column Visibility Controls**
+  - Dynamic column group toggles: Basic Info, Tiers, Ownership, Awakening Stones, Combat, Notes
+  - CSS-based column hiding for better performance
+  - Real-time toggle with visual feedback (✓ for visible, − for hidden)
+  - Column visibility state persistence using localStorage
+  - Always-visible character name column for consistent navigation
+
+- **📊 Enhanced Character Details Modal**
+  - Click any character name to view comprehensive details
+  - Complete character stats (HP, SP, Attack, Defense, Critical, Speed)
+  - Weapon types and elemental affinities with icons
+  - Skill descriptions with images and metadata
+  - Comprehensive character mapping covering all 244+ characters
+  - Dynamic markdown content processing
+  - Mobile-responsive modal design
+
+- **🏆 GL Tier Rating System**
+  - Overall tier rankings based on Global meta analysis
+  - Tier scores displayed in individual character cells (e.g., "S+ (9.5)")
+  - Clean tier group headers without score clutter
+  - Separated from A4 tier ratings for clearer categorization
+
+- **⭐ Enhanced Character Information**
+  - Star rating display (3★, 4★, 5★) for character rarity
+  - Job classification (Hunter, Warrior, Cleric, Scholar, etc.)
+  - Primary/secondary role information (DPS, Buffer, etc.)
+  - Smart awakening stone display (N/A for 3★/4★ characters)
+  - Enhanced free character identification
+
+- **🔧 Technical Improvements**
+  - Complete migration to enhanced v2 character data (244 characters)
+  - Advanced sorting within tier groups
+  - Enhanced event handling and DOM management
+  - Robust error handling and null safety checks
+  - Performance optimizations for large datasets
 
 ### Changed
-- **Table Header Improvements**
-  - Made table headers sticky to stay visible when scrolling
-  - Applied to entire `<thead>` element for better browser compatibility
-  - Added subtle shadow for visual separation
-- **Dark Mode Enhancements**
-  - Significantly improved tier color visibility in dark mode
-  - Changed tier backgrounds from #5a3a3a range to #8b4444 range for better contrast
-  - Removed background highlighting for C and D tiers
-  - Fixed S+ tier highlighting by updating class name handling
-- **Visual Refinements**
-  - Changed owned row highlighting to subtle background instead of intrusive gold
-  - Improved text readability with consistent text shadows on hover
-  - Fixed shard cell backgrounds to respect row states
-  - Enhanced contrast for all text elements in owned rows
+- **📋 Completely Redesigned Table Layout**
+  - Reorganized columns with logical grouping
+  - Ownership columns moved adjacent to each other
+  - Overall Tier moved to tiers group for better organization
+  - AS1-AS5 made into proper column group
+  - Character name always remains visible
+
+- **🎯 Enhanced Sorting System**
+  - Tier-aware sorting that respects tier hierarchies
+  - Sorting works within grouped views
+  - Notes sorting prioritizes characters with notes
+  - Enhanced sort indicators and visual feedback
+
+- **💾 Improved State Management**
+  - All preferences persist across sessions
+  - Enhanced localStorage handling with fallbacks
+  - Comprehensive settings restoration
+  - Reset button restores complete default state
+
+- **🎨 Visual and UX Improvements**
+  - Default view now uses visual tier grouping
+  - Enhanced theme toggle compatibility
+  - Improved mobile responsiveness
+  - Better accessibility with proper ARIA labels
+  - Consistent design language across all features
 
 ### Fixed
-- Fixed S+ tier not showing background color (changed class from `tier-s\+` to `tier-s-plus`)
-- Fixed tier column colors overriding row hover states
-- Fixed poor text contrast for shard/keep/A1-A4 text in owned rows
-- Fixed inconsistent text shadow application on hover
+- **🐛 Critical Bug Fixes**
+  - Fixed character modal not loading for many characters (including Shana)
+  - Fixed theme toggle not working with visual grouping system
+  - Fixed missing CSS helper functions in visual grouping
+  - Fixed column visibility controls not functioning
+  - Fixed sorting breaking when visual grouping was enabled
+
+- **🔧 Data and Display Issues**
+  - Fixed overall tier calculation to use only GL rankings
+  - Fixed awakening stone display for different star ratings
+  - Fixed icon element safety checks to prevent JavaScript errors
+  - Fixed event listener conflicts between systems
+  - Fixed group ordering showing invalid tiers
+
+### Character Data Updates
+- **Hikari**: Updated to S tier overall, S+ A4 tier with notes "A4 gives physical res down on break"
+- **Complete character mapping**: All 244+ characters now accessible via modal
+- **Enhanced metadata**: Full integration of v2 character data with stats, skills, and classifications
 
 ## [1.3.0] - 2025-07-04
 

@@ -413,6 +413,105 @@ header h1 {
     color: var(--text-primary);
 }
 
+/* Column Visibility Controls */
+.column-controls {
+    background: var(--bg-secondary);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+}
+
+.column-groups {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.control-label {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-right: 5px;
+}
+
+.group-toggle {
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.group-toggle:hover {
+    background: var(--hover-bg);
+    border-color: var(--primary-color);
+}
+
+.group-toggle.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.toggle-icon {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+/* Column Visibility - CSS-based approach */
+.hidden {
+    display: none !important;
+}
+
+/* Column group hiding via table classes */
+.hide-ownership .column-group-ownership {
+    display: none !important;
+}
+
+.hide-tiers .column-group-tiers {
+    display: none !important;
+}
+
+.hide-core .column-group-core {
+    display: none !important;
+}
+
+.hide-awakening .column-group-awakening {
+    display: none !important;
+}
+
+.hide-combat .column-group-combat {
+    display: none !important;
+}
+
+.hide-acquisition .column-group-acquisition {
+    display: none !important;
+}
+
+.hide-notes .column-group-notes {
+    display: none !important;
+}
+
+/* Always visible columns are never hidden */
+.always-visible {
+    display: table-cell !important;
+}
+
+/* N/A Stones for 3★/4★ characters */
+.na-stone {
+    color: var(--text-muted);
+    font-style: italic;
+    opacity: 0.6;
+}
+
 /* Table Styles */
 .table-container {
     background: var(--bg-secondary);
@@ -515,7 +614,7 @@ tr:hover td {
     text-shadow: 0 0 2px var(--bg-secondary), 0 0 4px var(--bg-secondary);
 }
 
-/* Group headers */
+/* Visual Group Headers */
 .group-header {
     background: var(--primary-color) !important;
     color: white;
@@ -526,14 +625,45 @@ tr:hover td {
 }
 
 .group-header:hover {
-    background: var(--primary-color) !important;
+    background: var(--primary-hover) !important;
+}
+
+.group-header.collapsible {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
 }
 
 .group-title {
     padding: 12px 15px !important;
     font-size: 1.1em;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-icon {
+    font-size: 0.9em;
+    transition: transform 0.2s ease;
+    min-width: 12px;
+}
+
+.group-name {
+    font-weight: 700;
+    flex: 1;
+}
+
+.group-count {
+    font-size: 0.9em;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+/* Group member visibility */
+.group-member.hidden {
+    display: none !important;
 }
 
 /* Add spacing between groups */

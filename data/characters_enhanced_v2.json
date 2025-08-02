@@ -7251,7 +7251,7 @@
       "glReleaseDate": "26-Jun-25",
       "ultPriority": "L1",
       "ultPriorityGroup": null,
-      "a4Tier": null,
+      "a4Tier": "S+",
       "stones": {
         "AS1": "A1",
         "AS2": "A2",
@@ -7259,7 +7259,7 @@
         "AS4": "A4",
         "AS5": "Keep"
       },
-      "notes": "",
+      "notes": "A4 gives physical res down on break.",
       "tags": [],
       "csvUltPriority": "",
       "skills": {
