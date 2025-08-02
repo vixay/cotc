@@ -72,9 +72,9 @@ Visit https://vixay.github.io/cotc/ to:
 
 #### Easy Method (No coding required!)
 
-1. Go to [`data/characters.json`](data/characters.json)
+1. Go to [`data/characters_enhanced_v2.json`](data/characters_enhanced_v2.json)
 2. Click the pencil icon to edit
-3. Make your changes following the format
+3. Make your changes following the v2 data format
 4. Submit a pull request
 
 #### Advanced Method
@@ -87,11 +87,11 @@ cd cotc
 # Create a branch for your changes
 git checkout -b update-character-name
 
-# Edit data/characters.json
+# Edit data/characters_enhanced_v2.json
 # Test locally with: python -m http.server 8000
 
 # Commit and push
-git add data/characters.json
+git add data/characters_enhanced_v2.json
 git commit -m "Update Character Name priorities"
 git push origin update-character-name
 
@@ -123,31 +123,42 @@ Characters marked as "Free" (obtained through story/events) have stones that **c
 ## Data Structure
 
 ### Current Production Data
-All character data is stored in [`data/characters.json`](data/characters.json). Each character entry includes:
+All character data is stored in [`data/characters_enhanced_v2.json`](data/characters_enhanced_v2.json). Each character entry includes comprehensive information:
 
 ```json
 {
   "id": "character_id",
   "name": "Character Name",
   "isFree": false,
+  "starRating": 5,
+  "job": "Hunter",
+  "influence": "Power",
+  "continent": "Orsterra",
+  "obtainedFrom": "Chance Encounters",
+  "tierRatings": {
+    "gl": {"tier": "S+", "score": 9.5}
+  },
   "a4Tier": "S+",
   "ultPriority": "L10",
   "stones": {
     "AS1": "U10",
-    "AS2": "A1",
+    "AS2": "A1", 
     "AS3": "A2",
     "AS4": "A3",
     "AS5": "Shard"
   },
-  "notes": "Description of recommendation"
+  "notes": "Description of recommendation",
+  "roles": {
+    "primary": "DPS",
+    "secondary": "Buffer"
+  }
 }
 ```
 
-### Enhanced Data Available
-Complete character data with stats, skills, and metadata is available in:
-- [`data/characters_enhanced_v2.json`](data/characters_enhanced_v2.json) - 244 characters with full details
-- [`data/characters_jp.json`](data/characters_jp.json) - JP-specific tier ratings and release dates
-- [`data/Character Markdown/`](data/Character%20Markdown/) - Individual character skill descriptions and details
+### Additional Data Files
+- [`data/characters_jp.json`](data/characters_jp.json) - JP-specific tier ratings and release dates for future features
+- [`data/Character Markdown/`](data/Character%20Markdown/) - Individual character skill descriptions with icons
+- [`data/schema.json`](data/schema.json) - JSON schema validation for the v2 data structure
 
 The enhanced data includes:
 - **Character Stats**: HP, SP, Attack, Defense, Speed, Critical (base and max levels)

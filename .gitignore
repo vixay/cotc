@@ -16,4 +16,48 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
-data/Octopath Traveler COTC Character Index.xlsx
+
+# COTC Project - Helper scripts and development tools
+helpers/
+
+# COTC Project - Temporary and backup data files
+data/*.backup
+data/*_backup*
+data/temp/
+data/Character\ List*.csv
+data/Octopath\ Traveler\ COTC\ Character\ Index.xlsx
+
+# COTC Project - Keep only essential data files for production
+# data/characters_enhanced_v2.json - KEEP (main production data)
+# data/characters_jp.json - KEEP (JP-specific data for future use)
+
+# COTC Project - Development screenshots and design docs
+Screenshot*.png
+*.jpg
+*.jpeg
+
+# COTC Project - Temporary files
+*.tmp
+*.temp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js (if you ever add build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
