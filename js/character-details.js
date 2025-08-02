@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 // Load and display character data
 async function loadCharacterData() {
     try {
-        const response = await fetch('data/characters_enhanced.json');
+        const response = await fetch('data/characters_enhanced_v2.json');
         const data = await response.json();
         
         // Update version and date
@@ -58,34 +58,47 @@ function createCharacterCard(char) {
     card.className = 'character-card';
     
     // Add meta tier class for special styling
-    if (char.overallTier && ['S+', 'S'].includes(char.overallTier)) {
+    const tierForStyling = char.overallTier || char.tierRatings?.gl?.tier || char.a4Tier;
+    if (tierForStyling && ['S+', 'S'].includes(tierForStyling)) {
         card.classList.add('meta-tier');
     }
     
     const starRating = char.starRating || 5;
-    const jobType = char.jobType || 'Unknown';
-    const overallTier = char.overallTier || char.a4Tier || 'B';
+    const jobType = char.job || 'Unknown';
+    const overallTier = char.overallTier || char.tierRatings?.gl?.tier || char.a4Tier || 'B';
+    const influence = char.influence || 'Unknown';
+    
+    // Role information
     const primaryRole = char.roles?.primary || 'Unknown';
     const secondaryRole = char.roles?.secondary;
     
     // Weapon and element display
-    const weapons = char.weaponTypes?.join(', ') || 'Unknown';
-    const elements = char.elementTypes?.join(', ') || 'Unknown';
+    const weapons = char.weapons?.join(', ') || 'Unknown';
+    const elements = char.elements?.join(', ') || 'Unknown';
+    const weaknesses = char.weaknesses?.join(', ') || 'Unknown';
+    
+    // Stats display
+    const baseStats = char.stats?.base || {};
+    const maxStats = char.stats?.max || {};
     
     // Role tiers display
     const roleTiersHtml = char.roleTiers ? 
         Object.entries(char.roleTiers)
-            .map(([role, tier]) => `<span class="role-tier ${tier?.toLowerCase()?.replace('+', '-plus')}">${role}: ${tier}</span>`)
+            .map(([role, tier]) => `<span class="role-tier tier-${tier?.toLowerCase()?.replace('+', '-plus')}">${role}: ${tier}</span>`)
             .join('') : '';
     
-    // Key skills display
-    const keySkillsHtml = char.keySkills && char.keySkills.length > 0 ?
+    // Skills display - prefer keySkills from v1, fallback to passive skills
+    const keySkills = char.keySkills || char.skills?.passive || [];
+    const keySkillsHtml = keySkills.length > 0 ?
         `<div class="key-skills">
-            <h4>Key Abilities</h4>
+            <h4>${char.keySkills ? 'Key Abilities' : 'Passive Skills'}</h4>
             <ul class="skills-list">
-                ${char.keySkills.map(skill => `<li>${skill}</li>`).join('')}
+                ${keySkills.map(skill => `<li>${skill}</li>`).join('')}
             </ul>
         </div>` : '';
+    
+    // Ultimate display
+    const ultimateSkill = char.skills?.ultimate || 'Unknown';
     
     // Combat tags from existing tags
     const combatTags = char.tags?.filter(tag => 
@@ -98,52 +111,89 @@ function createCharacterCard(char) {
             <div class="character-badges">
                 <span class="badge star-rating">${starRating}★</span>
                 <span class="badge job-type">${jobType}</span>
+                <span class="badge influence">${influence}</span>
+                <span class="badge role-primary">${primaryRole}</span>
+                ${secondaryRole ? `<span class="badge role-secondary">+${secondaryRole}</span>` : ''}
                 <span class="badge overall-tier tier-${overallTier.toLowerCase().replace('+', '-plus')}">${overallTier}</span>
-                ${char.canOverclass ? '<span class="badge" style="background: #2ecc71; color: white;">6★</span>' : ''}
+                ${char.canOverclass ? '<span class="badge overclass-available">6★</span>' : ''}
             </div>
         </div>
         
         <div class="character-info">
             <div class="info-section">
-                <h4>Role</h4>
-                <div class="role-info">
-                    <span class="role-primary">${primaryRole}</span>
-                    ${secondaryRole ? `<span class="role-secondary">+ ${secondaryRole}</span>` : ''}
-                </div>
-            </div>
-            
-            <div class="info-section">
-                <h4>Role Tiers</h4>
+                <h4>Role Performance</h4>
                 <div class="role-tiers">
                     ${roleTiersHtml || '<span class="role-tier">Not rated</span>'}
                 </div>
             </div>
             
             <div class="info-section">
+                <h4>Location</h4>
+                <p><strong>Continent:</strong> ${char.continent || 'Unknown'}</p>
+                <p><strong>Location:</strong> ${char.location || 'Unknown'}</p>
+                <p><strong>Obtained From:</strong> ${char.obtainedFrom || 'Unknown'}</p>
+            </div>
+            
+            <div class="info-section">
                 <h4>Combat</h4>
                 <p><strong>Weapons:</strong> ${weapons}</p>
                 <p><strong>Elements:</strong> ${elements}</p>
+                <p><strong>Weaknesses:</strong> ${weaknesses}</p>
+            </div>
+            
+            <div class="info-section">
+                <h4>Stats (Base → Max)</h4>
+                <div class="stats-grid">
+                    <div class="stat-item"><span>HP:</span> ${baseStats.hp || 'N/A'} → ${maxStats.hp || 'N/A'}</div>
+                    <div class="stat-item"><span>SP:</span> ${baseStats.sp || 'N/A'} → ${maxStats.sp || 'N/A'}</div>
+                    <div class="stat-item"><span>P.Atk:</span> ${baseStats.pAtk || 'N/A'} → ${maxStats.pAtk || 'N/A'}</div>
+                    <div class="stat-item"><span>P.Def:</span> ${baseStats.pDef || 'N/A'} → ${maxStats.pDef || 'N/A'}</div>
+                    <div class="stat-item"><span>E.Atk:</span> ${baseStats.eAtk || 'N/A'} → ${maxStats.eAtk || 'N/A'}</div>
+                    <div class="stat-item"><span>E.Def:</span> ${baseStats.eDef || 'N/A'} → ${maxStats.eDef || 'N/A'}</div>
+                    <div class="stat-item"><span>Crit:</span> ${baseStats.crit || 'N/A'} → ${maxStats.crit || 'N/A'}</div>
+                    <div class="stat-item"><span>Speed:</span> ${baseStats.spd || 'N/A'} → ${maxStats.spd || 'N/A'}</div>
+                </div>
             </div>
             
             <div class="info-section">
                 <h4>Awakening</h4>
-                <p><strong>Ultimate:</strong> ${char.ultPriority}</p>
+                <p><strong>Ultimate:</strong> ${char.ultPriority || 'Not Listed'}</p>
+                <p><strong>Ultimate Skill:</strong> ${ultimateSkill}</p>
                 <p><strong>A4 Tier:</strong> ${char.a4Tier || 'Not Listed'}</p>
+                <div class="stones-row">
+                    <strong>Stones:</strong>
+                    <span class="stone as1 ${getStoneClass(char.stones?.AS1)}">${char.stones?.AS1 || 'N/A'}</span>
+                    <span class="stone as2 ${getStoneClass(char.stones?.AS2)}">${char.stones?.AS2 || 'N/A'}</span>
+                    <span class="stone as3 ${getStoneClass(char.stones?.AS3)}">${char.stones?.AS3 || 'N/A'}</span>
+                    <span class="stone as4 ${getStoneClass(char.stones?.AS4)}">${char.stones?.AS4 || 'N/A'}</span>
+                    <span class="stone as5 ${getStoneClass(char.stones?.AS5)}">${char.stones?.AS5 || 'N/A'}</span>
+                </div>
             </div>
             
-            <div class="combat-info">
-                <h4>Tags</h4>
-                <div class="combat-tags">
-                    ${combatTags.map(tag => `<span class="combat-tag">${tag}</span>`).join('')}
-                </div>
-                <p><strong>Notes:</strong> ${char.notes}</p>
-            </div>
+            ${char.notes ? `<div class="info-section">
+                <h4>Notes</h4>
+                <p>${char.notes}</p>
+            </div>` : ''}
         </div>
         
         ${keySkillsHtml}
     `;
     
     return card;
+}
+
+// Stone priority class mapping (matching main app)
+function getStoneClass(value) {
+    if (!value) return '';
+    
+    const classMap = {
+        'U10': 'u10',
+        'A1': 'a1', 'A2': 'a2', 'A3': 'a3', 'A4': 'a4',
+        'Shard': 'shard',
+        'Keep': 'keep'
+    };
+    
+    return classMap[value] || '';
 }
 
 // Setup event listeners
@@ -181,7 +231,7 @@ function filterCharacters() {
         }
         
         // Job filter
-        if (jobFilter && char.jobType !== jobFilter) {
+        if (jobFilter && char.job !== jobFilter) {
             return false;
         }
         
@@ -193,7 +243,8 @@ function filterCharacters() {
         }
         
         // Tier filter
-        if (tierFilter && char.overallTier !== tierFilter) {
+        const charTier = char.overallTier || char.tierRatings?.gl?.tier || char.a4Tier;
+        if (tierFilter && charTier !== tierFilter) {
             return false;
         }
         
@@ -222,9 +273,10 @@ function updateStats() {
     const totalChars = allCharacters.length;
     const filteredCount = filteredCharacters.length;
     const fiveStarCount = allCharacters.filter(char => char.starRating === 5).length;
-    const metaTierCount = allCharacters.filter(char => 
-        char.overallTier && ['S+', 'S'].includes(char.overallTier)
-    ).length;
+    const metaTierCount = allCharacters.filter(char => {
+        const tier = char.overallTier || char.tierRatings?.gl?.tier || char.a4Tier;
+        return tier && ['S+', 'S'].includes(tier);
+    }).length;
     
     document.getElementById('totalChars').textContent = totalChars;
     document.getElementById('filteredChars').textContent = filteredCount;

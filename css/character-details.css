@@ -103,6 +103,33 @@
     background: linear-gradient(45deg, #a8a8a8, #636e72);
 }
 
+.badge.influence {
+    background: var(--info-color);
+    color: white;
+}
+
+.badge.role-primary {
+    background: var(--success-color);
+    color: white;
+}
+
+.badge.role-secondary {
+    background: var(--warning-color);
+    color: white;
+}
+
+.badge.overclass-available {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
 /* Character Info Sections */
 .character-info {
     display: grid;
@@ -126,9 +153,18 @@
 }
 
 .info-section p {
-    margin: 0;
-    font-size: 0.9em;
+    margin: 2px 0;
+    font-size: 0.85em;
     color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-section p strong {
+    color: var(--text-primary);
+    min-width: 60px;
+    font-size: 0.8em;
 }
 
 .role-info {
@@ -204,6 +240,95 @@
     font-size: 0.7em;
     background: var(--primary-color);
     color: white;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 0.8rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.stat-item span:first-child {
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: left;
+    min-width: 45px;
+}
+
+.stat-item span:last-child {
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: right;
+    font-family: 'Courier New', monospace;
+}
+
+/* Stones Row */
+.stones-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.stones-row strong {
+    color: var(--text-primary);
+    min-width: 50px;
+}
+
+.stone {
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: 600;
+    background: var(--border-color);
+    color: var(--text-primary);
+    min-width: 35px;
+    text-align: center;
+}
+
+.stone.as1, .stone.as2, .stone.as3, .stone.as4, .stone.as5 {
+    border: 1px solid var(--border-color);
+}
+
+/* Stone priority colors - matching main app */
+.stone.u10 {
+    background: var(--danger-color);
+    color: white;
+    font-weight: 700;
+}
+
+.stone.a1, .stone.a2, .stone.a3, .stone.a4 {
+    background: var(--primary-color);
+    color: white;
+}
+
+.stone.a4 {
+    font-weight: 700;
+}
+
+.stone.keep {
+    background: var(--success-color);
+    color: white;
+    font-weight: 700;
+}
+
+.stone.shard {
+    background: var(--text-muted);
+    color: white;
+    opacity: 0.8;
 }
 
 /* Key Skills */

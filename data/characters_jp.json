@@ -1,0 +1,3833 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-08-02",
+  "metadata": {
+    "dataSource": "CSV export",
+    "gameVersion": "JP",
+    "totalCharacters": 244
+  },
+  "characters": [
+    {
+      "name": "2B",
+      "japaneseName": "2B",
+      "jpReleaseDate": "1-Mar-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "28-Nov-24"
+      },
+      "blessingOfLanternJP": "14-Mar-24",
+      "classBreakthroughJP": "14-Mar-24"
+    },
+    {
+      "name": "9S",
+      "japaneseName": "9S",
+      "jpReleaseDate": "1-Mar-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "28-Nov-24"
+      },
+      "blessingOfLanternJP": "14-Mar-24",
+      "classBreakthroughJP": "14-Mar-24"
+    },
+    {
+      "name": "A2",
+      "japaneseName": "A2",
+      "jpReleaseDate": "1-Mar-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "28-Nov-24"
+      },
+      "blessingOfLanternJP": "14-Mar-24",
+      "classBreakthroughJP": "14-Mar-24"
+    },
+    {
+      "name": "Adelle",
+      "japaneseName": "アデル",
+      "jpReleaseDate": "28-Apr-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "29-Jun-23",
+      "classBreakthroughJP": "30-Nov-23"
+    },
+    {
+      "name": "Aedelgard",
+      "japaneseName": "エデルガルト",
+      "jpReleaseDate": "14-Jul-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "7-Dec-23",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Agnea",
+      "japaneseName": "アグネア",
+      "jpReleaseDate": "28-Oct-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "20-Mar-25"
+      },
+      "blessingOfLanternJP": "28-Oct-23",
+      "classBreakthroughJP": "28-Oct-23"
+    },
+    {
+      "name": "Agnea EX",
+      "japaneseName": "アグネアEx",
+      "jpReleaseDate": "20-Jun-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "20-Jun-24",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "Agnès",
+      "japaneseName": "アニエス",
+      "jpReleaseDate": "13-May-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "blessingOfLanternJP": "29-Jun-23",
+      "classBreakthroughJP": "30-Nov-23"
+    },
+    {
+      "name": "Alaune",
+      "japaneseName": "アラウネ",
+      "jpReleaseDate": "31-Mar-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "25-Jan-24",
+      "classBreakthroughJP": "25-Jan-24"
+    },
+    {
+      "name": "Alaune EX",
+      "japaneseName": "アラウネEx",
+      "jpReleaseDate": "1-Jan-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "19-Oct-23",
+      "classBreakthroughJP": "19-Oct-23"
+    },
+    {
+      "name": "Alfyn",
+      "japaneseName": "アーフェン",
+      "jpReleaseDate": "17-Mar-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "27-Jul-23",
+      "classBreakthroughJP": "8-Aug-24"
+    },
+    {
+      "name": "Alrond",
+      "japaneseName": "アルロンド",
+      "jpReleaseDate": "12-Sep-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "12-Sep-24",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Aoi",
+      "japaneseName": "アオイ",
+      "jpReleaseDate": "19-Jun-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": ""
+      },
+      "blessingOfLanternJP": "19-Jun-25"
+    },
+    {
+      "name": "Ashlan",
+      "japaneseName": "アシラン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "26-Oct-23"
+    },
+    {
+      "name": "Aslyte",
+      "japaneseName": "アズライト",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "8-May-25"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "29-Feb-24"
+    },
+    {
+      "name": "Auguste",
+      "japaneseName": "アーギュスト",
+      "jpReleaseDate": "28-Apr-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "2-Nov-23",
+      "classBreakthroughJP": "2-Nov-23"
+    },
+    {
+      "name": "Avar",
+      "japaneseName": "アヴァル",
+      "jpReleaseDate": "10-Apr-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "10-Apr-25"
+      },
+      "blessingOfLanternJP": "10-Apr-25",
+      "classBreakthroughJP": "10-Apr-25"
+    },
+    {
+      "name": "Aviette",
+      "japaneseName": "アヴィーテ",
+      "jpReleaseDate": "17-Jul-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "17-Jul-25"
+      },
+      "blessingOfLanternJP": "17-Jul-25",
+      "classBreakthroughJP": "17-Jul-25"
+    },
+    {
+      "name": "Bargello",
+      "japaneseName": "バルジェロ",
+      "jpReleaseDate": "28-Oct-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "2-May-24",
+      "classBreakthroughJP": "2-May-24"
+    },
+    {
+      "name": "Bargello EX",
+      "japaneseName": "バルジェロEx",
+      "jpReleaseDate": "18-Jul-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "18-Jul-24",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Barrad",
+      "japaneseName": "バラッド",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Bertrand",
+      "japaneseName": "ベルトラン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Billy",
+      "japaneseName": "ビリー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "26-Oct-23"
+    },
+    {
+      "name": "Black Knight",
+      "japaneseName": "黒の騎士",
+      "jpReleaseDate": "16-Jan-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 10.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "16-Jan-25",
+      "classBreakthroughJP": "16-Jan-25"
+    },
+    {
+      "name": "Black Maiden",
+      "japaneseName": "黒の巫女",
+      "jpReleaseDate": "16-Jan-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "16-Jan-25",
+      "classBreakthroughJP": "16-Jan-25"
+    },
+    {
+      "name": "Brigitte",
+      "japaneseName": "ブリジット",
+      "jpReleaseDate": "8-Apr-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Camilla",
+      "japaneseName": "カミラ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "26-Oct-23",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Canary",
+      "japaneseName": "カナリィ",
+      "jpReleaseDate": "1-Mar-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "1-Aug-24",
+      "classBreakthroughJP": "1-Aug-24"
+    },
+    {
+      "name": "Cardona",
+      "japaneseName": "カルドナ",
+      "jpReleaseDate": "5-Aug-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Carroll",
+      "japaneseName": "キャロル",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Cassia",
+      "japaneseName": "ケイシア",
+      "jpReleaseDate": "30-Jun-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jun-25"
+      },
+      "blessingOfLanternJP": "30-Jun-25",
+      "classBreakthroughJP": "30-Jun-25"
+    },
+    {
+      "name": "Castti",
+      "japaneseName": "キャスティ",
+      "jpReleaseDate": "1-Jan-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "14-Nov-24"
+      },
+      "blessingOfLanternJP": "1-Jan-24",
+      "classBreakthroughJP": "1-Jan-24"
+    },
+    {
+      "name": "Castti EX",
+      "japaneseName": "キャスティEx",
+      "jpReleaseDate": "8-May-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "8-May-25"
+      },
+      "blessingOfLanternJP": "8-May-25",
+      "classBreakthroughJP": "8-May-25"
+    },
+    {
+      "name": "Cecil",
+      "japaneseName": "セシル",
+      "jpReleaseDate": "20-Jun-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "20-Jun-24",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "Cecily",
+      "japaneseName": "セシリー",
+      "jpReleaseDate": "7-Oct-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "14-Feb-24",
+      "classBreakthroughJP": "14-Feb-24"
+    },
+    {
+      "name": "Cedric",
+      "japaneseName": "セドリック",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "20-Mar-25"
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "22-Nov-23"
+    },
+    {
+      "name": "Ceraphina",
+      "japaneseName": "セラフィナ",
+      "jpReleaseDate": "10-Oct-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "10-Oct-24",
+      "classBreakthroughJP": "10-Oct-24"
+    },
+    {
+      "name": "Cerna",
+      "japaneseName": "チェルナ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "blessingOfLanternJP": "26-Oct-23",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Chloe",
+      "japaneseName": "クロエ",
+      "jpReleaseDate": "6-Jan-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Jun-25"
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Cless",
+      "japaneseName": "クレス",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Mar-25"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "12-Oct-23"
+    },
+    {
+      "name": "Conny",
+      "japaneseName": "コニー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "12-Oct-23"
+    },
+    {
+      "name": "Cornelia",
+      "japaneseName": "コルネリア",
+      "jpReleaseDate": "11-Dec-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Crick",
+      "japaneseName": "クリック",
+      "jpReleaseDate": "21-Nov-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "21-Nov-24",
+      "classBreakthroughJP": "21-Nov-24"
+    },
+    {
+      "name": "Cyrus",
+      "japaneseName": "サイラス",
+      "jpReleaseDate": "18-Mar-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "13-Jul-23",
+      "classBreakthroughJP": "26-Oct-23"
+    },
+    {
+      "name": "Cyrus EX",
+      "japaneseName": "サイラスEx",
+      "jpReleaseDate": "13-Feb-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "13-Feb-25"
+      },
+      "blessingOfLanternJP": "13-Feb-25",
+      "classBreakthroughJP": "13-Feb-25"
+    },
+    {
+      "name": "Devin",
+      "japaneseName": "デヴィン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Diego",
+      "japaneseName": "ディエゴ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Ditraina",
+      "japaneseName": "ディトレイナ",
+      "jpReleaseDate": "1-Jun-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "1-Aug-24"
+    },
+    {
+      "name": "Ditraina EX",
+      "japaneseName": "ディトレイナEx",
+      "jpReleaseDate": "24-Oct-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "24-Oct-24",
+      "classBreakthroughJP": "24-Oct-24"
+    },
+    {
+      "name": "Dolcinaea",
+      "japaneseName": "ドルシネア",
+      "jpReleaseDate": "28-Apr-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Mar-25"
+      },
+      "blessingOfLanternJP": "28-Apr-24",
+      "classBreakthroughJP": "28-Apr-24"
+    },
+    {
+      "name": "Dorothea",
+      "japaneseName": "ドロテア",
+      "jpReleaseDate": "23-Jan-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Dorrie",
+      "japaneseName": "ドリー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "9-Nov-23"
+    },
+    {
+      "name": "Durand",
+      "japaneseName": "デュラン",
+      "jpReleaseDate": "26-Nov-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Edea",
+      "japaneseName": "イデア",
+      "jpReleaseDate": "6-May-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "29-Jun-23",
+      "classBreakthroughJP": "30-Nov-23"
+    },
+    {
+      "name": "Efrain",
+      "japaneseName": "エフレン",
+      "jpReleaseDate": "14-Jan-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Mar-25"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Eleonora",
+      "japaneseName": "エレオノーラ",
+      "jpReleaseDate": "3-Feb-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "23-May-24"
+    },
+    {
+      "name": "Eliza",
+      "japaneseName": "エリザ",
+      "jpReleaseDate": "25-Mar-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Elrica",
+      "japaneseName": "エリカ",
+      "jpReleaseDate": "1-Jan-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "29-May-25"
+      },
+      "blessingOfLanternJP": "22-Aug-24",
+      "classBreakthroughJP": "22-Aug-24"
+    },
+    {
+      "name": "Elrica EX",
+      "japaneseName": "エリカEx",
+      "jpReleaseDate": "24-Oct-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "24-Oct-24",
+      "classBreakthroughJP": "24-Oct-24"
+    },
+    {
+      "name": "Eltrix",
+      "japaneseName": "エルトリクス",
+      "jpReleaseDate": "25-Aug-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "6-Jun-24",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Elvis",
+      "japaneseName": "エルヴィス",
+      "jpReleaseDate": "28-Apr-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "29-Jun-23",
+      "classBreakthroughJP": "22-Nov-23"
+    },
+    {
+      "name": "Emil",
+      "japaneseName": "エミール",
+      "jpReleaseDate": "29-Feb-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "28-Nov-24"
+      },
+      "blessingOfLanternJP": "29-Feb-24",
+      "classBreakthroughJP": "29-Feb-24"
+    },
+    {
+      "name": "Esmeralda",
+      "japaneseName": "エスメラルダ",
+      "jpReleaseDate": "5-Jun-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Jun-25"
+      },
+      "blessingOfLanternJP": "5-Jun-25",
+      "classBreakthroughJP": "5-Jun-25"
+    },
+    {
+      "name": "Eunice",
+      "japaneseName": "ユニス",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Evelyn",
+      "japaneseName": "イヴリン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "25-Apr-24"
+    },
+    {
+      "name": "Fabio",
+      "japaneseName": "ファビオ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "1-Aug-24"
+    },
+    {
+      "name": "Falco",
+      "japaneseName": "ファルコ",
+      "jpReleaseDate": "26-Aug-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Jun-25"
+      },
+      "blessingOfLanternJP": "5-Oct-23",
+      "classBreakthroughJP": "14-Mar-24"
+    },
+    {
+      "name": "Felline",
+      "japaneseName": "フェリーネ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Fiore",
+      "japaneseName": "フィオル",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Fiore EX",
+      "japaneseName": "フィオルEx",
+      "jpReleaseDate": "8-Aug-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "8-Aug-23",
+      "classBreakthroughJP": "25-Jul-24"
+    },
+    {
+      "name": "Frederica",
+      "japaneseName": "フレデリカ",
+      "jpReleaseDate": "28-Jul-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "17-Jul-25"
+      },
+      "blessingOfLanternJP": "4-Jan-24",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Gertrude",
+      "japaneseName": "ガートルード",
+      "jpReleaseDate": "10-Jun-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "31-Jan-24",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Gilderoy",
+      "japaneseName": "ギルデロイ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Gloria",
+      "japaneseName": "グローリア",
+      "jpReleaseDate": "22-Nov-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "22-Nov-23"
+    },
+    {
+      "name": "Glossom",
+      "japaneseName": "グロッサム",
+      "jpReleaseDate": "11-Mar-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "6-Jun-24",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Grieg",
+      "japaneseName": "グリーグ",
+      "jpReleaseDate": "3-Aug-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "3-Aug-23",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Guti",
+      "japaneseName": "グティ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Hammy",
+      "japaneseName": "ハミィ",
+      "jpReleaseDate": "10-Nov-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "12-Sep-24",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Harley",
+      "japaneseName": "ハーレー",
+      "jpReleaseDate": "10-Feb-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Mar-25"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Harry",
+      "japaneseName": "ハリー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "21-Dec-23"
+    },
+    {
+      "name": "Hasumi",
+      "japaneseName": "ハスミ",
+      "jpReleaseDate": "22-Sep-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Hayes",
+      "japaneseName": "ヘイズ",
+      "jpReleaseDate": "25-Nov-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Heathcote",
+      "japaneseName": "ヒースコート",
+      "jpReleaseDate": "12-Nov-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Heinz",
+      "japaneseName": "ハインツ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "26-Sep-24"
+    },
+    {
+      "name": "Helga",
+      "japaneseName": "ヘルガ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "26-Sep-24"
+    },
+    {
+      "name": "Herminia",
+      "japaneseName": "ヘルミニア",
+      "jpReleaseDate": "28-Apr-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "2-Nov-23",
+      "classBreakthroughJP": "2-Nov-23"
+    },
+    {
+      "name": "Hikari",
+      "japaneseName": "ヒカリ",
+      "jpReleaseDate": "1-Jan-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "9-Jan-25"
+      },
+      "blessingOfLanternJP": "1-Jan-24",
+      "classBreakthroughJP": "1-Jan-24"
+    },
+    {
+      "name": "Hikari EX",
+      "japaneseName": "ヒカリEx",
+      "jpReleaseDate": "1-Jan-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "1-Jan-25"
+      },
+      "blessingOfLanternJP": "1-Jan-25",
+      "classBreakthroughJP": "1-Jan-25"
+    },
+    {
+      "name": "Hujheb",
+      "japaneseName": "ヒュージブ",
+      "jpReleaseDate": "1-Feb-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "1-Feb-24",
+      "classBreakthroughJP": "1-Feb-24"
+    },
+    {
+      "name": "H’aanit",
+      "japaneseName": "ハンイット",
+      "jpReleaseDate": "5-Nov-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Jun-25"
+      },
+      "blessingOfLanternJP": "27-Jul-23",
+      "classBreakthroughJP": "9-Nov-23"
+    },
+    {
+      "name": "H’aanit EX",
+      "japaneseName": "ハンイットEx",
+      "jpReleaseDate": "2-Feb-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "4-Jan-24",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Iris",
+      "japaneseName": "イリス",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Isla",
+      "japaneseName": "アイラ",
+      "jpReleaseDate": "12-Oct-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Mar-25"
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "12-Oct-23"
+    },
+    {
+      "name": "Jane",
+      "japaneseName": "ジェイン",
+      "jpReleaseDate": "28-Mar-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "28-Mar-24",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Jillmeila",
+      "japaneseName": "ジルメイラ",
+      "jpReleaseDate": "9-Sep-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Jorge",
+      "japaneseName": "ホルヘ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "1-Aug-24"
+    },
+    {
+      "name": "Jorn",
+      "japaneseName": "ヨルン",
+      "jpReleaseDate": "25-Feb-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Joshua",
+      "japaneseName": "ジョシュア",
+      "jpReleaseDate": "23-Dec-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "29-May-25"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "25-Apr-24"
+    },
+    {
+      "name": "José",
+      "japaneseName": "ホセ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Juan",
+      "japaneseName": "フアン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "23-May-24"
+    },
+    {
+      "name": "Julio",
+      "japaneseName": "フリオ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Kagemune",
+      "japaneseName": "カゲムネ",
+      "jpReleaseDate": "19-Dec-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "19-Dec-24",
+      "classBreakthroughJP": "6-Jan-25"
+    },
+    {
+      "name": "Kainé",
+      "japaneseName": "カイネ",
+      "jpReleaseDate": "29-Feb-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "28-Nov-24"
+      },
+      "blessingOfLanternJP": "29-Feb-24",
+      "classBreakthroughJP": "29-Feb-24"
+    },
+    {
+      "name": "Kazan",
+      "japaneseName": "カザン",
+      "jpReleaseDate": "19-Jun-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Jun-25"
+      },
+      "blessingOfLanternJP": "19-Jun-25",
+      "classBreakthroughJP": "19-Jun-25"
+    },
+    {
+      "name": "Kenneth",
+      "japaneseName": "ケネス",
+      "jpReleaseDate": "25-Dec-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "20-Mar-25"
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "Kersjes",
+      "japaneseName": "カージェス",
+      "jpReleaseDate": "8-Apr-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Kilns",
+      "japaneseName": "キルン",
+      "jpReleaseDate": "9-Nov-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "23-Jan-25"
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "9-Nov-23"
+    },
+    {
+      "name": "Kouren",
+      "japaneseName": "コウレン",
+      "jpReleaseDate": "21-Jul-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Krauser",
+      "japaneseName": "クラウザー",
+      "jpReleaseDate": "14-Apr-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "24-Aug-23",
+      "classBreakthroughJP": "22-Feb-24"
+    },
+    {
+      "name": "Kurtz",
+      "japaneseName": "カルツ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "25-Apr-24"
+    },
+    {
+      "name": "Largo",
+      "japaneseName": "ラルゴ",
+      "jpReleaseDate": "23-Dec-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "6-Jun-24",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Lars",
+      "japaneseName": "ラース",
+      "jpReleaseDate": "7-Oct-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "29-May-25"
+      },
+      "blessingOfLanternJP": "4-Jan-24",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Laura",
+      "japaneseName": "ラウラ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "14-Mar-24"
+    },
+    {
+      "name": "Lemaire",
+      "japaneseName": "ルメール",
+      "jpReleaseDate": "24-Nov-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "9-Nov-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Leon",
+      "japaneseName": "レオン",
+      "jpReleaseDate": "29-Sep-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "30-May-24",
+      "classBreakthroughJP": "30-May-24"
+    },
+    {
+      "name": "Levan",
+      "japaneseName": "レヴァン",
+      "jpReleaseDate": "10-Feb-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "26-Sep-24"
+    },
+    {
+      "name": "Levina",
+      "japaneseName": "レヴィーナ",
+      "jpReleaseDate": "9-Jun-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "18-Apr-24",
+      "classBreakthroughJP": "18-Apr-24"
+    },
+    {
+      "name": "Lianna",
+      "japaneseName": "リアナ",
+      "jpReleaseDate": "1-Sep-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "1-Aug-24"
+    },
+    {
+      "name": "Lionel",
+      "japaneseName": "ライオネル",
+      "jpReleaseDate": "14-Jan-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Lolo",
+      "japaneseName": "ロロ",
+      "jpReleaseDate": "25-Mar-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Lucetta",
+      "japaneseName": "ルーセッタ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "20-Mar-25"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "25-Apr-24"
+    },
+    {
+      "name": "Lumis",
+      "japaneseName": "リュミス",
+      "jpReleaseDate": "25-Feb-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "23-May-24"
+    },
+    {
+      "name": "Lumis EX",
+      "japaneseName": "リュミスEx",
+      "jpReleaseDate": "15-Dec-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "12-Dec-24"
+      },
+      "blessingOfLanternJP": "14-Dec-23",
+      "classBreakthroughJP": "14-Dec-23"
+    },
+    {
+      "name": "Lynette",
+      "japaneseName": "リネット",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Mar-25"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Mabel",
+      "japaneseName": "メイベル",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Madelaine",
+      "japaneseName": "マドレーヌ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "23-May-24"
+    },
+    {
+      "name": "Magnolia",
+      "japaneseName": "マグノリア",
+      "jpReleaseDate": "7-Dec-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "7-Dec-23",
+      "classBreakthroughJP": "7-Dec-23"
+    },
+    {
+      "name": "Mahrez",
+      "japaneseName": "マフレズ",
+      "jpReleaseDate": "29-May-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "29-May-25"
+      },
+      "blessingOfLanternJP": "29-May-25",
+      "classBreakthroughJP": "29-May-25"
+    },
+    {
+      "name": "Manuel",
+      "japaneseName": "マヌエル",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "Meena",
+      "japaneseName": "ミーナ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Menno",
+      "japaneseName": "メノ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Menny",
+      "japaneseName": "メニー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "18-Jan-24"
+    },
+    {
+      "name": "Merrit",
+      "japaneseName": "メレット",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Mar-25"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "14-Feb-24"
+    },
+    {
+      "name": "Miles",
+      "japaneseName": "マイルズ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "21-Dec-23"
+    },
+    {
+      "name": "Millard",
+      "japaneseName": "ミロード",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Jun-25"
+      },
+      "blessingOfLanternJP": "21-Dec-23",
+      "classBreakthroughJP": "21-Dec-23"
+    },
+    {
+      "name": "Millard EX",
+      "japaneseName": "ミロードEx",
+      "jpReleaseDate": "8-Dec-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "12-Dec-24"
+      },
+      "blessingOfLanternJP": "14-Dec-23",
+      "classBreakthroughJP": "14-Dec-23"
+    },
+    {
+      "name": "Mirgardi",
+      "japaneseName": "ミルガルディ",
+      "jpReleaseDate": "30-Jan-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "21-Dec-23",
+      "classBreakthroughJP": "21-Dec-23"
+    },
+    {
+      "name": "Molrusso",
+      "japaneseName": "モルルッソ",
+      "jpReleaseDate": "25-Dec-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "25-Apr-24"
+    },
+    {
+      "name": "Molrusso EX",
+      "japaneseName": "モルルッソEx",
+      "jpReleaseDate": "13-Feb-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "13-Feb-25"
+      },
+      "blessingOfLanternJP": "13-Feb-25",
+      "classBreakthroughJP": "13-Feb-25"
+    },
+    {
+      "name": "Molu",
+      "japaneseName": "ムールゥ",
+      "jpReleaseDate": "27-May-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Jun-25"
+      },
+      "blessingOfLanternJP": "26-Oct-23",
+      "classBreakthroughJP": "25-Apr-24"
+    },
+    {
+      "name": "Morena",
+      "japaneseName": "モレーナ",
+      "jpReleaseDate": "5-Dec-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "5-Dec-24",
+      "classBreakthroughJP": "5-Dec-24"
+    },
+    {
+      "name": "Morffins",
+      "japaneseName": "モーフィンス",
+      "jpReleaseDate": "17-Aug-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "8-May-25"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "18-Jan-24"
+    },
+    {
+      "name": "Mydia",
+      "japaneseName": "ミディヤ",
+      "jpReleaseDate": "7-Nov-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 10.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "7-Nov-24",
+      "classBreakthroughJP": "7-Nov-24"
+    },
+    {
+      "name": "Nanna",
+      "japaneseName": "ナンナ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "G",
+          "game8Score": 8.0
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "12-Oct-23"
+    },
+    {
+      "name": "Narr",
+      "japaneseName": "ナール",
+      "jpReleaseDate": "12-Nov-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Neha",
+      "japaneseName": "ネーハ",
+      "jpReleaseDate": "14-Sep-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "18-Jan-24"
+    },
+    {
+      "name": "Nephti",
+      "japaneseName": "ネフティ",
+      "jpReleaseDate": "19-Jan-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "blessingOfLanternJP": "21-Sep-23",
+      "classBreakthroughJP": "21-Dec-23"
+    },
+    {
+      "name": "Nicola",
+      "japaneseName": "ニコラ",
+      "jpReleaseDate": "11-Dec-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "5-Oct-23",
+      "classBreakthroughJP": "7-Dec-23"
+    },
+    {
+      "name": "Nier",
+      "japaneseName": "ニーア",
+      "jpReleaseDate": "29-Feb-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "28-Nov-24"
+      },
+      "blessingOfLanternJP": "29-Feb-24",
+      "classBreakthroughJP": "29-Feb-24"
+    },
+    {
+      "name": "Nina-Lanna",
+      "japaneseName": "ニーナラーナ",
+      "jpReleaseDate": "9-Dec-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Nivelle",
+      "japaneseName": "ニヴェル",
+      "jpReleaseDate": "31-Aug-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Noelle",
+      "japaneseName": "ノエル",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Nona",
+      "japaneseName": "ノーニャ",
+      "jpReleaseDate": "20-Jan-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "14-Feb-24",
+      "classBreakthroughJP": "14-Feb-24"
+    },
+    {
+      "name": "O. Odio",
+      "japaneseName": "オディオ・O",
+      "jpReleaseDate": "30-Mar-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "blessingOfLanternJP": "4-Jul-24",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Ochette",
+      "japaneseName": "オーシュット",
+      "jpReleaseDate": "20-Jul-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "9-Nov-23"
+    },
+    {
+      "name": "Ochette EX",
+      "japaneseName": "オーシュットEx",
+      "jpReleaseDate": "24-Apr-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Apr-25"
+      },
+      "blessingOfLanternJP": "24-Apr-25",
+      "classBreakthroughJP": "24-Apr-25"
+    },
+    {
+      "name": "Odette",
+      "japaneseName": "オデット",
+      "jpReleaseDate": "1-Jul-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Oersted",
+      "japaneseName": "オルステッド",
+      "jpReleaseDate": "16-Mar-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "27-Jun-24",
+      "classBreakthroughJP": "27-Jun-24"
+    },
+    {
+      "name": "Ogen",
+      "japaneseName": "オーゲン",
+      "jpReleaseDate": "11-May-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "8-May-25"
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "26-Sep-24"
+    },
+    {
+      "name": "Olberic",
+      "japaneseName": "オルベリク",
+      "jpReleaseDate": "28-Oct-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "29-May-25"
+      },
+      "blessingOfLanternJP": "13-Jul-24",
+      "classBreakthroughJP": "14-Feb-24"
+    },
+    {
+      "name": "Ophilia",
+      "japaneseName": "オフィーリア",
+      "jpReleaseDate": "28-Oct-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "13-Jul-23",
+      "classBreakthroughJP": "8-Aug-24"
+    },
+    {
+      "name": "Ophilia EX",
+      "japaneseName": "オフィーリアEx",
+      "jpReleaseDate": "20-Jun-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "20-Jun-24",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "Ori",
+      "japaneseName": "オリ",
+      "jpReleaseDate": "26-Sep-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "26-Sep-24",
+      "classBreakthroughJP": "26-Sep-24"
+    },
+    {
+      "name": "Oskha",
+      "japaneseName": "オスカ",
+      "jpReleaseDate": "23-May-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "23-May-24",
+      "classBreakthroughJP": "23-May-24"
+    },
+    {
+      "name": "Osvald",
+      "japaneseName": "オズバルド",
+      "jpReleaseDate": "18-Jan-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "31-Oct-24"
+      },
+      "blessingOfLanternJP": "18-Jan-24",
+      "classBreakthroughJP": "18-Jan-24"
+    },
+    {
+      "name": "Osvald EX",
+      "japaneseName": "オズバルドEx",
+      "jpReleaseDate": "24-Apr-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Apr-25"
+      },
+      "blessingOfLanternJP": "24-Apr-25",
+      "classBreakthroughJP": "24-Apr-25"
+    },
+    {
+      "name": "Pardis III",
+      "japaneseName": "パーディス三世",
+      "jpReleaseDate": "10-Oct-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "10-Oct-24",
+      "classBreakthroughJP": "10-Oct-24"
+    },
+    {
+      "name": "Partitio",
+      "japaneseName": "パルテティオ",
+      "jpReleaseDate": "12-Oct-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "blessingOfLanternJP": "12-Oct-23",
+      "classBreakthroughJP": "12-Oct-23"
+    },
+    {
+      "name": "Partitio EX",
+      "japaneseName": "パルテティオEx",
+      "jpReleaseDate": "13-Mar-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "13-Mar-25"
+      },
+      "blessingOfLanternJP": "13-Mar-25",
+      "classBreakthroughJP": "13-Mar-25"
+    },
+    {
+      "name": "Paula",
+      "japaneseName": "ポーラ",
+      "jpReleaseDate": "28-Jan-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Pearl",
+      "japaneseName": "パール",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "14-Mar-24"
+    },
+    {
+      "name": "Penny",
+      "japaneseName": "ペニー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "14-Feb-24"
+    },
+    {
+      "name": "Peredir",
+      "japaneseName": "ペレディール",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "18-Jan-24"
+    },
+    {
+      "name": "Pia",
+      "japaneseName": "ピア",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "9-Nov-23"
+    },
+    {
+      "name": "Pirro",
+      "japaneseName": "ピルロ",
+      "jpReleaseDate": "6-Jul-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "7-Dec-23"
+    },
+    {
+      "name": "Primrose",
+      "japaneseName": "プリムロゼ",
+      "jpReleaseDate": "13-Jul-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "27-Jul-23",
+      "classBreakthroughJP": "8-Aug-24"
+    },
+    {
+      "name": "Primrose EX",
+      "japaneseName": "プリムロゼEx",
+      "jpReleaseDate": "22-Sep-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "31-Jan-24",
+      "classBreakthroughJP": "26-Sep-24"
+    },
+    {
+      "name": "Promme",
+      "japaneseName": "プロメ",
+      "jpReleaseDate": "10-Jun-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "21-Sep-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Rai Mei",
+      "japaneseName": "ライ・メイ",
+      "jpReleaseDate": "1-Jan-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "1-Jan-25"
+      },
+      "blessingOfLanternJP": "1-Jan-25",
+      "classBreakthroughJP": "1-Jan-25"
+    },
+    {
+      "name": "Ramona",
+      "japaneseName": "ラモーナ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Relisha",
+      "japaneseName": "レリーシャ",
+      "jpReleaseDate": "15-Aug-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "15-Aug-24",
+      "classBreakthroughJP": "15-Aug-24"
+    },
+    {
+      "name": "Richard",
+      "japaneseName": "リシャール",
+      "jpReleaseDate": "10-Feb-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "14-Mar-24",
+      "classBreakthroughJP": "11-Jul-24"
+    },
+    {
+      "name": "Ringabel",
+      "japaneseName": "リングアベル",
+      "jpReleaseDate": "22-Nov-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "22-Nov-23",
+      "classBreakthroughJP": "22-Nov-23"
+    },
+    {
+      "name": "Rinyuu",
+      "japaneseName": "リンユウ",
+      "jpReleaseDate": "30-Jun-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "19-Oct-23",
+      "classBreakthroughJP": "19-Oct-23"
+    },
+    {
+      "name": "Rinyuu EX",
+      "japaneseName": "リンユウEx",
+      "jpReleaseDate": "29-Aug-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "29-Aug-24",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Rique",
+      "japaneseName": "リーク",
+      "jpReleaseDate": "15-Feb-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Feb-25"
+      },
+      "blessingOfLanternJP": "15-Feb-24",
+      "classBreakthroughJP": "15-Feb-24"
+    },
+    {
+      "name": "Rita",
+      "japaneseName": "リタ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "8-May-25"
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Ri’tu",
+      "japaneseName": "リトゥ",
+      "jpReleaseDate": "13-May-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "11-Apr-24",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Rodion",
+      "japaneseName": "ロディオン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Roland",
+      "japaneseName": "ロラン",
+      "jpReleaseDate": "28-Jul-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "17-Jul-25"
+      },
+      "blessingOfLanternJP": "4-Jan-24",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Rondo",
+      "japaneseName": "ロンド",
+      "jpReleaseDate": "26-May-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "14-Mar-24",
+      "classBreakthroughJP": "13-Jun-24"
+    },
+    {
+      "name": "S. Odio",
+      "japaneseName": "オディオ・S",
+      "jpReleaseDate": "30-Mar-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "blessingOfLanternJP": "4-Jul-24",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Sail",
+      "japaneseName": "セイル",
+      "jpReleaseDate": "22-Jun-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23"
+    },
+    {
+      "name": "Saria",
+      "japaneseName": "サーリア",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "4-Aug-23",
+      "classBreakthroughJP": "7-Dec-23"
+    },
+    {
+      "name": "Sarisa",
+      "japaneseName": "サリサ",
+      "jpReleaseDate": "23-Jun-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "7-Dec-23",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Sazantos",
+      "japaneseName": "サザントス",
+      "jpReleaseDate": "28-Apr-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "17-Oct-24"
+    },
+    {
+      "name": "Sazantos EX",
+      "japaneseName": "サザントスEx",
+      "jpReleaseDate": "20-Jun-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "19-Dec-24"
+      },
+      "blessingOfLanternJP": "20-Jun-24",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "Scarecrow",
+      "japaneseName": "スケアクロウ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Serenoa",
+      "japaneseName": "セレノア",
+      "jpReleaseDate": "28-Jul-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "17-Jul-25"
+      },
+      "blessingOfLanternJP": "4-Jan-24",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Sertet",
+      "japaneseName": "セルテト",
+      "jpReleaseDate": "8-Jun-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Shana",
+      "japaneseName": "シャナ",
+      "jpReleaseDate": "11-Apr-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 10.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "20-Feb-25"
+      },
+      "blessingOfLanternJP": "11-Apr-24",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Shelby",
+      "japaneseName": "シェルビー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "26-Oct-23",
+      "classBreakthroughJP": "29-Aug-24"
+    },
+    {
+      "name": "Signa",
+      "japaneseName": "シグナ",
+      "jpReleaseDate": "28-Apr-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "S+",
+          "game8Score": 9.9
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "3-Oct-24"
+    },
+    {
+      "name": "Signa EX",
+      "japaneseName": "シグナEx",
+      "jpReleaseDate": "13-Mar-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "13-Mar-25"
+      },
+      "blessingOfLanternJP": "13-Mar-25",
+      "classBreakthroughJP": "13-Mar-25"
+    },
+    {
+      "name": "Sigrid",
+      "japaneseName": "ジークリット",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F+",
+          "game8Score": 9.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "7-Dec-23"
+    },
+    {
+      "name": "Sigrid EX",
+      "japaneseName": "ジークリットEx",
+      "jpReleaseDate": "31-Dec-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "1-Jan-25"
+      },
+      "blessingOfLanternJP": "1-Jan-25",
+      "classBreakthroughJP": "1-Jan-25"
+    },
+    {
+      "name": "Sofia",
+      "japaneseName": "ソフィア",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "8-May-25"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Sofia EX",
+      "japaneseName": "ソフィアEx",
+      "jpReleaseDate": "8-Aug-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "8-Aug-23",
+      "classBreakthroughJP": "25-Jul-24"
+    },
+    {
+      "name": "Soleil",
+      "japaneseName": "ソレイユ",
+      "jpReleaseDate": "24-Jun-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Solon",
+      "japaneseName": "ソロン",
+      "jpReleaseDate": "16-Feb-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "24-Aug-23",
+      "classBreakthroughJP": "11-Jan-24"
+    },
+    {
+      "name": "Sonia",
+      "japaneseName": "ソニア",
+      "jpReleaseDate": "28-Oct-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "21-Sep-23",
+      "classBreakthroughJP": "16-May-24"
+    },
+    {
+      "name": "Sowan",
+      "japaneseName": "ソワン",
+      "jpReleaseDate": "1-Aug-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "1-Aug-24",
+      "classBreakthroughJP": "1-Aug-24"
+    },
+    {
+      "name": "Stead",
+      "japaneseName": "ステッド",
+      "jpReleaseDate": "11-Mar-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "21-Sep-23",
+      "classBreakthroughJP": "4-Jul-24"
+    },
+    {
+      "name": "Streibough",
+      "japaneseName": "ストレイボウ",
+      "jpReleaseDate": "16-Mar-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "27-Jun-24",
+      "classBreakthroughJP": "27-Jun-24"
+    },
+    {
+      "name": "Sunny",
+      "japaneseName": "サニー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "16-Jan-25"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "22-Nov-23"
+    },
+    {
+      "name": "Tahir",
+      "japaneseName": "ターヒル",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "31-Aug-23",
+      "classBreakthroughJP": "23-May-24"
+    },
+    {
+      "name": "Tatloch",
+      "japaneseName": "タトゥロック",
+      "jpReleaseDate": "13-Oct-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "9-May-24",
+      "classBreakthroughJP": "9-May-24"
+    },
+    {
+      "name": "Tatloch EX",
+      "japaneseName": "タトゥロックEx",
+      "jpReleaseDate": "18-Jul-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "A",
+          "game8Score": 9.7
+        }
+      },
+      "blessingOfLanternJP": "18-Jul-24",
+      "classBreakthroughJP": "18-Jul-24"
+    },
+    {
+      "name": "Telly",
+      "japaneseName": "テリー",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Temenos",
+      "japaneseName": "テメノス",
+      "jpReleaseDate": "28-Oct-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "28-Oct-23",
+      "classBreakthroughJP": "28-Oct-23"
+    },
+    {
+      "name": "Theo",
+      "japaneseName": "テオ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "29-Feb-24"
+    },
+    {
+      "name": "Therese",
+      "japaneseName": "テレーズ",
+      "jpReleaseDate": "26-Nov-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "6-Jan-25"
+      },
+      "blessingOfLanternJP": "17-Aug-23",
+      "classBreakthroughJP": "18-Jan-24"
+    },
+    {
+      "name": "Therese EX",
+      "japaneseName": "テレーズEx",
+      "jpReleaseDate": "13-Mar-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "13-Mar-25"
+      },
+      "blessingOfLanternJP": "13-Mar-25",
+      "classBreakthroughJP": "13-Mar-25"
+    },
+    {
+      "name": "Therion",
+      "japaneseName": "テリオン",
+      "jpReleaseDate": "1-Jan-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Jun-25"
+      },
+      "blessingOfLanternJP": "27-Jul-23",
+      "classBreakthroughJP": "8-Aug-24"
+    },
+    {
+      "name": "Throné",
+      "japaneseName": "ソローネ",
+      "jpReleaseDate": "22-Jun-23",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "22-Jun-23",
+      "classBreakthroughJP": "22-Nov-23"
+    },
+    {
+      "name": "Tikilen",
+      "japaneseName": "ティキレン",
+      "jpReleaseDate": "10-Feb-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "11-Apr-24",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Tithi",
+      "japaneseName": "ティティ",
+      "jpReleaseDate": "1-Dec-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "7-Dec-23",
+      "classBreakthroughJP": "7-Dec-23"
+    },
+    {
+      "name": "Tiziano",
+      "japaneseName": "ティツィアーノ",
+      "jpReleaseDate": "28-Apr-24",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "5-Dec-24"
+      },
+      "blessingOfLanternJP": "28-Apr-24",
+      "classBreakthroughJP": "28-Apr-24"
+    },
+    {
+      "name": "Tressa",
+      "japaneseName": "トレサ",
+      "jpReleaseDate": "1-Jan-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "13-Jul-23",
+      "classBreakthroughJP": "12-Oct-23"
+    },
+    {
+      "name": "Tressa EX",
+      "japaneseName": "トレサEx",
+      "jpReleaseDate": "8-Sep-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.0
+        }
+      },
+      "blessingOfLanternJP": "16-Nov-23",
+      "classBreakthroughJP": "16-Nov-23"
+    },
+    {
+      "name": "Trish",
+      "japaneseName": "トリッシュ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.0
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "28-Mar-24"
+    },
+    {
+      "name": "Tytos",
+      "japaneseName": "タイタス",
+      "jpReleaseDate": "28-Apr-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "24-Oct-24"
+      },
+      "blessingOfLanternJP": "2-Nov-23",
+      "classBreakthroughJP": "2-Nov-23"
+    },
+    {
+      "name": "Varkyn",
+      "japaneseName": "ヴァルカン",
+      "jpReleaseDate": "8-Apr-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "12-Sep-24",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Viola",
+      "japaneseName": "ヴィオラ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "27-Feb-25"
+      },
+      "blessingOfLanternJP": "28-Sep-23",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Viola EX",
+      "japaneseName": "ヴィオラEx",
+      "jpReleaseDate": "13-Feb-25",
+      "tierRatings": {
+        "jp": {
+          "tier": "S",
+          "game8Score": 9.8
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "13-Feb-25"
+      },
+      "blessingOfLanternJP": "13-Feb-25",
+      "classBreakthroughJP": "13-Feb-25"
+    },
+    {
+      "name": "Vivian",
+      "japaneseName": "ビビアン",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "6-Jul-23",
+      "classBreakthroughJP": "11-Apr-24"
+    },
+    {
+      "name": "Wingate",
+      "japaneseName": "ウィンゲート",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "F",
+          "game8Score": 8.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "7-Nov-24"
+      },
+      "blessingOfLanternJP": "26-Oct-23",
+      "classBreakthroughJP": "20-Jun-24"
+    },
+    {
+      "name": "W’ludai",
+      "japaneseName": "ウルダイ",
+      "jpReleaseDate": "11-Nov-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "4-Jan-24",
+      "classBreakthroughJP": "4-Jan-24"
+    },
+    {
+      "name": "Yan Long",
+      "japaneseName": "イェンロン",
+      "jpReleaseDate": "27-Oct-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.3
+        }
+      },
+      "blessingOfLanternJP": "12-Sep-24",
+      "classBreakthroughJP": "12-Sep-24"
+    },
+    {
+      "name": "Yugo",
+      "japaneseName": "ウーゴ",
+      "jpReleaseDate": "28-Oct-20",
+      "tierRatings": {
+        "jp": {
+          "tier": "H",
+          "game8Score": 7.5
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "30-Jan-25"
+      },
+      "blessingOfLanternJP": "20-Jul-23",
+      "classBreakthroughJP": "29-Feb-24"
+    },
+    {
+      "name": "Yukes",
+      "japaneseName": "ユークス",
+      "jpReleaseDate": "12-May-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "C",
+          "game8Score": 9.4
+        }
+      },
+      "ultimate200": {
+        "available": true,
+        "dateJP": "21-Nov-24"
+      },
+      "blessingOfLanternJP": "7-Dec-23",
+      "classBreakthroughJP": "6-Jun-24"
+    },
+    {
+      "name": "Yunnie",
+      "japaneseName": "ユーニィ",
+      "jpReleaseDate": "21-Jul-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "D",
+          "game8Score": 9.2
+        }
+      },
+      "blessingOfLanternJP": "31-Jan-24",
+      "classBreakthroughJP": "31-Jan-24"
+    },
+    {
+      "name": "Zenia",
+      "japaneseName": "ゼニア",
+      "jpReleaseDate": "1-Jun-22",
+      "tierRatings": {
+        "jp": {
+          "tier": "B",
+          "game8Score": 9.6
+        }
+      },
+      "blessingOfLanternJP": "30-May-24",
+      "classBreakthroughJP": "30-May-24"
+    },
+    {
+      "name": "Z’aanta",
+      "japaneseName": "ザンター",
+      "jpReleaseDate": "28-Jan-21",
+      "tierRatings": {
+        "jp": {
+          "tier": "E",
+          "game8Score": 9.1
+        }
+      },
+      "blessingOfLanternJP": "14-Sep-23",
+      "classBreakthroughJP": "28-Mar-24"
+    }
+  ]
+}

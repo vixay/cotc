@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(chmod:*)",
+      "WebFetch(domain:octopathcotc.notion.site)",
+      "Bash(grep:*)",
+      "WebFetch(domain:dotgg.gg)",
+      "WebFetch(domain:docs.google.com)",
+      "Bash(python3:*)",
+      "Bash(for char in \"Temenos\" \"Therese EX\" \"Thronè\" \"Tithi\" \"Tiziano\" \"Tressa EX\" \"Trish\" \"Tytos\" \"Viola EX\" \"Vivian\" \"Wingate\" \"Yugo\" \"Yukes\")",
+      "Bash(do)",
+      "Bash(if ! grep -q \"\"\"$char\"\"\" /mnt/c/Users/VJOverseer/OneDrive/code/vixay/cotc/data/characters.json)",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(pip install:*)",
+      "WebFetch(domain:meowdb.com)",
+      "Bash(python:*)",
+      "Bash(mv:*)",
+      "Bash(true)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}
