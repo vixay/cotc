@@ -61,3 +61,13 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+docs/character_details_view_requirements.md
+docs/column_visibility_design.md
+docs/column_visibility_strategy.md
+docs/DISPLAY_VIEWS_ROADMAP.md
+docs/MERGE_WORKFLOW.md
+docs/unified_column_visibility_strategy.md
+scripts/merge-to-main.sh
+CLAUDE_INSTRUCTIONS_COMPLETE.md
+CLAUDE.md
+instructions_template.md
