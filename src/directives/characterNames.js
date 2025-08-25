@@ -211,7 +211,7 @@ const showPortraitPreview = (linkElement, characterId, characterName) => {
   preview.innerHTML = `
     <div class="preview-content">
       <div class="preview-portrait">
-        <img src="images/characters/portraits/${characterId}.png" 
+        <img src="${import.meta.env.BASE_URL}images/characters/portraits/${characterId}.png" 
              alt="${characterName}"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
              style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 2px solid var(--primary-color);">

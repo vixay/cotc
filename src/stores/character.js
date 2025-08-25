@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { findMarkdownFile } from '../utils/markdownParser'
 import debug from '../utils/debug'
+import { paths } from '../utils/pathUtils.js'
 
 export const useCharacterStore = defineStore('character', {
   state: () => ({
@@ -162,7 +163,7 @@ export const useCharacterStore = defineStore('character', {
       this.loading.characters = true
       
       try {
-        const dataUrl = 'data/characters_enhanced_v3.json'
+        const dataUrl = paths.data('characters_enhanced_v3.json')
         const response = await fetch(dataUrl)
         
         if (!response.ok) {

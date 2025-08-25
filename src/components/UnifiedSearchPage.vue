@@ -526,6 +526,7 @@ import { ref, computed, reactive, onMounted, watch, nextTick } from 'vue'
 import { useCharacterStore } from '../stores/character'
 import { useToast } from 'primevue/usetoast'
 import CharacterPortrait from './CharacterPortrait.vue'
+import { paths } from '../utils/pathUtils.js'
 
 // PrimeVue Components
 import InputText from 'primevue/inputtext'
@@ -898,7 +899,7 @@ export default {
         // Load accessories from accessories.json
         allAccessories.value = []
         try {
-          const response = await fetch('data/accessories.json')
+          const response = await fetch(paths.data('accessories.json'))
           const accessoriesData = await response.json()
           
           if (accessoriesData.accessories) {

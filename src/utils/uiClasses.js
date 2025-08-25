@@ -5,6 +5,8 @@
  * All functions return `ui-` prefixed classes from the global style library.
  */
 
+import { paths } from './pathUtils.js'
+
 /**
  * Get stone class for awakening stones
  * @param {string} stone - Stone value (U10, A1, A2, A3, A4, Shard, etc.)
@@ -148,10 +150,10 @@ export const getCharacterImagePath = (characterId, imageType = 'portrait') => {
   const normalizedId = characterId.toLowerCase().replace(/[^a-z0-9]/g, '_')
   
   const imageMap = {
-    'thumbnail': `/images/characters/thumbnails/${normalizedId}.png`,
-    'portrait': `/images/characters/portraits/${normalizedId}.png`,
-    'full': `/images/characters/full/${normalizedId}.png`,
-    'card': `/images/characters/cards/${normalizedId}.png`
+    'thumbnail': paths.images(`characters/thumbnails/${normalizedId}.png`),
+    'portrait': paths.images(`characters/portraits/${normalizedId}.png`),
+    'full': paths.images(`characters/full/${normalizedId}.png`),
+    'card': paths.images(`characters/cards/${normalizedId}.png`)
   }
   
   return imageMap[imageType] || imageMap.portrait
@@ -409,15 +411,15 @@ export const getStatIconClass = (statType, size = '') => {
  */
 export const getStatIconPath = (statType) => {
   const iconMap = {
-    'patk': '/images/icons/stat_boosts/Phys_Atk_Up.png',
-    'eatk': '/images/icons/stat_boosts/Elem_Atk_Up.png', 
-    'crit': '/images/icons/stat_boosts/Crit_Up.png',
-    'sp': '/images/icons/healing_recovery/SP_Stock.png',
-    'hp': '/images/icons/healing_recovery/HP_Barrier.png',
-    'spd': '/images/icons/stat_boosts/Speed_Up.png',
-    'speed': '/images/icons/stat_boosts/Speed_Up.png',
-    'edef': '/images/icons/stat_boosts/Elem_Def_Up.png',
-    'pdef': '/images/icons/stat_boosts/Phys_Def_Up.png'
+    'patk': paths.images('icons/stat_boosts/Phys_Atk_Up.png'),
+    'eatk': paths.images('icons/stat_boosts/Elem_Atk_Up.png'), 
+    'crit': paths.images('icons/stat_boosts/Crit_Up.png'),
+    'sp': paths.images('icons/healing_recovery/SP_Stock.png'),
+    'hp': paths.images('icons/healing_recovery/HP_Barrier.png'),
+    'spd': paths.images('icons/stat_boosts/Speed_Up.png'),
+    'speed': paths.images('icons/stat_boosts/Speed_Up.png'),
+    'edef': paths.images('icons/stat_boosts/Elem_Def_Up.png'),
+    'pdef': paths.images('icons/stat_boosts/Phys_Def_Up.png')
   }
   
   return iconMap[statType.toLowerCase()] || ''
