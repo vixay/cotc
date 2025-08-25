@@ -1291,7 +1291,7 @@ export default {
       
       const normalizedStat = statType.toLowerCase().replace(/\s+/g, '_')
       const iconFile = statMap[normalizedStat]
-      return iconFile ? `/images/wiki-icons/${iconFile}` : null
+      return iconFile ? paths.images(`wiki-icons/${iconFile}`) : null
     }
 
     const formatStatValue = (value) => {
