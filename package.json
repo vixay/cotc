@@ -5,11 +5,10 @@
   "main": "src/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && mkdir -p dist-vue/data && cp data/characters_enhanced_v3.json data/accessories.json dist-vue/data/",
-    "build:github": "vite build && cp dist-vue/index.html dist-vue/vue.html",
+    "build": "vite build",
     "preview": "vite preview",
     "serve": "python -m http.server 8000",
-    "deploy:vue": "npm run build:github && echo 'Vue build ready for GitHub Pages in dist-vue/'"
+    "deploy:vue": "npm run build && echo 'Vue 4.0.0 built and ready for GitHub Pages'"
   },
   "dependencies": {
     "@playwright/mcp": "^0.0.33",

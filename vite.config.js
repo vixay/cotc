@@ -14,15 +14,15 @@ export default defineConfig({
   publicDir: false, // Disable default public dir to avoid conflicts
   base: '/', // Use root path for dev server
   build: {
-    outDir: 'dist-vue',
-    assetsDir: 'assets',
-    base: '/cotc/', // GitHub Pages base path only for build
+    outDir: '.',
+    assetsDir: 'dist-assets',
+    base: '/cotc/',
     rollupOptions: {
-      input: 'index-vue.html', // Use our Vue HTML entry point
+      input: 'index-vue.html',
       output: {
-        entryFileNames: 'assets/[name].[hash].js',
-        chunkFileNames: 'assets/[name].[hash].js',
-        assetFileNames: 'assets/[name].[hash].[ext]'
+        entryFileNames: 'dist-assets/[name].[hash].js',
+        chunkFileNames: 'dist-assets/[name].[hash].js',
+        assetFileNames: 'dist-assets/[name].[hash].[ext]'
       }
     }
   },
