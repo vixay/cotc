@@ -497,6 +497,17 @@ function getSharedIconPath(iconName) {
         'Vim_and_Vigor.png': 'wiki-icons/Buff_Vim_and_Vigor.png',
         'Sidesstep.png': 'wiki-icons/Buff_Evade_Phys._Atk.png',
         
+        // Common icons
+        'Awakening_IV.png': 'icons/awakening/Awakening_IV.png',
+        'Accessory.png': 'icons/common/Accessory.png',
+        
+        // Status effects - map to Status_ prefixed icons
+        'Corrosion.png': 'wiki-icons/Status_Corrosion.png',
+        'Frostbite.png': 'wiki-icons/Status_Frostbite.png',
+        'Shock.png': 'wiki-icons/Status_Shock.png',
+        'Enchant.png': 'wiki-icons/Status_Enchant.png',
+        'Combustion.png': 'wiki-icons/Status_Combust.png',
+        
         // Direct mapping for existing wiki-icons
         'Buff_Phys._Atk._Up.png': 'wiki-icons/Buff_Phys._Atk._Up.png',
         'Buff_Elem._Atk._Up.png': 'wiki-icons/Buff_Elem._Atk._Up.png',
@@ -508,10 +519,11 @@ function getSharedIconPath(iconName) {
         'Buff_BP_Recovery_Up.png': 'wiki-icons/Buff_BP_Recovery_Up.png',
         'Buff_HP_Barrier.png': 'wiki-icons/Buff_HP_Barrier.png'
     };
-    // Normalize the icon name to remove variants
-    const normalizedName = normalizeIconName(iconName);
-    const iconPath = sharedIcons[normalizedName];
-    return iconPath ? paths.images(iconPath) : null;
+      // Normalize the icon name to remove variants
+      const normalizedName = normalizeIconName(iconName);
+      const iconPath = sharedIcons[normalizedName];
+      // If we have a mapping, use it; otherwise fall back to the original path
+      return iconPath ? paths.images(iconPath) : paths.images(iconName);
 }
 
 // Get attribute icon path
