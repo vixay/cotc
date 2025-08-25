@@ -68,3 +68,4 @@ dev-server.log
 images/characters/cotc-sprites.7z
 .playwright-mcp/*
 dist-vue/*
+dist-assets/*
