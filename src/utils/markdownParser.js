@@ -424,6 +424,22 @@ function processImagePath(imagePath) {
     return paths.images(imagePath);
 }
 
+// Normalize icon name by removing variants and URL encoding
+function normalizeIconName(iconName) {
+    if (!iconName) return '';
+    
+    // URL decode the name first
+    let normalized = decodeURIComponent(iconName);
+    
+    // Remove numbered variants like " 1", " 2", etc.
+    normalized = normalized.replace(/\s+\d+\.png$/, '.png');
+    
+    // Remove URL-encoded variants like "%201", "%202", etc.
+    normalized = normalized.replace(/%20\d+\.png$/, '.png');
+    
+    return normalized;
+}
+
 // Get shared icon path
 function getSharedIconPath(iconName) {
     const sharedIcons = {
@@ -432,15 +448,54 @@ function getSharedIconPath(iconName) {
         'Elem_Atk_Boost.png': 'wiki-icons/Buff_Elem._Atk._Up.png',
         'Elem_atk_Boost.png': 'wiki-icons/Buff_Elem._Atk._Up.png',
         'BP_Recovery_Boost.png': 'wiki-icons/Buff_BP_Recovery_Up.png',
+        'BP_Recovery.png': 'wiki-icons/Buff_BP_Recovery_Up.png',
         'Critical_Force.png': 'wiki-icons/Buff_Crit._Up.png',
+        'Critical_Elemental_Damage.png': 'wiki-icons/Buff_Crit._Up.png',
         'Crit_Up.png': 'wiki-icons/Buff_Crit._Up.png',
         'Max_HP_Boost.png': 'wiki-icons/Buff_HP_Barrier.png',
+        'Max_HP_Up.png': 'wiki-icons/Buff_HP_Barrier.png',
         'HP_Boost.png': 'wiki-icons/Buff_HP_Barrier.png',
         'Speed_Up.png': 'wiki-icons/Buff_Spd._Up.png',
         'Spd_Up.png': 'wiki-icons/Buff_Spd._Up.png',
+        'Speed_Drain.png': 'wiki-icons/Debuff_Spd._Down.png',
         'Elem_Def_Up.png': 'wiki-icons/Buff_Elem._Def._Up.png',
         'Phys_Def_Up.png': 'wiki-icons/Buff_Phys._Def._Up.png',
+        'Phys_Def_Boost.png': 'wiki-icons/Buff_Phys._Def._Up.png',
         'SP_Stock.png': 'wiki-icons/Buff_SP_Stock.png',
+        'SP_Recovery.png': 'wiki-icons/Buff_SP_Stock.png',
+        'SP_Regen.png': 'wiki-icons/Buff_SP_Stock.png',
+        
+        // Weapon icons - map to available wiki-icons weapon types
+        'Sword.png': 'wiki-icons/Type_Swords.png',
+        'Dagger.png': 'wiki-icons/Type_Daggers.png',
+        'Staff_Staves.png': 'wiki-icons/Type_Staves.png',
+        'Bow.png': 'wiki-icons/Type_Bows.png',
+        'Axe.png': 'wiki-icons/Type_Axes.png',
+        'Spear_Polearm.png': 'wiki-icons/Type_Polearms.png',
+        'Fan.png': 'wiki-icons/Type_Fans.png',
+        'Tome.png': 'wiki-icons/Type_Tomes.png',
+        
+        // Element icons - map to available wiki-icons
+        'Lightning_Thunder.png': 'wiki-icons/Type_Lightning.png',
+        'Dark.png': 'wiki-icons/Type_Dark.png',
+        'Fire.png': 'wiki-icons/Type_Fire.png',
+        'Ice.png': 'wiki-icons/Type_Ice.png',
+        'Wind.png': 'wiki-icons/Type_Wind.png',
+        'Light.png': 'wiki-icons/Type_Light.png',
+        
+        // Resistances
+        'Fire_Resilience.png': 'wiki-icons/Buff_Fire_Res._Up.png',
+        'Ice_Resilience.png': 'wiki-icons/Buff_Ice_Res._Up.png',
+        'Lightning_Resilience.png': 'wiki-icons/Buff_Lightning_Res._Up.png',
+        'Wind_Resilience.png': 'wiki-icons/Buff_Wind_Res._Up.png',
+        'Light_Resilience.png': 'wiki-icons/Buff_Light_Res._Up.png',
+        'Dark_Resilience.png': 'wiki-icons/Buff_Dark_Res._Up.png',
+        
+        // Special abilities
+        'Thief_Evasion.png': 'wiki-icons/Buff_Thief\'s_Evasion.png',
+        'Thiefs_Evasion.png': 'wiki-icons/Buff_Thief\'s_Evasion.png',
+        'Vim_and_Vigor.png': 'wiki-icons/Buff_Vim_and_Vigor.png',
+        'Sidesstep.png': 'wiki-icons/Buff_Evade_Phys._Atk.png',
         
         // Direct mapping for existing wiki-icons
         'Buff_Phys._Atk._Up.png': 'wiki-icons/Buff_Phys._Atk._Up.png',
@@ -453,7 +508,9 @@ function getSharedIconPath(iconName) {
         'Buff_BP_Recovery_Up.png': 'wiki-icons/Buff_BP_Recovery_Up.png',
         'Buff_HP_Barrier.png': 'wiki-icons/Buff_HP_Barrier.png'
     };
-    const iconPath = sharedIcons[iconName];
+    // Normalize the icon name to remove variants
+    const normalizedName = normalizeIconName(iconName);
+    const iconPath = sharedIcons[normalizedName];
     return iconPath ? paths.images(iconPath) : null;
 }
 
