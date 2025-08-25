@@ -162,7 +162,7 @@ export const useCharacterStore = defineStore('character', {
       this.loading.characters = true
       
       try {
-        const dataUrl = '/data/characters_enhanced_v3.json'
+        const dataUrl = 'data/characters_enhanced_v3.json'
         const response = await fetch(dataUrl)
         
         if (!response.ok) {
