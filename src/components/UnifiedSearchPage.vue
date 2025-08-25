@@ -228,55 +228,43 @@
 
     <!-- Results Table -->
     <DataTable 
-      v-model:selection="selectedResults"
       :value="filteredResults"
       :paginator="true"
       :rows="pageSize"
       :totalRecords="filteredResults.length"
       :lazy="false"
       :loading="isLoading"
-      selectionMode="multiple"
-      :metaKeySelection="false"
       class="unified-results-table"
       :resizableColumns="true"
       columnResizeMode="fit"
       stripedRows
       responsiveLayout="scroll"
     >
-      <!-- Selection Column -->
-      <Column selectionMode="multiple" headerStyle="width: 3rem" />
 
-      <!-- Type Column -->
-      <Column field="type" header="Type" :sortable="true" style="min-width: 100px">
+      <!-- Combined Type Column -->
+      <Column field="type" header="Type" :sortable="true" style="min-width: 120px; max-width: 160px; width: 12%">
         <template #body="{ data }">
-          <Tag 
-            :value="data.type"
-            :severity="getTypeSeverity(data.type)"
-            :icon="getTypeIcon(data.type)"
-            class="type-tag"
-          />
-        </template>
-      </Column>
-
-      <!-- Skill Type Column (only for skills) -->
-      <Column field="skillType" header="Skill Type" :sortable="true" style="min-width: 120px">
-        <template #body="{ data }">
-          <Tag 
-            v-if="data.type === 'skills' && data.skillType"
-            :value="data.skillType"
-            :severity="getSkillTypeSeverity(data.skillType)"
-            :icon="getSkillTypeIcon(data.skillType)"
-            class="skill-type-tag"
-          />
-          <span v-else-if="data.type === 'accessories'">—</span>
+          <div class="combined-type-cell">
+            <div class="type-display">
+              <div class="main-type">{{ getMainType(data) }}</div>
+              <div class="sub-type">
+                <Tag 
+                  :value="getSubType(data)"
+                  :severity="getCombinedTypeSeverity(data)"
+                  :icon="getCombinedTypeIcon(data)"
+                  class="sub-type-tag"
+                />
+              </div>
+            </div>
+          </div>
         </template>
       </Column>
 
       <!-- Name Column -->
-      <Column field="name" header="Name" :sortable="true" style="min-width: 200px">
+      <Column field="name" header="Name" :sortable="true" style="min-width: 160px; max-width: 240px; width: 20%">
         <template #body="{ data }">
           <div class="name-cell">
-            <span class="item-name">{{ data.name }}</span>
+            <span class="item-name" :title="data.name">{{ data.name }}</span>
             <div v-if="data.character" class="character-link">
               <CharacterPortrait 
                 :characterId="data.character.id"
@@ -312,7 +300,7 @@
       </Column>
 
       <!-- Stats Column -->
-      <Column field="stats" header="Stats" style="min-width: 120px; max-width: 180px; width: 140px;">
+      <Column field="stats" header="Stats" style="min-width: 100px; max-width: 160px; width: 12%;">
         <template #body="{ data }">
           <div class="stats-cell">
             <div v-if="data.stats && Object.keys(data.stats).length" class="stats-icons">
@@ -345,7 +333,7 @@
       </Column>
 
       <!-- Effects Column -->
-      <Column field="effects" header="Effects" style="min-width: 200px; max-width: 300px; width: 25%;">
+      <Column field="effects" header="Effects" style="min-width: 180px; max-width: 280px; width: 22%;">
         <template #body="{ data }">
           <div class="effects-cell">
             <p class="effects-text">{{ data.effects || data.description }}</p>
@@ -353,8 +341,8 @@
         </template>
       </Column>
 
-      <!-- Notes Column -->
-      <Column field="notes" header="Notes" style="min-width: 150px; max-width: 250px; width: 20%;">
+      <!-- Tags Column -->
+      <Column field="notes" header="Tags" style="min-width: 120px; max-width: 200px; width: 15%;">
         <template #body="{ data }">
           <div class="notes-cell">
             <p class="notes-text">{{ data.notes || '' }}</p>
@@ -381,7 +369,7 @@
       </Column>
 
       <!-- Details Column -->
-      <Column field="details" header="Details" style="min-width: 150px">
+      <Column field="details" header="Details" style="min-width: 100px; max-width: 140px; width: 10%;">
         <template #body="{ data }">
           <div class="details-cell">
             <div v-if="data.spCost" class="detail-item">
@@ -397,7 +385,7 @@
       </Column>
 
       <!-- Actions Column -->
-      <Column header="Actions" style="min-width: 120px">
+      <Column header="Actions" style="min-width: 100px; width: 8%;">
         <template #body="{ data }">
           <div class="action-buttons">
             <Button 
@@ -583,7 +571,6 @@ export default {
     const showAdvancedFilters = ref(false)
     const showDetailsModal = ref(false)
     const selectedItem = ref(null)
-    const selectedResults = ref([])
     const pageSize = ref(25)
     const exportMenu = ref()
 
@@ -727,7 +714,24 @@ export default {
         results = results.filter(item => selectedContentTypes.value.includes(item.type))
       }
 
-
+      // Filter by unreleased characters (respect main page setting)
+      // TEMPORARILY DISABLED FOR DEBUGGING
+      /*
+      if (characterStore && characterStore.filters && !characterStore.filters.showUnreleased) {
+        results = results.filter(item => {
+          // Only filter items that have associated characters
+          if (item.character) {
+            const releaseDate = item.character.glReleaseDate
+            // Filter out if no release date or release date is in the future
+            if (!releaseDate || new Date(releaseDate) > new Date()) {
+              return false
+            }
+          }
+          // Items without characters always show (not character-dependent)
+          return true
+        })
+      }
+      */
 
       // Filter by skill types
       if (selectedSkillTypes.value.length > 0) {
@@ -1171,7 +1175,6 @@ export default {
 
     const clearSearch = () => {
       searchQuery.value = ''
-      selectedResults.value = []
       performSearch() // Show all results when search is cleared
     }
 
@@ -1189,8 +1192,6 @@ export default {
       searchMode.value = 'any'
       sortOption.value = 'name_asc'  // Reset sort to default
       
-      // Clear selected results
-      selectedResults.value = []
       
       // Hide advanced filters
       showAdvancedFilters.value = false
@@ -1244,6 +1245,75 @@ export default {
         case 'passive': return 'pi pi-circle'
         default: return 'pi pi-question'
       }
+    }
+
+    // Combined type functions for the unified column
+    const getCombinedTypeDisplay = (data) => {
+      if (data.type === 'skills') {
+        const skillType = data.skillType ? data.skillType : 'Unknown'
+        return `Skills > ${skillType}`
+      } else if (data.type === 'accessories') {
+        const accessoryType = data.accessoryType ? data.accessoryType : 'General'
+        // Use shorter format for accessories
+        if (accessoryType.toLowerCase() === 'awakening' || accessoryType.toLowerCase() === 'a4') {
+          return 'Acc. > A4'
+        } else if (accessoryType.toLowerCase() === 'regular' || accessoryType.toLowerCase() === 'general') {
+          return 'Acc. > Regular'
+        }
+        return `Acc. > ${accessoryType}`
+      }
+      return data.type
+    }
+
+    const getCombinedTypeSeverity = (data) => {
+      if (data.type === 'skills') {
+        return getSkillTypeSeverity(data.skillType)
+      } else if (data.type === 'accessories') {
+        const accessoryType = data.accessoryType ? data.accessoryType : 'General'
+        // Different colors for different accessory types
+        if (accessoryType.toLowerCase() === 'awakening' || accessoryType.toLowerCase() === 'a4') {
+          return 'warning' // Orange for A4 accessories
+        } else if (accessoryType.toLowerCase() === 'exclusive') {
+          return 'danger' // Red for Exclusive accessories  
+        } else {
+          return 'secondary' // Gray/no color for Regular accessories (like passive)
+        }
+      }
+      return getTypeSeverity(data.type)
+    }
+
+    const getCombinedTypeIcon = (data) => {
+      if (data.type === 'skills') {
+        return getSkillTypeIcon(data.skillType) || 'pi pi-flash'
+      } else if (data.type === 'accessories') {
+        return 'pi pi-shield'
+      }
+      return getTypeIcon(data.type)
+    }
+
+    // Multi-line type display functions
+    const getMainType = (data) => {
+      if (data.type === 'skills') {
+        return 'Skills'
+      } else if (data.type === 'accessories') {
+        return 'Acc.'
+      }
+      return data.type
+    }
+
+    const getSubType = (data) => {
+      if (data.type === 'skills') {
+        return data.skillType ? data.skillType : 'Unknown'
+      } else if (data.type === 'accessories') {
+        const accessoryType = data.accessoryType ? data.accessoryType : 'General'
+        if (accessoryType.toLowerCase() === 'awakening' || accessoryType.toLowerCase() === 'a4') {
+          return 'A4'
+        } else if (accessoryType.toLowerCase() === 'regular' || accessoryType.toLowerCase() === 'general') {
+          return 'Regular'
+        }
+        return accessoryType
+      }
+      return ''
     }
 
     const getTierSeverity = (tier) => {
@@ -1464,7 +1534,6 @@ export default {
       showAdvancedFilters,
       showDetailsModal,
       selectedItem,
-      selectedResults,
       pageSize,
       exportMenu,
       
@@ -1511,6 +1580,11 @@ export default {
       getTypeIcon,
       getSkillTypeSeverity,
       getSkillTypeIcon,
+      getCombinedTypeDisplay,
+      getCombinedTypeSeverity,
+      getCombinedTypeIcon,
+      getMainType,
+      getSubType,
       getTierSeverity,
       getStatIcon,
       formatStatValue,
@@ -1770,6 +1844,11 @@ export default {
 .item-name {
   font-weight: 600;
   color: var(--primary-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  max-width: 100%;
 }
 
 .character-link {
@@ -1798,6 +1877,43 @@ export default {
 .clickable-name:hover {
   color: var(--primary-hover);
   text-decoration-style: solid;
+}
+
+.combined-type-cell {
+  display: flex;
+  align-items: center;
+}
+
+.type-display {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.main-type {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.sub-type {
+  display: flex;
+  align-items: center;
+}
+
+.sub-type-tag {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.combined-type-tag {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tier-cell {
