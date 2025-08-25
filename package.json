@@ -5,7 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node -e \"require('fs').copyFileSync('index-vue.html', 'index.html')\"",
     "preview": "vite preview",
     "serve": "python -m http.server 8000",
     "deploy:vue": "npm run build && echo 'Vue 4.0.0 built and ready for GitHub Pages'"
