@@ -6,11 +6,85 @@
 **Basic Memory Integration**: ✅ Configured with comprehensive project documentation and context preservation.
 **Icon System**: ✅ Complete official COTC Wiki icon collection (176 icons) integrated.
 **Database Quality**: ✅ **EXCELLENT** - Version 4.0.0 with zero corruption, comprehensive tagging, full data integrity.
-**Current Focus**: 🎯 **NEXT PRIORITY** - Admin Dashboard development (Task 14) for community contributions.
+**Current Focus**: 🎯 **NEXT PRIORITY** - Icon Registry Refactoring (Task 22) to eliminate critical technical debt and enable rich skill visualization.
 
 ---
 
 ## 📋 High Priority Pending Tasks
+
+### Task 22: Icon Registry Refactoring - Eliminate Technical Debt
+**Status**: Ready for Implementation
+**Priority**: HIGH - Critical technical debt elimination and skill visualization enhancement
+
+**Purpose**: Consolidate 4 duplicate icon implementations into unified registry supporting 171+ official COTC Wiki icons.
+
+**Critical Technical Debt Identified**:
+- **4 duplicate implementations** with inconsistent icon mappings across components
+- **Scale underestimated**: Only handling 8 basic stats vs 171+ available buff/debuff/status icons
+- **Performance issues**: 1,803 skills need proper icon support
+- **Inconsistent fallbacks**: Some components have error handling, others don't
+
+**Key Issues**:
+1. `uiClasses.js`: Uses `wiki-icons/PhysAtk.png`
+2. `UnifiedSearchPage.vue`: Uses `wiki-icons/Buff_Phys._Atk._Up.png` (CONFLICT - different icons for same stat!)
+3. `SkillCharacterCard.vue`: Uses `elements/` and `weapons/` paths
+4. `markdownParser.js`: Uses `sharedIcons` mapping with different logic
+
+**Implementation Plan**:
+- **Create `/src/utils/iconRegistry.js`** as single source of truth
+- **Support all icon categories**: Stats, Buffs (85), Debuffs (40), Status Effects (46), Elements, Weapons
+- **Effect detection**: Analyze skill descriptions to suggest appropriate icons
+- **Migration**: Replace all 4 duplicate implementations systematically
+- **Performance optimization**: Lazy loading and caching for large skill dataset
+
+**Benefits**:
+- ✅ **Single maintenance point** for all 171+ icons
+- ✅ **Rich skill effect visualization** with official COTC icons
+- ✅ **Consistent behavior** across all components
+- ✅ **Performance improvements** through optimization
+- ✅ **Foundation** for advanced skill analysis features
+
+**Timeline**: 2-3 weeks (Phase 1 of major refactoring)
+
+---
+
+### Task 23: Unified Tagging System Consolidation
+**Status**: Ready for Implementation (Depends on Task 22)
+**Priority**: MEDIUM - Cross-category search and BotL classification fixes
+
+**Purpose**: Consolidate fragmented tagging systems and enable cross-category effect search.
+
+**Critical Problems Identified**:
+1. **Cross-category search broken**: Cannot find `dark_res_down` across both skills and accessories
+2. **BotL misclassified**: Should be subtypes of active/passive, not separate category  
+3. **Multiple competing tagging systems** causing fragmentation
+4. **Effect taxonomy gaps**: Same effects tagged differently in skills vs accessories
+
+**Current Issues**:
+- **Universal Tagging System** exists with 200+ tags but not consistently applied
+- **Skills vs accessories** use different tag vocabularies
+- **BotL structure wrong**: Should be metadata on battle/passive skills, not separate array
+- **Per character limits**: 1 BotL active + 1 BotL passive + 1 EX skill (not enforced)
+
+**Implementation Plan**:
+- **Consolidate tag systems** into single registry with unified effect vocabulary
+- **Create cross-category taxonomy**: Same effect names for skills + accessories
+- **Fix BotL classification**: Restructure as subtypes with proper metadata
+- **Enable unified search**: "Find all dark_res_down sources" across both categories  
+- **Clean up memory docs**: Remove duplicate/conflicting tagging documentation
+
+**Dependencies**: Task 22 (Icon Registry) - effects need both unified tags and icons
+
+**Benefits**:
+- ✅ **Cross-category search**: Find effects across skills + accessories
+- ✅ **Proper BotL classification** as skill subtypes
+- ✅ **Single effect vocabulary** across all content types
+- ✅ **Enhanced search capabilities** with unified taxonomy
+- ✅ **Simplified maintenance** with consolidated systems
+
+**Timeline**: 2-3 weeks (Phase 2 of major refactoring, after Task 22)
+
+---
 
 ### Task 21: Remove Legacy Vanilla Version and Deploy Vue App
 **Status**: ⏳ PARTIALLY COMPLETED - Vue App Deployed, Legacy Cleanup Pending

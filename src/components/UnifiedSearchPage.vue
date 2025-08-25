@@ -360,7 +360,7 @@
                 v-if="data.tags.length > 3"
                 :label="`+${data.tags.length - 3} more`"
                 class="more-tags-indicator"
-                @click="showItemDetails(data)"
+                @click="viewDetails(data)"
                 :removable="false"
               />
             </div>
@@ -376,10 +376,6 @@
               <i class="pi pi-bolt"></i>
               <span>{{ data.spCost }} SP</span>
             </div>
-            <div v-if="data.accessoryType" class="detail-item">
-              <i class="pi pi-shield"></i>
-              <span>{{ data.accessoryType }}</span>
-            </div>
           </div>
         </template>
       </Column>
@@ -393,12 +389,6 @@
               class="p-button-text p-button-sm view-button"
               @click="viewDetails(data)"
               v-tooltip.top="'View details'"
-            />
-            <Button 
-              icon="pi pi-copy"
-              class="p-button-text p-button-sm copy-button"
-              @click="copyToClipboard(data)"
-              v-tooltip.top="'Copy info'"
             />
             <Button 
               v-if="data.character"

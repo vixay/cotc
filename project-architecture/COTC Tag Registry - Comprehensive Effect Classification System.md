@@ -1,4 +1,10 @@
-# Tag Registry
+---
+title: COTC Tag Registry - Comprehensive Effect Classification System
+type: note
+permalink: project-architecture/cotc-tag-registry-comprehensive-effect-classification-system
+---
+
+# COTC Tag Registry - Comprehensive Effect Classification System
 
 ## Overview
 Centralized registry for all tags used across characters, skills, ultimates, accessories, pets, and divine beasts. This ensures consistency, prevents duplication, and maintains a single source of truth for tag definitions.
@@ -253,7 +259,7 @@ Defines the attack pattern of abilities.
 | `hit_potency_up` | Attack with potency enhancement | "Potency Up" |
 | `hit_count_up` | Increased number of attacks | "Attack Count Up" |
 
-### 11. Trigger Conditions (`trigger_*`)
+### 12. Trigger Conditions (`trigger_*`)
 Conditions that activate abilities or effects.
 
 | Tag | Definition | UI Display |
@@ -270,7 +276,7 @@ Conditions that activate abilities or effects.
 | `trigger_dodge` | Activates when dodging | "On Dodge" |
 | `trigger_kill` | Activates when defeating enemy | "On Kill" |
 
-### 12. Meta Relevance (`meta_*`)
+### 13. Meta Relevance (`meta_*`)
 Tags for tracking current meta utility and content relevance.
 
 | Tag | Definition | UI Display |
@@ -314,69 +320,25 @@ Tags for tracking current meta utility and content relevance.
 4. **Clean up data** - Remove from all references
 5. **Remove from registry** - Delete after confirmed cleanup
 
-## UI Integration
+## Cross-Category Effect Support
 
-### Search Interface Design
-The tag system should integrate seamlessly with the existing search, making it intuitive for users to find what they need.
+### Critical Feature: Unified Effect Search
+This registry supports **cross-category searches** essential for Task 23. For example:
+- **`active_res_dark_down`** (skills) and **`resist_down_dark`** (accessories) both support dark resistance down
+- **`heal_hp`** appears in both skills and accessories with HP recovery effects
+- **`active_stats_patk_up`** (skills) and **`stat_atk_phys`** (accessories) both support physical attack boosts
 
-#### Auto-Complete Search Bar
-```html
-<div class="tag-search-container">
-  <input type="text" 
-         id="tagSearch" 
-         placeholder="Type to find characters, skills, or effects..."
-         autocomplete="off">
-  <div id="tagSuggestions" class="tag-suggestions">
-    <!-- Dynamic suggestions appear here -->
-  </div>
-</div>
-```
+### BotL (Blessing of the Lantern) Classification
+**Current Issue**: BotL skills incorrectly classified as separate category
+**Solution**: BotL skills should be **subtypes** of active/passive with metadata:
+- `botl_active` → `active_stats_*` + `source_botl` metadata  
+- `botl_passive` → `passive_stats_*` + `source_botl` metadata
+- Each character limited to: 1 BotL active + 1 BotL passive + 1 EX skill
 
-#### Tag Suggestion Categories
-When user types, show suggestions grouped by relevance:
+---
 
-1. **Direct matches** - Exact tag name matches
-2. **Partial matches** - Tags containing the search term
-3. **Related tags** - Semantically similar tags
-4. **Popular tags** - Most commonly used tags
-
-#### Visual Tag Display
-```html
-<div class="selected-tags">
-  <span class="tag tag-buff">Physical Attack Buff <button class="tag-remove">×</button></span>
-  <span class="tag tag-target">All Allies <button class="tag-remove">×</button></span>
-</div>
-```
-
-#### Search Logic
-```javascript
-// Multi-tag search with Boolean logic
-function searchByTags(selectedTags, searchMode = 'AND') {
-  const results = characters.filter(character => {
-    const characterTags = getAllTagsForCharacter(character);
-    
-    if (searchMode === 'AND') {
-      return selectedTags.every(tag => characterTags.includes(tag));
-    } else if (searchMode === 'OR') {
-      return selectedTags.some(tag => characterTags.includes(tag));
-    }
-  });
-  
-  return results;
-}
-```
-
-### Filter Integration
-Tags integrate with existing filters to create powerful search combinations:
-
-```javascript
-const searchCriteria = {
-  tags: ['buff_atk_phys', 'target_ally_all'],
-  tagMode: 'AND',
-  role: 'Buffer',
-  tier: ['S+', 'S'],
-  availability: 'gacha'
-};
-```
-
-This creates a comprehensive, maintainable system for organizing and searching game content while keeping the UI intuitive and responsive.
+**Status**: ✅ **Comprehensive Registry Complete**  
+**Coverage**: 200+ standardized effect tags across all game mechanics  
+**Cross-Category Support**: ✅ Unified effect vocabulary for skills + accessories  
+**BotL Solution**: ✅ Proper subtype classification with metadata approach  
+**Next Step**: Implement unified icon registry mapping these tags to 171+ COTC Wiki icons
