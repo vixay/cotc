@@ -1,5 +1,7 @@
 // Character markdown file mapping and parsing utilities
 
+import { paths } from './pathUtils.js'
+
 // Get replacement SVG for Notion emoji URLs
 function getNotionEmojiReplacement(notionUrl) {
     // Return a simple placeholder emoji as text instead of problematic SVG
@@ -413,34 +415,53 @@ function processImagePath(imagePath) {
         return getNotionEmojiReplacement(imagePath);
     }
     
-    // Handle relative paths
-    if (imagePath.includes('/')) {
+    // Handle paths that are already full URLs
+    if (imagePath.startsWith('http')) {
         return imagePath;
     }
     
-    // Default to images directory
-    return `images/${imagePath}`;
+    // Use pathUtils for proper base URL handling
+    return paths.images(imagePath);
 }
 
 // Get shared icon path
 function getSharedIconPath(iconName) {
     const sharedIcons = {
-        'Phys_Atk_Boost.png': 'icons/stat_boosts/Phys_Atk_Boost.png',
-        'Elem_atk_Boost.png': 'icons/stat_boosts/Elem_atk_Boost.png',
-        'BP_Recovery_Boost.png': 'icons/stat_boosts/BP_Recovery_Boost.png',
-        'Critical_Force.png': 'icons/stat_boosts/Critical_Force.png',
-        'Critical_Elemental_Damage.png': 'icons/stat_boosts/Critical_Elemental_Damage.png',
-        'Max_HP_Boost.png': 'icons/stat_boosts/Max_HP_Boost.png',
-        'Elem_Atk_Limit_Up.png': 'icons/stat_boosts/Elem_Atk_Limit_Up.png',
-        'Phys_Atk_Limit_Up.png': 'icons/stat_boosts/Phys_Atk_Limit_Up.png'
+        // Stat boosts - map to wiki-icons
+        'Phys_Atk_Boost.png': 'wiki-icons/Buff_Phys._Atk._Up.png',
+        'Elem_Atk_Boost.png': 'wiki-icons/Buff_Elem._Atk._Up.png',
+        'Elem_atk_Boost.png': 'wiki-icons/Buff_Elem._Atk._Up.png',
+        'BP_Recovery_Boost.png': 'wiki-icons/Buff_BP_Recovery_Up.png',
+        'Critical_Force.png': 'wiki-icons/Buff_Crit._Up.png',
+        'Crit_Up.png': 'wiki-icons/Buff_Crit._Up.png',
+        'Max_HP_Boost.png': 'wiki-icons/Buff_HP_Barrier.png',
+        'HP_Boost.png': 'wiki-icons/Buff_HP_Barrier.png',
+        'Speed_Up.png': 'wiki-icons/Buff_Spd._Up.png',
+        'Spd_Up.png': 'wiki-icons/Buff_Spd._Up.png',
+        'Elem_Def_Up.png': 'wiki-icons/Buff_Elem._Def._Up.png',
+        'Phys_Def_Up.png': 'wiki-icons/Buff_Phys._Def._Up.png',
+        'SP_Stock.png': 'wiki-icons/Buff_SP_Stock.png',
+        
+        // Direct mapping for existing wiki-icons
+        'Buff_Phys._Atk._Up.png': 'wiki-icons/Buff_Phys._Atk._Up.png',
+        'Buff_Elem._Atk._Up.png': 'wiki-icons/Buff_Elem._Atk._Up.png',
+        'Buff_Spd._Up.png': 'wiki-icons/Buff_Spd._Up.png',
+        'Buff_Phys._Def._Up.png': 'wiki-icons/Buff_Phys._Def._Up.png',
+        'Buff_Elem._Def._Up.png': 'wiki-icons/Buff_Elem._Def._Up.png',
+        'Buff_Crit._Up.png': 'wiki-icons/Buff_Crit._Up.png',
+        'Buff_SP_Stock.png': 'wiki-icons/Buff_SP_Stock.png',
+        'Buff_BP_Recovery_Up.png': 'wiki-icons/Buff_BP_Recovery_Up.png',
+        'Buff_HP_Barrier.png': 'wiki-icons/Buff_HP_Barrier.png'
     };
-    return sharedIcons[iconName] || null;
+    const iconPath = sharedIcons[iconName];
+    return iconPath ? paths.images(iconPath) : null;
 }
 
 // Get attribute icon path
 function getAttributeIconPath(iconName) {
     // This would be expanded based on actual icon mapping
-    return null;
+    // For now, use pathUtils for any provided icon path
+    return iconName ? paths.images(iconName) : null;
 }
 
 // Process skill content
