@@ -240,6 +240,7 @@
 
 <script>
 import { ref, computed, inject } from 'vue'
+import { paths } from '../utils/pathUtils'
 
 export default {
   name: 'SkillCharacterCard',
@@ -302,11 +303,11 @@ export default {
     }
 
     const getCharacterPortrait = (characterId) => {
-      return `/images/characters/portraits/${characterId}.png`
+      return paths.images(`characters/portraits/${characterId}.png`)
     }
 
     const handleImageError = (event) => {
-      event.target.src = '/images/characters/portraits/default.png'
+      event.target.src = paths.images('characters/portraits/default.png')
     }
 
     const getTierClass = (tier) => {
@@ -344,7 +345,7 @@ export default {
     }
 
     const getElementIcon = (element) => {
-      return `/images/elements/${element}.png`
+      return paths.images(`elements/${element}.png`)
     }
 
     const getWeaponIcon = (weapon) => {
@@ -355,7 +356,7 @@ export default {
         'Staff': 'Staff_Staves'
       }
       const fileName = weaponMap[weapon] || weapon
-      return `/images/weapons/${fileName}.png`
+      return paths.images(`weapons/${fileName}.png`)
     }
 
     const getWeaknessClass = (weakness) => {

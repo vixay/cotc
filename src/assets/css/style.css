@@ -798,23 +798,23 @@ header .header-nav .main-navigation .nav-link.donation:hover {
 }
 
 /* Element Icons - Base styles (specific styles in scoped components) */
-.element-icon.element-fire { background-image: url('/images/elements/Fire.png'); }
-.element-icon.element-ice { background-image: url('/images/elements/Ice.png'); }
-.element-icon.element-lightning { background-image: url('/images/elements/Lightning.png'); }
-.element-icon.element-wind { background-image: url('/images/elements/Wind.png'); }
-.element-icon.element-light { background-image: url('/images/elements/Light.png'); }
-.element-icon.element-dark { background-image: url('/images/elements/Dark.png'); }
+.element-icon.element-fire { background-image: url('../../../images/elements/Fire.png'); }
+.element-icon.element-ice { background-image: url('../../../images/elements/Ice.png'); }
+.element-icon.element-lightning { background-image: url('../../../images/elements/Lightning.png'); }
+.element-icon.element-wind { background-image: url('../../../images/elements/Wind.png'); }
+.element-icon.element-light { background-image: url('../../../images/elements/Light.png'); }
+.element-icon.element-dark { background-image: url('../../../images/elements/Dark.png'); }
 
 /* Weapon Icons */
-.weapon-icon.weapon-sword { background-image: url('/images/weapons/Sword.png'); }
-.weapon-icon.weapon-bow { background-image: url('/images/weapons/Bow.png'); }
-.weapon-icon.weapon-axe { background-image: url('/images/weapons/Axe.png'); }
-.weapon-icon.weapon-staff { background-image: url('/images/weapons/Staff.png'); }
-.weapon-icon.weapon-dagger { background-image: url('/images/weapons/Dagger.png'); }
-.weapon-icon.weapon-tome { background-image: url('/images/weapons/Tome.png'); }
-.weapon-icon.weapon-polearm { background-image: url('/images/weapons/Polearm.png'); }
-.weapon-icon.weapon-spear { background-image: url('/images/weapons/Spear_Polearm.png'); }
-.weapon-icon.weapon-fan { background-image: url('/images/weapons/Fan.png'); }
+.weapon-icon.weapon-sword { background-image: url('../../../images/weapons/Sword.png'); }
+.weapon-icon.weapon-bow { background-image: url('../../../images/weapons/Bow.png'); }
+.weapon-icon.weapon-axe { background-image: url('../../../images/weapons/Axe.png'); }
+.weapon-icon.weapon-staff { background-image: url('../../../images/weapons/Staff.png'); }
+.weapon-icon.weapon-dagger { background-image: url('../../../images/weapons/Dagger.png'); }
+.weapon-icon.weapon-tome { background-image: url('../../../images/weapons/Tome.png'); }
+.weapon-icon.weapon-polearm { background-image: url('../../../images/weapons/Polearm.png'); }
+.weapon-icon.weapon-spear { background-image: url('../../../images/weapons/Spear_Polearm.png'); }
+.weapon-icon.weapon-fan { background-image: url('../../../images/weapons/Fan.png'); }
 
 /* Element and weapon containers with icons */
 .element-with-icon, .weapon-with-icon {

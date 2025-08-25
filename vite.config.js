@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [vue()],
   resolve: {
     alias: {
@@ -12,7 +12,7 @@ export default defineConfig({
   },
   root: '.',
   publicDir: false, // Disable default public dir to avoid conflicts
-  base: '/cotc/', // GitHub Pages base path
+  base: mode === 'production' ? '/cotc/' : '/', // Only use /cotc/ in production
   build: {
     outDir: '.',
     assetsDir: 'dist-assets',
@@ -42,4 +42,4 @@ export default defineConfig({
       allow: ['..']
     }
   }
-})
+}))

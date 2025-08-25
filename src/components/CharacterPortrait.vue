@@ -68,6 +68,7 @@
 <script>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useCharacterStore } from '../stores/character'
+import { paths } from '../utils/pathUtils'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 
@@ -139,15 +140,15 @@ export default {
     const imageUrl = computed(() => {
       if (imageError.value) return null
       
-      // Try multiple image paths
-      const paths = [
-        `/images/characters/portraits/${props.characterId}.png`,
-        `/images/characters/sprites/${props.characterId}.png`,
-        `/images/characters/${props.characterId}.png`
+      // Try multiple image paths using pathUtils
+      const imagePaths = [
+        paths.images(`characters/portraits/${props.characterId}.png`),
+        paths.images(`characters/sprites/${props.characterId}.png`),
+        paths.images(`characters/${props.characterId}.png`)
       ]
       
       // Return the first path for now - we'll handle fallbacks in error handler
-      return paths[0]
+      return imagePaths[0]
     })
 
     const portraitClasses = computed(() => {

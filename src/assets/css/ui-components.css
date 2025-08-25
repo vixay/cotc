@@ -415,64 +415,64 @@
 
 /* Element Icon Images */
 .ui-element-fire {
-  background-image: url('/images/elements/Fire.png');
+  background-image: url('../../../images/elements/Fire.png');
 }
 
 .ui-element-ice {
-  background-image: url('/images/elements/Ice.png');
+  background-image: url('../../../images/elements/Ice.png');
 }
 
 .ui-element-lightning {
-  background-image: url('/images/elements/Lightning.png');
+  background-image: url('../../../images/elements/Lightning.png');
 }
 
 .ui-element-wind {
-  background-image: url('/images/elements/Wind.png');
+  background-image: url('../../../images/elements/Wind.png');
 }
 
 .ui-element-light {
-  background-image: url('/images/elements/Light.png');
+  background-image: url('../../../images/elements/Light.png');
 }
 
 .ui-element-dark {
-  background-image: url('/images/elements/Dark.png');
+  background-image: url('../../../images/elements/Dark.png');
 }
 
 /* Weapon Icon Images */
 .ui-weapon-sword {
-  background-image: url('/images/weapons/Sword.png');
+  background-image: url('../../../images/weapons/Sword.png');
 }
 
 .ui-weapon-bow {
-  background-image: url('/images/weapons/Bow.png');
+  background-image: url('../../../images/weapons/Bow.png');
 }
 
 .ui-weapon-axe {
-  background-image: url('/images/weapons/Axe.png');
+  background-image: url('../../../images/weapons/Axe.png');
 }
 
 .ui-weapon-staff {
-  background-image: url('/images/weapons/Staff.png');
+  background-image: url('../../../images/weapons/Staff.png');
 }
 
 .ui-weapon-dagger {
-  background-image: url('/images/weapons/Dagger.png');
+  background-image: url('../../../images/weapons/Dagger.png');
 }
 
 .ui-weapon-tome {
-  background-image: url('/images/weapons/Tome.png');
+  background-image: url('../../../images/weapons/Tome.png');
 }
 
 .ui-weapon-polearm {
-  background-image: url('/images/weapons/Polearm.png');
+  background-image: url('../../../images/weapons/Polearm.png');
 }
 
 .ui-weapon-spear {
-  background-image: url('/images/weapons/Spear_Polearm.png');
+  background-image: url('../../../images/weapons/Spear_Polearm.png');
 }
 
 .ui-weapon-fan {
-  background-image: url('/images/weapons/Fan.png');
+  background-image: url('../../../images/weapons/Fan.png');
 }
 
 /* ========================================

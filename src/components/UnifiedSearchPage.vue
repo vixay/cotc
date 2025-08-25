@@ -282,9 +282,15 @@
                 :characterId="data.character.id"
                 :characterName="data.character.name"
                 size="small"
+                :clickable="true"
                 class="character-portrait-inline"
+                @click="openCharacterModal(data.character)"
               />
-              <span class="character-name">{{ data.character.name }}</span>
+              <span 
+                class="character-name clickable-name" 
+                @click="openCharacterModal(data.character)"
+                :title="'Click to view ' + data.character.name"
+              >{{ data.character.name }}</span>
             </div>
           </div>
         </template>
@@ -1780,6 +1786,18 @@ export default {
 .character-name {
   font-size: 0.85rem;
   color: var(--text-secondary);
+}
+
+.clickable-name {
+  cursor: pointer;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.clickable-name:hover {
+  color: var(--primary-hover);
+  text-decoration-style: solid;
 }
 
 .tier-cell {
