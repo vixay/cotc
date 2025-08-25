@@ -12,11 +12,10 @@ export default defineConfig({
   },
   root: '.',
   publicDir: false, // Disable default public dir to avoid conflicts
-  base: '/', // Use root path for dev server
+  base: '/cotc/', // GitHub Pages base path
   build: {
     outDir: '.',
     assetsDir: 'dist-assets',
-    base: '/cotc/',
     rollupOptions: {
       input: 'index-vue.html',
       output: {
