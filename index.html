@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCTOPATH COTC META GUIDE</title>
+    <meta name="description" content="Community-maintained meta guide for Octopath Traveler: Champions of the Continent character priorities, awakening stones, and team building">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/source-attribution.css">
+    <link rel="stylesheet" href="css/advanced-filters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    
+    <!-- Analytics - GoatCounter -->
+    <script data-goatcounter="https://cotc-vixay.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>COTC Awakening Stone Priority Guide</h1>
+            <div class="meta-info">
+                <a id="version" class="version" href="docs/CHANGELOG.md" target="_blank" rel="noopener">Loading...</a>
+                <span id="lastUpdated" class="last-updated">Loading...</span>
+                <a href="https://github.com/vixay/cotc" class="github-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Contribute
+                </a>
+                <a href="character-details.html" class="nav-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A0.5,0.5 0 0,0 7,13.5A0.5,0.5 0 0,0 7.5,14A0.5,0.5 0 0,0 8,13.5A0.5,0.5 0 0,0 7.5,13M16.5,13A0.5,0.5 0 0,0 16,13.5A0.5,0.5 0 0,0 16.5,14A0.5,0.5 0 0,0 17,13.5A0.5,0.5 0 0,0 16.5,13Z"/>
+                    </svg>
+                    Character Details
+                </a>
+                <a href="skills.html" class="nav-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                    </svg>
+                    Skill Search
+                </a>
+                <a href="accessories.html" class="nav-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2C12.74,2 13.4,2.31 13.85,2.85L14.15,3.15C14.6,3.6 15.26,3.91 16,3.91H16.5C17.88,3.91 19,5.03 19,6.41V6.91C19,7.65 19.31,8.31 19.85,8.85L20.15,9.15C20.69,9.6 21,10.26 21,11S20.69,12.4 20.15,12.85L19.85,13.15C19.4,13.6 19,14.26 19,15V15.5C19,16.88 17.88,18 16.5,18H16C15.26,18 14.6,18.31 14.15,18.85L13.85,19.15C13.4,19.69 12.74,20 12,20S10.6,19.69 10.15,19.15L9.85,18.85C9.4,18.4 8.74,18 8,18H7.5C6.12,18 5,16.88 5,15.5V15C5,14.26 4.69,13.6 4.15,13.15L3.85,12.85C3.31,12.4 3,11.74 3,11S3.31,9.6 3.85,9.15L4.15,8.85C4.6,8.4 5,7.74 5,7V6.5C5,5.12 6.12,4 7.5,4H8C8.74,4 9.4,3.69 9.85,3.15L10.15,2.85C10.6,2.31 11.26,2 12,2M12,8A3,3 0 0,0 9,11A3,3 0 0,0 12,14A3,3 0 0,0 15,11A3,3 0 0,0 12,8Z"/>
+                    </svg>
+                    Accessories
+                </a>
+                <a href="https://coff.ee/vixay" class="donation-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20,3H4V2A1,1 0 0,0 3,1A1,1 0 0,0 2,2V21A1,1 0 0,0 3,22A1,1 0 0,0 4,21V20H20A2,2 0 0,0 22,18V5A2,2 0 0,0 20,3M20,18H4V5H20V18M7,6V8H17V6H7M7,10V12H17V10H7M7,14V16H17V14H7Z"/>
+                    </svg>
+                    Buy me a coffee
+                </a>
+            </div>
+        </header>
+
+        <div class="legend" id="legend">
+            <h3 id="legendHeader" class="legend-header">
+                How to Use This Guide
+                <span class="collapse-indicator">▼</span>
+            </h3>
+            <div class="legend-content" id="legendContent">
+                <div class="legend-grid">
+                    <div class="legend-section">
+                        <h4>Awakening Stones</h4>
+                        <div class="legend-item"><span class="legend-key">AS1-AS5:</span> Awakening Stones 1 through 5</div>
+                        <div class="legend-item"><span class="legend-key">U10:</span> Ultimate Level 10 (highest priority)</div>
+                        <div class="legend-item"><span class="legend-key">A1-A4:</span> Awakening stages 1-4</div>
+                        <div class="legend-item"><span class="legend-key">Shard:</span> Exchange for awakening shards</div>
+                        <div class="legend-item"><span class="legend-key">Keep:</span> Save for future use</div>
+                    </div>
+                    <div class="legend-section">
+                        <h4>Priority Guidelines</h4>
+                        <div class="legend-item">• If L10: Use stones for Ultimate first</div>
+                        <div class="legend-item">• If L9 or lower: Get A1-A4 first</div>
+                        <div class="legend-item">• 6 shards = 6000 fragments = 1 chosen dupe</div>
+                        <div class="legend-item free-note">• Free characters cannot be sharded!</div>
+                        <div class="legend-item">
+                            📖 <a href="https://github.com/vixay/cotc/blob/main/README.md" target="_blank" rel="noopener">Read the full guide</a> for detailed features and usage tips
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            <div class="stat-item">Released: <span id="releasedChars">0</span></div>
+            <div class="stat-item">Unreleased: <span id="unreleasedChars">0</span></div>
+            <div class="stat-item">Filtered: <span id="filteredChars">0</span></div>
+        </div>
+
+        <nav class="filters">
+            <div class="filter-group">
+                <input type="text" id="searchBox" placeholder="Search characters..." class="search-box">
+                <select id="a4Filter" class="filter-select">
+                    <option value="">All A4 Tiers</option>
+                    <option value="S+">S+ Tier</option>
+                    <option value="S">S Tier</option>
+                    <option value="A">A Tier</option>
+                    <option value="B">B Tier</option>
+                    <option value="C">C Tier</option>
+                    <option value="D">D Tier</option>
+                    <option value="Not Listed">Not Listed</option>
+                </select>
+                <select id="ultFilter" class="filter-select">
+                    <option value="">All Ultimate Levels</option>
+                    <option value="L10">L10 (Top Priority)</option>
+                    <option value="L10 First">L10 First</option>
+                    <option value="A1, L10">A1, L10</option>
+                    <option value="A4, L10">A4, L10</option>
+                    <option value="L9">L9</option>
+                    <option value="L1">L1</option>
+                </select>
+                <select id="freeFilter" class="filter-select">
+                    <option value="">All Characters</option>
+                    <option value="free">Free Only</option>
+                    <option value="gacha">Gacha Only</option>
+                </select>
+                <select id="ownershipFilter" class="filter-select">
+                    <option value="">All Characters</option>
+                    <option value="owned">Owned Only</option>
+                    <option value="not-owned">Not Owned</option>
+                </select>
+            </div>
+            <div class="action-group">
+                <button id="themeToggle" class="btn btn-secondary" title="Toggle theme">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                    </svg>
+                </button>
+                <button id="groupingToggle" class="btn btn-secondary active">Disable Grouping</button>
+                <button id="expandAllToggle" class="btn btn-secondary">Collapse All</button>
+                <button id="resetFilters" class="btn btn-secondary">Reset All</button>
+                <button id="exportCSV" class="btn btn-secondary" disabled title="Coming soon: Copy to clipboard & share links">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/>
+                    </svg>
+                    Export (Soon)
+                </button>
+            </div>
+        </nav>
+
+        <!-- Advanced Filters Section -->
+        <div class="advanced-filters-section">
+            <div class="advanced-filters-toggle">
+                <button id="toggleAdvancedFilters" class="btn btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,12V19.88C14.04,20.18 13.94,20.5 13.71,20.71C13.32,21.1 12.69,21.1 12.3,20.71L10.29,18.7C10.06,18.47 9.96,18.16 10,17.87V12H9.97L4.21,4.62C3.87,4.19 3.95,3.56 4.38,3.22C4.57,3.08 4.78,3 5,3V3H19V3C19.22,3 19.43,3.08 19.62,3.22C20.05,3.56 20.13,4.19 19.79,4.62L14.03,12H14Z"/>
+                    </svg>
+                    <span id="advancedFiltersText">Show Advanced Filters</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="dropdown-arrow">
+                        <path d="M7,10L12,15L17,10H7Z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="advancedFiltersPanel" class="advanced-filters-panel hidden">
+                <div class="filters-row">
+                    <div class="filter-section">
+                        <h4>Column Visibility</h4>
+                        <div class="column-toggles">
+                            <button class="column-toggle" data-column="ownership" title="Toggle ownership tracking">
+                                <span class="toggle-icon">−</span> 👤 Ownership
+                            </button>
+                            <button class="column-toggle" data-column="awakening" title="Toggle awakening stones">
+                                <span class="toggle-icon">−</span> 💎 Awakening Stones
+                            </button>
+                            <button class="column-toggle" data-column="combat" title="Toggle combat info">
+                                <span class="toggle-icon">−</span> ⚔️ Combat Info
+                            </button>
+                            <button class="column-toggle" data-column="acquisition" title="Toggle acquisition info">
+                                <span class="toggle-icon">−</span> 📍 Acquisition
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Multi-Select Filters</h4>
+                        <div class="multi-filters">
+                            <div class="filter-group-advanced">
+                                <label>Star Rating:</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="3"> 3★</label>
+                                    <label><input type="checkbox" value="4"> 4★</label>
+                                    <label><input type="checkbox" value="5"> 5★</label>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-group-advanced">
+                                <label>Job:</label>
+                                <div class="checkbox-group" id="jobFilters">
+                                    <label><input type="checkbox" value="Warrior"> Warrior</label>
+                                    <label><input type="checkbox" value="Hunter"> Hunter</label>
+                                    <label><input type="checkbox" value="Cleric"> Cleric</label>
+                                    <label><input type="checkbox" value="Scholar"> Scholar</label>
+                                    <label><input type="checkbox" value="Dancer"> Dancer</label>
+                                    <label><input type="checkbox" value="Merchant"> Merchant</label>
+                                    <label><input type="checkbox" value="Apothecary"> Apothecary</label>
+                                    <label><input type="checkbox" value="Thief"> Thief</label>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-group-advanced">
+                                <label>Elements:</label>
+                                <div class="checkbox-group" id="elementFilters">
+                                    <label><input type="checkbox" value="Fire"> Fire</label>
+                                    <label><input type="checkbox" value="Ice"> Ice</label>
+                                    <label><input type="checkbox" value="Lightning"> Lightning</label>
+                                    <label><input type="checkbox" value="Wind"> Wind</label>
+                                    <label><input type="checkbox" value="Light"> Light</label>
+                                    <label><input type="checkbox" value="Dark"> Dark</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Options</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="showUnreleasedAdvanced"> Show Unreleased Characters
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="enableGroupingAdvanced" checked> Enable Grouping
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filters-actions">
+                    <button id="resetAdvancedFilters" class="btn btn-secondary">Reset Advanced</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="characterTable" class="hide-ownership hide-awakening hide-combat hide-acquisition">
+                <thead>
+                    <tr>
+                        <!-- Core Group (always visible) -->
+                        <th data-sort="name" class="sortable always-visible">Character <span class="sort-indicator"></span></th>
+                        <th data-sort="job" data-filter="job" class="sortable column-group-core filterable">Job <span class="sort-indicator"></span></th>
+                        <th data-sort="starRating" data-filter="starRating" class="sortable column-group-core filterable">Stars <span class="sort-indicator"></span></th>
+                        <th data-filter="roles" class="column-group-core filterable">Roles</th>
+                        
+                        <!-- Ownership Group (grouped together) -->
+                        <th class="ownership-header column-group-ownership">Own</th>
+                        <th class="column-group-ownership">Awaken</th>
+                        <th class="column-group-ownership">Ult</th>
+                        
+                        <!-- Tiers Group -->
+                        <th data-sort="overallTier" data-filter="tierRating" class="sortable column-group-tiers filterable">Overall Tier <span class="sort-indicator"></span></th>
+                        <th data-sort="a4Tier" data-filter="a4Tier" class="sortable column-group-tiers filterable">A4 Tier <span class="sort-indicator"></span></th>
+                        <th data-sort="ultPriority" class="sortable column-group-tiers">Ult Priority <span class="sort-indicator"></span></th>
+                        
+                        <!-- Awakening Stones (hidden by default, linked to Ult Priority) -->
+                        <th class="column-group-awakening">AS1</th>
+                        <th class="column-group-awakening">AS2</th>
+                        <th class="column-group-awakening">AS3</th>
+                        <th class="column-group-awakening">AS4</th>
+                        <th class="column-group-awakening">AS5</th>
+                        
+                        <!-- Combat Group (hidden by default) -->
+                        <th data-filter="elements" class="column-group-combat filterable">Elements</th>
+                        <th data-filter="weapons" class="column-group-combat filterable">Weapons</th>
+                        
+                        <!-- Acquisition Group (hidden by default) -->
+                        <th data-sort="continent" data-filter="continent" class="sortable column-group-acquisition filterable">Continent <span class="sort-indicator"></span></th>
+                        <th data-sort="obtainedFrom" data-filter="obtainedFrom" class="sortable column-group-acquisition filterable">Obtained From <span class="sort-indicator"></span></th>
+                        <th data-sort="glReleaseDate" class="sortable column-group-acquisition">Release Date <span class="sort-indicator"></span></th>
+                        
+                        <!-- Notes -->
+                        <th data-sort="notes" class="sortable column-group-notes">Notes <span class="sort-indicator"></span></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td colspan="19" class="loading">Loading character data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="credits" id="credits">
+            <h3 id="creditsHeader" class="credits-header">
+                Credits & Acknowledgments
+                <span class="collapse-indicator">▼</span>
+            </h3>
+            <div class="credits-content collapsed" id="creditsContent">
+                <div class="credits-grid">
+                    <div class="credits-section">
+                        <h4>Data Sources</h4>
+                        <ul>
+                            <li><strong>Community Tier Lists:</strong> Reddit COTC community, Discord discussions</li>
+                            <li><strong>dotgg.gg:</strong> Character tier rankings and meta analysis</li>
+                            <li><strong>Meow Database:</strong> Role-specific classifications and buff/debuff guides</li>
+                            <li><strong>Excel Database:</strong> Comprehensive character abilities and stats</li>
+                        </ul>
+                    </div>
+                    <div class="credits-section">
+                        <h4>Contributors</h4>
+                        <ul>
+                            <li><strong>vixay:</strong> Project creator and maintainer</li>
+                            <li><strong><a href="https://www.reddit.com/user/MontyVGC/" target="_blank" rel="noopener">MontyVGC</a>:</strong> Comprehensive Notion database with character stats and skills</li>
+                            <li><strong>COTC Community:</strong> Character assessments and feedback</li>
+                            <li><strong>Claude Code:</strong> Data analysis and application development</li>
+                            <li><strong>GitHub Contributors:</strong> Bug reports and feature suggestions</li>
+                        </ul>
+                    </div>
+                    <div class="credits-section">
+                        <h4>Tools & Technologies</h4>
+                        <ul>
+                            <li><strong>Vanilla JavaScript:</strong> Client-side application logic</li>
+                            <li><strong>CSS Custom Properties:</strong> Dynamic theming system</li>
+                            <li><strong>Python:</strong> Data extraction and enhancement scripts</li>
+                            <li><strong>GitHub Pages:</strong> Free hosting and deployment</li>
+                            <li><strong>Inter Font:</strong> Typography by Rasmus Andersson</li>
+                        </ul>
+                    </div>
+                    <div class="credits-section">
+                        <h4>Special Thanks</h4>
+                        <ul>
+                            <li><strong>Square Enix:</strong> Octopath Traveler: Champions of the Continent</li>
+                            <li><strong>COTC Players:</strong> Ongoing meta discussions and tier assessments</li>
+                            <li><strong>Open Source Community:</strong> Libraries and inspiration</li>
+                            <li><strong>Coffee Supporters:</strong> Fuel for late-night coding sessions ☕</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer:</strong> This is a fan-made tool not affiliated with Square Enix. Character assessments are based on community consensus and may vary with game updates.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>Community maintained guide for COTC players.</p>
+                <div class="footer-links">
+                    <a href="docs/CONTRIBUTING.md">How to Contribute</a>
+                    <a href="https://github.com/vixay/cotc/issues" target="_blank">Report Issue</a>
+                    <a href="docs/CHANGELOG.md">Changelog</a>
+                    <a href="https://coff.ee/vixay" class="donation-link" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20,3H4V2A1,1 0 0,0 3,1A1,1 0 0,0 2,2V21A1,1 0 0,0 3,22A1,1 0 0,0 4,21V20H20A2,2 0 0,0 22,18V5A2,2 0 0,0 20,3M20,18H4V5H20V18M7,6V8H17V6H7M7,10V12H17V10H7M7,14V16H17V14H7Z"/>
+                        </svg>
+                        Buy me a coffee
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Character Details Modal -->
+    <div id="characterModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h2 id="modalCharacterName">Character Details</h2>
+                    <div class="modal-subtitle">
+                        <span id="modalCharacterMeta">Loading...</span>
+                    </div>
+                </div>
+                <button id="closeModal" class="modal-close" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-loading" id="modalLoading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading character details...</p>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Character details will be inserted here -->
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <script src="js/app-state.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/character-modal.js"></script>
+    <script src="js/visual-grouping.js"></script>
+    <script src="js/source-attribution.js"></script>
+    <script src="js/advanced-filters.js"></script>
+</body>
+</html>

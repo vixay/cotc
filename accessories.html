@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COTC Accessories Database - Meta Guide</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/advanced-filters.css">
+    <link rel="stylesheet" href="src/assets/css/ui-components.css">
+    
+    <style>
+        /* Navigation Header */
+        .navigation-header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.75rem 0;
+            margin-bottom: 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-color-dark);
+        }
+        
+        .back-link svg {
+            transition: transform 0.2s;
+        }
+        
+        .back-link:hover svg {
+            transform: translateX(-2px);
+        }
+
+        /* Accessories-specific styling */
+        .accessories-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .accessories-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .accessories-header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .filters-section {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .filter-group select,
+        .filter-group input {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+        
+        .tag-search-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .tag-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .tag-chip {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .tag-chip:hover {
+            background: var(--primary-color-dark);
+            transform: translateY(-1px);
+        }
+        
+        .tag-chip.selected {
+            background: var(--success-color);
+        }
+        
+        .accessories-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .accessories-table th {
+            background: var(--bg-tertiary);
+            padding: 1rem 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-color);
+            cursor: pointer;
+            user-select: none;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .accessories-table th:hover {
+            background: var(--bg-hover);
+        }
+        
+        .accessories-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+        
+        .accessories-table tbody tr:hover {
+            background: var(--bg-hover);
+        }
+        
+        .accessory-name {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .tier-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .tier-s-plus { background: #ff6b6b; color: white; }
+        .tier-s { background: #ffa500; color: white; }
+        .tier-a { background: #4ecdc4; color: white; }
+        .tier-b { background: #45b7d1; color: white; }
+        .tier-c { background: #96ceb4; color: #333; }
+        .tier-d { background: #bdc3c7; color: #333; }
+        .tier-unknown { background: #6c7b7f; color: white; }
+        
+        .stats-list {
+            font-size: 0.85rem;
+            line-height: 1.3;
+        }
+        
+        .stat-item {
+            display: inline-block;
+            margin-right: 0.5rem;
+            padding: 0.1rem 0.3rem;
+            background: var(--bg-secondary);
+            border-radius: 3px;
+            margin-bottom: 0.2rem;
+        }
+        
+        .effect-list {
+            font-size: 0.85rem;
+            max-width: 300px;
+        }
+        
+        .effect-item {
+            background: var(--bg-secondary);
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .effect-description {
+            margin-bottom: 0.25rem;
+        }
+        
+        .effect-meta {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        
+        /* Table column widths and layout */
+        .notes-column {
+            width: 300px;
+            max-width: 300px;
+            word-wrap: break-word;
+            white-space: normal;
+        }
+        
+        /* Name column - fixed width */
+        .accessories-table td:nth-child(1) {
+            width: 200px;
+            max-width: 200px;
+            word-wrap: break-word;
+        }
+        
+        /* Tier column - fixed width */
+        .accessories-table td:nth-child(2) {
+            width: 60px;
+            max-width: 60px;
+            text-align: center;
+        }
+        
+        /* Character column - fixed width */
+        .accessories-table td:nth-child(3) {
+            width: 120px;
+            max-width: 120px;
+            word-wrap: break-word;
+        }
+        
+        /* Stats column - reduced width */
+        .accessories-table td:nth-child(5) {
+            width: 150px;
+            max-width: 150px;
+        }
+        
+        /* Tags column - increased width */
+        .accessories-table td:nth-child(6) {
+            width: 180px;
+            max-width: 180px;
+        }
+        
+        /* Notes column - last column, wider */
+        .accessories-table td:nth-child(8) {
+            width: 300px;
+            max-width: 300px;
+        }
+        
+        .tag-mini {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: 0.1rem 0.4rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        .notes-column {
+            max-width: 300px;
+            word-wrap: break-word;
+        }
+        
+        .accessory-notes {
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            line-height: 1.4;
+            padding: 0.25rem 0;
+        }
+        
+        .character-restriction {
+            background: var(--warning-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        /* Enhanced tag display */
+        .tag-more-button {
+            background: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+            padding: 0.1rem 0.4rem;
+            border-radius: 10px;
+            font-size: 0.65rem;
+            font-weight: bold;
+            margin-left: 0.25rem;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 24px;
+            height: 18px;
+        }
+        
+        .tag-more-button:hover {
+            background: var(--primary-hover);
+            transform: scale(1.05);
+        }
+        
+        /* Tags modal */
+        .tags-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        
+        .tags-modal {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            max-width: 400px;
+            width: 90%;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .tags-modal-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .tags-modal-close {
+            float: right;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            margin-left: 1rem;
+        }
+        
+        .tags-modal-close:hover {
+            color: var(--text-primary);
+        }
+        
+        .tags-modal .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tags-modal .tag-mini {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+        }
+        
+        .stats-section {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .stat-box {
+            background: var(--bg-primary);
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+        
+        .search-section {
+            margin-bottom: 1rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .effect-type-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        
+        .effect-type-badge {
+            padding: 0.15rem 0.4rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+        
+        .type-resistance-reduction { background: #ff6b6b; color: white; }
+        .type-stat-buffing { background: #4ecdc4; color: white; }
+        .type-special-mechanics { background: #9b59b6; color: white; }
+        .type-damage-amplification { background: #e67e22; color: white; }
+        .type-healing-recovery { background: #2ecc71; color: white; }
+        .type-status-protection { background: #3498db; color: white; }
+        .type-utility { background: #95a5a6; color: white; }
+    </style>
+</head>
+<body>
+    <!-- Common Header -->
+    <header>
+        <!-- Title and Metadata Row -->
+        <div class="header-top">
+            <h1>OCTOPATH COTC META GUIDE</h1>
+            <div class="header-meta">
+                <span class="version">v3.0.0</span>
+                <a href="https://github.com/vixay/cotc" class="github-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Contribute
+                </a>
+            </div>
+        </div>
+        
+        <!-- Navigation Row -->
+        <div class="header-nav">
+            <nav class="main-navigation">
+                <a href="index-vue.html" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                    </svg>
+                    Home
+                </a>
+                <a href="accessories.html?from=vue" class="nav-link active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2C12.74,2 13.4,2.31 13.85,2.85L14.15,3.15C14.6,3.6 15.26,3.91 16,3.91H16.5C17.88,3.91 19,5.03 19,6.41V6.91C19,7.65 19.31,8.31 19.85,8.85L20.15,9.15C20.69,9.6 21,10.26 21,11S20.69,12.4 20.15,12.85L19.85,13.15C19.4,13.6 19,14.26 19,15V15.5C19,16.88 17.88,18 16.5,18H16C15.26,18 14.6,18.31 14.15,18.85L13.85,19.15C13.4,19.69 12.74,20 12,20S10.6,19.69 10.15,19.15L9.85,18.85C9.4,18.4 8.74,18 8,18H7.5C6.12,18 5,16.88 5,15.5V15C5,14.26 4.69,13.6 4.15,13.15L3.85,12.85C3.31,12.4 3,11.74 3,11S3.31,9.6 3.85,9.15L4.15,8.85C4.6,8.4 5,7.74 5,7V6.5C5,5.12 6.12,4 7.5,4H8C8.74,4 9.4,3.69 9.85,3.15L10.15,2.85C10.6,2.31 11.26,2 12,2M12,8A3,3 0 0,0 9,11A3,3 0 0,0 12,14A3,3 0 0,0 15,11A3,3 0 0,0 12,8Z"/>
+                    </svg>
+                    Accessories
+                </a>
+                <a href="skills.html?from=vue" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                    </svg>
+                    Skills
+                </a>
+                <a href="https://coff.ee/vixay" class="nav-link donation" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2,21V19H20V21H2M20,8V5H18V8H20M20,3A2,2 0 0,1 22,5V8A2,2 0 0,1 20,10H18V13A4,4 0 0,1 14,17H8A4,4 0 0,1 4,13V3H6V13A2,2 0 0,0 8,15H14A2,2 0 0,0 16,13V3H20Z"/>
+                    </svg>
+                    Buy me a coffee
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Header -->
+    <div class="accessories-header">
+        <h1>🏆 Accessories Database</h1>
+        <p>Comprehensive database of COTC accessories with effect-based search and Universal Tagging System</p>
+    </div>
+
+    <div class="container">
+        <!-- Statistics Section -->
+        <div class="stats-section">
+            <h2>Database Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number" id="total-accessories">-</div>
+                    <div class="stat-label">Total Accessories</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="s-tier-count">-</div>
+                    <div class="stat-label">S+ and S Tier</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="unique-effects">-</div>
+                    <div class="stat-label">Unique Effect Tags</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="character-accessories">-</div>
+                    <div class="stat-label">Character A4 Accessories</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <input type="text" 
+                       id="search-input" 
+                       class="search-input" 
+                       placeholder="Search accessories by name, character, or effects..."
+                       style="flex: 1;">
+                <button id="clear-filters-btn" style="
+                    background: var(--danger-color);
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    transition: all 0.2s;
+                    white-space: nowrap;
+                " onmouseover="this.style.background='#c53030'" 
+                   onmouseout="this.style.background='var(--danger-color)'">Clear All Filters</button>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <h3>Filters</h3>
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="tier-filter">Tier</label>
+                    <select id="tier-filter" multiple>
+                        <option value="S+">S+ Tier</option>
+                        <option value="S">S Tier</option>
+                        <option value="A">A Tier</option>
+                        <option value="B">B Tier</option>
+                        <option value="C">C Tier</option>
+                        <option value="D">D Tier</option>
+                        <option value="?">Unrated</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="character-filter">Character Restriction</label>
+                    <select id="character-filter">
+                        <option value="">All Characters</option>
+                        <option value="no-restriction">No Restriction</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="accessory-type-filter">Accessory Type</label>
+                    <select id="accessory-type-filter">
+                        <option value="">All Types</option>
+                        <option value="normal">General</option>
+                        <option value="awakening">Awakening (A4)</option>
+                        <option value="exclusive">Exclusive</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="effect-type-filter">Effect Type</label>
+                    <select id="effect-type-filter" multiple>
+                        <option value="">All Types</option>
+                        <option value="resistance_reduction">Resistance Reduction</option>
+                        <option value="stat_buffing">Stat Buffing</option>
+                        <option value="special_mechanics">Special Mechanics</option>
+                        <option value="damage_amplification">Damage Amplification</option>
+                        <option value="healing_recovery">Healing & Recovery</option>
+                        <option value="status_protection">Status Protection</option>
+                        <option value="utility">Utility</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="source-filter">Data Source</label>
+                    <select id="source-filter">
+                        <option value="">All Sources</option>
+                        <option value="tier_list">Tier List</option>
+                        <option value="a4_extraction">A4 Extraction</option>
+                        <option value="both">Both Sources</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Tag Search Section -->
+            <div class="tag-search-section">
+                <label for="tag-search">Effect Tags (Universal Tagging System)</label>
+                <input type="text" 
+                       id="tag-search" 
+                       placeholder="Search for effect tags (e.g., 'resist_down', 'buff_stats', 'special_')...">
+                <div class="tag-chips" id="popular-tags">
+                    <!-- Popular tags will be populated here -->
+                </div>
+                <div class="tag-chips" id="selected-tags">
+                    <!-- Selected tags will be shown here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="loading" id="loading">Loading accessories database...</div>
+            
+            <div id="results-container" style="display: none;">
+                <div class="results-header">
+                    <h3>Accessories (<span id="result-count">0</span>)</h3>
+                </div>
+                
+                <div class="table-container">
+                    <table class="accessories-table" id="accessories-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="name">Name</th>
+                                <th data-sort="tier">Tier</th>
+                                <th data-sort="character">Character</th>
+                                <th>Stats</th>
+                                <th>Effects</th>
+                                <th style="width: 120px;">UTS Tags</th>
+                                <th style="width: 300px;">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="accessories-tbody">
+                            <!-- Accessory rows will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="no-results" id="no-results" style="display: none;">
+                <p>No accessories match your search criteria.</p>
+                <p>Try adjusting your filters or search terms.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Global state
+        let accessoriesData = [];
+        let filteredAccessories = [];
+        let selectedTags = new Set();
+        let sortColumn = 'tier_value';
+        let sortDirection = 'desc';
+        
+        // Load accessories database (combining general + character-specific)
+        async function loadAccessories() {
+            try {
+                // Load general accessories
+                const accessoriesResponse = await fetch('data/accessories.json');
+                const accessoriesJsonData = await accessoriesResponse.json();
+                const generalAccessories = Object.values(accessoriesJsonData.accessories);
+                
+                // Load character database for A4 and exclusive accessories
+                const charactersResponse = await fetch('data/characters_enhanced_v3.json');
+                const charactersData = await charactersResponse.json();
+                const characters = charactersData.characters || [];
+                
+                // Extract character-specific accessories
+                const characterAccessories = [];
+                
+                characters.forEach(character => {
+                    // For A4 accessories, we need to use data from both a4_accessory (metadata) and exclusive_accessory (effects)
+                    if (character.a4_accessory) {
+                        const a4Acc = character.a4_accessory;
+                        const excAcc = character.exclusive_accessory || {};
+                        
+                        // Combine data from both sources
+                        const normalizedAccessory = {
+                            id: a4Acc.id,
+                            name: a4Acc.name,
+                            tier: a4Acc.tier || excAcc.tier || '?',
+                            tier_value: a4Acc.tier_value || 0,
+                            tier_explanation: a4Acc.tier_explanation || '',
+                            accessory_type: 'awakening',
+                            character_restriction: character.name,
+                            effects: excAcc.effects || a4Acc.effects || [],
+                            stats: excAcc.stats || a4Acc.stats || {},
+                            tags: [
+                                ...(a4Acc.top_tags || []),
+                                ...(excAcc.tags || []),
+                                'awakening', 
+                                `char:${character.name.toLowerCase()}`
+                            ],
+                            source: 'character_database',
+                            primary_effect_types: a4Acc.primary_effect_types || [],
+                            effect_classification: {
+                                primary_types: a4Acc.primary_effect_types || []
+                            },
+                            // Additional metadata from A4 accessory
+                            is_offensive: a4Acc.is_offensive || false,
+                            is_defensive: a4Acc.is_defensive || false,
+                            is_utility: a4Acc.is_utility || false,
+                            stats_summary: a4Acc.stats_summary
+                        };
+                        
+                        characterAccessories.push(normalizedAccessory);
+                    }
+                    
+                    // Process exclusive accessories that are different from A4
+                    if (character.exclusive_accessory && 
+                        character.exclusive_accessory.id !== character.a4_accessory?.id) {
+                        const excAcc = character.exclusive_accessory;
+                        
+                        const normalizedExclusive = {
+                            id: excAcc.id + '_exclusive',
+                            name: excAcc.name,
+                            tier: excAcc.tier || '?',
+                            tier_value: 0,
+                            tier_explanation: '',
+                            accessory_type: 'exclusive',
+                            character_restriction: character.name,
+                            effects: excAcc.effects || [],
+                            stats: excAcc.stats || {},
+                            tags: [
+                                ...(excAcc.tags || []),
+                                'exclusive', 
+                                `char:${character.name.toLowerCase()}`
+                            ],
+                            source: 'character_database',
+                            primary_effect_types: [],
+                            effect_classification: {
+                                primary_types: []
+                            }
+                        };
+                        
+                        characterAccessories.push(normalizedExclusive);
+                    }
+                });
+                
+                // Combine all accessories
+                accessoriesData = [...generalAccessories, ...characterAccessories];
+                
+                console.log(`Loaded ${generalAccessories.length} general accessories`);
+                console.log(`Loaded ${characterAccessories.length} character-specific accessories`);
+                console.log(`Total: ${accessoriesData.length} accessories`);
+                
+                initializeFilters();
+                updateStatistics();
+                applyFilters();
+                
+                // Hide loading, show results
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('results-container').style.display = 'block';
+                
+            } catch (error) {
+                console.error('Failed to load accessories:', error);
+                document.getElementById('loading').innerHTML = 
+                    `<p>Failed to load accessories database.</p><p>Error: ${error.message}</p>`;
+            }
+        }
+        
+        // Initialize filter options
+        function initializeFilters() {
+            // Populate character filter
+            const characterFilter = document.getElementById('character-filter');
+            const characters = [...new Set(accessoriesData
+                .map(acc => acc.character_restriction)
+                .filter(char => char))]
+                .sort();
+            
+            characters.forEach(char => {
+                const option = document.createElement('option');
+                option.value = char;
+                option.textContent = char;
+                characterFilter.appendChild(option);
+            });
+            
+            // Populate popular tags
+            const tagCounts = {};
+            accessoriesData.forEach(acc => {
+                (acc.tags || []).forEach(tag => {
+                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                });
+            });
+            
+            const popularTags = Object.entries(tagCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 15);
+                
+            const popularTagsContainer = document.getElementById('popular-tags');
+            popularTags.forEach(([tag, count]) => {
+                const chip = document.createElement('div');
+                chip.className = 'tag-chip';
+                chip.textContent = `${tag} (${count})`;
+                chip.onclick = () => toggleTag(tag);
+                popularTagsContainer.appendChild(chip);
+            });
+        }
+        
+        // Update statistics
+        function updateStatistics() {
+            const total = accessoriesData.length;
+            const sTier = accessoriesData.filter(acc => acc.tier === 'S+' || acc.tier === 'S').length;
+            const characterA4 = accessoriesData.filter(acc => acc.character_restriction).length;
+            
+            const allTags = new Set();
+            accessoriesData.forEach(acc => {
+                (acc.tags || []).forEach(tag => allTags.add(tag));
+            });
+            
+            document.getElementById('total-accessories').textContent = total;
+            document.getElementById('s-tier-count').textContent = sTier;
+            document.getElementById('unique-effects').textContent = allTags.size;
+            document.getElementById('character-accessories').textContent = characterA4;
+        }
+        
+        // Toggle tag selection
+        function toggleTag(tag) {
+            if (selectedTags.has(tag)) {
+                selectedTags.delete(tag);
+            } else {
+                selectedTags.add(tag);
+            }
+            updateSelectedTagsDisplay();
+            applyFilters();
+        }
+        
+        // Update selected tags display
+        function updateSelectedTagsDisplay() {
+            const container = document.getElementById('selected-tags');
+            container.innerHTML = '';
+            
+            selectedTags.forEach(tag => {
+                const chip = document.createElement('div');
+                chip.className = 'tag-chip selected';
+                chip.textContent = `${tag} ×`;
+                chip.onclick = () => toggleTag(tag);
+                container.appendChild(chip);
+            });
+        }
+        
+        // Apply filters
+        function applyFilters() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const tierFilter = Array.from(document.getElementById('tier-filter').selectedOptions).map(opt => opt.value);
+            const characterFilter = document.getElementById('character-filter').value;
+            const accessoryTypeFilter = document.getElementById('accessory-type-filter').value;
+            const effectTypeFilter = Array.from(document.getElementById('effect-type-filter').selectedOptions).map(opt => opt.value);
+            const sourceFilter = document.getElementById('source-filter').value;
+            const tagSearch = document.getElementById('tag-search').value.toLowerCase();
+            
+            filteredAccessories = accessoriesData.filter(accessory => {
+                // Search filter
+                if (searchTerm) {
+                    const searchableText = [
+                        accessory.name,
+                        accessory.character_restriction,
+                        accessory.tier_explanation,
+                        ...(accessory.effects || []).map(eff => eff.description),
+                        ...(accessory.tags || [])
+                    ].join(' ').toLowerCase();
+                    
+                    if (!searchableText.includes(searchTerm)) return false;
+                }
+                
+                // Tier filter
+                if (tierFilter.length > 0 && !tierFilter.includes(accessory.tier)) {
+                    return false;
+                }
+                
+                // Character filter
+                if (characterFilter) {
+                    if (characterFilter === 'no-restriction' && accessory.character_restriction) {
+                        return false;
+                    } else if (characterFilter !== 'no-restriction' && accessory.character_restriction !== characterFilter) {
+                        return false;
+                    }
+                }
+                
+                // Accessory type filter
+                if (accessoryTypeFilter) {
+                    if (accessory.accessory_type !== accessoryTypeFilter) {
+                        return false;
+                    }
+                }
+                
+                // Effect type filter
+                if (effectTypeFilter.length > 0) {
+                    const accessoryTypes = accessory.effect_classification?.primary_types || [];
+                    if (!effectTypeFilter.some(type => accessoryTypes.includes(type))) {
+                        return false;
+                    }
+                }
+                
+                // Source filter
+                if (sourceFilter) {
+                    const sources = accessory.data_sources || [];
+                    if (sourceFilter === 'tier_list' && !sources.includes('tier_list')) return false;
+                    if (sourceFilter === 'a4_extraction' && !sources.includes('a4_extraction')) return false;
+                    if (sourceFilter === 'both' && sources.length < 2) return false;
+                }
+                
+                // Tag search filter
+                if (tagSearch) {
+                    const accessoryTags = (accessory.tags || []).join(' ').toLowerCase();
+                    if (!accessoryTags.includes(tagSearch)) return false;
+                }
+                
+                // Selected tags filter (AND logic)
+                if (selectedTags.size > 0) {
+                    const accessoryTags = accessory.tags || [];
+                    if (![...selectedTags].every(tag => accessoryTags.includes(tag))) {
+                        return false;
+                    }
+                }
+                
+                return true;
+            });
+            
+            // Sort results
+            sortResults();
+            renderResults();
+        }
+        
+        // Sort results
+        function sortResults() {
+            filteredAccessories.sort((a, b) => {
+                let aVal = a[sortColumn];
+                let bVal = b[sortColumn];
+                
+                // Handle special sorting cases
+                if (sortColumn === 'name' || sortColumn === 'character') {
+                    aVal = (aVal || '').toString();
+                    bVal = (bVal || '').toString();
+                } else if (sortColumn === 'tier_value') {
+                    aVal = aVal || 0;
+                    bVal = bVal || 0;
+                }
+                
+                if (sortDirection === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+        }
+        
+        // Render results
+        function renderResults() {
+            const tbody = document.getElementById('accessories-tbody');
+            const resultCount = document.getElementById('result-count');
+            const noResults = document.getElementById('no-results');
+            const resultsContainer = document.getElementById('results-container');
+            
+            resultCount.textContent = filteredAccessories.length;
+            
+            if (filteredAccessories.length === 0) {
+                resultsContainer.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            resultsContainer.style.display = 'block';
+            noResults.style.display = 'none';
+            
+            tbody.innerHTML = '';
+            
+            filteredAccessories.forEach(accessory => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>
+                        <div class="accessory-name">${accessory.name}</div>
+                    </td>
+                    <td>
+                        <span class="tier-badge tier-${accessory.tier.toLowerCase().replace('+', '-plus').replace('?', 'unknown')}">${accessory.tier}</span>
+                    </td>
+                    <td>
+                        ${accessory.character_restriction ? `<span class="character-restriction">${accessory.character_restriction}</span>` : '<span style="color: var(--text-tertiary);">General</span>'}
+                    </td>
+                    <td style="width: 180px;">
+                        <div class="stats-list">
+                            ${formatStats(accessory.stats || {})}
+                        </div>
+                    </td>
+                    <td>
+                        <div class="effect-list">
+                            ${formatEffects(accessory.effects || [])}
+                        </div>
+                    </td>
+                    <td style="width: 180px;">
+                        <div class="tag-list">
+                            ${formatTagsCompact(accessory.tags || [], accessory.name || '')}
+                        </div>
+                    </td>
+                    <td class="notes-column" style="width: 300px;">
+                        <div class="accessory-notes">
+                            ${formatNotes(accessory)}
+                        </div>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+        
+        // Helper function to get stat icon
+        // Official icons sourced from COTC Wiki: https://octopathtraveler.fandom.com/wiki/Status_Effects_(Champions_of_the_Continent)
+        function getStatIconPath(statType) {
+            const iconMap = {
+                'patk': '/images/icons/stat_boosts/Phys_Atk_Up.png',
+                'eatk': '/images/icons/stat_boosts/Elem_Atk_Up.png', 
+                'crit': '/images/icons/stat_boosts/Crit_Up.png',
+                'sp': '/images/icons/healing_recovery/SP_Stock.png',
+                'hp': '/images/icons/healing_recovery/HP_Barrier.png',
+                'spd': '/images/icons/stat_boosts/Speed_Up.png',
+                'speed': '/images/icons/stat_boosts/Speed_Up.png',
+                'edef': '/images/icons/stat_boosts/Elem_Def_Up.png',
+                'pdef': '/images/icons/stat_boosts/Phys_Def_Up.png'
+            };
+            return iconMap[statType.toLowerCase()] || '';
+        }
+
+        // Format stats with icons (restored original badge styling)
+        function formatStats(stats) {
+            const statEntries = Object.entries(stats)
+                .filter(([key, value]) => value !== 0) // Show both positive and negative values
+                .map(([key, value]) => {
+                    const iconPath = getStatIconPath(key);
+                    const iconHtml = iconPath ? `<img src="${iconPath}" class="ui-stat-icon-sm" alt="${key}" />` : '';
+                    const displayValue = value > 0 ? `+${value}` : value; // Show + for positive, - automatically for negative
+                    return `<span class="stat-item">${iconHtml}${key.toUpperCase()}: ${displayValue}</span>`;
+                });
+            
+            return statEntries.length > 0 ? statEntries.join('') : '<span style="color: var(--text-tertiary);">No stats</span>';
+        }
+        
+        // Format effects
+        function formatEffects(effects) {
+            if (effects.length === 0) {
+                return '<span style="color: var(--text-tertiary);">No effects listed</span>';
+            }
+            
+            return effects.slice(0, 2).map(effect => `
+                <div class="effect-item">
+                    <div class="effect-description">${effect.description}</div>
+                    <div class="effect-meta">${effect.trigger || 'passive'} • ${effect.target || 'self'}</div>
+                </div>
+            `).join('') + (effects.length > 2 ? `<div style="color: var(--text-secondary); font-size: 0.75rem;">+${effects.length - 2} more effects</div>` : '');
+        }
+        
+        // Format tags
+        function formatTags(tags) {
+            if (tags.length === 0) return '<span style="color: var(--text-tertiary);">No tags</span>';
+            
+            return tags.slice(0, 5).map(tag => 
+                `<span class="tag-mini" onclick="toggleTag('${tag}')" style="cursor: pointer;">${tag}</span>`
+            ).join('') + (tags.length > 5 ? ` <span style="color: var(--text-secondary); font-size: 0.7rem;">+${tags.length - 5}</span>` : '');
+        }
+        
+        // Format tags compact for fixed-width column
+        function formatTagsCompact(tags, accessoryName = '') {
+            if (tags.length === 0) return '<span style="color: var(--text-tertiary);">None</span>';
+            
+            // Show max 3-4 tags in the wider column
+            const maxVisible = 3;
+            const visibleTags = tags.slice(0, maxVisible).map(tag => 
+                `<span class="tag-mini" onclick="toggleTag('${tag}')" style="cursor: pointer; font-size: 0.7rem;">${tag}</span>`
+            ).join(' ');
+            
+            const remainingCount = tags.length - maxVisible;
+            const remainingText = remainingCount > 0 ? 
+                ` <button class="tag-more-button" onclick="showAllTags('${accessoryName}', ${JSON.stringify(tags).replace(/"/g, '&quot;')})">+${remainingCount}</button>` : '';
+            
+            return visibleTags + remainingText;
+        }
+        
+        // Format notes without redundant A4 information
+        function formatNotes(accessory) {
+            let notes = accessory.tier_explanation || '';
+            
+            // Remove redundant "A4 accessory for X" text since character is already shown
+            if (notes) {
+                // Remove patterns like "A4 accessory for Character Name"
+                notes = notes.replace(/A4 accessory for [^,.\s]+[,.]?\s*/gi, '');
+                // Remove patterns like "Character's A4 accessory"  
+                notes = notes.replace(/[^'s]*'s A4 accessory[,.]?\s*/gi, '');
+                // Remove standalone "A4 accessory" 
+                notes = notes.replace(/^A4 accessory[,.]?\s*/gi, '');
+                // Clean up any double spaces
+                notes = notes.replace(/\s+/g, ' ').trim();
+            }
+            
+            return notes || '<span style="color: var(--text-tertiary); font-style: italic;">No notes</span>';
+        }
+        
+        // Clear all filters function
+        function clearAllFilters() {
+            // Clear search input
+            document.getElementById('search-input').value = '';
+            
+            // Clear all select filters
+            const tierFilter = document.getElementById('tier-filter');
+            const characterFilter = document.getElementById('character-filter');
+            const accessoryTypeFilter = document.getElementById('accessory-type-filter');
+            const effectTypeFilter = document.getElementById('effect-type-filter');
+            const sourceFilter = document.getElementById('source-filter');
+            const tagSearch = document.getElementById('tag-search');
+            
+            // Clear multiple select filters
+            for (let option of tierFilter.options) {
+                option.selected = false;
+            }
+            for (let option of effectTypeFilter.options) {
+                option.selected = false;
+            }
+            
+            // Reset single select filters to first option
+            characterFilter.selectedIndex = 0;
+            accessoryTypeFilter.selectedIndex = 0;
+            sourceFilter.selectedIndex = 0;
+            
+            // Clear tag search
+            tagSearch.value = '';
+            
+            // Clear selected tags
+            selectedTags.clear();
+            
+            // Reapply filters (which will now show all accessories)
+            applyFilters();
+            
+            // Update popular tags display
+            updatePopularTagsDisplay();
+        }
+        
+        // Show all tags modal
+        function showAllTags(accessoryName, tags) {
+            // Create modal overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'tags-modal-overlay';
+            overlay.onclick = closeTagsModal;
+            
+            // Create modal content
+            const modal = document.createElement('div');
+            modal.className = 'tags-modal';
+            modal.onclick = (e) => e.stopPropagation(); // Prevent closing when clicking modal content
+            
+            // Modal header
+            const header = document.createElement('div');
+            header.className = 'tags-modal-title';
+            header.innerHTML = `
+                All Tags for ${accessoryName}
+                <button class="tags-modal-close" onclick="closeTagsModal()">&times;</button>
+            `;
+            
+            // Tags content
+            const content = document.createElement('div');
+            content.className = 'tag-list';
+            content.innerHTML = tags.map(tag => 
+                `<span class="tag-mini" onclick="toggleTag('${tag}')" style="cursor: pointer;">${tag}</span>`
+            ).join(' ');
+            
+            modal.appendChild(header);
+            modal.appendChild(content);
+            overlay.appendChild(modal);
+            
+            // Add to page
+            document.body.appendChild(overlay);
+            
+            // Add keyboard listener for Escape key
+            const escapeHandler = (e) => {
+                if (e.key === 'Escape') {
+                    closeTagsModal();
+                    document.removeEventListener('keydown', escapeHandler);
+                }
+            };
+            document.addEventListener('keydown', escapeHandler);
+        }
+        
+        // Close tags modal
+        function closeTagsModal() {
+            const modal = document.querySelector('.tags-modal-overlay');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            loadAccessories();
+            
+            // Filter event listeners
+            document.getElementById('search-input').addEventListener('input', applyFilters);
+            document.getElementById('tier-filter').addEventListener('change', applyFilters);
+            document.getElementById('character-filter').addEventListener('change', applyFilters);
+            document.getElementById('accessory-type-filter').addEventListener('change', applyFilters);
+            document.getElementById('effect-type-filter').addEventListener('change', applyFilters);
+            document.getElementById('source-filter').addEventListener('change', applyFilters);
+            document.getElementById('tag-search').addEventListener('input', applyFilters);
+            
+            // Clear filters button
+            document.getElementById('clear-filters-btn').addEventListener('click', clearAllFilters);
+            
+            // Sort event listeners
+            document.querySelectorAll('th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const column = th.dataset.sort;
+                    if (sortColumn === column) {
+                        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        sortColumn = column;
+                        sortDirection = column === 'tier_value' ? 'desc' : 'asc';
+                    }
+                    applyFilters();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

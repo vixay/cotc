@@ -1,0 +1,1003 @@
+/* ========================================
+   COTC Global UI Components Library
+   ======================================== 
+   
+   Global utility classes for consistent styling across all Vue components.
+   Uses `ui-` prefix to avoid conflicts with component-specific styles.
+   
+   Contains:
+   - Awakening stone classes
+   - Tag classes  
+   - Tier badge classes
+   - Priority badge classes
+   - Element & weapon icons
+   - Character images
+   - Badge layouts
+   - Weakness badges
+   ======================================== */
+
+/* ========================================
+   AWAKENING STONE CLASSES
+   ======================================== */
+
+.ui-stone-u10 {
+  background: var(--success-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-a1 {
+  background: var(--primary-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-a2 {
+  background: var(--info-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-a3 {
+  background: var(--warning-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-a4 {
+  background: var(--danger-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-shard {
+  background: var(--text-secondary);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-blank {
+  color: var(--text-tertiary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: 1px dashed var(--text-tertiary);
+  font-style: italic;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.ui-stone-none {
+  color: var(--text-tertiary);
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+/* Alternative names for backwards compatibility */
+.ui-stone-ult {
+  background: var(--success-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+/* ========================================
+   TAG CLASSES
+   ======================================== */
+
+/* Drayleb-specific tags */
+.ui-tag-drayleb-must-pull {
+  background: var(--danger-color);
+  color: white;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.ui-tag-drayleb-should-pull {
+  background: var(--warning-color);
+  color: white;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.ui-tag-drayleb-luxury {
+  background: var(--info-color);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.ui-tag-drayleb-skip {
+  background: var(--text-secondary);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* General tags */
+.ui-tag-general {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Interactive tag (for "+X more" buttons) */
+.ui-tag-more {
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.ui-tag-more:hover {
+  background: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+/* ========================================
+   TIER CLASSES
+   ======================================== */
+
+.ui-tier-s-plus {
+  background: var(--tier-s-plus);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+.ui-tier-s {
+  background: var(--tier-s);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+.ui-tier-a {
+  background: var(--tier-a);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+.ui-tier-b {
+  background: var(--tier-b);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+.ui-tier-c {
+  background: var(--tier-c);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+.ui-tier-d {
+  background: var(--tier-d);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+.ui-tier-unrated {
+  color: var(--text-tertiary);
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+/* Alternative naming for modal compatibility */
+.ui-tier-splus {
+  background: var(--tier-s-plus);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+  min-width: 24px;
+}
+
+/* ========================================
+   PRIORITY CLASSES  
+   ======================================== */
+
+/* A4 Priority */
+.ui-a4-essential {
+  background: var(--danger-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+.ui-a4-good {
+  background: var(--success-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+.ui-a4-skip {
+  color: var(--text-tertiary);
+  font-size: inherit;
+  font-weight: normal;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Ultimate Priority */
+.ui-ult-essential {
+  background: var(--danger-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+.ui-ult-good {
+  background: var(--success-color);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+.ui-ult-skip {
+  color: var(--text-tertiary);
+  font-size: inherit;
+  font-weight: normal;
+  display: inline-block;
+  text-align: center;
+}
+
+.ui-priority-none {
+  color: var(--text-tertiary);
+  font-size: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+/* ========================================
+   ELEMENT & WEAPON ICONS
+   ======================================== */
+
+/* Base icon classes */
+.ui-element-icon,
+.ui-weapon-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* Smaller icon variant for compact displays */
+.ui-element-icon-sm,
+.ui-weapon-icon-sm {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+/* Icon-only variant (no margin) for table displays */
+.ui-element-icon-only,
+.ui-weapon-icon-only {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 0;
+}
+
+/* Element Icon Images */
+.ui-element-fire {
+  background-image: url('/images/elements/Fire.png');
+}
+
+.ui-element-ice {
+  background-image: url('/images/elements/Ice.png');
+}
+
+.ui-element-lightning {
+  background-image: url('/images/elements/Lightning.png');
+}
+
+.ui-element-wind {
+  background-image: url('/images/elements/Wind.png');
+}
+
+.ui-element-light {
+  background-image: url('/images/elements/Light.png');
+}
+
+.ui-element-dark {
+  background-image: url('/images/elements/Dark.png');
+}
+
+/* Weapon Icon Images */
+.ui-weapon-sword {
+  background-image: url('/images/weapons/Sword.png');
+}
+
+.ui-weapon-bow {
+  background-image: url('/images/weapons/Bow.png');
+}
+
+.ui-weapon-axe {
+  background-image: url('/images/weapons/Axe.png');
+}
+
+.ui-weapon-staff {
+  background-image: url('/images/weapons/Staff.png');
+}
+
+.ui-weapon-dagger {
+  background-image: url('/images/weapons/Dagger.png');
+}
+
+.ui-weapon-tome {
+  background-image: url('/images/weapons/Tome.png');
+}
+
+.ui-weapon-polearm {
+  background-image: url('/images/weapons/Polearm.png');
+}
+
+.ui-weapon-spear {
+  background-image: url('/images/weapons/Spear_Polearm.png');
+}
+
+.ui-weapon-fan {
+  background-image: url('/images/weapons/Fan.png');
+}
+
+/* ========================================
+   CHARACTER IMAGES
+   ======================================== */
+
+/* Base character image class */
+.ui-character-image {
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Different image size variants */
+.ui-character-thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ui-character-portrait {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.ui-character-full {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ui-character-card {
+  width: 200px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Character image placeholders/fallbacks */
+.ui-character-placeholder {
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  border: 2px dashed var(--border-color);
+  border-radius: 4px;
+}
+
+.ui-character-placeholder-thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+.ui-character-placeholder-portrait {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   BADGE LAYOUTS
+   ======================================== */
+
+/* Flex container for badge groups */
+.ui-badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.ui-badge-group-compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+/* Base badge class */
+.ui-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Different badge variants */
+.ui-badge-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.ui-badge-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.ui-badge-success {
+  background: var(--success-color);
+  color: white;
+}
+
+.ui-badge-danger {
+  background: var(--danger-color);
+  color: white;
+}
+
+.ui-badge-warning {
+  background: var(--warning-color);
+  color: white;
+}
+
+.ui-badge-info {
+  background: var(--info-color);
+  color: white;
+}
+
+/* ========================================
+   WEAKNESS BADGES
+   ======================================== */
+
+/* Base weakness badge */
+.ui-weakness-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  gap: 4px;
+  margin: 2px;
+}
+
+/* Element-specific weakness colors */
+.ui-weakness-fire {
+  background: rgba(255, 107, 107, 0.2);
+  border: 1px solid #ff6b6b;
+  color: var(--text-primary);
+}
+
+.ui-weakness-ice {
+  background: rgba(116, 192, 252, 0.2);
+  border: 1px solid #74c0fc;
+  color: var(--text-primary);
+}
+
+.ui-weakness-lightning {
+  background: rgba(255, 212, 59, 0.2);
+  border: 1px solid #ffd43b;
+  color: var(--bg-primary, #2a2a2a);
+}
+
+.ui-weakness-wind {
+  background: rgba(81, 207, 102, 0.2);
+  border: 1px solid #51cf66;
+  color: var(--text-primary);
+}
+
+.ui-weakness-light {
+  background: rgba(248, 249, 250, 0.2);
+  border: 1px solid #f8f9fa;
+  color: var(--bg-primary, #2a2a2a);
+}
+
+.ui-weakness-dark {
+  background: rgba(52, 58, 64, 0.3);
+  border: 1px solid #343a40;
+  color: var(--text-primary);
+}
+
+/* Weapon-specific weakness colors (neutral styling) */
+.ui-weakness-sword,
+.ui-weakness-bow,
+.ui-weakness-axe,
+.ui-weakness-staff,
+.ui-weakness-dagger,
+.ui-weakness-tome,
+.ui-weakness-polearm,
+.ui-weakness-spear,
+.ui-weakness-fan {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+/* ========================================
+   ROLE TAGS
+   ======================================== */
+
+.ui-role-tag {
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ui-role-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.ui-role-secondary {
+  background: var(--text-secondary);
+  color: white;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Text utilities for consistent formatting */
+.ui-text-uppercase {
+  text-transform: uppercase;
+}
+
+.ui-text-capitalize {
+  text-transform: capitalize;
+}
+
+.ui-text-center {
+  text-align: center;
+}
+
+.ui-text-nowrap {
+  white-space: nowrap;
+}
+
+/* Display utilities */
+.ui-inline-block {
+  display: inline-block;
+}
+
+.ui-flex {
+  display: flex;
+}
+
+.ui-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.ui-items-center {
+  align-items: center;
+}
+
+.ui-justify-center {
+  justify-content: center;
+}
+
+/* Gap utilities */
+.ui-gap-2 {
+  gap: 2px;
+}
+
+.ui-gap-4 {
+  gap: 4px;
+}
+
+.ui-gap-6 {
+  gap: 6px;
+}
+
+.ui-gap-8 {
+  gap: 8px;
+}
+
+/* Responsive breakpoints for component adjustments */
+@media (max-width: 768px) {
+  .ui-character-portrait {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .ui-character-card {
+    width: 160px;
+    height: 224px;
+  }
+  
+  .ui-badge-group {
+    gap: 4px;
+  }
+  
+  .ui-element-icon,
+  .ui-weapon-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ui-character-thumbnail {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .ui-character-portrait {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .ui-badge {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+  }
+}
+
+/* ========================================
+   ANIMATION UTILITIES  
+   ======================================== */
+
+.ui-transition {
+  transition: all 0.2s ease;
+}
+
+.ui-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.ui-hover-opacity:hover {
+  opacity: 0.8;
+}
+
+/* ========================================
+   SKILL TYPE CLASSES
+   ======================================== */
+
+/* Ultimate Skills */
+.ui-skill-ultimate {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.1) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-left: 4px solid #f59e0b;
+  color: #fbbf24;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Passive Skills */
+.ui-skill-passive {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.1) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-left: 4px solid #10b981;
+  color: #34d399;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Active/Battle Skills */
+.ui-skill-active {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-left: 4px solid #3b82f6;
+  color: #60a5fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Support Skills */
+.ui-skill-support {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  border-left: 4px solid #8b5cf6;
+  color: #a78bfa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Skill Group Containers */
+.ui-skill-group {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.ui-skill-group-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+/* ========================================
+   STAT ICONS & DISPLAYS
+   ======================================== */
+
+/* Stat icon base classes */
+.ui-stat-icon,
+.ui-stat-icon-sm,
+.ui-stat-icon-only {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.ui-stat-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+img.ui-stat-icon-sm {
+  width: 12px !important;
+  height: 12px !important;
+  max-width: 12px !important;
+  max-height: 12px !important;
+  min-width: 12px !important;
+  min-height: 12px !important;
+  margin-right: 3px !important;
+  vertical-align: middle !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+  transform: scale(1) !important;
+  zoom: 1 !important;
+}
+
+.ui-stat-icon-only {
+  width: 20px;
+  height: 20px;
+  margin-right: 0;
+}
+
+/* Stat item display */
+.ui-stat-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  background: var(--bg-secondary);
+  border-radius: 3px;
+  margin-bottom: 0.2rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.ui-stat-item:last-child {
+  margin-right: 0;
+}
+
+/* Stat list container */
+.ui-stat-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.ui-stat-list-compact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* ========================================
+   ACCESSIBILITY  
+   ======================================== */
+
+/* Focus states for interactive elements */
+.ui-tag-more:focus,
+.ui-badge:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 1px;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .ui-transition,
+  .ui-tag-more,
+  .ui-hover-scale {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  .ui-stone-blank {
+    border-width: 2px;
+    border-style: solid;
+  }
+  
+  .ui-weakness-fire,
+  .ui-weakness-ice,
+  .ui-weakness-lightning,
+  .ui-weakness-wind,
+  .ui-weakness-light,
+  .ui-weakness-dark {
+    border-width: 2px;
+  }
+  
+  .ui-skill-ultimate,
+  .ui-skill-passive,
+  .ui-skill-active,
+  .ui-skill-support {
+    border-left-width: 6px;
+    border-width: 2px;
+  }
+}

@@ -1,0 +1,161 @@
+name: Deploy Vue App to GitHub Pages
+
+on:
+  # Trigger on pushes to main branch (when Vue version is ready)
+  push:
+    branches: [ main ]
+    paths: 
+      - 'src/**'
+      - 'package.json'
+      - 'vite.config.js'
+      - 'index-vue.html'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build Vue app
+        run: npm run build:github
+        
+      - name: Copy static assets (maintain current site)
+        run: |
+          # Copy existing files to maintain current functionality
+          cp index.html dist-vue/vanilla.html
+          cp -r css dist-vue/
+          cp -r js dist-vue/
+          cp -r data dist-vue/
+          cp -r images dist-vue/
+          cp -r docs dist-vue/
+          cp character-details.html dist-vue/
+          
+          # Create index that offers both versions
+          cat > dist-vue/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>COTC Awakening Stone Priority Guide</title>
+              <style>
+                  body { 
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                      max-width: 800px; 
+                      margin: 0 auto; 
+                      padding: 40px 20px; 
+                      background: #1a1d24; 
+                      color: #e1e5e9;
+                  }
+                  .version-card {
+                      background: #252a33;
+                      border: 1px solid #3a4048;
+                      border-radius: 8px;
+                      padding: 24px;
+                      margin: 16px 0;
+                      text-decoration: none;
+                      display: block;
+                      transition: all 0.2s ease;
+                  }
+                  .version-card:hover {
+                      background: #2d343e;
+                      border-color: #4a9eff;
+                      transform: translateY(-2px);
+                  }
+                  .version-title {
+                      color: #4a9eff;
+                      font-size: 20px;
+                      font-weight: 600;
+                      margin: 0 0 8px 0;
+                  }
+                  .version-description {
+                      color: #9ca3af;
+                      margin: 0 0 12px 0;
+                      line-height: 1.5;
+                  }
+                  .version-status {
+                      display: inline-block;
+                      padding: 4px 12px;
+                      border-radius: 12px;
+                      font-size: 12px;
+                      font-weight: 500;
+                  }
+                  .stable { background: #10b981; color: white; }
+                  .beta { background: #f59e0b; color: white; }
+                  h1 { text-align: center; color: #e1e5e9; }
+                  .subtitle { text-align: center; color: #9ca3af; margin-bottom: 40px; }
+              </style>
+          </head>
+          <body>
+              <h1>COTC Awakening Stone Priority Guide</h1>
+              <p class="subtitle">Choose your version:</p>
+              
+              <a href="vanilla.html" class="version-card">
+                  <div class="version-title">Current Version</div>
+                  <div class="version-description">
+                      The stable version with all features you know and love. 
+                      Reliable and battle-tested.
+                  </div>
+                  <span class="version-status stable">Stable</span>
+              </a>
+              
+              <a href="vue.html" class="version-card">
+                  <div class="version-title">Vue Version (Beta)</div>
+                  <div class="version-description">
+                      New Vue 3 + Pinia version with improved architecture, 
+                      better performance, and smoother user experience.
+                  </div>
+                  <span class="version-status beta">Beta</span>
+              </a>
+              
+              <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #3a4048;">
+                  <p style="color: #6b7280; font-size: 14px;">
+                      <a href="https://github.com/vixay/cotc" style="color: #4a9eff;">GitHub</a> | 
+                      <a href="docs/CONTRIBUTING.md" style="color: #4a9eff;">Contribute</a> | 
+                      <a href="https://coff.ee/vixay" style="color: #4a9eff;">Buy me a coffee</a>
+                  </p>
+              </div>
+          </body>
+          </html>
+          EOF
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist-vue'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,198 @@
+name: Validate Character Data
+
+on:
+  pull_request:
+    paths:
+      - 'data/characters_enhanced_v2.json'
+      - 'data/characters_jp.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/characters_enhanced_v2.json'
+      - 'data/characters_jp.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+    
+    - name: Validate JSON syntax
+      run: |
+        echo "Validating JSON syntax for v2 data files..."
+        
+        # Validate main v2 data file
+        if [ -f "data/characters_enhanced_v2.json" ]; then
+          python -m json.tool data/characters_enhanced_v2.json > /dev/null
+          if [ $? -eq 0 ]; then
+            echo "✅ characters_enhanced_v2.json syntax is valid"
+          else
+            echo "❌ characters_enhanced_v2.json syntax error detected"
+            exit 1
+          fi
+        fi
+        
+        # Validate JP data file if it exists
+        if [ -f "data/characters_jp.json" ]; then
+          python -m json.tool data/characters_jp.json > /dev/null
+          if [ $? -eq 0 ]; then
+            echo "✅ characters_jp.json syntax is valid"
+          else
+            echo "❌ characters_jp.json syntax error detected"
+            exit 1
+          fi
+        fi
+    
+    - name: Check for required fields (v2)
+      run: |
+        node -e "
+        const fs = require('fs');
+        
+        // Validate main v2 data file
+        if (fs.existsSync('data/characters_enhanced_v2.json')) {
+          const data = JSON.parse(fs.readFileSync('data/characters_enhanced_v2.json', 'utf8'));
+          const requiredFields = ['id', 'name', 'isFree', 'stones'];
+          const optionalFields = ['starRating', 'job', 'tierRatings', 'a4Tier', 'ultPriority', 'roles', 'notes'];
+          let errors = [];
+          
+          data.characters.forEach((char, index) => {
+            requiredFields.forEach(field => {
+              if (!(field in char)) {
+                errors.push(\`Character at index \${index} (\${char.name || 'unnamed'}) missing required field: \${field}\`);
+              }
+            });
+            
+            // Check stones structure
+            if (char.stones) {
+              const stoneFields = ['AS1', 'AS2', 'AS3', 'AS4', 'AS5'];
+              stoneFields.forEach(stone => {
+                if (!(stone in char.stones)) {
+                  errors.push(\`Character \${char.name} missing stone: \${stone}\`);
+                }
+              });
+            }
+            
+            // Check tier ratings structure if present
+            if (char.tierRatings && char.tierRatings.gl && char.tierRatings.gl.tier) {
+              const validTiers = ['S+', 'S', 'A', 'B', 'C', 'D'];
+              if (!validTiers.includes(char.tierRatings.gl.tier)) {
+                errors.push(\`Character \${char.name} has invalid GL tier: \${char.tierRatings.gl.tier}\`);
+              }
+            }
+            
+            // Check roles structure if present
+            if (char.roles && char.roles.primary) {
+              const validRoles = ['DPS', 'Buffer', 'Debuffer', 'Healer', 'Tank', 'Support'];
+              if (!validRoles.includes(char.roles.primary)) {
+                errors.push(\`Character \${char.name} has invalid primary role: \${char.roles.primary}\`);
+              }
+            }
+          });
+          
+          if (errors.length > 0) {
+            console.error('❌ V2 validation errors:');
+            errors.forEach(err => console.error('  - ' + err));
+            process.exit(1);
+          } else {
+            console.log('✅ All required v2 fields present and valid');
+          }
+        }
+        "
+    
+    - name: Check for duplicate IDs (v2)
+      run: |
+        node -e "
+        const fs = require('fs');
+        
+        if (fs.existsSync('data/characters_enhanced_v2.json')) {
+          const data = JSON.parse(fs.readFileSync('data/characters_enhanced_v2.json', 'utf8'));
+          const ids = data.characters.map(c => c.id);
+          const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
+          
+          if (duplicates.length > 0) {
+            console.error('❌ Duplicate IDs found:', duplicates);
+            process.exit(1);
+          } else {
+            console.log('✅ No duplicate IDs in v2 data');
+          }
+        }
+        "
+    
+    - name: Validate stone values (v2)
+      run: |
+        node -e "
+        const fs = require('fs');
+        
+        if (fs.existsSync('data/characters_enhanced_v2.json')) {
+          const data = JSON.parse(fs.readFileSync('data/characters_enhanced_v2.json', 'utf8'));
+          const validStones = ['U10', 'A1', 'A2', 'A3', 'A4', 'Shard', 'Keep'];
+          const validUltPriorities = ['L10', 'L10 First', 'A1, L10', 'A4, L10', 'L9', 'L1'];
+          const validJobs = ['Warrior', 'Hunter', 'Cleric', 'Scholar', 'Dancer', 'Merchant', 'Apothecary', 'Thief'];
+          let errors = [];
+          
+          data.characters.forEach(char => {
+            // Validate stone values
+            if (char.stones) {
+              Object.entries(char.stones).forEach(([key, value]) => {
+                if (!validStones.includes(value)) {
+                  errors.push(\`\${char.name} has invalid stone value for \${key}: \${value}\`);
+                }
+              });
+            }
+            
+            // Validate ultimate priorities
+            if (char.ultPriority && !validUltPriorities.includes(char.ultPriority)) {
+              errors.push(\`\${char.name} has invalid ultimate priority: \${char.ultPriority}\`);
+            }
+            
+            // Validate job types
+            if (char.job && !validJobs.includes(char.job)) {
+              errors.push(\`\${char.name} has invalid job: \${char.job}\`);
+            }
+            
+            // Validate star ratings
+            if (char.starRating && (char.starRating < 3 || char.starRating > 5)) {
+              errors.push(\`\${char.name} has invalid star rating: \${char.starRating}\`);
+            }
+          });
+          
+          if (errors.length > 0) {
+            console.error('❌ Invalid v2 data values:');
+            errors.forEach(err => console.error('  - ' + err));
+            process.exit(1);
+          } else {
+            console.log('✅ All v2 data values are valid');
+          }
+        }
+        "
+    
+    - name: Post validation results
+      uses: actions/github-script@v6
+      if: github.event_name == 'pull_request' && failure()
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '❌ Character data validation failed. Please check the JSON syntax and ensure all required v2 fields are present. See the Actions tab for detailed error messages.'
+          })
+    
+    - name: Post success message
+      uses: actions/github-script@v6
+      if: github.event_name == 'pull_request' && success()
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '✅ Character data validation passed! The v2 format changes look good and all fields are valid.'
+          })

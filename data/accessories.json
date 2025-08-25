@@ -1,0 +1,6325 @@
+{
+  "metadata": {
+    "version": "1.2.0",
+    "updated_date": "2025-08-18",
+    "data_sources": [
+      "tier_list_csv",
+      "a4_character_extraction"
+    ],
+    "total_accessories": 153,
+    "uts_version": "3.0.0",
+    "enhancement_version": "1.0.0",
+    "enhancements": [
+      "comprehensive_uts_tagging",
+      "effect_classification",
+      "character_cross_references",
+      "accessory_type_classification"
+    ],
+    "accessory_type_counts": {
+      "normal": 153
+    },
+    "restructure_version": "2.0.0",
+    "changes": [
+      "Removed character-specific accessories (A4 awakening and exclusive)",
+      "Character accessories now sourced from character database only",
+      "Accessories view will combine both sources dynamically"
+    ],
+    "effects_extraction": {
+      "date": "2025-08-09",
+      "source": "CSV explanations",
+      "accessories_updated": 117,
+      "extraction_version": "1.0.0"
+    },
+    "stat_cleanup": {
+      "date": "2025-08-10",
+      "action": "Removed stat modifier effects (duplicated in stats section)",
+      "accessories_modified": 11,
+      "total_effects_removed": 11,
+      "cleanup_version": "1.0.0"
+    },
+    "zero_stats_cleaned": {
+      "fix_date": "2025-08-18T16:04:26.577013",
+      "statistics": {
+        "accessories_processed": 153,
+        "accessories_cleaned": 153,
+        "stats_removed": 1214,
+        "specific_fixes": [
+          "Orb of King Dulin: Removed 7 zero stats",
+          "Bewitching Cloak: Removed 8 zero stats",
+          "Bird-of-Paradise Tailfeather: Removed 8 zero stats",
+          "Brilliant Tactician's Medal: Removed 8 zero stats",
+          "Light of Succession: Removed 8 zero stats",
+          "Sage Helva's Orb: Removed 8 zero stats",
+          "\"King\" Card: Removed 8 zero stats",
+          "Cleric's Cloak Pin: Removed 8 zero stats",
+          "Creator's Emblem: Removed 8 zero stats",
+          "Dance Duelist's Barrette: Removed 8 zero stats"
+        ]
+      },
+      "description": "Removed zero and null stat values from accessories"
+    }
+  },
+  "accessories": {
+    "orb_of_king_dulin": {
+      "id": "orb_of_king_dulin",
+      "name": "Orb of King Dulin",
+      "tier": "S+",
+      "tier_value": 10,
+      "tier_explanation": "This free artifact grants 200 patk and 100k damage cap up. Enough said.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "patk": 200
+      },
+      "effects": [
+        {
+          "description": "Increases damage cap by 100,000",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "100000",
+          "tags": [
+            "damage_cap_up",
+            "special"
+          ]
+        }
+      ],
+      "tags": [
+        "special_damage_cap_up"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.126632",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.416028",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "stat_buffing",
+          "special_mechanics"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "bewitching_cloak": {
+      "id": "bewitching_cloak",
+      "name": "Bewitching Cloak",
+      "tier": "S",
+      "tier_value": 9,
+      "tier_explanation": "In many fights, the ability to stay alive without mitigation on turn 1 is essential. This item covers that and is very versatile overall, providing 5 instances of physical and elemental evasion from the start of the fight.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "In many fights, the ability to stay alive without mitigation on turn 1 is essential. This item covers that and is very versatile overall, providing 5 instances of physical and elemental evasion from t...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "1",
+          "tags": [
+            "special_elemental_evasion",
+            "special_physical_evasion"
+          ]
+        }
+      ],
+      "tags": [
+        "special_elemental_evasion",
+        "trigger_battle_start",
+        "special_physical_evasion"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.127107",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.416835",
+        "total_tags": 3,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "special_mechanics"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "birdofparadise_tailfeather": {
+      "id": "birdofparadise_tailfeather",
+      "name": "Bird-of-Paradise Tailfeather",
+      "tier": "S",
+      "tier_value": 9,
+      "tier_explanation": "Reduces axe resistance on break. Unique effect to use in all axe damage teams.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Reduces axe resistance on break. Unique effect to use in all axe damage teams.",
+          "trigger": "on_break",
+          "duration": null,
+          "target": "self",
+          "value": null,
+          "tags": [
+            "trigger_on_break"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_on_break"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.127340",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.416917",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "brilliant_tacticians_medal": {
+      "id": "brilliant_tacticians_medal",
+      "name": "Brilliant Tactician's Medal",
+      "tier": "S",
+      "tier_value": 9,
+      "tier_explanation": "Varkyn's A4 accessory is excellent. It provides lots of speed (60) and offers an amazing 6 turns of elemental defense down that can be capped and extended with 4* Laura, or improved with Signa's A4.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Varkyn's A4 accessory is excellent. It provides lots of speed (60) and offers an amazing 6 turns of elemental defense down that can be capped and extended with 4* Laura, or improved with Signa's A4.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.127562",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.417000",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "light_of_succession": {
+      "id": "light_of_succession",
+      "name": "Light of Succession",
+      "tier": "S",
+      "tier_value": 9,
+      "tier_explanation": "Ditraina's exclusive accessory's only downside is that it's exclusive. +1 buff received duration is such a good effect that we bring 4* Lucetta / Mabel just because of it.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Ditraina's exclusive accessory's only downside is that it's exclusive. +1 buff received duration is such a good effect that we bring 4* Lucetta / Mabel just because of it.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.129306",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.418228",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "sage_helvas_orb": {
+      "id": "sage_helvas_orb",
+      "name": "Sage Helva's Orb",
+      "tier": "S",
+      "tier_value": 9,
+      "tier_explanation": "This free artifact grants 200 eatk and 100k damage cap up. The only reason it's not an S+ accessory is because physical damage is so dominant.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increases damage cap by 100",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "100",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "special_damage_cap_up"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.130487",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.418898",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "special_mechanics"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "king_card": {
+      "id": "king_card",
+      "name": "King Card",
+      "tier": "?",
+      "tier_value": 0,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.131379",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.419495",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "clerics_cloak_pin": {
+      "id": "clerics_cloak_pin",
+      "name": "Cleric's Cloak Pin",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Lianna's exclusive accessory provides her a much needed SP reduction.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "Yes",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Lianna's exclusive accessory provides her a much needed SP reduction.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.132702",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.420441",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "creators_emblem": {
+      "id": "creators_emblem",
+      "name": "Creator's Emblem",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "When equipped with Sacred Emblem the unit gets 30% passive patk and eatk up. Very good to cap the passive attack stat and to improve healing from the healer of a phys team.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "When equipped with Sacred Emblem the unit gets 30% passive patk and eatk up. Very good to cap the passive attack stat and to improve healing from the healer of a phys team.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.132971",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.420797",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dance_duelists_barrette": {
+      "id": "dance_duelists_barrette",
+      "name": "Dance Duelist's Barrette",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Glossom's A4 accessory provides good HP (400) and passive elemental and physical attack buff when below 75% HP. If you have NieR collab character A2, this is an awesome accessory for her because berserk guarantees the buff.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Glossom's A4 accessory provides good HP (400) and passive elemental and physical attack buff when below 75% HP. If you have NieR collab character A2, this is an awesome accessory for her because berse...",
+          "trigger": "conditional_hp",
+          "duration": null,
+          "target": "self",
+          "value": "4",
+          "tags": [
+            "trigger_conditional_hp",
+            "trigger_hp_below"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_hp_below"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.133554",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.421430",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dark_rune_vi": {
+      "id": "dark_rune_vi",
+      "name": "Dark Rune VI",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Dark damage up is rare and good dark damage dealers are not scholars with 30% dark damage up passives - such as Primrose, Auguste, Jillmeila (if you can't get bleed reliably)",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Dark damage by 30%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_elemental_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.133815",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.421542",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "fire_rune_vi": {
+      "id": "fire_rune_vi",
+      "name": "Fire Rune VI",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Many fire damage dealers are scholars, but there are notable exceptions (e.g. Therion, possibly even Largo). This item becomes less important if you have Frederica.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Many fire damage dealers are scholars, but there are notable exceptions (e.g. Therion, possibly even Largo). This item becomes less important if you have Frederica.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.134600",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.421948",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "garde_style_successors_cloak": {
+      "id": "garde_style_successors_cloak",
+      "name": "Garde Style Successor's Cloak",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Mirgardi's A4 accessory provides the ability to recover 15% HP when hit, effectively reducing incoming damage by 85%. Good defensive item.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Mirgardi's A4 accessory provides the ability to recover 15% HP when hit, effectively reducing incoming damage by 85%. Good defensive item.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_when_hit"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.135126",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.422167",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "great_blossoms_crest_yin": {
+      "id": "great_blossoms_crest_yin",
+      "name": "Great Blossom's Crest (Yin)",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "This item provides taunt at full HP. However, unlike Edea's A4, it takes 2 slots and does not give the 1000 HP by itself. The effect is still a free action per turn every turn, which adds value to the item, especially when equipped by characters that have natural sidestep abilities like Bargello, Canary, etc.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "hp": 1000
+      },
+      "effects": [
+        {
+          "description": "This item provides taunt at full HP. However, unlike Edea's A4, it takes 2 slots and does not give the 1000 HP by itself. The effect is still a free action per turn every turn, which adds value to the...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "4",
+          "tags": [
+            "buff_regen_hp",
+            "trigger_hp_full",
+            "trigger_conditional_hp_full",
+            "special_evasion"
+          ]
+        }
+      ],
+      "tags": [
+        "special_evasion_sidestep",
+        "buff_regen_hp",
+        "trigger_hp_full"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.135679",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.422531",
+        "total_tags": 3,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "special_mechanics"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "ice_rune_vi": {
+      "id": "ice_rune_vi",
+      "name": "Ice Rune VI",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Some ice damage dealers don't have ice damage up: most notably Eleonora.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Some ice damage dealers don't have ice damage up: most notably Eleonora.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.136014",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.422813",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "improvised_fishing_rod": {
+      "id": "improvised_fishing_rod",
+      "name": "Improvised Fishing Rod",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Kenneth's A4 accessory has decent elemental attack and provides passive ice def down at the start of the battle. It can be extended by abilities (e.g. Aslyte's passive ice def down on break) and Sofia's A4",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Kenneth's A4 accessory has decent elemental attack and provides passive ice def down at the start of the battle. It can be extended by abilities (e.g. Aslyte's passive ice def down on break) and Sofia...",
+          "trigger": "on_break",
+          "duration": null,
+          "target": "self",
+          "value": "4",
+          "tags": [
+            "trigger_on_break",
+            "trigger_battle_start"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_on_break",
+        "trigger_battle_start"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.136231",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.422980",
+        "total_tags": 2,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "light_rune_vi": {
+      "id": "light_rune_vi",
+      "name": "Light Rune VI",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Varkyn and Eliza are usual go-to light damage dealers - the other will very likely benefit from light damage up.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Varkyn and Eliza are usual go-to light damage dealers - the other will very likely benefit from light damage up.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.136805",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.423377",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "mercenarys_barrette": {
+      "id": "mercenarys_barrette",
+      "name": "Mercenary's Barrette",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Tikilen's exclusive accessory provides great amounts of magic. With fortune weapons warriors have become good at dealing elemental damage.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Tikilen's exclusive accessory provides great amounts of magic. With fortune weapons warriors have become good at dealing elemental damage.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.137567",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.423903",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "nightshade_cloak": {
+      "id": "nightshade_cloak",
+      "name": "Nightshade Cloak",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Hujheb's exclusive accessory is better than it looks. Getting 6 wisdom arrows at the start of the battle allows Hujheb to cast his buffs without needing to use any skills. In scenarios where he is just supporting the team, he can cap active patk and bow damage up by himself with this.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Hujheb's exclusive accessory is better than it looks. Getting 6 wisdom arrows at the start of the battle allows Hujheb to cast his buffs without needing to use any skills. In scenarios where he is jus...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "6",
+          "tags": [
+            "trigger_battle_start"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_battle_start"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.138053",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.424141",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "occult_pendant": {
+      "id": "occult_pendant",
+      "name": "Occult Pendant",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Unconditional passive 10% eatk up with 50 eatk. Good option to cap eatk. Also good for healers since eatk buffs improve healing.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Unconditional passive 10% eatk up with 50 eatk. Good option to cap eatk. Also good for healers since eatk buffs improve healing.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.138294",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.424205",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "rosary_of_truth": {
+      "id": "rosary_of_truth",
+      "name": "Rosary of Truth",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Yan Long's exclusive accessory is probably a staple on him. It provides a massive +150 phys atk and also some speed and crit.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "patk": 150
+      },
+      "effects": [
+        {
+          "description": "Grants 150 Phys Attack",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "150",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.138794",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.424472",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "sacred_emblem": {
+      "id": "sacred_emblem",
+      "name": "Sacred Emblem",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "When equipped with Creator's Emblem the unit gets 30% passive patk and eatk up. Very good to cap the passive attack stat and to improve healing from the healer of a phys team.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "When equipped with Creator's Emblem the unit gets 30% passive patk and eatk up. Very good to cap the passive attack stat and to improve healing from the healer of a phys team.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.139015",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.424550",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "solomons_thighbone": {
+      "id": "solomons_thighbone",
+      "name": "Solomon's Thighbone",
+      "tier": "A",
+      "tier_value": 8,
+      "tier_explanation": "Along with Wingate's A4 accessory, this can help reduce passive dark resistance.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Along with Wingate's A4 accessory, this can help reduce passive dark resistance.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.140152",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.425350",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "adventurers_emblem": {
+      "id": "adventurers_emblem",
+      "name": "Adventurer's Emblem",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Besides providing 200 HP, the item is useful to boost any tank's regen capabilities as well as provide extra regen to a character that is in the same row as the party healer (and thus doesn't receive heals)",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "hp": 200
+      },
+      "effects": [],
+      "tags": [
+        "buff_regen_hp"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.141614",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.425993",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "airborne_knights_ribbon": {
+      "id": "airborne_knights_ribbon",
+      "name": "Airborne Knight's Ribbon",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Good attack, 10% sword dmg up.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Sword damage by 10%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "10",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.141861",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.426042",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "anniversary_scarf": {
+      "id": "anniversary_scarf",
+      "name": "Anniversary Scarf",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Besides providing a great 365 HP, the item is useful to boost any tank's regen capabilities. Nowadays multiple characters heal the full party so the item lost some value.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "hp": 365
+      },
+      "effects": [],
+      "tags": [
+        "buff_regen_hp"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.142051",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.426117",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "blood_soaked_cup": {
+      "id": "blood_soaked_cup",
+      "name": "Blood Soaked Cup",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Cup is a very powerful unique item that caps elemental attack by itself. While the 3 turn duration may seem bad, it can be extended by 5* dancer Lynette passive skill \"Empowering Exchange\". It lost some value with multiple units that can provide passive eatk up",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Cup is a very powerful unique item that caps elemental attack by itself. While the 3 turn duration may seem bad, it can be extended by 5* dancer Lynette passive skill \"Empowering Exchange\". It lost...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.142629",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.426691",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "boots_of_the_black_cat": {
+      "id": "boots_of_the_black_cat",
+      "name": "Boots of the Black Cat",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Obtaining 1 dodge when moving to the front row is very good when the enemy does not attack with multiple hits. This item might be A tier.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Grants 1 Dodge When Moving To The Front Row Is Very Good When The Enemy Does Not Attack",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "1",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "trigger_when_hit",
+        "target_front_row"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.142910",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.426763",
+        "total_tags": 2,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dance_duelists_cologne": {
+      "id": "dance_duelists_cologne",
+      "name": "Dance Duelist's Cologne",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Glossom's EX2 accessory is a stat stick at +100 patk. The Glossom's exclusive +duration is a S+ tier effect but this requires bringing Glossom and using him as support with his +patk accessories. Somewhat contradictory.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.143805",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.427712",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dance_duelists_wristband": {
+      "id": "dance_duelists_wristband",
+      "name": "Dance Duelist's Wristband",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Glossom's exclusive accessory provides a very high amount of physical attack but no HP or speed.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Glossom's exclusive accessory provides a very high amount of physical attack but no HP or speed.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.144075",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.427758",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "defensive_speed_belt_iii": {
+      "id": "defensive_speed_belt_iii",
+      "name": "Defensive Speed Belt III",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This accessory provides a relatively large amount of speed (30) which is very helpful to control turn order.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This accessory provides a relatively large amount of speed (30) which is very helpful to control turn order.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.144556",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.427868",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dragons_scarf_iv": {
+      "id": "dragons_scarf_iv",
+      "name": "Dragon's Scarf IV",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.145031",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428047",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dragons_scarf_v": {
+      "id": "dragons_scarf_v",
+      "name": "Dragon's Scarf V",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.145235",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428079",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dragons_scarf_vi": {
+      "id": "dragons_scarf_vi",
+      "name": "Dragon's Scarf VI",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.145452",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428110",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "ebony_dragons_scarf": {
+      "id": "ebony_dragons_scarf",
+      "name": "Ebony Dragon's Scarf",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.145654",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428141",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "ediths_brilliant_wings": {
+      "id": "ediths_brilliant_wings",
+      "name": "Edith's Brilliant Wings",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This free artifact grants 200 pdef and edef, in addition to some HP and SP regen. We have much better uses for an accessory slot. This has its niche use for backrow units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [
+        "buff_regen_hp",
+        "buff_regen_sp"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.145862",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428213",
+        "total_tags": 2,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "elite_thiefs_emblem": {
+      "id": "elite_thiefs_emblem",
+      "name": "Elite Thief's Emblem",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "The 15% dagger damage up is difficult to obtain outside of A4 accessories and useful for thieves.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Dagger damage by 15%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "15",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.146119",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428267",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "empowering_bangle": {
+      "id": "empowering_bangle",
+      "name": "Empowering Bangle",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.146340",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428302",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "empowering_pendant": {
+      "id": "empowering_pendant",
+      "name": "Empowering Pendant",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.146534",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428334",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "energy_belt_iii": {
+      "id": "energy_belt_iii",
+      "name": "Energy Belt III",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.146742",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428377",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "energy_belt_iv": {
+      "id": "energy_belt_iv",
+      "name": "Energy Belt IV",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.146964",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428410",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "energy_belt_v": {
+      "id": "energy_belt_v",
+      "name": "Energy Belt V",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This item provides excellent amounts of HP and SP (500 and 50 respectively)",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This item provides excellent amounts of HP and SP (500 and 50 respectively)",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.147169",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428457",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "festive_winter_scarf": {
+      "id": "festive_winter_scarf",
+      "name": "Festive Winter Scarf",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This item provides some speed, large elemental attack and some useful SP regen, which is quite good in prolonged fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This item provides some speed, large elemental attack and some useful SP regen, which is quite good in prolonged fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.147502",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.428888",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "gladiatory_encyclopedia": {
+      "id": "gladiatory_encyclopedia",
+      "name": "Gladiatory Encyclopedia",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Hammy's exclusive accessory provides a lot of physical attack and the ability to show weak points at the start of the battle. Very situational for when Hammy is going to be a damage dealer (not often realistically).",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Hammy's exclusive accessory provides a lot of physical attack and the ability to show weak points at the start of the battle. Very situational for when Hammy is going to be a damage dealer (not often ...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": null,
+          "tags": [
+            "trigger_battle_start"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_battle_start"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.147818",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429388",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "great_blossoms_crest_yang": {
+      "id": "great_blossoms_crest_yang",
+      "name": "Great Blossom's Crest (Yang)",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Besides providing a great 365 HP, the item is useful to boost any tank's regen capabilities. Nowadays multiple characters heal the full party so the item is not as valuable.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "hp": 365
+      },
+      "effects": [],
+      "tags": [
+        "buff_regen_hp"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.148079",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429464",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "great_krakens_crest_yang": {
+      "id": "great_krakens_crest_yang",
+      "name": "Great Kraken's Crest (Yang)",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Stat stick at +100 patk/eatk. If you can defend the damage dealer properly the -300 pdef/edef shouldn't matter. The 30% patk/eatk when combined to it's Yin piece is also good. Excellent for backpack healers like Rinyuu.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.148329",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429568",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "heroic_apothecarys_emblem": {
+      "id": "heroic_apothecarys_emblem",
+      "name": "Heroic Apothecary's Emblem",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This unique 30% axe damage up is useful for axe damage dealers if not bringing Hayes.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Axe damage by 30%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.148810",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429648",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "heroic_hunters_emblem": {
+      "id": "heroic_hunters_emblem",
+      "name": "Heroic Hunter's Emblem",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This unique 30% bow damage up is very useful for most hunters.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Bow damage by 30%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.149087",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429693",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "heroic_warriors_emblem": {
+      "id": "heroic_warriors_emblem",
+      "name": "Heroic Warrior's Emblem",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This unique 30% sword damage up is very useful for warriors without passive sword damage up skills or characters that hit sword without being warriors (e.g. A2)",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Sword damage by 30%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.149310",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429764",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "inventors_drafting_board": {
+      "id": "inventors_drafting_board",
+      "name": "Inventor's Drafting Board",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Largo's A4 accessory provides lots of HP (600), passive spear damage up, status ailment extended duration. Excellent defensive item, and can extend e.g. Therion's paralysis by 1 turn per proc.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Largo's A4 accessory provides lots of HP (600), passive spear damage up, status ailment extended duration. Excellent defensive item, and can extend e.g. Therion's paralysis by 1 turn per proc.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.149815",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.429910",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "kotas_right_glove": {
+      "id": "kotas_right_glove",
+      "name": "Kota's Right Glove",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Kota's is a very powerful unique item that caps physical attack by itself. While the 3 turn duration may seem bad, it can be extended by 5* dancer Lynette or Eleonora passive skills. It lost some value now that we have multiple units that can give some form of passive patk.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Kota's is a very powerful unique item that caps physical attack by itself. While the 3 turn duration may seem bad, it can be extended by 5* dancer Lynette or Eleonora passive skills. It lost some v...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.150057",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430004",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "largos_magic_booster": {
+      "id": "largos_magic_booster",
+      "name": "Largo's Magic Booster",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Largo's EX2 accessory provides massive eatk (130). For Largo, it also gives 30% passive eatk which is somewhat easy to get nowadays.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Largo's EX2 accessory provides massive eatk (130). For Largo, it also gives 30% passive eatk which is somewhat easy to get nowadays.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.150322",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430151",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "lightning_rune_vi": {
+      "id": "lightning_rune_vi",
+      "name": "Lightning Rune VI",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This is a good item on paper but lightning just doesn't see too much play for now.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This is a good item on paper but lightning just doesn't see too much play for now.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.150601",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430319",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "magical_speed_belt_v": {
+      "id": "magical_speed_belt_v",
+      "name": "Magical Speed Belt V",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This item provides very nice speed on top of good elemental attack (50 each)",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This item provides very nice speed on top of good elemental attack (50 each)",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.150823",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430371",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "master_apothecarys_armlet": {
+      "id": "master_apothecarys_armlet",
+      "name": "Master Apothecary's Armlet",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Gertrude's exclusive accessory is a nice fit for her with the extra speed and the axe damage up, even conditional. The speed alone would be useful.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Gertrude's exclusive accessory is a nice fit for her with the extra speed and the axe damage up, even conditional. The speed alone would be useful.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.151284",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430491",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "master_apothecarys_necklace": {
+      "id": "master_apothecarys_necklace",
+      "name": "Master Apothecary's Necklace",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Gertrude's EX2 accessory has massive patk (130) but lacks utility. Still very helpful when extra damage is the only thing needed.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Gertrude's EX2 accessory has massive patk (130) but lacks utility. Still very helpful when extra damage is the only thing needed.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.151509",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430554",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "master_apothecarys_wrap": {
+      "id": "master_apothecarys_wrap",
+      "name": "Master Apothecary's Wrap",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Gertrude's A4 accessory provides speed, lots of physical attack and axe damage up. However, pets now help control unit speed.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Grants 4 Accessory Provides Speed, Lots Of Physical Attack",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "4",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.151740",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430609",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "mercenarys_cape": {
+      "id": "mercenarys_cape",
+      "name": "Mercenary's Cape",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Tikilen's EX2 accessory is a stat stick at +100 eatk. Good filler accessory also for backpack healers like Rinyuu. Unfortunately Tikilen is so outclassed in wind damage that we won't be seeing the secondary effects much.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.152234",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.430992",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "minotaur_scarf_ii": {
+      "id": "minotaur_scarf_ii",
+      "name": "Minotaur Scarf II",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.152589",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.431345",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "monks_bottle_gourd": {
+      "id": "monks_bottle_gourd",
+      "name": "Monk's Bottle Gourd",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Yan Long's EX2 accessory provides some attack and speed. The effect of gaining 3BP on break is basically useless because we would like to use accessories that inflict debuffs on break instead.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Yan Long's EX2 accessory provides some attack and speed. The effect of gaining 3BP on break is basically useless because we would like to use accessories that inflict debuffs on break instead.",
+          "trigger": "on_break",
+          "duration": null,
+          "target": "self",
+          "value": "2",
+          "tags": [
+            "trigger_on_break"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_on_break"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.152804",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.431490",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "necklace_of_icirlo": {
+      "id": "necklace_of_icirlo",
+      "name": "Necklace of I'Cirlo",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Ri'tu's EX2 accessory is a stat stick at +100 patk. The exclusive effect for Ri'tu is quite good providing a very rare passive dagger resistance down. However, that requires bringing Ri'tu who is severely outclassed by many thieves.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.153287",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.431613",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "new_years_cloak": {
+      "id": "new_years_cloak",
+      "name": "New Year's Cloak",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This item is not a gacha 5* A4 but it is essentially paid at 1350 rubies. This is a very good item in some niches since it provides 5 instances of physical evasion. Free actions are very valuable in the cleric tower, for example, and evasion is a good skill. With evasion pets and units, this loses some value.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This item is not a gacha 5* A4 but it is essentially paid at 1350 rubies. This is a very good item in some niches since it provides 5 instances of physical evasion. Free actions are very valuable in t...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "5",
+          "tags": [
+            "special_physical_evasion"
+          ]
+        }
+      ],
+      "tags": [
+        "special_physical_evasion"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.153828",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.431879",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "special_mechanics"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "powerful_speed_belt_v": {
+      "id": "powerful_speed_belt_v",
+      "name": "Powerful Speed Belt V",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This item provides very nice speed on top of good attack (50 each)",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This item provides very nice speed on top of good attack (50 each)",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.154642",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.432641",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "ruby_dragon_scarf": {
+      "id": "ruby_dragon_scarf",
+      "name": "Ruby Dragon Scarf",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.155627",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.433021",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "vanguard_scarf": {
+      "id": "vanguard_scarf",
+      "name": "Vanguard Scarf",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This item gives an excellent 30% speed buff for 3 turns and 30 speed. This is excellent to control turn order.  With pets, however, speed is much more manageable.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "sp": 30,
+        "speed": 30
+      },
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.156695",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.434030",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "wind_maidens_hairband": {
+      "id": "wind_maidens_hairband",
+      "name": "Wind Maiden's Hairband",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Agnès's exclusive accessory provides the useful speed and HP bonuses, as well as some SP regen. A B+ accessory",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Agnès's exclusive accessory provides the useful speed and HP bonuses, as well as some SP regen. A B+ accessory",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.157213",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.434230",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "wind_rune_vi": {
+      "id": "wind_rune_vi",
+      "name": "Wind Rune VI",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "This is a good item for Lars if he's going to be used as wind dps (his 3x wind skill has very good potency). However, we do have many resources to deal and improve wind damage, like Tikilen's and Noelle's A4 accessories.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This is a good item for Lars if he's going to be used as wind dps (his 3x wind skill has very good potency). However, we do have many resources to deal and improve wind damage, like Tikilen's and N...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.157438",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.434309",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "winged_sheath": {
+      "id": "winged_sheath",
+      "name": "Winged Sheath",
+      "tier": "B",
+      "tier_value": 7,
+      "tier_explanation": "Ri'tu's A4 accessory provides physical attack and dagger damage up. It is great to complement Falco's passive on Therion and A2, for example.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Grants 4 Accessory Provides Physical Attack",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "4",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.157674",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.434381",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "agility_bangle": {
+      "id": "agility_bangle",
+      "name": "Agility Bangle",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Speed is a useful stat to control turn order.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Speed is a useful stat to control turn order.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.158451",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.434752",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "attack_belt_v": {
+      "id": "attack_belt_v",
+      "name": "Attack Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Stat stick fot 50 atk and eatk",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Stat stick fot 50 atk and eatk",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.158929",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.434955",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beast_tooth_accessory": {
+      "id": "beast_tooth_accessory",
+      "name": "Beast Tooth Accessory",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "This item gives 70 patk and -50 speed. We can now disable speed nodes but reducing speed still has some niche use.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "patk": 70
+      },
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.159138",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435015",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beastlings_feather_adorn": {
+      "id": "beastlings_feather_adorn",
+      "name": "Beastling's Feather Adorn",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "This item gives 15% bow damage up and some damage. May be useful if passive bow damage up is needed.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Bow damage by 15%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "15",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.159386",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435069",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "beastly_scarf_iii": {
+      "id": "beastly_scarf_iii",
+      "name": "Beastly Scarf III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.159616",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435072",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beastly_scarf_iv": {
+      "id": "beastly_scarf_iv",
+      "name": "Beastly Scarf IV",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.159797",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435075",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beastly_scarf_v": {
+      "id": "beastly_scarf_v",
+      "name": "Beastly Scarf V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.159975",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435078",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beastly_scarf_vi": {
+      "id": "beastly_scarf_vi",
+      "name": "Beastly Scarf VI",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.160156",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435080",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "bleeding_ward_i": {
+      "id": "bleeding_ward_i",
+      "name": "Bleeding Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.160334",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435113",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "champions_mark": {
+      "id": "champions_mark",
+      "name": "Champion's Mark",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Situational, but provides the hard to get 5% physical and elemental dmg up.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Physical And Elemental damage by 5%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "5",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.160874",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435593",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "cosmic_boots": {
+      "id": "cosmic_boots",
+      "name": "Cosmic Boots",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Nullify stillness may have a use or 2 but certainly extremely niche.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Nullify stillness may have a use or 2 but certainly extremely niche.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.161104",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435719",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "cosmic_glove": {
+      "id": "cosmic_glove",
+      "name": "Cosmic Glove",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Nullify comatose may have a use or 2 but certainly extremely niche.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Nullify comatose may have a use or 2 but certainly extremely niche.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.161306",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435759",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "cosmic_ring": {
+      "id": "cosmic_ring",
+      "name": "Cosmic Ring",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Nullify charm may have a use or 2 but certainly extremely niche.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Nullify charm may have a use or 2 but certainly extremely niche.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.161501",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435796",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "critical_speed_belt_ii": {
+      "id": "critical_speed_belt_ii",
+      "name": "Critical Speed Belt II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Even relatively small amounts of speed can be useful to control turn order.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Even relatively small amounts of speed can be useful to control turn order.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.161725",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435836",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "critical_speed_belt_v": {
+      "id": "critical_speed_belt_v",
+      "name": "Critical Speed Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "The speed may come in handy for turn order control.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "The speed may come in handy for turn order control.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.161945",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435869",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dark_rune_ii": {
+      "id": "dark_rune_ii",
+      "name": "Dark Rune II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.162152",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435873",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "defensive_magic_belt_v": {
+      "id": "defensive_magic_belt_v",
+      "name": "Defensive Magic Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Just a 50 eatk stat stick.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just a 50 eatk stat stick.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.162342",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435902",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "defensive_speed_belt_v": {
+      "id": "defensive_speed_belt_v",
+      "name": "Defensive Speed Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "The speed may come in handy for turn order control.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "The speed may come in handy for turn order control.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.162555",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435935",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dragons_scarf_i": {
+      "id": "dragons_scarf_i",
+      "name": "Dragon's Scarf I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.162764",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435967",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dragons_scarf_ii": {
+      "id": "dragons_scarf_ii",
+      "name": "Dragon's Scarf II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.162980",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.435999",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "dragons_scarf_iii": {
+      "id": "dragons_scarf_iii",
+      "name": "Dragon's Scarf III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.163182",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436030",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "ebony_dragons_scale": {
+      "id": "ebony_dragons_scale",
+      "name": "Ebony Dragon's Scale",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Speed is a useful stat to control turn order. The extra physical attack and elemental attack are a bonus.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Speed is a useful stat to control turn order. The extra physical attack and elemental attack are a bonus.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.163414",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436203",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "elemental_belt_v": {
+      "id": "elemental_belt_v",
+      "name": "Elemental Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Just a 50 eatk stat stick.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just a 50 eatk stat stick.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.163633",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436232",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "elite_apothecarys_emblem": {
+      "id": "elite_apothecarys_emblem",
+      "name": "Elite Apothecary's Emblem",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.163836",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436235",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "elite_dancers_emblem": {
+      "id": "elite_dancers_emblem",
+      "name": "Elite Dancer's Emblem",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "If an enemy is weak to fan and the roster has no other options, this might see some niche use.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "If an enemy is weak to fan and the roster has no other options, this might see some niche use.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.164020",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436279",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "energy_belt_ii": {
+      "id": "energy_belt_ii",
+      "name": "Energy Belt II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.164246",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436311",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "famous_thiefs_emblem_iii": {
+      "id": "famous_thiefs_emblem_iii",
+      "name": "Famous Thief's Emblem III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "A slightly better Thief Emblem",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "A slightly better Thief Emblem",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.164688",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436410",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "feintzs_floral_ornament": {
+      "id": "feintzs_floral_ornament",
+      "name": "Feintz's Floral Ornament",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Although this item provides 30 patk and eatk, the lack of extra HP and other stats makes it very niche.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Grants 30 Pattack And Eattack, The Lack Of Extra Hp And Other Stats Makes It Very Niche.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.164893",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436461",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "fire_rune_ii": {
+      "id": "fire_rune_ii",
+      "name": "Fire Rune II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.165109",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436464",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "great_krakens_crest_yin": {
+      "id": "great_krakens_crest_yin",
+      "name": "Great Kraken's Crest (Yin)",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "This accessory gives passive 30% patk/eatk up when combined with the Yang accessory. However, we generally have good ways to get these buffs, which means this accessory is not so useful.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This accessory gives passive 30% patk/eatk up when combined with the Yang accessory. However, we generally have good ways to get these buffs, which means this accessory is not so useful.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.165634",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.436922",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "heroic_dancers_emblem": {
+      "id": "heroic_dancers_emblem",
+      "name": "Heroic Dancer's Emblem",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "This unique 30% fan damage up can help dancers deal a lot of damage with fans. Unfortunately, there are usually much better options, although it is probably a good item for Glossom.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Fan damage by 30%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.166113",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437077",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "heroic_scholars_emblem": {
+      "id": "heroic_scholars_emblem",
+      "name": "Heroic Scholar's Emblem",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "This unique 30% tome damage up can help scholars deal a lot of damage with tomes. Unfortunately, there are usually much better options.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Tome damage by 30%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "30",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "dmg_weapon_multiplier"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.166364",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437142",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "damage_amplification"
+        ],
+        "is_offensive": true,
+        "is_defensive": false,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    },
+    "ice_rune_ii": {
+      "id": "ice_rune_ii",
+      "name": "Ice Rune II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.166593",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437146",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "inventors_compass": {
+      "id": "inventors_compass",
+      "name": "Inventor's Compass",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Largo's exclusive accessory is only useful for him, and only in situations where you would use him to deal damage - probably not many.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Largo's exclusive accessory is only useful for him, and only in situations where you would use him to deal damage - probably not many.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.166769",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437201",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "kitty_cape": {
+      "id": "kitty_cape",
+      "name": "Kitty Cape",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Speed is a useful stat to control turn order. The 1 time reduced damage is a nice bonus.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Speed is a useful stat to control turn order. The 1 time reduced damage is a nice bonus.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.166987",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437246",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "light_rune_ii": {
+      "id": "light_rune_ii",
+      "name": "Light Rune II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.167216",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437249",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "light_rune_iii": {
+      "id": "light_rune_iii",
+      "name": "Light Rune III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.167400",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437251",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "magical_critical_belt_v": {
+      "id": "magical_critical_belt_v",
+      "name": "Magical Critical Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Just a 50 eatk stat stick.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just a 50 eatk stat stick.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.167586",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437280",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "magical_speed_belt_ii": {
+      "id": "magical_speed_belt_ii",
+      "name": "Magical Speed Belt II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Even relatively small amounts of speed can be useful to control turn order.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Even relatively small amounts of speed can be useful to control turn order.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.167801",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437320",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "marlowes_secret_script": {
+      "id": "marlowes_secret_script",
+      "name": "Marlowe's Secret Script",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Efrain's A4 accessory provides some physical attack (50) but not very much besides that.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Grants 4 Accessory Provides Some Physical Attack",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "4",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.168029",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437366",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "mermaid_tights": {
+      "id": "mermaid_tights",
+      "name": "Mermaid Tights",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Nullify can't switch may have a use or 2 but certainly extremely niche.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Nullify can't switch may have a use or 2 but certainly extremely niche.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.168266",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437494",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "mighty_warriors_emblem_iii": {
+      "id": "mighty_warriors_emblem_iii",
+      "name": "Mighty Warrior's Emblem III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "A slightly better Warrior Emblem",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "A slightly better Warrior Emblem",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.168490",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437525",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "paralysis_ward_i": {
+      "id": "paralysis_ward_i",
+      "name": "Paralysis Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.168720",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437682",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "physical_belt_v": {
+      "id": "physical_belt_v",
+      "name": "Physical Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Just a 50 atk stat stick.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just a 50 atk stat stick.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.168922",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437710",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "powerful_critical_belt_v": {
+      "id": "powerful_critical_belt_v",
+      "name": "Powerful Critical Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Just a 50 atk stat stick.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just a 50 atk stat stick.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.169132",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437737",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "powerful_speed_belt_ii": {
+      "id": "powerful_speed_belt_ii",
+      "name": "Powerful Speed Belt II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Even relatively small amounts of speed can be useful to control turn order.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Even relatively small amounts of speed can be useful to control turn order.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.169337",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437778",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "powerful_spirit_belt_v": {
+      "id": "powerful_spirit_belt_v",
+      "name": "Powerful Spirit Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Just a 50 atk stat stick.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just a 50 atk stat stick.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.169549",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.437805",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "ruby_dragons_scale": {
+      "id": "ruby_dragons_scale",
+      "name": "Ruby Dragon's Scale",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Speed is a useful stat to control turn order. The extra physical attack and elemental attack are a bonus.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Speed is a useful stat to control turn order. The extra physical attack and elemental attack are a bonus.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.169812",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438025",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "savage_belt_ii": {
+      "id": "savage_belt_ii",
+      "name": "Savage Belt II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "The extra 20k damage cap up may be valuable if the character still hits cap with a damage that provides cap up (Krauser notably).",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increases damage cap by 20",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "20",
+          "tags": []
+        }
+      ],
+      "tags": [
+        "special_damage_cap_up"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.170041",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438083",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "special_mechanics"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "silence_ward_i": {
+      "id": "silence_ward_i",
+      "name": "Silence Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.170421",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438399",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "skilled_apothecarys_emblem": {
+      "id": "skilled_apothecarys_emblem",
+      "name": "Skilled Apothecary's Emblem",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.170632",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438402",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "sleep_ward_i": {
+      "id": "sleep_ward_i",
+      "name": "Sleep Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.170814",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438434",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "spirit_scarf_i": {
+      "id": "spirit_scarf_i",
+      "name": "Spirit Scarf I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "SP management is very important in longer fights.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "SP management is very important in longer fights.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.171019",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438467",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "spirited_speed_belt_v": {
+      "id": "spirited_speed_belt_v",
+      "name": "Spirited Speed Belt V",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "The speed may come in handy for turn order control.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "The speed may come in handy for turn order control.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.171236",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438500",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "tacticians_cloak": {
+      "id": "tacticians_cloak",
+      "name": "Tactician's Cloak",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Varkyn's exclusive accessory reduces SP costs but also makes him randomly double cast spells, which can help deal with otherwise impossible content but also (more frequently) mess up with break turns",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Varkyn's exclusive accessory reduces SP costs but also makes him randomly double cast spells, which can help deal with otherwise impossible content but also (more frequently) mess up with break turns",
+          "trigger": "on_break",
+          "duration": null,
+          "target": "self",
+          "value": null,
+          "tags": [
+            "trigger_on_break"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_on_break"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.171431",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438638",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "terror_ward_i": {
+      "id": "terror_ward_i",
+      "name": "Terror Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.171912",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438731",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "toxin_ward_i": {
+      "id": "toxin_ward_i",
+      "name": "Toxin Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.172120",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438762",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "veterans_emblem": {
+      "id": "veterans_emblem",
+      "name": "Veteran's Emblem",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Situational, but provides the hard to get 5% physical and elemental dmg up.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Increase Physical And Elemental damage by 5%",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "5",
+          "tags": []
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.172317",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438805",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "wayfarers_shoes": {
+      "id": "wayfarers_shoes",
+      "name": "Wayfarer's Shoes",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Adelle's exclusive accessory is a slightly better Thief Emblem",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Adelle's exclusive accessory is a slightly better Thief Emblem",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.172525",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438842",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "weakness_ward_i": {
+      "id": "weakness_ward_i",
+      "name": "Weakness Ward I",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "HP accessories are great in non-damage units.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP accessories are great in non-damage units.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.172729",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438874",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "wealthy_hunters_emblem_iii": {
+      "id": "wealthy_hunters_emblem_iii",
+      "name": "Wealthy Hunter's Emblem III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "A slightly better Hunter Emblem",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "A slightly better Hunter Emblem",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.172950",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438907",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "wind_rune_ii": {
+      "id": "wind_rune_ii",
+      "name": "Wind Rune II",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.173195",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.438999",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "wind_rune_iii": {
+      "id": "wind_rune_iii",
+      "name": "Wind Rune III",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.173378",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439001",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "winged_cape": {
+      "id": "winged_cape",
+      "name": "Winged Cape",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Ri'tu's exclusive accessory provides good healing but no HP or speed.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Ri'tu's exclusive accessory provides good healing but no HP or speed.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.173556",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439040",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "worndown_quill": {
+      "id": "worndown_quill",
+      "name": "Worn-down Quill",
+      "tier": "C",
+      "tier_value": 6,
+      "tier_explanation": "Odette's exclusive accessory provides speed, which is useful to control turn order.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "Yes",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Odette's exclusive accessory provides speed, which is useful to control turn order.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.173781",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439146",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "agility_cuffs": {
+      "id": "agility_cuffs",
+      "name": "Agility Cuffs",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.173991",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439148",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "agility_earring": {
+      "id": "agility_earring",
+      "name": "Agility Earring",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.174166",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439151",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "alluring_barrette_i": {
+      "id": "alluring_barrette_i",
+      "name": "Alluring Barrette I",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.174360",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439153",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "antidote_charm_i": {
+      "id": "antidote_charm_i",
+      "name": "Antidote Charm I",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.174551",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439156",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "apothecarys_emblem": {
+      "id": "apothecarys_emblem",
+      "name": "Apothecary's Emblem",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.174722",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439159",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "articulate_charm_i": {
+      "id": "articulate_charm_i",
+      "name": "Articulate Charm I",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.174905",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439161",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "axe_ward_charm_30": {
+      "id": "axe_ward_charm_30",
+      "name": "Axe Ward Charm (30%)",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.175097",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439163",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beastly_scarf_i": {
+      "id": "beastly_scarf_i",
+      "name": "Beastly Scarf I",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.175277",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439165",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "beastly_scarf_ii": {
+      "id": "beastly_scarf_ii",
+      "name": "Beastly Scarf II",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.175473",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439168",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "decorative_jasper_twine": {
+      "id": "decorative_jasper_twine",
+      "name": "Decorative Jasper Twine",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Leon's exclusive accessory gives him 20 SP regen period. This is not really very useful considering we have many ways to recover SP at this point.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {
+        "sp": 20
+      },
+      "effects": [],
+      "tags": [
+        "buff_regen_sp"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.175651",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439232",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "defense_belt_v": {
+      "id": "defense_belt_v",
+      "name": "Defense Belt V",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Useless, 'nuff said",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Useless, 'nuff said",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.175888",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439257",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "defensive_critical_belt_v": {
+      "id": "defensive_critical_belt_v",
+      "name": "Defensive Critical Belt V",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Useless, 'nuff said",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Useless, 'nuff said",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.176104",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439281",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "earthen_fist": {
+      "id": "earthen_fist",
+      "name": "Earthen Fist",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Just 30% paralysis resistance.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Just 30% paralysis resistance.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.176293",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439315",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "evening_calm_balm": {
+      "id": "evening_calm_balm",
+      "name": "Evening Calm Balm",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "This item basically only provides speed and is marginally better than leaving the item slot empty.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "This item basically only provides speed and is marginally better than leaving the item slot empty.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.176500",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439361",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "eye_of_argos": {
+      "id": "eye_of_argos",
+      "name": "Eye of Argos",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Low chance of paralysis on break. Not useful.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Low chance of paralysis on break. Not useful.",
+          "trigger": "on_break",
+          "duration": null,
+          "target": "self",
+          "value": null,
+          "tags": [
+            "trigger_on_break"
+          ]
+        }
+      ],
+      "tags": [
+        "trigger_on_break"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.176720",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439423",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "feet_of_the_moon_rabbit": {
+      "id": "feet_of_the_moon_rabbit",
+      "name": "Feet of the Moon Rabbit",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Bad stats and the 5% elemental resistance is not useful.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Bad stats and the 5% elemental resistance is not useful.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.176948",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439463",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "getaloadofthese_geta": {
+      "id": "getaloadofthese_geta",
+      "name": "Geta-Load-of-These Geta",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "HP recovery when inflicted with ailments. Not useful.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "HP recovery when inflicted with ailments. Not useful.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.177151",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439500",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "mantis_fist": {
+      "id": "mantis_fist",
+      "name": "Mantis Fist",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Bad stats and the 5% physical resistance is not useful.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Bad stats and the 5% physical resistance is not useful.",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.177383",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439626",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "spirited_critical_belt_v": {
+      "id": "spirited_critical_belt_v",
+      "name": "Spirited Critical Belt V",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Useless, 'nuff said",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Useless, 'nuff said",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "",
+          "tags": [
+            "general"
+          ]
+        }
+      ],
+      "tags": [],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.177654",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.439828",
+        "total_tags": 0,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "utility"
+        ],
+        "is_offensive": false,
+        "is_defensive": false,
+        "is_utility": true
+      },
+      "accessory_type": "normal"
+    },
+    "varkyns_valor": {
+      "id": "varkyns_valor",
+      "name": "Varkyn's Valor",
+      "tier": "D",
+      "tier_value": 5,
+      "tier_explanation": "Varkyn's EX2 accessory is probably worse than not equipping anything due to the -HP effect. The 1BP recovery exclusive to Varkyn requires bringing the 10% double cast chance gamble that is a lot more harmful than it's good.",
+      "is_gacha_5star_a4": false,
+      "shard_exchange_available": "N/A",
+      "character_restriction": null,
+      "stats": {},
+      "effects": [
+        {
+          "description": "Varkyn's EX2 accessory is probably worse than not equipping anything due to the -HP effect. The 1BP recovery exclusive to Varkyn requires bringing the 10% double cast chance gamble that is a lot more ...",
+          "trigger": "passive",
+          "duration": null,
+          "target": "self",
+          "value": "2",
+          "tags": [
+            "heal_hp_flat"
+          ]
+        }
+      ],
+      "tags": [
+        "heal_hp_flat"
+      ],
+      "data_sources": [
+        "tier_list"
+      ],
+      "last_updated": "2025-08-07T14:28:56.177860",
+      "validation_status": "pending",
+      "tag_enhancement": {
+        "enhanced_date": "2025-08-07T14:30:35.440023",
+        "total_tags": 1,
+        "enhancement_version": "1.0.0"
+      },
+      "effect_classification": {
+        "primary_types": [
+          "healing_recovery"
+        ],
+        "is_offensive": false,
+        "is_defensive": true,
+        "is_utility": false
+      },
+      "accessory_type": "normal"
+    }
+  }
+}

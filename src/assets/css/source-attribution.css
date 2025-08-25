@@ -1,0 +1,165 @@
+/* Source Attribution UI - Wikipedia-style info icons */
+
+.source-info {
+  display: inline-block;
+  position: relative;
+  margin-left: 4px;
+  cursor: help;
+}
+
+.source-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: #0066cc;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: serif;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
+
+.source-icon:hover {
+  background: #004499;
+  transform: scale(1.1);
+}
+
+/* Dark theme support */
+.dark-theme .source-icon {
+  background: #4a9eff;
+}
+
+.dark-theme .source-icon:hover {
+  background: #2080ff;
+}
+
+/* Tooltip */
+.source-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1.3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  margin-bottom: 8px;
+}
+
+.source-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #333;
+}
+
+.source-info:hover .source-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Light theme tooltip */
+.light-theme .source-tooltip {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.light-theme .source-tooltip::after {
+  border-top-color: #fff;
+}
+
+/* Multi-source indicator */
+.source-multiple {
+  background: #28a745;
+}
+
+.source-multiple:hover {
+  background: #1e7e34;
+}
+
+/* Source quality indicators */
+.source-high-confidence {
+  background: #0066cc;
+}
+
+.source-medium-confidence {
+  background: #ffc107;
+  color: #333;
+}
+
+.source-low-confidence {
+  background: #dc3545;
+}
+
+/* Detailed tooltip for complex sources */
+.source-tooltip-detailed {
+  white-space: normal;
+  max-width: 300px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.source-tooltip-detailed .source-evaluator {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.source-tooltip-detailed .source-date {
+  color: #bbb;
+  font-size: 11px;
+}
+
+.source-tooltip-detailed .source-reasoning {
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* Integration with character cards */
+.character-recommendation {
+  position: relative;
+  display: inline-block;
+}
+
+.recommendation-text {
+  display: inline-block;
+}
+
+/* F2P vs Dolphin with sources */
+.rec-with-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rec.f2p::after,
+.rec.dolphin::after {
+  content: attr(data-source-count);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  font-size: 9px;
+  text-align: center;
+  line-height: 14px;
+  margin-left: 4px;
+  font-weight: bold;
+}

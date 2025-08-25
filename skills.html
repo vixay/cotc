@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COTC Skill Search - Advanced Skill & Effect Database</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  
+  <!-- Import Vue 3 and Vue Select -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue-select@3.16.0/dist/vue-select.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-select@3.16.0/dist/vue-select.css">
+  
+  <!-- Import existing styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/advanced-filters.css">
+  <link rel="stylesheet" href="css/character-card-tags.css">
+  
+  <!-- Skill Search specific styles -->
+  <style>
+    /* Common Header Styles */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-top {
+      background: var(--bg-primary);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .header-top h1 {
+      color: var(--primary-color);
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .version {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .github-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .github-link:hover {
+      color: var(--primary-color);
+    }
+
+    .header-nav {
+      background: var(--bg-primary);
+      padding: 0;
+    }
+
+    .main-navigation {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 24px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color);
+      background: var(--bg-hover);
+    }
+
+    .nav-link.active {
+      color: var(--primary-color);
+      border-bottom-color: var(--primary-color);
+    }
+
+    .nav-link.donation {
+      color: var(--warning-color);
+    }
+
+    .nav-link.donation:hover {
+      color: #ffa000;
+      background: rgba(255, 193, 7, 0.1);
+    }
+
+    .nav-link svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .header-top {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+      .header-top h1 {
+        font-size: 1.3rem;
+      }
+
+      .main-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-link {
+        padding: 12px 16px;
+        font-size: 1rem;
+      }
+    }
+
+    .skill-search-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .search-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .search-header h1 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .search-subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .search-stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .search-stat {
+      text-align: center;
+    }
+
+    .search-stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      display: block;
+    }
+
+    .search-stat-label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Advanced Search Interface */
+    .search-interface {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .search-modes {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .search-mode {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 2px solid var(--border-color);
+      background: var(--bg-primary);
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--text-primary);
+    }
+
+    .search-mode.active {
+      background: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+
+    .search-mode:hover {
+      border-color: var(--primary-color);
+    }
+
+    /* Natural Language Search */
+    .natural-search {
+      margin-bottom: 25px;
+    }
+
+    .natural-search-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--border-color);
+      border-radius: 25px;
+      font-size: 1.1rem;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      transition: border-color 0.2s;
+    }
+
+    .natural-search-input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .search-suggestions {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-suggestion {
+      padding: 4px 12px;
+      background: var(--bg-tertiary);
+      border-radius: 15px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--text-secondary);
+    }
+
+    .search-suggestion:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    /* Boolean Logic Builder */
+    .boolean-builder {
+      display: none; /* Hidden by default, shown when Boolean mode is active */
+      margin-bottom: 25px;
+    }
+
+    .boolean-builder.active {
+      display: block;
+    }
+
+    .boolean-query {
+      background: var(--bg-primary);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      min-height: 60px;
+      font-family: monospace;
+      font-size: 0.95rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    .boolean-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .boolean-operator {
+      padding: 6px 12px;
+      background: var(--warning-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    .boolean-operator:hover {
+      opacity: 0.8;
+    }
+
+    .boolean-operator.and { background: var(--success-color); }
+    .boolean-operator.or { background: var(--warning-color); }
+    .boolean-operator.not { background: var(--danger-color); }
+
+    /* Tag-based Filters */
+    .tag-filters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .tag-filter-group {
+      background: var(--bg-primary);
+      border-radius: 6px;
+      padding: 15px;
+      border: 1px solid var(--border-color);
+    }
+
+    .tag-filter-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tag-filter-count {
+      background: var(--text-tertiary);
+      color: white;
+      padding: 2px 6px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+
+    /* Results Display */
+    .search-results {
+      margin-top: 30px;
+    }
+
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .results-count {
+      font-size: 1.2rem;
+      color: var(--text-primary);
+    }
+
+    .results-count-number {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .results-controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .view-mode-toggle {
+      display: flex;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .view-mode-btn {
+      padding: 8px 12px;
+      background: var(--bg-primary);
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--text-primary);
+    }
+
+    .view-mode-btn.active {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    /* Character Cards for Skill Search */
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-character-card {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .skill-character-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .character-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .character-portrait {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+    }
+
+    .character-placeholder {
+      border: 1px solid var(--border-color);
+      flex-shrink: 0;
+    }
+
+    .character-info h3 {
+      margin: 0 0 4px 0;
+      color: var(--text-primary);
+    }
+
+    .character-meta {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .character-job {
+      padding: 2px 8px;
+      background: var(--primary-color);
+      color: white;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+
+    .character-tier {
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    /* Skill Highlights */
+    .matched-skills {
+      margin-bottom: 15px;
+    }
+
+    .matched-skills-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 8px;
+    }
+
+    .skill-match {
+      background: var(--bg-primary);
+      border-left: 3px solid var(--success-color);
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .skill-description {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.3;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+    }
+
+    .skill-tag {
+      padding: 2px 6px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .skill-tag.effect { background: rgba(74, 158, 255, 0.2); color: var(--primary-color); }
+    .skill-tag.targeting { background: rgba(255, 193, 7, 0.2); color: #e6a500; }
+    .skill-tag.trigger { background: rgba(220, 53, 69, 0.2); color: var(--danger-color); }
+    .skill-tag.meta { background: rgba(40, 167, 69, 0.2); color: var(--success-color); }
+
+    /* Table View Styles */
+    .character-table-view {
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+
+    .skill-results-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-primary);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .skill-results-table th {
+      background: var(--bg-secondary);
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-primary);
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .skill-results-table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    .character-table-row:hover {
+      background: var(--bg-hover, rgba(255, 255, 255, 0.02));
+    }
+
+    .character-name-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .character-mini-portrait {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .tier-badge,
+    .priority-badge {
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .matching-skills-cell {
+      max-width: 300px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .skill-item {
+      background: var(--bg-secondary);
+      padding: 6px 8px;
+      border-radius: 4px;
+      border-left: 3px solid var(--primary-color);
+    }
+
+    .skill-tags-mini {
+      display: flex;
+      gap: 4px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .skill-tag-mini {
+      padding: 1px 4px;
+      border-radius: 8px;
+      font-size: 0.65rem;
+      font-weight: 500;
+    }
+
+    .more-skills-mini {
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    /* Export & Share */
+    .export-options {
+      margin-top: 20px;
+      padding: 15px;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      display: none;
+    }
+
+    .export-options.active {
+      display: block;
+    }
+
+    .export-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .export-btn {
+      padding: 8px 16px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .export-btn:hover {
+      opacity: 0.8;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .character-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .tag-filters {
+        grid-template-columns: 1fr;
+      }
+      
+      .search-stats {
+        gap: 20px;
+      }
+      
+      .results-header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Common Header -->
+    <header>
+        <!-- Title and Metadata Row -->
+        <div class="header-top">
+            <h1>OCTOPATH COTC META GUIDE</h1>
+            <div class="header-meta">
+                <span class="version">v3.0.0</span>
+                <a href="https://github.com/vixay/cotc" class="github-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Contribute
+                </a>
+            </div>
+        </div>
+        
+        <!-- Navigation Row -->
+        <div class="header-nav">
+            <nav class="main-navigation">
+                <a href="index-vue.html" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                    </svg>
+                    Home
+                </a>
+                <a href="accessories.html?from=vue" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2C12.74,2 13.4,2.31 13.85,2.85L14.15,3.15C14.6,3.6 15.26,3.91 16,3.91H16.5C17.88,3.91 19,5.03 19,6.41V6.91C19,7.65 19.31,8.31 19.85,8.85L20.15,9.15C20.69,9.6 21,10.26 21,11S20.69,12.4 20.15,12.85L19.85,13.15C19.4,13.6 19,14.26 19,15V15.5C19,16.88 17.88,18 16.5,18H16C15.26,18 14.6,18.31 14.15,18.85L13.85,19.15C13.4,19.69 12.74,20 12,20S10.6,19.69 10.15,19.15L9.85,18.85C9.4,18.4 8.74,18 8,18H7.5C6.12,18 5,16.88 5,15.5V15C5,14.26 4.69,13.6 4.15,13.15L3.85,12.85C3.31,12.4 3,11.74 3,11S3.31,9.6 3.85,9.15L4.15,8.85C4.6,8.4 5,7.74 5,7V6.5C5,5.12 6.12,4 7.5,4H8C8.74,4 9.4,3.69 9.85,3.15L10.15,2.85C10.6,2.31 11.26,2 12,2M12,8A3,3 0 0,0 9,11A3,3 0 0,0 12,14A3,3 0 0,0 15,11A3,3 0 0,0 12,8Z"/>
+                    </svg>
+                    Accessories
+                </a>
+                <a href="skills.html?from=vue" class="nav-link active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                    </svg>
+                    Skills
+                </a>
+                <a href="https://coff.ee/vixay" class="nav-link donation" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2,21V19H20V21H2M20,8V5H18V8H20M20,3A2,2 0 0,1 22,5V8A2,2 0 0,1 20,10H18V13A4,4 0 0,1 14,17H8A4,4 0 0,1 4,13V3H6V13A2,2 0 0,0 8,15H14A2,2 0 0,0 16,13V3H20Z"/>
+                    </svg>
+                    Buy me a coffee
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="skill-search-container">
+      <!-- Search Header -->
+      <div class="search-header">
+        <h1>COTC Skill Search</h1>
+        <p class="search-subtitle">Discover character abilities and build optimal teams with effect-based search</p>
+        
+        <div class="search-stats">
+          <div class="search-stat">
+            <span class="search-stat-number">{{ totalCharacters }}</span>
+            <span class="search-stat-label">Characters</span>
+          </div>
+          <div class="search-stat">
+            <span class="search-stat-number">{{ totalSkills }}</span>
+            <span class="search-stat-label">Skills</span>
+          </div>
+          <div class="search-stat">
+            <span class="search-stat-number">{{ totalTags }}</span>
+            <span class="search-stat-label">Effect Tags</span>
+          </div>
+          <div class="search-stat">
+            <span class="search-stat-number">{{ filteredCharacters.length }}</span>
+            <span class="search-stat-label">Results</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Search Interface -->
+      <div class="search-interface">
+        <!-- Search Modes -->
+        <div class="search-modes">
+          <div class="search-mode" :class="{ active: searchMode === 'natural' }" @click="setSearchMode('natural')">
+            🗣️ Natural Language
+          </div>
+          <div class="search-mode" :class="{ active: searchMode === 'tags' }" @click="setSearchMode('tags')">
+            🏷️ Tag-based
+          </div>
+          <div class="search-mode" :class="{ active: searchMode === 'boolean' }" @click="setSearchMode('boolean')">
+            ⚡ Boolean Logic
+          </div>
+          <div class="search-mode" :class="{ active: searchMode === 'advanced' }" @click="setSearchMode('advanced')">
+            🔧 Advanced
+          </div>
+        </div>
+
+        <!-- Natural Language Search -->
+        <div v-if="searchMode === 'natural'" class="natural-search">
+          <input
+            v-model="naturalQuery"
+            @input="handleNaturalSearch"
+            class="natural-search-input"
+            placeholder="Try: 'characters with fire resistance down' or 'skills that buff the entire party'"
+            type="text"
+          />
+          <div class="search-suggestions">
+            <span
+              v-for="suggestion in searchSuggestions"
+              :key="suggestion"
+              class="search-suggestion"
+              @click="applySearchSuggestion(suggestion)"
+            >
+              {{ suggestion }}
+            </span>
+          </div>
+        </div>
+
+        <!-- Boolean Logic Builder -->
+        <div class="boolean-builder" :class="{ active: searchMode === 'boolean' }">
+          <div class="boolean-query">{{ booleanQuery || 'Click tags below to build your search query...' }}</div>
+          <div class="boolean-controls">
+            <button class="boolean-operator and" @click="addBooleanOperator('AND')">AND</button>
+            <button class="boolean-operator or" @click="addBooleanOperator('OR')">OR</button>
+            <button class="boolean-operator not" @click="addBooleanOperator('NOT')">NOT</button>
+            <button class="boolean-operator" @click="clearBooleanQuery">Clear</button>
+          </div>
+        </div>
+
+        <!-- Tag-based Filters -->
+        <div v-if="searchMode === 'tags' || searchMode === 'boolean' || searchMode === 'advanced'" class="tag-filters">
+          <div class="tag-filter-group">
+            <div class="tag-filter-title">
+              💥 Damage Effects
+              <span class="tag-filter-count">{{ availableTags.effects.filter(t => t.includes('dmg')).length }}</span>
+            </div>
+            <v-select
+              v-model="selectedTags.damage"
+              :options="availableTags.effects.filter(t => t.includes('dmg'))"
+              placeholder="Select damage types..."
+              multiple
+              :close-on-select="false"
+              @option:selected="onTagSelected"
+            />
+          </div>
+
+          <div class="tag-filter-group">
+            <div class="tag-filter-title">
+              ⬆️ Buff Effects
+              <span class="tag-filter-count">{{ availableTags.effects.filter(t => t.includes('buff')).length }}</span>
+            </div>
+            <v-select
+              v-model="selectedTags.buffs"
+              :options="availableTags.effects.filter(t => t.includes('buff'))"
+              placeholder="Select buff types..."
+              multiple
+              :close-on-select="false"
+              @option:selected="onTagSelected"
+            />
+          </div>
+
+          <div class="tag-filter-group">
+            <div class="tag-filter-title">
+              ⬇️ Debuff Effects
+              <span class="tag-filter-count">{{ availableTags.effects.filter(t => t.includes('debuff') || t.includes('resist_down')).length }}</span>
+            </div>
+            <v-select
+              v-model="selectedTags.debuffs"
+              :options="availableTags.effects.filter(t => t.includes('debuff') || t.includes('resist_down'))"
+              placeholder="Select debuff types..."
+              multiple
+              :close-on-select="false"
+              @option:selected="onTagSelected"
+            />
+          </div>
+
+          <div class="tag-filter-group">
+            <div class="tag-filter-title">
+              💚 Healing Effects
+              <span class="tag-filter-count">{{ availableTags.effects.filter(t => t.includes('heal')).length }}</span>
+            </div>
+            <v-select
+              v-model="selectedTags.healing"
+              :options="availableTags.effects.filter(t => t.includes('heal'))"
+              placeholder="Select healing types..."
+              multiple
+              :close-on-select="false"
+              @option:selected="onTagSelected"
+            />
+          </div>
+
+          <div class="tag-filter-group">
+            <div class="tag-filter-title">
+              🎯 Targeting
+              <span class="tag-filter-count">{{ availableTags.targeting.length }}</span>
+            </div>
+            <v-select
+              v-model="selectedTags.targeting"
+              :options="availableTags.targeting"
+              placeholder="Select targets..."
+              multiple
+              :close-on-select="false"
+              @option:selected="onTagSelected"
+            />
+          </div>
+
+          <div class="tag-filter-group">
+            <div class="tag-filter-title">
+              ⚡ Triggers
+              <span class="tag-filter-count">{{ availableTags.triggers.length }}</span>
+            </div>
+            <v-select
+              v-model="selectedTags.triggers"
+              :options="availableTags.triggers"
+              placeholder="Select triggers..."
+              multiple
+              :close-on-select="false"
+              @option:selected="onTagSelected"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Results -->
+      <div class="search-results">
+        <div class="results-header">
+          <div class="results-count">
+            Found <span class="results-count-number">{{ filteredCharacters.length }}</span> 
+            {{ filteredCharacters.length === 1 ? 'character' : 'characters' }}
+            <span v-if="activeFilters.length > 0">
+              matching {{ activeFilters.join(', ') }}
+            </span>
+          </div>
+          <div class="results-controls">
+            <div class="view-mode-toggle">
+              <button class="view-mode-btn" :class="{ active: viewMode === 'cards' }" @click="setViewMode('cards')">
+                🃏 Cards
+              </button>
+              <button class="view-mode-btn" :class="{ active: viewMode === 'table' }" @click="setViewMode('table')">
+                📋 Table
+              </button>
+            </div>
+            <button class="export-btn" @click="toggleExportOptions">
+              📤 Export
+            </button>
+          </div>
+        </div>
+
+        <!-- Character Cards View -->
+        <div v-if="viewMode === 'cards'" class="character-grid">
+          <div
+            v-for="character in filteredCharacters"
+            :key="character.id"
+            class="skill-character-card"
+          >
+            <div class="character-header">
+              <img
+                :src="`images/characters/portraits/${character.id}.png`"
+                :alt="character.name"
+                class="character-portrait"
+                @error="handleImageError"
+              />
+              <div class="character-info">
+                <h3>{{ character.name }}</h3>
+                <div class="character-meta">
+                  <span class="character-job">{{ character.job }}</span>
+                  <span v-if="character.tierRatings?.gl?.tier" class="character-tier" :class="getTierClass(character.tierRatings.gl.tier)">
+                    {{ character.tierRatings.gl.tier }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div v-if="character.matchedSkills && character.matchedSkills.length > 0" class="matched-skills">
+              <div class="matched-skills-title">🎯 Matching Skills:</div>
+              <div
+                v-for="skill in character.matchedSkills.slice(0, 3)"
+                :key="skill.name"
+                class="skill-match"
+              >
+                <div class="skill-name">{{ skill.name }}</div>
+                <div class="skill-description">{{ skill.description }}</div>
+                <div class="skill-tags">
+                  <span
+                    v-for="tag in skill.matchedTags"
+                    :key="tag"
+                    class="skill-tag"
+                    :class="getTagCategory(tag)"
+                  >
+                    {{ formatTagName(tag) }}
+                  </span>
+                </div>
+              </div>
+              <div v-if="character.matchedSkills.length > 3" class="more-skills">
+                + {{ character.matchedSkills.length - 3 }} more skills
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table View -->
+        <div v-if="viewMode === 'table'" class="character-table-view">
+          <table class="skill-results-table">
+            <thead>
+              <tr>
+                <th>Character</th>
+                <th>Job</th>
+                <th>Tier</th>
+                <th>Priority</th>
+                <th>Matching Skills</th>
+                <th>Total Skills</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="character in filteredCharacters" :key="character.id" class="character-table-row">
+                <td class="character-name-cell">
+                  <img
+                    :src="`images/characters/portraits/${character.id}.png`"
+                    :alt="character.name"
+                    class="character-mini-portrait"
+                    @error="handleImageError"
+                  />
+                  {{ character.name }}
+                </td>
+                <td>{{ character.job || '-' }}</td>
+                <td>
+                  <span v-if="character.tierRatings?.gl?.tier" :class="getTierClass(character.tierRatings.gl.tier)" class="tier-badge">
+                    {{ character.tierRatings.gl.tier }}
+                  </span>
+                  <span v-else>-</span>
+                </td>
+                <td>
+                  <span v-if="character.ultPriority" class="priority-badge">
+                    {{ character.ultPriority }}
+                  </span>
+                  <span v-else>-</span>
+                </td>
+                <td class="matching-skills-cell">
+                  <div v-if="character.matchedSkills && character.matchedSkills.length > 0" class="skill-list">
+                    <div v-for="skill in character.matchedSkills.slice(0, 2)" :key="skill.name" class="skill-item">
+                      <strong>{{ skill.name }}</strong>
+                      <div class="skill-tags-mini">
+                        <span
+                          v-for="tag in skill.matchedTags.slice(0, 3)"
+                          :key="tag"
+                          class="skill-tag-mini"
+                          :class="getTagCategory(tag)"
+                        >
+                          {{ formatTagName(tag) }}
+                        </span>
+                      </div>
+                    </div>
+                    <div v-if="character.matchedSkills.length > 2" class="more-skills-mini">
+                      +{{ character.matchedSkills.length - 2 }} more
+                    </div>
+                  </div>
+                  <span v-else>-</span>
+                </td>
+                <td>{{ getTotalSkillCount(character) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Export Options -->
+        <div class="export-options" :class="{ active: showExportOptions }">
+          <div class="export-buttons">
+            <button class="export-btn" @click="exportToCSV">📊 Export CSV</button>
+            <button class="export-btn" @click="exportToJSON">📋 Export JSON</button>
+            <button class="export-btn" @click="shareResults">🔗 Share Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref, computed, onMounted, watch } = Vue
+    
+    const app = createApp({
+      components: {
+        'v-select': VueSelect
+      },
+      setup() {
+        // State
+        const characters = ref([])
+        const searchMode = ref('natural')
+        const viewMode = ref('cards')
+        const naturalQuery = ref('')
+        const booleanQuery = ref('')
+        const selectedTags = ref({
+          damage: [],
+          buffs: [],
+          debuffs: [],
+          healing: [],
+          targeting: [],
+          triggers: []
+        })
+        const showExportOptions = ref(false)
+
+        // Loading and error states
+        const loading = ref(true)
+        const error = ref(null)
+
+        // Computed properties
+        const totalCharacters = computed(() => characters.value.length)
+        const totalSkills = computed(() => {
+          return characters.value.reduce((total, char) => {
+            if (char.skills) {
+              const passiveCount = char.skills.passive?.length || 0
+              const battleCount = char.skills.battle?.length || 0
+              const ultimateCount = char.skills.ultimate?.length || 0
+              return total + passiveCount + battleCount + ultimateCount
+            }
+            return total
+          }, 0)
+        })
+
+        const totalTags = computed(() => {
+          const allTags = new Set()
+          characters.value.forEach(char => {
+            if (char.tags) {
+              ['effects', 'targeting', 'triggers', 'meta'].forEach(category => {
+                if (char.tags[category]) {
+                  char.tags[category].forEach(tag => {
+                    if (typeof tag === 'string') {
+                      allTags.add(tag)
+                    } else if (tag.name) {
+                      allTags.add(tag.name)
+                    }
+                  })
+                }
+              })
+            }
+          })
+          return allTags.size
+        })
+
+        const availableTags = computed(() => {
+          const effects = new Set()
+          const targeting = new Set()
+          const triggers = new Set()
+
+          characters.value.forEach(char => {
+            if (char.tags) {
+              if (char.tags.effects) {
+                char.tags.effects.forEach(tag => {
+                  const tagName = typeof tag === 'string' ? tag : tag.name
+                  if (tagName) effects.add(tagName)
+                })
+              }
+              if (char.tags.targeting) {
+                char.tags.targeting.forEach(tag => {
+                  const tagName = typeof tag === 'string' ? tag : tag.name
+                  if (tagName) targeting.add(tagName)
+                })
+              }
+              if (char.tags.triggers) {
+                char.tags.triggers.forEach(tag => {
+                  const tagName = typeof tag === 'string' ? tag : tag.name
+                  if (tagName) triggers.add(tagName)
+                })
+              }
+            }
+          })
+
+          return {
+            effects: Array.from(effects).sort(),
+            targeting: Array.from(targeting).sort(),
+            triggers: Array.from(triggers).sort()
+          }
+        })
+
+        const activeFilters = computed(() => {
+          const filters = []
+          Object.values(selectedTags.value).forEach(tagArray => {
+            filters.push(...tagArray)
+          })
+          if (naturalQuery.value) filters.push(naturalQuery.value)
+          if (booleanQuery.value) filters.push(booleanQuery.value)
+          return filters
+        })
+
+        const filteredCharacters = computed(() => {
+          let filtered = characters.value
+          
+          if (activeFilters.value.length > 0) {
+            filtered = characters.value.filter(character => {
+            // Natural language search
+            if (naturalQuery.value) {
+              return matchesNaturalQuery(character, naturalQuery.value)
+            }
+
+            // Tag-based search
+            const allSelectedTags = []
+            Object.values(selectedTags.value).forEach(tagArray => {
+              allSelectedTags.push(...tagArray)
+            })
+
+            if (allSelectedTags.length === 0) return true
+
+            return hasAnyMatchingTags(character, allSelectedTags)
+          })
+          }
+          
+          // Add matched skills to each character
+          return filtered.map(character => ({
+            ...character,
+            matchedSkills: getMatchedSkills(character)
+          }))
+        })
+
+        const searchSuggestions = ref([
+          'characters with fire resistance down',
+          'skills that buff the entire party',
+          'healing abilities',
+          'multi-hit physical damage',
+          'BP generation skills',
+          'immunity to charm',
+          'follow-up attack abilities',
+          'elemental damage dealers'
+        ])
+
+        // Methods
+        const loadCharacters = async () => {
+          try {
+            loading.value = true
+            const response = await fetch('data/characters_enhanced_v3.json')
+            const data = await response.json()
+            characters.value = data.characters || []
+            error.value = null
+          } catch (err) {
+            error.value = 'Failed to load character data'
+            console.error('Error loading characters:', err)
+          } finally {
+            loading.value = false
+          }
+        }
+
+        const setSearchMode = (mode) => {
+          searchMode.value = mode
+          if (mode !== 'natural') naturalQuery.value = ''
+          if (mode !== 'boolean') booleanQuery.value = ''
+        }
+
+        const setViewMode = (mode) => {
+          viewMode.value = mode
+        }
+
+        const handleNaturalSearch = () => {
+          // Simple natural language processing
+          // This can be enhanced with AI integration
+        }
+
+        const applySearchSuggestion = (suggestion) => {
+          naturalQuery.value = suggestion
+          searchMode.value = 'natural'
+          handleNaturalSearch()
+        }
+
+        const addBooleanOperator = (operator) => {
+          if (operator === 'Clear') {
+            booleanQuery.value = ''
+            return
+          }
+          
+          if (booleanQuery.value) {
+            booleanQuery.value += ` ${operator} `
+          }
+        }
+
+        const clearBooleanQuery = () => {
+          booleanQuery.value = ''
+        }
+
+        const onTagSelected = (tag) => {
+          if (searchMode.value === 'boolean') {
+            if (booleanQuery.value && !booleanQuery.value.endsWith(' ')) {
+              booleanQuery.value += ' '
+            }
+            booleanQuery.value += tag
+          }
+        }
+
+        const matchesNaturalQuery = (character, query) => {
+          const queryLower = query.toLowerCase()
+          
+          // Search in character name
+          if (character.name.toLowerCase().includes(queryLower)) return true
+          
+          // Search in skills
+          if (character.skills) {
+            const allSkills = [
+              ...(character.skills.passive || []),
+              ...(character.skills.battle || []),
+              ...(character.skills.ultimate || [])
+            ]
+            
+            for (const skill of allSkills) {
+              if (skill.name?.toLowerCase().includes(queryLower) ||
+                  skill.description?.toLowerCase().includes(queryLower)) {
+                return true
+              }
+            }
+          }
+          
+          // Search in tags
+          if (character.tags) {
+            const allTags = [
+              ...(character.tags.effects || []),
+              ...(character.tags.targeting || []),
+              ...(character.tags.triggers || []),
+              ...(character.tags.meta || [])
+            ]
+            
+            for (const tag of allTags) {
+              const tagName = typeof tag === 'string' ? tag : tag.name
+              if (tagName && tagName.toLowerCase().includes(queryLower)) {
+                return true
+              }
+            }
+          }
+          
+          return false
+        }
+
+        const hasAnyMatchingTags = (character, searchTags) => {
+          if (!character.tags) return false
+          
+          const characterTags = []
+          if (character.tags.effects) {
+            character.tags.effects.forEach(tag => {
+              characterTags.push(typeof tag === 'string' ? tag : tag.name)
+            })
+          }
+          if (character.tags.targeting) {
+            character.tags.targeting.forEach(tag => {
+              characterTags.push(typeof tag === 'string' ? tag : tag.name)
+            })
+          }
+          if (character.tags.triggers) {
+            character.tags.triggers.forEach(tag => {
+              characterTags.push(typeof tag === 'string' ? tag : tag.name)
+            })
+          }
+          
+          return searchTags.some(searchTag => characterTags.includes(searchTag))
+        }
+
+        const getMatchedSkills = (character) => {
+          if (!character.skills) return []
+          
+          const allSkills = [
+            ...(character.skills.passive || []).map(s => ({...s, type: 'passive'})),
+            ...(character.skills.battle || []).map(s => ({...s, type: 'battle'})),
+            ...(character.skills.ultimate || []).map(s => ({...s, type: 'ultimate'}))
+          ]
+          
+          const currentFilters = activeFilters.value
+          if (currentFilters.length === 0) return allSkills
+          
+          return allSkills.filter(skill => {
+            if (naturalQuery.value) {
+              const query = naturalQuery.value.toLowerCase()
+              return skill.name?.toLowerCase().includes(query) ||
+                     skill.description?.toLowerCase().includes(query)
+            }
+            
+            if (skill.extracted_tags) {
+              return skill.extracted_tags.some(tag => {
+                const tagName = typeof tag === 'string' ? tag : tag.name
+                return currentFilters.includes(tagName)
+              })
+            }
+            
+            return false
+          }).map(skill => {
+            // Add matched tags for highlighting
+            const matchedTags = []
+            if (skill.extracted_tags) {
+              skill.extracted_tags.forEach(tag => {
+                const tagName = typeof tag === 'string' ? tag : tag.name
+                if (currentFilters.includes(tagName)) {
+                  matchedTags.push(tagName)
+                }
+              })
+            }
+            return {...skill, matchedTags}
+          })
+        }
+
+        const getTierClass = (tier) => {
+          const tierMap = {
+            'S+': 'ui-tier-s-plus',
+            'S': 'ui-tier-s', 
+            'A': 'ui-tier-a',
+            'B': 'ui-tier-b',
+            'C': 'ui-tier-c',
+            'D': 'ui-tier-d'
+          }
+          return tierMap[tier] || ''
+        }
+
+        const getTagCategory = (tagName) => {
+          if (tagName.includes('dmg') || tagName.includes('buff') || tagName.includes('heal')) return 'effect'
+          if (tagName.includes('target')) return 'targeting'
+          if (tagName.includes('trigger')) return 'trigger'
+          return 'meta'
+        }
+
+        const formatTagName = (tagName) => {
+          return tagName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+        }
+
+        const handleImageError = (event) => {
+          // Remove the image and replace with character initials
+          const img = event.target
+          const character = img.alt
+          const initials = character.split(' ').map(word => word.charAt(0)).join('').substring(0, 2).toUpperCase()
+          
+          // Create a div to replace the image
+          const placeholder = document.createElement('div')
+          placeholder.className = img.className.replace('character-portrait', 'character-placeholder')
+          placeholder.textContent = initials
+          placeholder.style.cssText = `
+            width: ${img.offsetWidth || 50}px;
+            height: ${img.offsetHeight || 50}px;
+            border-radius: 50%;
+            background: var(--bg-secondary, #444);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--text-primary, #fff);
+            font-size: ${(img.offsetWidth || 50) * 0.4}px;
+          `
+          
+          img.parentNode.replaceChild(placeholder, img)
+        }
+
+        const toggleExportOptions = () => {
+          showExportOptions.value = !showExportOptions.value
+        }
+
+        const exportToCSV = () => {
+          const csvData = filteredCharacters.value.map(char => ({
+            name: char.name,
+            job: char.job,
+            tier: char.tierRatings?.gl?.tier || '',
+            priority: char.ultPriority,
+            skills: getMatchedSkills(char).length
+          }))
+          
+          const headers = ['Name', 'Job', 'Tier', 'Priority', 'Matching Skills']
+          const csvContent = [
+            headers.join(','),
+            ...csvData.map(row => Object.values(row).join(','))
+          ].join('\n')
+          
+          const blob = new Blob([csvContent], { type: 'text/csv' })
+          const url = URL.createObjectURL(blob)
+          const a = document.createElement('a')
+          a.href = url
+          a.download = 'cotc-skill-search-results.csv'
+          a.click()
+          URL.revokeObjectURL(url)
+        }
+
+        const exportToJSON = () => {
+          const jsonData = {
+            searchQuery: activeFilters.value,
+            timestamp: new Date().toISOString(),
+            results: filteredCharacters.value.map(char => ({
+              id: char.id,
+              name: char.name,
+              job: char.job,
+              tier: char.tierRatings?.gl?.tier,
+              matchingSkills: getMatchedSkills(char)
+            }))
+          }
+          
+          const blob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' })
+          const url = URL.createObjectURL(blob)
+          const a = document.createElement('a')
+          a.href = url
+          a.download = 'cotc-skill-search-results.json'
+          a.click()
+          URL.revokeObjectURL(url)
+        }
+
+        const shareResults = () => {
+          const params = new URLSearchParams()
+          if (naturalQuery.value) params.set('q', naturalQuery.value)
+          if (searchMode.value !== 'natural') params.set('mode', searchMode.value)
+          
+          const shareUrl = `${window.location.origin}${window.location.pathname}?${params.toString()}`
+          navigator.clipboard.writeText(shareUrl).then(() => {
+            alert('Share link copied to clipboard!')
+          })
+        }
+
+        // Lifecycle
+        onMounted(() => {
+          loadCharacters()
+          
+          // Load from URL parameters
+          const params = new URLSearchParams(window.location.search)
+          if (params.has('q')) {
+            naturalQuery.value = params.get('q')
+            searchMode.value = 'natural'
+          }
+          if (params.has('mode')) {
+            searchMode.value = params.get('mode')
+          }
+        })
+
+        const getTotalSkillCount = (character) => {
+          if (!character.skills) return 0
+          const passiveCount = character.skills.passive?.length || 0
+          const battleCount = character.skills.battle?.length || 0
+          const ultimateCount = character.skills.ultimate?.length || 0
+          return passiveCount + battleCount + ultimateCount
+        }
+
+        return {
+          // State
+          characters,
+          searchMode,
+          viewMode,
+          naturalQuery,
+          booleanQuery,
+          selectedTags,
+          showExportOptions,
+          loading,
+          error,
+          searchSuggestions,
+          
+          // Computed
+          totalCharacters,
+          totalSkills,
+          totalTags,
+          availableTags,
+          activeFilters,
+          filteredCharacters,
+          
+          // Methods
+          setSearchMode,
+          setViewMode,
+          handleNaturalSearch,
+          applySearchSuggestion,
+          addBooleanOperator,
+          clearBooleanQuery,
+          onTagSelected,
+          getMatchedSkills,
+          getTotalSkillCount,
+          getTierClass,
+          getTagCategory,
+          formatTagName,
+          handleImageError,
+          toggleExportOptions,
+          exportToCSV,
+          exportToJSON,
+          shareResults
+        }
+      }
+    })
+    
+    app.mount('#app')
+  </script>
+</body>
+</html>

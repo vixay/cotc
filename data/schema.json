@@ -1,0 +1,285 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "COTC Character Database v2",
+  "description": "Enhanced character data schema for Octopath Traveler: Champions of the Continent awakening stone guide",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Database version"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "Last update date in YYYY-MM-DD format"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "totalCharacters": {
+          "type": "integer",
+          "description": "Total number of characters in database"
+        },
+        "lastCharacterAdded": {
+          "type": "string",
+          "description": "Name of the most recently added character"
+        },
+        "dataSourceDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when source data was last extracted"
+        }
+      },
+      "required": ["totalCharacters"]
+    },
+    "characters": {
+      "type": "array",
+      "description": "Array of character data",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique lowercase identifier for the character"
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the character"
+          },
+          "isFree": {
+            "type": "boolean",
+            "description": "Whether character is obtainable for free (story/event) vs gacha"
+          },
+          "starRating": {
+            "type": "integer",
+            "minimum": 3,
+            "maximum": 5,
+            "description": "Base star rating of the character (3★, 4★, 5★)"
+          },
+          "job": {
+            "type": "string",
+            "enum": ["Warrior", "Hunter", "Cleric", "Scholar", "Dancer", "Merchant", "Apothecary", "Thief"],
+            "description": "Character's job class"
+          },
+          "influence": {
+            "type": "string",
+            "enum": ["Power", "Fame", "Wealth"],
+            "description": "Character's influence type"
+          },
+          "continent": {
+            "type": "string",
+            "description": "Continent where character originates"
+          },
+          "location": {
+            "type": "string",
+            "description": "Specific town or region"
+          },
+          "obtainedFrom": {
+            "type": "string",
+            "description": "How the character is obtained (e.g., 'Chance Encounters', 'Limited Guidance')"
+          },
+          "weapons": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["Sword", "Polearm", "Dagger", "Axe", "Bow", "Staff", "Tome", "Fan"]
+            },
+            "description": "Weapon types the character can use"
+          },
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["Fire", "Ice", "Lightning", "Wind", "Light", "Dark"]
+            },
+            "description": "Elemental affinities"
+          },
+          "weaknesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Character weaknesses (elements and weapons)"
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "base": {
+                "type": "object",
+                "properties": {
+                  "hp": {"type": "integer"},
+                  "sp": {"type": "integer"},
+                  "pAtk": {"type": "integer"},
+                  "pDef": {"type": "integer"},
+                  "eAtk": {"type": "integer"},
+                  "eDef": {"type": "integer"},
+                  "crit": {"type": "integer"},
+                  "spd": {"type": "integer"}
+                },
+                "description": "Base stats at level 1"
+              },
+              "max": {
+                "type": "object",
+                "properties": {
+                  "hp": {"type": "integer"},
+                  "sp": {"type": "integer"},
+                  "pAtk": {"type": "integer"},
+                  "pDef": {"type": "integer"},
+                  "eAtk": {"type": "integer"},
+                  "eDef": {"type": "integer"},
+                  "crit": {"type": "integer"},
+                  "spd": {"type": "integer"}
+                },
+                "description": "Maximum stats at level 120"
+              }
+            }
+          },
+          "roles": {
+            "type": "object",
+            "properties": {
+              "primary": {
+                "type": "string",
+                "enum": ["DPS", "Buffer", "Debuffer", "Healer", "Tank", "Support"],
+                "description": "Primary role classification"
+              },
+              "secondary": {
+                "type": "string",
+                "enum": ["DPS", "Buffer", "Debuffer", "Healer", "Tank", "Support"],
+                "description": "Secondary role classification (optional)"
+              }
+            }
+          },
+          "tierRatings": {
+            "type": "object",
+            "properties": {
+              "gl": {
+                "type": "object",
+                "properties": {
+                  "tier": {
+                    "type": "string",
+                    "enum": ["S+", "S", "A", "B", "C", "D"],
+                    "description": "Overall tier rating for Global/EN"
+                  },
+                  "score": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 10,
+                    "description": "Numerical score for the tier rating"
+                  }
+                }
+              }
+            }
+          },
+          "a4Tier": {
+            "type": ["string", "null"],
+            "enum": ["S+", "S", "A", "B", "C", "D", null],
+            "description": "A4 accessory tier rating"
+          },
+          "ultPriority": {
+            "type": "string",
+            "enum": ["L10", "L10 First", "A1, L10", "A4, L10", "L9", "L1"],
+            "description": "Ultimate awakening priority recommendation"
+          },
+          "stones": {
+            "type": "object",
+            "properties": {
+              "AS1": {
+                "type": "string",
+                "enum": ["U10", "A1", "A2", "A3", "A4", "Shard", "Keep"],
+                "description": "Awakening Stone 1 recommendation"
+              },
+              "AS2": {
+                "type": "string",
+                "enum": ["U10", "A1", "A2", "A3", "A4", "Shard", "Keep"],
+                "description": "Awakening Stone 2 recommendation"
+              },
+              "AS3": {
+                "type": "string",
+                "enum": ["U10", "A1", "A2", "A3", "A4", "Shard", "Keep"],
+                "description": "Awakening Stone 3 recommendation"
+              },
+              "AS4": {
+                "type": "string",
+                "enum": ["U10", "A1", "A2", "A3", "A4", "Shard", "Keep"],
+                "description": "Awakening Stone 4 recommendation"
+              },
+              "AS5": {
+                "type": "string",
+                "enum": ["U10", "A1", "A2", "A3", "A4", "Shard", "Keep"],
+                "description": "Awakening Stone 5 recommendation"
+              }
+            },
+            "required": ["AS1", "AS2", "AS3", "AS4", "AS5"]
+          },
+          "glReleaseDate": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "Global/EN release date in YYYY-MM-DD format"
+          },
+          "notes": {
+            "type": ["string", "null"],
+            "description": "Additional notes or recommendations"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Descriptive tags for categorization"
+          },
+          "skills": {
+            "type": "object",
+            "properties": {
+              "passive": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Passive skill names"
+              },
+              "battle": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Battle skill names"
+              },
+              "ultimate": {
+                "type": ["string", "null"],
+                "description": "Ultimate skill name"
+              }
+            }
+          },
+          "blessingOfLantern": {
+            "type": "object",
+            "properties": {
+              "available": {
+                "type": "boolean",
+                "description": "Whether Blessing of Lantern is available for this character"
+              },
+              "dateGL": {
+                "type": ["string", "null"],
+                "format": "date",
+                "description": "Date when Blessing of Lantern was released in GL"
+              }
+            }
+          },
+          "classBreakthrough": {
+            "type": "object",
+            "properties": {
+              "available": {
+                "type": "boolean",
+                "description": "Whether Class Breakthrough is available for this character"
+              },
+              "dateGL": {
+                "type": ["string", "null"],
+                "format": "date",
+                "description": "Date when Class Breakthrough was released in GL"
+              }
+            }
+          }
+        },
+        "required": ["id", "name", "isFree", "stones"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["version", "lastUpdated", "characters"],
+  "additionalProperties": false
+}

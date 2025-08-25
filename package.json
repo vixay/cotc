@@ -1,0 +1,30 @@
+{
+  "name": "octopath-cotc-meta-guide",
+  "version": "4.0.0",
+  "description": "OCTOPATH COTC META GUIDE - Vue 3 Migration",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && mkdir -p dist-vue/data && cp data/characters_enhanced_v3.json data/accessories.json dist-vue/data/",
+    "build:github": "vite build && cp dist-vue/index.html dist-vue/vue.html",
+    "preview": "vite preview",
+    "serve": "python -m http.server 8000",
+    "deploy:vue": "npm run build:github && echo 'Vue build ready for GitHub Pages in dist-vue/'"
+  },
+  "dependencies": {
+    "@playwright/mcp": "^0.0.33",
+    "@primevue/themes": "^4.3.7",
+    "@sipec/vue3-tags-input": "^3.0.4",
+    "pinia": "^2.1.7",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.7",
+    "vue": "^3.4.0",
+    "vue-router": "^4.5.1",
+    "vue-select": "^4.0.0-beta.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "type": "module"
+}

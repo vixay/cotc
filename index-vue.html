@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCTOPATH COTC META GUIDE - Vue Edition</title>
+    <meta name="description" content="Community-maintained meta guide for Octopath Traveler: Champions of the Continent character priorities, awakening stones, and team building">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    
+    <!-- Analytics - GoatCounter -->
+    <script data-goatcounter="https://cotc-vixay.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    
+    <!-- Vue app styles will be injected here by Vite -->
+</head>
+<body>
+    <div id="app">
+        <!-- Vue app will mount here -->
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Inter, sans-serif;">
+            <div style="text-align: center;">
+                <div style="width: 40px; height: 40px; border: 3px solid #ddd; border-top: 3px solid #4a9eff; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px;"></div>
+                <p>Loading COTC Guide...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Community maintained guide for COTC players - Vue 3 Edition.</p>
+            <div class="footer-links">
+                <a href="docs/CONTRIBUTING.md">How to Contribute</a>
+                <a href="https://github.com/vixay/cotc/issues" target="_blank">Report Issue</a>
+                <a href="docs/CHANGELOG.md">Changelog</a>
+                <a href="https://coff.ee/vixay" class="donation-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20,3H4V2A1,1 0 0,0 3,1A1,1 0 0,0 2,2V21A1,1 0 0,0 3,22A1,1 0 0,0 4,21V20H20A2,2 0 0,0 22,18V5A2,2 0 0,0 20,3M20,18H4V5H20V18M7,6V8H17V6H7M7,10V12H17V10H7M7,14V16H17V14H7Z"/>
+                    </svg>
+                    Buy me a coffee
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        body {
+            margin: 0;
+            background: var(--bg-primary, #1a1d24);
+            color: var(--text-primary, #e1e5e9);
+        }
+        
+        footer {
+            background: var(--bg-secondary, #252a33);
+            border-top: 1px solid var(--border-color, #3a4048);
+            padding: 32px 0;
+            margin-top: 64px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary, #9ca3af);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--text-primary, #e1e5e9);
+            background: var(--bg-hover, #2d343e);
+        }
+    </style>
+
+    <!-- Vue app script will be injected here by Vite -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
