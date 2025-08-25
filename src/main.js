@@ -15,23 +15,25 @@ import 'vue-select/dist/vue-select.css'
 import 'primeicons/primeicons.css'
 import './assets/css/ui-components.css'
 
-console.log('🚀 Starting Vue app initialization...')
+// Production environment - disable development features
+if (import.meta.env.PROD) {
+  console.log = () => {}
+  console.warn = () => {}
+  console.info = () => {}
+}
 
 // Mark that user has accessed Vue version for better back navigation
 localStorage.setItem('vue-migration-seen', 'true')
 
 try {
   // Create the Vue app
-  console.log('📦 Creating Vue app...')
   const app = createApp(App)
   
   // Create and use Pinia store
-  console.log('🏪 Setting up Pinia store...')
   const pinia = createPinia()
   app.use(pinia)
   
   // Setup PrimeVue
-  console.log('🎨 Setting up PrimeVue...')
   app.use(PrimeVue, {
     theme: {
       preset: Aura,
@@ -46,17 +48,18 @@ try {
   app.directive('tooltip', Tooltip)
   
   // Setup router
-  console.log('🗺️ Setting up Vue Router...')
   app.use(router)
   
   // Register global directives
-  console.log('📝 Registering global directives...')
   app.directive('character-names', characterNamesDirective)
   
   // Mount the app
-  console.log('🎯 Mounting app to #app...')
   const mountedApp = app.mount('#app')
-  console.log('✅ Vue app mounted successfully!', mountedApp)
+  
+  // Development only logs
+  if (import.meta.env.DEV) {
+    console.log('✅ Vue app mounted successfully!', mountedApp)
+  }
   
 } catch (error) {
   console.error('❌ Failed to initialize Vue app:', error)
