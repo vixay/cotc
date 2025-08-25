@@ -411,15 +411,20 @@ export const getStatIconClass = (statType, size = '') => {
  */
 export const getStatIconPath = (statType) => {
   const iconMap = {
-    'patk': paths.images('icons/stat_boosts/Phys_Atk_Up.png'),
-    'eatk': paths.images('icons/stat_boosts/Elem_Atk_Up.png'), 
-    'crit': paths.images('icons/stat_boosts/Crit_Up.png'),
-    'sp': paths.images('icons/healing_recovery/SP_Stock.png'),
-    'hp': paths.images('icons/healing_recovery/HP_Barrier.png'),
-    'spd': paths.images('icons/stat_boosts/Speed_Up.png'),
-    'speed': paths.images('icons/stat_boosts/Speed_Up.png'),
-    'edef': paths.images('icons/stat_boosts/Elem_Def_Up.png'),
-    'pdef': paths.images('icons/stat_boosts/Phys_Def_Up.png')
+    'patk': paths.images('wiki-icons/PhysAtk.png'),
+    'physatk': paths.images('wiki-icons/PhysAtk.png'),
+    'eatk': paths.images('wiki-icons/ElemAtk.png'),
+    'elematk': paths.images('wiki-icons/ElemAtk.png'),
+    'crit': paths.images('wiki-icons/Critical.png'),
+    'critical': paths.images('wiki-icons/Critical.png'),
+    'sp': paths.images('wiki-icons/SP.png'),
+    'hp': paths.images('wiki-icons/HP.png'),
+    'spd': paths.images('wiki-icons/Speed.png'),
+    'speed': paths.images('wiki-icons/Speed.png'),
+    'edef': paths.images('wiki-icons/ElemDef.png'),
+    'elemdef': paths.images('wiki-icons/ElemDef.png'),
+    'pdef': paths.images('wiki-icons/PhysDef.png'),
+    'physdef': paths.images('wiki-icons/PhysDef.png')
   }
   
   return iconMap[statType.toLowerCase()] || ''

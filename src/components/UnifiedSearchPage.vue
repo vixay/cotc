@@ -715,23 +715,24 @@ export default {
       }
 
       // Filter by unreleased characters (respect main page setting)
-      // TEMPORARILY DISABLED FOR DEBUGGING
-      /*
       if (characterStore && characterStore.filters && !characterStore.filters.showUnreleased) {
+        const currentDate = new Date()
         results = results.filter(item => {
           // Only filter items that have associated characters
           if (item.character) {
             const releaseDate = item.character.glReleaseDate
-            // Filter out if no release date or release date is in the future
-            if (!releaseDate || new Date(releaseDate) > new Date()) {
-              return false
+            // Filter out if no release date (empty string) or release date is in the future
+            if (!releaseDate || releaseDate.trim() === '') {
+              return false // No release date = unreleased
             }
+            const parsedDate = new Date(releaseDate)
+            // Filter out if release date is in the future
+            return parsedDate <= currentDate
           }
           // Items without characters always show (not character-dependent)
           return true
         })
       }
-      */
 
       // Filter by skill types
       if (selectedSkillTypes.value.length > 0) {
@@ -889,10 +890,7 @@ export default {
                   tier: character.tierRatings?.gl?.tier || null,
                   stats: null,
                   tags: skill.tags || [],
-                  character: {
-                    id: character.id,
-                    name: character.name
-                  }
+                  character: character // Include full character reference for filtering
                 })
               })
             }
@@ -952,10 +950,7 @@ export default {
                 tier: accessory.tier || character.tierRatings?.gl?.tier || null,
                 stats: accessory.stats || {},
                 tags: accessory.tags || [],
-                character: {
-                  id: character.id,
-                  name: character.name
-                }
+                character: character // Include full character reference for filtering
               })
             }
             
@@ -974,12 +969,7 @@ export default {
                 tier: accessory.tier || character.tierRatings?.gl?.tier || null,
                 stats: accessory.stats || {},
                 tags: accessory.tags || [],
-                character: {
-                  id: character.id,
-                  name: character.name,
-                  job: character.job,
-                  tierRatings: character.tierRatings
-                }
+                character: character // Include full character reference for filtering
               })
             }
           })

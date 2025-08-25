@@ -4,6 +4,33 @@ All notable changes to the COTC Awakening Stone Guide will be documented in this
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.0] - 2025-08-25
+
+### Fixed
+- **🎨 Search Results Display**
+  - Fixed table layout in "Search All" page where name column was too wide
+  - Improved column spacing so all information fits properly on screen
+  - Fixed missing action buttons that were hidden off-screen
+  - Combined Type and Skill Type into single organized display
+
+- **🏷️ Accessory Badge Colors**
+  - Updated accessory badges with distinct colors for easy identification
+  - A4 (Awakening) accessories now show orange badges
+  - Exclusive accessories now show red badges  
+  - Regular accessories now show neutral gray badges (removed green)
+
+- **👻 Character Visibility**
+  - Fixed issue where unreleased characters like Aoi and Sowan were showing in search results
+  - "Search All" page now properly respects the "Show Unreleased Characters" setting from main page
+  - Unreleased characters only appear when explicitly enabled
+
+### Changed
+- **📋 Search Results Layout**
+  - Renamed "Notes" column to "Tags" for clarity
+  - Combined accessory types into compact format: "Acc. > A4" and "Acc. > Regular"
+  - Improved multi-line display for better information organization
+  - Optimized column widths for better space utilization
+
 ## [4.0.0] - 2025-08-25
 
 ### Added
